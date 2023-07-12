@@ -192,7 +192,7 @@ Screen1 As screen:
 
                 "Gallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                     Fill: =RGBA(237, 237, 237, 1)
-                    Height: =Parent.Height - Button5_2.Height -50
+                    Height: =Parent.Height  -50
                     Items: |-
                         =//Sort
                         Search(Sort(

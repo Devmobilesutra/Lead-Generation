@@ -354,7 +354,7 @@ DashboardScreen As screen:
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Semibold
                     Height: =Label2_9.Height+Label2_9.Y
-                    OnSelect: =Navigate(SubmittedLeadsScreen);Set(VarFutureIncetives,true)
+                    OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                     Size: |-
                         =//19.22
                         If(Parent.Width<358,12,Parent.Width>358,16,14)
@@ -380,10 +380,8 @@ DashboardScreen As screen:
                             =//180
                             Parent.Height
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: |-
-                            =Navigate([@SubmittedLeadsScreen],ScreenTransition.None,{Header: "Potential Future Incentives"});Set(VarFutureIncetives,true);
-                            Set(VarSoldIncetives,false);
-                            Set(VarTotalIncentives,false);
+                        OnSelect: |
+                            =Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
                         PaddingRight: =5.34
                         PaddingTop: =50
                         PressedFill: =
@@ -401,7 +399,8 @@ DashboardScreen As screen:
                         Color: =RGBA(116, 116, 116, 1)
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
-                        OnSelect: =Navigate(SubmittedLeadsScreen);Set(VarFutureIncetives,true)
+                        OnSelect: |
+                            =Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
                         Size: |-
                             =//19.22
                             If(Parent.Width<358,14,Parent.Width>358,16,18)
@@ -433,7 +432,7 @@ DashboardScreen As screen:
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Semibold
                     Height: =Label2_9.Height+Label2_9.Y
-                    OnSelect: =Navigate(SubmittedLeadsScreen);Set(VarFutureIncetives,true)
+                    OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                     Size: |-
                         =//19.22
                         If(Parent.Width<358,12,Parent.Width>358,16,14)
@@ -458,10 +457,7 @@ DashboardScreen As screen:
                         Height: =Parent.Height
                         HoverFill: =RGBA(149, 149, 149, 1)
                         OnSelect: |-
-                            =//Set(VarPopup,true)
-                            Navigate([@SubmittedLeadsScreen],ScreenTransition.None,{Header: "Sold Incentives"});
-                            Set(VarSoldIncetives,true);
-                            Set(VarFutureIncetives,false);
+                            =Navigate([@Screen1],ScreenTransition.None,{Header:"Submitted Leads"})
                         PaddingRight: =5.34
                         PaddingTop: =53.40
                         Size: |-
@@ -477,7 +473,8 @@ DashboardScreen As screen:
                         Color: =RGBA(116, 116, 116, 1)
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
-                        OnSelect: =Set(VarPopup,true)
+                        OnSelect: |-
+                            =Navigate([@Screen1],ScreenTransition.None,{Header:"Submitted Leads"})
                         PaddingRight: =5.34
                         PaddingTop: =5.34
                         Size: |-

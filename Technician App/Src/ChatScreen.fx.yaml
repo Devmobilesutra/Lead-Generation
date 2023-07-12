@@ -108,7 +108,7 @@ ChatScreen As screen:
             Gallery4_2 As gallery.variableTemplateHeightGallery:
                 DelayItemLoading: =true
                 Height: =Parent.Height-Button1.Height-TextInput1_2.Height
-                Items: =Sort(Filter(LeadChats,LeadInformationLID.ID=Gallery1.Selected.ID),'Created On',SortOrder.Ascending)
+                Items: =Sort(Filter(LeadChats,LeadInformationLID.ID=Gallery1_1.Selected.ID),'Created On',SortOrder.Ascending)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
@@ -186,7 +186,7 @@ ChatScreen As screen:
                                     FromEmail:myMail,
                                  // To:personEmail,
                                     Message:TextInput1_2.Text,
-                                    LeadInformationLID:LookUp(LeadInformations,ID=Gallery1.Selected.ID)
+                                    LeadInformationLID:LookUp(LeadInformations,ID=Gallery1_1.Selected.ID)
                                     
                                 }
                             );
@@ -202,7 +202,7 @@ ChatScreen As screen:
             Button1 As button:
                 Fill: =RGBA(255, 0, 0, 1)
                 HoverFill: =ColorFade(Self.Fill, -20%)
-                OnSelect: =Navigate(SubmittedLeadsScreen)
+                OnSelect: =Navigate(Screen1)
                 Text: ="Back"
                 X: =32
                 Y: =22
