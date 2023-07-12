@@ -720,7 +720,9 @@ ViewDetailsScreen As screen:
                     DataCardValue27_2 As combobox:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(0, 0, 0, 1)
-                        Default: =Gallery1.Selected.PrimaryScopeofWorkLID
+                        Default: |-
+                            =//Gallery1.Selected.PrimaryScopeofWorkLID
+                            Scope
                         DefaultSelectedItems: |-
                             =//Gallery1.Selected.Scope
                             Scope
@@ -809,7 +811,9 @@ ViewDetailsScreen As screen:
                     DataCardValue28_2 As combobox:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(0, 0, 0, 1)
-                        Default: =Gallery1.Selected.SecondaryScopeofWorkLID
+                        Default: |-
+                            =//Gallery1.Selected.SecondaryScopeofWorkLID
+                            ScopeOfWork
                         DefaultSelectedItems: |-
                             =//Gallery1.Selected.ScopeOfWorkLID
                             ScopeOfWork
@@ -1178,7 +1182,7 @@ ViewDetailsScreen As screen:
                             =//18
                             If(Parent.Width<378,14,Parent.Width<500,16,18)
                         Text: ="Unit Down"
-                        Visible: =If(Gallery1.Selected.IsUnitDown='IsUnitDown (LeadInformations)'.Yes,true,false)
+                        Visible: =If(unitdown='IsUnitDown (LeadInformations)'.Yes,true,false)
                         Width: =Parent.Width-60
                         X: =40
                         Y: =18
@@ -1196,7 +1200,7 @@ ViewDetailsScreen As screen:
                     Height: =61
                     Required: =false
                     Update: =
-                    Visible: =If(Gallery1.Selected.AdditionalExpensesRequired='AdditionalExpensesRequired (LeadInformations)'.Yes,true,false)
+                    Visible: =If(AdditionalExpensesRequired='AdditionalExpensesRequired (LeadInformations)'.Yes,true,false)
                     Width: =Parent.Width
                     X: =0
                     Y: =12

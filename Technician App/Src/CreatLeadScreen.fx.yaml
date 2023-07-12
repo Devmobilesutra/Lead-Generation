@@ -25,17 +25,19 @@ CreatLeadScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            imgSchindlerLogo_5 As image:
+            Icon9_3 As icon.BackArrow:
                 AlignInContainer: =AlignInContainer.Center
-                DisplayMode: =DisplayMode.View
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =Parent.Height
-                Image: ='3x'
-                LayoutMinHeight: =320
-                LayoutMinWidth: =320
-                PaddingTop: =0.00
-                Width: =Parent.Width/7.5
-                X: =0.00
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =55
+                Icon: =Icon.BackArrow
+                OnSelect: |-
+                    =Navigate(DashboardScreen);
+                    UpdateContext({locInfoExpanded:false})
+                PaddingLeft: =20
+                PaddingTop: =5
+                Width: =55
+                X: =18
+                Y: =11
                 ZIndex: =1
 
             Label1_5 As label:
@@ -52,35 +54,22 @@ CreatLeadScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_5.Width-Icon2_5.Width
+                Width: =Parent.Width-imgSchindlerLogo_5.Width-Icon9_3.Width
                 X: =96.12
                 ZIndex: =2
 
-            Icon2_5 As icon.Hamburger:
+            imgSchindlerLogo_5 As image:
                 AlignInContainer: =AlignInContainer.Center
-                Color: =RGBA(255, 0, 0, 1)
                 DisplayMode: =DisplayMode.View
-                Icon: =Icon.Hamburger
-                OnSelect: =//Set(varshowMenu,!varshowMenu)
-                PaddingLeft: =10
-                PaddingRight: =10.68
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: ='3x'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
                 PaddingTop: =0.00
-                Width: =Parent.Width/10
-                X: =1390.56
-                ZIndex: =4
-
-            Icon7_5 As icon.Message:
-                AlignInContainer: =AlignInContainer.Center
-                Color: =RGBA(0, 0, 0, 1)
-                Height: =50
-                Icon: =Icon.Message
-                OnSelect: =Navigate(DashboardScreen)
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Visible: =false
-                Width: =53.40
+                Width: =Parent.Width/7.5
                 X: =0.00
-                ZIndex: =5
+                ZIndex: =3
 
         Container1_5 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
@@ -97,61 +86,30 @@ CreatLeadScreen As screen:
             Y: =ctnHeaderDS_5.Y+ctnHeaderDS_5.Height+10
             ZIndex: =2
 
-            Button3_5 As button:
-                Align: =Align.Left
+            Button3_1 As button:
+                Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
-                PaddingLeft: =Image1_5.Width+50
-                PaddingRight: =5.34
-                PaddingTop: =0.00
-                Size: =If(Parent.Width<500,14,Parent.Width>500,22,12)
-                Text: ="Technician"
+                PaddingLeft: =100
+                PaddingRight: =20
+                PaddingTop: =0
+                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                Text: ="Create Lead"
                 Width: =Parent.Width
-                X: =0.00
                 ZIndex: =1
 
-            Image1_5 As image:
-                Height: =Parent.Height/1.1
-                Image: =download
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Width: =Parent.Width/8
-                X: =5
-                Y: =2
-                ZIndex: =2
-
-            Label3_5 As label:
-                Align: =Align.Right
+            Label3_1 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
-                PaddingRight: =10.68
-                PaddingTop: =5.34
-                Size: =If(Parent.Width>500,14,Parent.Width<500,11,10)
+                PaddingRight: =10
+                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
                 Text: =User().FullName
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.Width/3
-                X: =Parent.Width-Self.Width
-                ZIndex: =4
-
-        Container10 As groupContainer.manualLayoutContainer:
-            FillPortions: =0
-            Height: =100
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            ZIndex: =3
-
-            Button3 As button:
-                Fill: =RGBA(255, 0, 0, 1)
-                HoverFill: =ColorFade(Self.Fill, -20%)
-                OnSelect: =Navigate(DashboardScreen)
-                Text: ="Back"
-                Width: =120
-                X: =40
-                Y: =40
-                ZIndex: =1
+                Width: =Parent.Width/2
+                Y: =5
+                ZIndex: =2
 
         Container7_3 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.Center
@@ -159,7 +117,7 @@ CreatLeadScreen As screen:
             Height: =136
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =Parent.Width/1.08
+            Width: =Parent.Width/1.04
             X: =87
             Y: =77
             ZIndex: =4
@@ -168,7 +126,7 @@ CreatLeadScreen As screen:
                 Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                 Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                 Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
+                X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/6)
                 Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                 ZIndex: =1
 
@@ -210,8 +168,10 @@ CreatLeadScreen As screen:
                 Icon: =Icon.Check
                 OnSelect: =
                 Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                X: =Circle1.X+(Circle1.Width/4)
-                Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                X: =Circle1.X+(Circle1.Width/4.2)
+                Y: |-
+                    =//If(Parent.Width<378,Circle1.Height/2,Parent.Width<500,Circle1.Height/2,Circle1.Height/2)
+                    Circle1.Y+Circle1.Height/6
                 ZIndex: =6
 
             Icon3_1 As icon.Check:
@@ -219,9 +179,10 @@ CreatLeadScreen As screen:
                 Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                 Icon: =Icon.Check
                 OnSelect: =
+                Visible: =false
                 Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                X: =Circle1_1.X+(Circle1_1.Width/3.2)
-                Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                X: =Circle1_1.X+(Circle1_1.Width/4.2)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,40,32)
                 ZIndex: =7
 
             Icon3_2 As icon.Check:
@@ -229,8 +190,9 @@ CreatLeadScreen As screen:
                 Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                 Icon: =Icon.Check
                 OnSelect: =
+                Visible: =false
                 Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                X: =Circle1_2.X+(Circle1_2.Width/3)
+                X: =Circle1_2.X+(Circle1_2.Width/4.2)
                 Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                 ZIndex: =8
 
@@ -239,8 +201,9 @@ CreatLeadScreen As screen:
                 Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                 Icon: =Icon.Check
                 OnSelect: =
+                Visible: =false
                 Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                X: =Circle1_2.X+(Circle1_2.Width/3)
+                X: =Circle1_3.X+(Circle1_3.Width/4.2)
                 Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                 ZIndex: =9
 
@@ -249,8 +212,9 @@ CreatLeadScreen As screen:
                 Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                 Icon: =Icon.Check
                 OnSelect: =
+                Visible: =false
                 Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                X: =Circle1_3.X+(Circle1_3.Width/3)
+                X: =Circle1_4.X+(Circle1_4.Width/4.2)
                 Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                 ZIndex: =10
 
@@ -292,59 +256,54 @@ CreatLeadScreen As screen:
 
             Label5 As label:
                 Font: =Font.Arial
-                Height: =27
-                PaddingLeft: =10
+                Height: =30
                 Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                 Text: ="Step 1"
                 Width: =Parent.Width/6
                 X: |-
                     =//If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
                     Circle1.X-Circle1.Width/3
-                Y: =73
+                Y: =Circle1.Y+Circle1.Height+20
                 ZIndex: =15
 
             Label5_1 As label:
                 Font: =Font.Arial
                 Height: =30
-                PaddingLeft: =10
                 Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                 Text: ="Step 2"
                 Width: =Parent.Width/6
                 X: =Circle1_1.X-Circle1_1.Width/3
-                Y: =70
+                Y: =Circle1.Y+Circle1.Height+20
                 ZIndex: =16
 
             Label5_2 As label:
                 Font: =Font.Arial
-                Height: =27
-                PaddingLeft: =10
+                Height: =30
                 Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                 Text: ="Step 3"
                 Width: =Parent.Width/6
                 X: =Circle1_2.X-Circle1_2.Width/3
-                Y: =73
+                Y: =Circle1.Y+Circle1.Height+20
                 ZIndex: =17
 
             Label5_3 As label:
                 Font: =Font.Arial
-                Height: =27
-                PaddingLeft: =10
+                Height: =30
                 Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                 Text: ="Step 4"
                 Width: =Parent.Width/6
                 X: =Circle1_3.X-Circle1_3.Width/3
-                Y: =73
+                Y: =Circle1.Y+Circle1.Height+20
                 ZIndex: =18
 
             Label5_4 As label:
                 Font: =Font.Arial
-                Height: =27
-                PaddingLeft: =10
+                Height: =30
                 Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                 Text: ="Step 5"
-                Width: =Parent.Width/8
+                Width: =Parent.Width/6
                 X: =Circle1_4.X-Circle1_4.Width/3
-                Y: =73
+                Y: =Circle1.Y+Circle1.Height+20
                 ZIndex: =19
 
         BuildingInfoForm As form:
