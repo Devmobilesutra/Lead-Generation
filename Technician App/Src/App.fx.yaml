@@ -1,0 +1,44 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =// CSS
+        
+        Set(
+            AllScreenCSS,
+            {
+            fontsize:22
+            }
+        );
+        Set(myMail,User().Email);
+        Set(yearly,true);
+        ClearCollect(
+            Menu,
+            {
+                Title: "Home",
+                icon: Icon.Home,
+                Navigate: DashboardScreen
+            },
+            {
+                Title: "About",
+                icon: Icon.Information //,
+                //Navigate: BuildingInfoScreen
+            },
+            {
+                Title: "Support",
+                icon: Icon.Support //,
+                //Navigate: SubmittedLeadsScreen
+            }
+        );
+        Set(
+            varshowMenu,
+            false
+        );
+    StartScreen: =
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

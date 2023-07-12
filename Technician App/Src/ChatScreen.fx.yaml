@@ -1,0 +1,210 @@
+ChatScreen As screen:
+
+    Container7 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ctnHeaderDS_9 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            imgSchindlerLogo_9 As image:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: ='3x'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                PaddingLeft: =5
+                PaddingRight: =2
+                Width: =90
+                ZIndex: =1
+
+            Label1_10 As label:
+                Color: =RGBA(116, 116, 116, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                PaddingLeft: =20
+                Size: =20
+                Text: ="Technicians Lead Generation"
+                Width: =560
+                ZIndex: =2
+
+            Icon2_9 As icon.Hamburger:
+                Color: =RGBA(255, 0, 0, 1)
+                DisplayMode: =DisplayMode.View
+                Icon: =Icon.Hamburger
+                OnSelect: =//Set(varshowMenu,!varshowMenu)
+                PaddingLeft: =10
+                PaddingRight: =10
+                ZIndex: =4
+
+        Container1_9 As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width/1.02
+            X: =10
+            Y: =85
+            ZIndex: =2
+
+            Button3_9 As button:
+                Align: =Align.Left
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.Arial
+                Height: =Parent.Height
+                PaddingLeft: =100
+                PaddingTop: =0
+                Size: =24
+                Text: ="Create Lead"
+                Width: =Parent.Width/1.02
+                ZIndex: =1
+
+            Image1_11 As image:
+                Height: =58
+                Image: =download
+                Width: =63
+                X: =17
+                Y: =11
+                ZIndex: =2
+
+            Label3_9 As label:
+                Align: =Align.Right
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Arial
+                Height: =80
+                PaddingRight: =10
+                Size: =18
+                Text: =User().FullName
+                Width: =124
+                X: =496
+                ZIndex: =4
+
+        Container8 As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height-ctnHeaderDS_9.Height-Container1_9.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =Parent.Width
+            Y: =180
+            ZIndex: =3
+
+            Gallery4_2 As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Height: =Parent.Height-Button1.Height-TextInput1_2.Height
+                Items: =Sort(Filter(LeadChats,LeadInformationLID.ID=Gallery1.Selected.ID),'Created On',SortOrder.Ascending)
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Patch(LeadChats,
+                            ThisItem,
+                            {
+                                'Read ':true
+                            }
+                        );
+                    
+                    Set(MessageRead,true);
+                    Refresh(LeadChats);
+                TemplateSize: =Label6_2.Height+Label8_2.Height
+                Width: =Parent.Width/1.02
+                Y: =62
+                ZIndex: =1
+
+                Label6_2 As label:
+                    Align: =If(ThisItem.FromEmail=myMail,Align.Right,Align.Left)
+                    AutoHeight: =true
+                    Font: =Font.Arial
+                    Height: =25
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =20
+                    PaddingRight: =50
+                    Size: =18
+                    Text: =ThisItem.Message
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                Label8_2 As label:
+                    Align: =If(ThisItem.FromEmail=myMail,Align.Right,Align.Left)
+                    Font: =Font.Arial
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =10
+                    PaddingRight: =50
+                    Size: =10
+                    Text: =ThisItem.FromEmail & "  "& ThisItem.'Created On'
+                    Width: =Parent.Width
+                    Y: =Label6_2.Y+Label6_2.Height
+                    ZIndex: =2
+
+            TextInput1_2 As text:
+                BorderColor: =Self.Color
+                Color: =RGBA(255, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(255, 0, 0, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.Arial
+                Height: =80
+                HintText: ="Enter message"
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =10
+                Size: =16
+                Width: =Parent.Width/1.04
+                X: =13
+                Y: =Gallery4_2.Height
+                ZIndex: =2
+
+            Icon6_2 As icon.Send:
+                BorderColor: =Self.Color
+                BorderThickness: =2
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledBorderColor: =RGBA(255, 0, 0, 1)
+                DisabledColor: =RGBA(255, 0, 0, 1)
+                Height: =80
+                Icon: =Icon.Send
+                OnSelect: |-
+                    =Patch(LeadChats,Defaults(LeadChats),
+                                {
+                                    ID:GUID(),
+                                    FromEmail:myMail,
+                                 // To:personEmail,
+                                    Message:TextInput1_2.Text,
+                                    LeadInformationLID:LookUp(LeadInformations,ID=Gallery1.Selected.ID)
+                                    
+                                }
+                            );
+                    Refresh(LeadChats);
+                    Reset(TextInput1_2);
+                PaddingLeft: =5
+                PaddingRight: =5
+                Width: =100
+                X: =TextInput1_2.Width-(Self.Width)/1.2
+                Y: =Gallery4_2.Height
+                ZIndex: =3
+
+            Button1 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                HoverFill: =ColorFade(Self.Fill, -20%)
+                OnSelect: =Navigate(SubmittedLeadsScreen)
+                Text: ="Back"
+                X: =32
+                Y: =22
+                ZIndex: =4
+

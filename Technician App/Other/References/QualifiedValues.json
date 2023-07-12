@@ -1,0 +1,93 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_shlrf_leadinformation_forms",
+      "Namespace": "LeadInformations (Forms)",
+      "Values": {
+        "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_leadchat_forms",
+      "Namespace": "LeadChats (Forms)",
+      "Values": {
+        "Information": "6283499e-a738-4823-a6b1-c3073ac34716"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_primaryscopeofwork_forms",
+      "Namespace": " PrimaryScopeofWorks (Forms)",
+      "Values": {
+        "Information": "525135e4-049e-4bdb-81b2-afec7f3e7b02"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_secondaryscopeofwork_forms",
+      "Namespace": "SecondaryScopeofWorks (Forms)",
+      "Values": {
+        "Information": "997701e5-93f7-4b1f-be77-dac5ae3b7435"
+      }
+    },
+    {
+      "Kind": "default.cds_duplicaterecord_forms",
+      "Namespace": "Duplicate Records (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_shlrf_leadimage_forms",
+      "Namespace": "LeadImages (Forms)",
+      "Values": {
+        "Information": "589ae9f0-1520-4d73-b618-8ff99759338e"
+      }
+    },
+    {
+      "Kind": "default.cds_crd59_scopeofwork_forms",
+      "Namespace": "ScopeOfWorks (Forms)",
+      "Values": {
+        "Information": "1ee2a470-5b1d-4356-ae58-e21256e1e3e4"
+      }
+    },
+    {
+      "Kind": "default.cds_crd59_leadinformation_forms",
+      "Namespace": "LeadInformations (Forms)1",
+      "Values": {
+        "Information": "26548ea9-4488-4602-a91a-e7e2e6119643",
+        "LeadDetails": "cf57937b-a786-ed11-81ad-00224829bffd",
+        "LeadInformation main form": "7dce6b35-b47a-ed11-81ad-0022482725e1",
+        "LeadStep2": "d1c2d0c2-ed79-ed11-81ad-0022482725e1",
+        "LeadStep3": "9ad5e181-b07a-ed11-81ad-00224829bffd",
+        "LeadStep4": "fc479f5d-b57a-ed11-81ad-0022482725e1",
+        "LeadStep5": "c96ca4e2-b77a-ed11-81ad-0022482725e1",
+        "LeadSummary": "611d18a7-a27b-ed11-81ad-0022482725e1"
+      }
+    },
+    {
+      "Kind": "default.cds_crd59_scope_forms",
+      "Namespace": "Scopes (Forms)",
+      "Values": {
+        "Information": "5a9bd302-c10d-443c-9c01-b6bc7a0b6300"
+      }
+    },
+    {
+      "Kind": "default.cds_crd59_chat_forms",
+      "Namespace": "Chats (Forms)",
+      "Values": {
+        "Information": "efde9871-9282-4065-b153-cec4acba2d0e"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_leadinformation_forms",
+      "Namespace": "LeadInformations (Forms)11",
+      "Values": {
+        "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_leadinformation_forms",
+      "Namespace": "LeadInformations (Forms)2",
+      "Values": {
+        "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
+      }
+    }
+  ]
+}
