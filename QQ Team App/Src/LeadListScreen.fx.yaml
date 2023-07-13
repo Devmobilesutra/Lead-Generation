@@ -115,7 +115,7 @@ LeadListScreen As screen:
                         Width: =200
                         ZIndex: =2
 
-                    ComboBox2 As combobox:
+                    cmbxdistrictfilterLS As combobox:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 0, 0, 1)
                         ChevronHoverBackground: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
@@ -126,11 +126,11 @@ LeadListScreen As screen:
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Reset: =true
                         SearchFields: =["Value"]
-                        SearchItems: =Search(["District1","District2","District3","District4"],ComboBox2.SearchText,"Value")
+                        SearchItems: =Search(["District1","District2","District3","District4"],cmbxdistrictfilterLS.SearchText,"Value")
                         Width: =200
                         ZIndex: =3
 
-                    ComboBox2_1 As combobox:
+                    cmbxareafilterLS As combobox:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 0, 0, 1)
                         ChevronHoverBackground: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
@@ -141,11 +141,11 @@ LeadListScreen As screen:
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Reset: =true
                         SearchFields: =["Value"]
-                        SearchItems: =Search(["Area1","Area2","Area3","Area4"],ComboBox2_1.SearchText,"Value")
+                        SearchItems: =Search(["Area1","Area2","Area3","Area4"],cmbxareafilterLS.SearchText,"Value")
                         Width: =200
                         ZIndex: =4
 
-                    TextInput1 As text:
+                    txtinptsearchLS As text:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         Default: =""
                         HintText: ="Search on Contract No./Mechanic Name"
