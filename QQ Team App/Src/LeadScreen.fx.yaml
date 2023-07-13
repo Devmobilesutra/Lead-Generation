@@ -1248,7 +1248,7 @@ LeadScreen As screen:
             Width: =ctnHeaderDashboardScreen_1.Width/10
             ZIndex: =4
 
-    Group2 As group:
+    grpchatmessageLdS As group:
         Height: =5
         Width: =5
         X: =40
