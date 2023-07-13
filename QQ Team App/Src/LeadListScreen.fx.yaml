@@ -229,12 +229,12 @@ LeadListScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =4
 
-                            Label1_3 As label:
+                            lblcreatedatevalueLS As label:
                                 Align: =Align.Center
                                 Text: =Text(ThisItem.'Created On',"dd mmm yyyy")
                                 ZIndex: =1
 
-                            Label2_3 As label:
+                            lblqqteamnamvalueLS As label:
                                 Align: =Align.Center
                                 Text: |-
                                     =//ThisItem.AssignedTo
@@ -242,7 +242,7 @@ LeadListScreen As screen:
                                     "QQ name"
                                 ZIndex: =2
 
-                            Label6_3 As label:
+                            lblmechanicnamevalueLS As label:
                                 Align: =Align.Center
                                 Text: |-
                                     =ThisItem.MechanicName
