@@ -97,15 +97,6 @@ LeadListScreen As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Rectangle1 As rectangle:
-                        BorderColor: =RGBA(149, 149, 149, 1)
-                        BorderThickness: =2
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =80
-                        Visible: =false
-                        Width: =Parent.Width/3
-                        ZIndex: =1
-
                     ComboBox1 As combobox:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 0, 0, 1)
