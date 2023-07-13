@@ -347,17 +347,17 @@ LeadListScreen As screen:
                         Text: ="Created Date"
                         ZIndex: =1
 
-                    Label2_2 As label:
+                    lblqqteamnameLS As label:
                         Align: =Align.Center
                         Text: ="QQ Team name"
                         ZIndex: =2
 
-                    Label6_2 As label:
+                    lblmechanicnameLS As label:
                         Align: =Align.Center
                         Text: ="Mechanic Name"
                         ZIndex: =3
 
-                    Label7_2 As label:
+                    lblcontractnoLS As label:
                         Align: =Align.Center
                         Text: ="Contract No. "
                         Width: =120
