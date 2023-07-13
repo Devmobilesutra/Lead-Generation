@@ -87,7 +87,7 @@ LeadListScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                Container25 As groupContainer.horizontalAutoLayoutContainer:
+                ctnfiltersearchLS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =100
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =5
