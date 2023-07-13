@@ -19,7 +19,7 @@ LeadListScreen As screen:
             Width: =Parent.Width
             ZIndex: =7
 
-            imguserDS_2 As image:
+            imguserLS As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: |-
@@ -30,11 +30,11 @@ LeadListScreen As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =lblheaderDS_2.X+lblheaderDS_2.Width
+                X: =lblheaderLS.X+lblheaderLS.Width
                 Y: =16
                 ZIndex: =1
 
-            lblusernameDS_2 As label:
+            lblusernameLS As label:
                 Align: =Align.Center
                 Color: =Header.White
                 FontWeight: =FontWeight.Semibold
@@ -43,10 +43,10 @@ LeadListScreen As screen:
                     =//"Hi Sam Martin"
                     User().FullName
                 Width: =ctnHeaderLeadListScreen.Width/8
-                X: =imguserDS_2.X+ imguserDS_2.Height
+                X: =imguserLS.X+ imguserLS.Height
                 ZIndex: =2
 
-            lblheaderDS_2 As label:
+            lblheaderLS As label:
                 Align: =Align.Center
                 Color: =Header.White
                 Fill: =RGBA(227, 43, 43, 1)
