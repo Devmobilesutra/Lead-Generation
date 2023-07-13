@@ -13,7 +13,7 @@ LeadScreen As screen:
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width
-        Y: =ctnHeaderDashboardScreen_1.Height+ctnHeaderDashboardScreen_1.Y
+        Y: =ctnHeaderLeadScreen.Height+ctnHeaderLeadScreen.Y
         ZIndex: =1
 
         Container10 As groupContainer.horizontalAutoLayoutContainer:
@@ -1192,7 +1192,7 @@ LeadScreen As screen:
             Y: =Container1_1.Height+Container1_1.Y
             ZIndex: =11
 
-    ctnHeaderDashboardScreen_1 As groupContainer.manualLayoutContainer:
+    ctnHeaderLeadScreen As groupContainer.manualLayoutContainer:
         Fill: =RGBA(227, 43, 43, 1)
         Height: =80
         Width: =Parent.Width
@@ -1221,7 +1221,7 @@ LeadScreen As screen:
             Text: |-
                 =//"Hi Sam Martin"
                 User().FullName
-            Width: =ctnHeaderDashboardScreen_1.Width/8
+            Width: =ctnHeaderLeadScreen.Width/8
             X: =imguserDS_1.X+ imguserDS_1.Height
             ZIndex: =2
 
@@ -1233,7 +1233,7 @@ LeadScreen As screen:
             Height: =Parent.Height
             Size: =26
             Text: =" Leads"
-            Width: =ctnHeaderDashboardScreen_1.Width/1.5
+            Width: =ctnHeaderLeadScreen.Width/1.5
             X: =imgSchindlerlogoDS_1.Width+imgSchindlerlogoDS_1.X
             ZIndex: =3
 
@@ -1245,7 +1245,7 @@ LeadScreen As screen:
             PaddingLeft: =2
             PaddingRight: =1
             PaddingTop: =5
-            Width: =ctnHeaderDashboardScreen_1.Width/10
+            Width: =ctnHeaderLeadScreen.Width/10
             ZIndex: =4
 
     grpchatmessageLdS As group:
@@ -1255,7 +1255,7 @@ LeadScreen As screen:
         Y: =40
         ZIndex: =10
 
-        Rectangle1_5 As rectangle:
+        rectfullchatmessageLdS As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =VarChatMessage
