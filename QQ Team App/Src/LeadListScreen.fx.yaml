@@ -9,7 +9,7 @@ LeadListScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        ctnHeaderDashboardScreen_2 As groupContainer.manualLayoutContainer:
+        ctnHeaderLeadListScreen As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(227, 43, 43, 1)
             FillPortions: =0
@@ -42,7 +42,7 @@ LeadListScreen As screen:
                 Text: |-
                     =//"Hi Sam Martin"
                     User().FullName
-                Width: =ctnHeaderDashboardScreen_2.Width/8
+                Width: =ctnHeaderLeadListScreen.Width/8
                 X: =imguserDS_2.X+ imguserDS_2.Height
                 ZIndex: =2
 
@@ -54,11 +54,11 @@ LeadListScreen As screen:
                 Height: =Parent.Height
                 Size: =26
                 Text: =" Leads"
-                Width: =ctnHeaderDashboardScreen_2.Width/1.5
-                X: =imgSchindlerlogoDS_2.Width+imgSchindlerlogoDS_2.X
+                Width: =ctnHeaderLeadListScreen.Width/1.5
+                X: =imgSchindlerlogoLS.Width+imgSchindlerlogoLS.X
                 ZIndex: =3
 
-            imgSchindlerlogoDS_2 As image:
+            imgSchindlerlogoLS As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =SchindlerImage
@@ -66,7 +66,7 @@ LeadListScreen As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =ctnHeaderDashboardScreen_2.Width/10
+                Width: =ctnHeaderLeadListScreen.Width/10
                 ZIndex: =4
 
         Container23 As groupContainer.verticalAutoLayoutContainer:
