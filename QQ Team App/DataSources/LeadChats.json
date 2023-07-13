@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "shlrf_leadchat",
-    "MaxGetRowsCount": 500,
     "Name": "LeadChats",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
