@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "shlrf_leadimage",
+    "MaxGetRowsCount": 500,
     "Name": "LeadImages",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
