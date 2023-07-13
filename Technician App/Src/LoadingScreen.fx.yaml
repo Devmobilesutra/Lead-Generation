@@ -1,0 +1,41 @@
+LoadingScreen As screen:
+
+    Image3 As image:
+        Height: =Parent.Height
+        Image: ='3x'
+        ImagePosition: =ImagePosition.Center
+        PaddingLeft: =40
+        PaddingRight: =42.72
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        X: =0.00
+        ZIndex: =1
+
+    TimerLS As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: |-
+            =//Navigate(DashboardScreen)
+            Navigate(DashboardScreen)
+        PaddingRight: =5.34
+        PaddingTop: =5.34
+        Size: =13.88
+        Start: =true
+        Visible: =false
+        Width: =170.88
+        X: =85.44
+        Y: =80
+        ZIndex: =2
+
+    Label1_9 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        PaddingRight: =5.34
+        PaddingTop: =5.34
+        Size: =13.88
+        Text: ="version 2.0"
+        Width: =Parent.Width
+        X: =0.00
+        Y: =Parent.Height/1.6
+        ZIndex: =3
+

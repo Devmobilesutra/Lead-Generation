@@ -1,0 +1,66 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Refresh(LeadInformations);
+        ClearCollect(
+            GcLeadInformations,
+            LeadInformations
+        );
+        // Global CSS
+        Set(
+            //for header
+            Header,
+            {
+                //  HeaderFont: "Roboto",
+                White: RGBA(
+                    255,
+                    255,
+                    255,
+                    1
+                ),
+                Red: RGBA(
+                    227,
+                    43,
+                    43,
+                    1
+                ),
+                Black: RGBA(
+                    0,
+                    0,
+                    0,
+                    1
+                )
+              //  HeaderFontSize: 26,
+              //  FontWeight: "bold",
+              //  HeaderUserFontSize: 16
+            }
+        );
+        ClearCollect(
+            GcQQTeamLoginDetails,
+            {
+                Id: 1,
+                UserName: "QQTeam1",
+                Email: "schindlerqqteam1@schindler.com",
+                Password: "team1"
+            },
+            {
+                Id: 2,
+                UserName: "QQTeam2",
+                Email: "schindlerqqteam2@schindler.com",
+                Password: "team2"
+            },
+            {
+                Id: 3,
+                UserName: "QQTeam3",
+                Email: "schindlerqqteam3@schindler.com",
+                Password: "team2"
+            }
+        );
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

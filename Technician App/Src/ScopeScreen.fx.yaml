@@ -1,0 +1,562 @@
+ScopeScreen As screen:
+
+    ctnMainDS_3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ctnHeaderDS_8 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =80
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            imgSchindlerLogo_8 As image:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: ='3x'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                PaddingLeft: =5
+                PaddingRight: =2
+                Width: =90
+                ZIndex: =1
+
+            Label1_8 As label:
+                Color: =RGBA(116, 116, 116, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                PaddingLeft: =20
+                Size: =20
+                Text: ="Technicians Lead Generation"
+                Width: =560
+                ZIndex: =2
+
+            Icon2_8 As icon.Hamburger:
+                Color: =RGBA(255, 0, 0, 1)
+                DisplayMode: =DisplayMode.View
+                Icon: =Icon.Hamburger
+                OnSelect: =//Set(varshowMenu,!varshowMenu)
+                PaddingLeft: =10
+                PaddingRight: =10
+                ZIndex: =4
+
+        Container5_5 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =926
+            Width: =Parent.Width-20
+            X: =10
+            Y: =177
+            ZIndex: =2
+
+            ScopeInfoForm As form:
+                DataSource: =LeadInformations
+                Height: =784
+                Item: =VarFormMode
+                Width: =620
+                Y: =142
+                ZIndex: =1
+
+                Scope_DataCard1 As typedDataCard.comboBoxEditCard:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="crd59_Scope"
+                    Default: =ThisItem.PrimaryScopeofWorkLID
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_PrimaryScopeofWorkLID")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue13.Selected
+                    Width: =620
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey13 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Arial
+                        Height: =48
+                        Size: =18
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue13 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error),Color.Black, Color.Red)
+                        ChevronBackground: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =Color.Black
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["shlrf_id"]
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =2
+                        Font: =Font.Arial
+                        Height: =50
+                        HoverBorderColor: =
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        InputTextPlaceholder: ="Search Scope of work"
+                        IsSearchable: =false
+                        Items: =' PrimaryScopeofWorks'
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PressedFill: =RGBA(0, 0, 0, 1)
+                        SearchFields: =["shlrf_id"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Size: =18
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage13 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue13.Y + DataCardValue13.Height
+                        ZIndex: =3
+
+                    StarVisible13 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey13.Height
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey13.Y
+                        ZIndex: =4
+
+                ScopeOfWorkLID_DataCard1 As typedDataCard.comboBoxEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="crd59_ScopeOfWorkLID"
+                    Default: =ThisItem.SecondaryScopeofWorkLID
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_SecondaryScopeofWorkLID")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue14.Selected
+                    Width: =620
+                    X: =0
+                    Y: =1
+                    ZIndex: =1
+
+                    DataCardKey14 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Arial
+                        Height: =48
+                        Size: =18
+                        Text: ="Scope of work"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue14 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                        ChevronBackground: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =Color.Black
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["shlrf_id"]
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =2
+                        Font: =Font.Arial
+                        Height: =50
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        IsSearchable: =false
+                        Items: =Filter(SecondaryScopeofWorks,PrimaryScopeofWorkLID.' PrimaryScopeofWork'=DataCardValue13.Selected.' PrimaryScopeofWork')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["shlrf_id"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Size: =18
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage14 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue14.Y + DataCardValue14.Height
+                        ZIndex: =3
+
+                    StarVisible14 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey14.Height
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey14.Y
+                        ZIndex: =4
+
+                ManuallyScopeOfWork_DataCard2 As typedDataCard.textualEditCard:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="crd59_manuallyscopeofwork"
+                    Default: =ThisItem.CustomScopeofWork
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_customscopeofwork")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
+                    Required: =false
+                    Update: =DataCardValue15.Text
+                    Width: =620
+                    X: =0
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey15 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 0, 0, 1)
+                        Font: =Font.Arial
+                        Height: =48
+                        Size: =18
+                        Text: ="Custom Scope of work(Manually Entered)"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue15 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.Arial
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =18
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage15 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue15.Y + DataCardValue15.Height
+                        ZIndex: =3
+
+                    StarVisible15 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey15.Height
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey15.Y
+                        ZIndex: =4
+
+            Container7_2 As groupContainer.manualLayoutContainer:
+                Height: =136
+                Width: =474
+                X: =73
+                Y: =44
+                ZIndex: =3
+
+                Circle1_10 As circle:
+                    Fill: =If(VarIndicator=true,Color.Green,Color.Red)
+                    Height: =39
+                    Width: =40
+                    X: =20
+                    Y: =28
+                    ZIndex: =1
+
+                Circle1_11 As circle:
+                    Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
+                    Height: =39
+                    Width: =40
+                    X: =113
+                    Y: =28
+                    ZIndex: =2
+
+                Circle1_12 As circle:
+                    Fill: =If(VarIndicatorSS=true,Color.Green,Color.Red)
+                    Height: =39
+                    Width: =40
+                    X: =206
+                    Y: =28
+                    ZIndex: =3
+
+                Circle1_13 As circle:
+                    Fill: =Color.Red
+                    Height: =39
+                    Width: =40
+                    X: =299
+                    Y: =28
+                    ZIndex: =4
+
+                Circle1_14 As circle:
+                    Fill: =Color.Red
+                    Height: =39
+                    Width: =40
+                    X: =392
+                    Y: =28
+                    ZIndex: =5
+
+                Icon3_10 As icon.Check:
+                    Color: =If(VarIndicator=true,Color.White,Color.Red)
+                    Height: =19
+                    Icon: =Icon.Check
+                    Width: =23
+                    X: =28
+                    Y: =38
+                    ZIndex: =6
+
+                Icon3_11 As icon.Check:
+                    Color: =If(VarIndicatorUS=true,Color.White,Color.Red)
+                    Height: =19
+                    Icon: =Icon.Check
+                    OnSelect: =
+                    Width: =23
+                    X: =122
+                    Y: =38
+                    ZIndex: =7
+
+                Icon3_12 As icon.Check:
+                    Color: =If(VarIndicatorSS=true,Color.White,Color.Red)
+                    Height: =19
+                    Icon: =Icon.Check
+                    OnSelect: =
+                    Width: =23
+                    X: =215
+                    Y: =38
+                    ZIndex: =8
+
+                Icon3_13 As icon.Check:
+                    Color: =Color.Red
+                    Height: =19
+                    Icon: =Icon.Check
+                    OnSelect: =
+                    Width: =23
+                    X: =307
+                    Y: =38
+                    ZIndex: =9
+
+                Icon3_14 As icon.Check:
+                    Color: =Color.Red
+                    Height: =19
+                    Icon: =Icon.Check
+                    OnSelect: =
+                    Width: =23
+                    X: =400
+                    Y: =38
+                    ZIndex: =10
+
+                Icon4_8 As icon.HorizontalLine:
+                    Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
+                    Height: =51
+                    Icon: =Icon.HorizontalLine
+                    Width: =53
+                    X: =60
+                    Y: =22
+                    ZIndex: =11
+
+                Icon4_9 As icon.HorizontalLine:
+                    Color: =If(VarIndicatorUS=true,Color.Green,Color.DarkGray)
+                    Height: =51
+                    Icon: =Icon.HorizontalLine
+                    Width: =53
+                    X: =153
+                    Y: =22
+                    ZIndex: =12
+
+                Icon4_10 As icon.HorizontalLine:
+                    Color: =Color.DarkGray
+                    Height: =51
+                    Icon: =Icon.HorizontalLine
+                    Width: =53
+                    X: =246
+                    Y: =22
+                    ZIndex: =13
+
+                Icon4_11 As icon.HorizontalLine:
+                    Color: =Color.DarkGray
+                    Height: =51
+                    Icon: =Icon.HorizontalLine
+                    Width: =53
+                    X: =339
+                    Y: =22
+                    ZIndex: =14
+
+                Label5_10 As label:
+                    Height: =27
+                    PaddingLeft: =10
+                    Size: =12
+                    Text: ="Step 1"
+                    Width: =67
+                    X: =11
+                    Y: =73
+                    ZIndex: =15
+
+                Label5_11 As label:
+                    Height: =27
+                    PaddingLeft: =10
+                    Size: =12
+                    Text: ="Step 2"
+                    Width: =73
+                    X: =101
+                    Y: =73
+                    ZIndex: =16
+
+                Label5_12 As label:
+                    Height: =27
+                    PaddingLeft: =10
+                    Size: =12
+                    Text: ="Step 3"
+                    Width: =73
+                    X: =190
+                    Y: =73
+                    ZIndex: =17
+
+                Label5_13 As label:
+                    Height: =27
+                    PaddingLeft: =10
+                    Size: =12
+                    Text: ="Step 4"
+                    Width: =73
+                    X: =286
+                    Y: =73
+                    ZIndex: =18
+
+                Label5_14 As label:
+                    Height: =27
+                    PaddingLeft: =10
+                    Size: =12
+                    Text: ="Step 5"
+                    Width: =73
+                    X: =375
+                    Y: =73
+                    ZIndex: =19
+
+            Button2_3 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =53
+                HoverFill: =Color.Red
+                OnSelect: |
+                    =Set(VarIndicator,true);
+                    Set(VarIndicatorUS,true);
+                    Set(VarIndicatorSS,true);
+                    Set(VarIndicatorES,false);
+                    //Navigate(EstimateScreen);
+                Size: =20
+                Text: ="Next"
+                Width: =131
+                X: =289
+                Y: =790
+                ZIndex: =4
+
+            Button2_4 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =53
+                HoverFill: =Color.Red
+                OnSelect: |+
+                    =Navigate(UnitScreen);
+                    Set(varIndicatorSS,false);
+                    
+                    
+                Size: =20
+                Text: ="Previous"
+                Width: =131
+                X: =144
+                Y: =790
+                ZIndex: =5
+
+        Container1_8 As groupContainer.manualLayoutContainer:
+            Height: =80
+            Width: =Parent.Width/1.02
+            X: =10
+            Y: =85
+            ZIndex: =3
+
+            Button3_8 As button:
+                Align: =Align.Left
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.Arial
+                Height: =Parent.Height
+                PaddingLeft: =100
+                PaddingTop: =0
+                Size: =24
+                Text: ="Create Lead"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Image1_10 As image:
+                Height: =58
+                Image: =download
+                Width: =63
+                X: =17
+                Y: =11
+                ZIndex: =2
+
+            Label3_8 As label:
+                Align: =Align.Right
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Arial
+                Height: =80
+                PaddingRight: =10
+                Size: =18
+                Text: =User().FullName
+                Width: =124
+                X: =496
+                ZIndex: =4
+

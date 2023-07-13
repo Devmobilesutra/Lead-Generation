@@ -1,0 +1,652 @@
+CreatLeadScreen As screen:
+
+    Container5_2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =20
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ctnHeaderDS_5 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: |-
+                =//Parent.Height/13.5
+                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =Parent.Width
+            X: =0.00
+            ZIndex: =1
+
+            Icon9_3 As icon.BackArrow:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =55
+                Icon: =Icon.BackArrow
+                OnSelect: |-
+                    =Navigate(DashboardScreen);
+                    UpdateContext({locInfoExpanded:false})
+                PaddingLeft: =20
+                PaddingTop: =5
+                Width: =55
+                X: =18
+                Y: =11
+                ZIndex: =1
+
+            Label1_5 As label:
+                Color: =RGBA(116, 116, 116, 1)
+                DisplayMode: =DisplayMode.View
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                PaddingLeft: =20
+                PaddingRight: =5.34
+                PaddingTop: =5.34
+                Size: |
+                    =//21.36
+                    If(Parent.Width<500,14,Parent.Width>500,22,12)
+                Text: ="Technicians Lead Generation"
+                Width: =Parent.Width-imgSchindlerLogo_5.Width-Icon9_3.Width
+                X: =96.12
+                ZIndex: =2
+
+            imgSchindlerLogo_5 As image:
+                AlignInContainer: =AlignInContainer.Center
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: ='3x'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                PaddingTop: =0.00
+                Width: =Parent.Width/7.5
+                X: =0.00
+                ZIndex: =3
+
+        Container1_5 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: |-
+                =//Parent.Height/14
+                If(Parent.Height<Parent.Width,Parent.Height/10,Parent.Height/16)
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =Parent.Width-40
+            X: =21.36
+            Y: =ctnHeaderDS_5.Y+ctnHeaderDS_5.Height+10
+            ZIndex: =2
+
+            Button3_1 As button:
+                Align: =Align.Right
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 0, 0, 1)
+                Font: =Font.Arial
+                Height: =Parent.Height
+                PaddingLeft: =100
+                PaddingRight: =20
+                PaddingTop: =0
+                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                Text: ="Create Lead"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Label3_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Arial
+                Height: =Parent.Height
+                PaddingRight: =10
+                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                Text: =User().FullName
+                Width: =Parent.Width/2
+                Y: =5
+                ZIndex: =2
+
+        Container7_3 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =136
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width/1.04
+            X: =87
+            Y: =77
+            ZIndex: =4
+
+            Circle1 As circle:
+                Fill: =If(VarIndicator=true,Color.Green,Color.Red)
+                Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/6)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                ZIndex: =1
+
+            Circle1_1 As circle:
+                Fill: =Color.Red
+                Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                X: =Icon4.X+Icon4.Width
+                Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                ZIndex: =2
+
+            Circle1_2 As circle:
+                Fill: =Color.Red
+                Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                X: =Icon4_1.X+Icon4_1.Width
+                Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                ZIndex: =3
+
+            Circle1_3 As circle:
+                Fill: =Color.Red
+                Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                X: =Icon4_2.X+Icon4_2.Width
+                Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                ZIndex: =4
+
+            Circle1_4 As circle:
+                Fill: =Color.Red
+                Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                X: =Icon4_3.X+Icon4_3.Width
+                Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                ZIndex: =5
+
+            Icon3 As icon.Check:
+                Color: =If(VarIndicator=true,Color.White,Color.Red)
+                Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                Icon: =Icon.Check
+                OnSelect: =
+                Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                X: =Circle1.X+(Circle1.Width/4.2)
+                Y: |-
+                    =//If(Parent.Width<378,Circle1.Height/2,Parent.Width<500,Circle1.Height/2,Circle1.Height/2)
+                    Circle1.Y+Circle1.Height/6
+                ZIndex: =6
+
+            Icon3_1 As icon.Check:
+                Color: =Color.Red
+                Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                Icon: =Icon.Check
+                OnSelect: =
+                Visible: =false
+                Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                X: =Circle1_1.X+(Circle1_1.Width/4.2)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,40,32)
+                ZIndex: =7
+
+            Icon3_2 As icon.Check:
+                Color: =Color.Red
+                Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                Icon: =Icon.Check
+                OnSelect: =
+                Visible: =false
+                Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                X: =Circle1_2.X+(Circle1_2.Width/4.2)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                ZIndex: =8
+
+            Icon3_3 As icon.Check:
+                Color: =Color.Red
+                Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                Icon: =Icon.Check
+                OnSelect: =
+                Visible: =false
+                Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                X: =Circle1_3.X+(Circle1_3.Width/4.2)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                ZIndex: =9
+
+            Icon3_4 As icon.Check:
+                Color: =Color.Red
+                Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                Icon: =Icon.Check
+                OnSelect: =
+                Visible: =false
+                Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
+                X: =Circle1_4.X+(Circle1_4.Width/4.2)
+                Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                ZIndex: =10
+
+            Icon4 As icon.HorizontalLine:
+                Color: =Color.DarkGray
+                Height: =51
+                Icon: =Icon.HorizontalLine
+                Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                X: =Circle1.X+Circle1.Width
+                Y: =22
+                ZIndex: =11
+
+            Icon4_1 As icon.HorizontalLine:
+                Color: =Color.DarkGray
+                Height: =51
+                Icon: =Icon.HorizontalLine
+                Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                X: =Circle1_1.X+Circle1_1.Width
+                Y: =22
+                ZIndex: =12
+
+            Icon4_2 As icon.HorizontalLine:
+                Color: =Color.DarkGray
+                Height: =51
+                Icon: =Icon.HorizontalLine
+                Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                X: =Circle1_2.X+Circle1_2.Width
+                Y: =22
+                ZIndex: =13
+
+            Icon4_3 As icon.HorizontalLine:
+                Color: =Color.DarkGray
+                Height: =51
+                Icon: =Icon.HorizontalLine
+                Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                X: =Circle1_3.X+Circle1_3.Width
+                Y: =22
+                ZIndex: =14
+
+            Label5 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+                Text: ="Step 1"
+                Width: =Parent.Width/6
+                X: |-
+                    =//If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
+                    Circle1.X-Circle1.Width/3
+                Y: =Circle1.Y+Circle1.Height+20
+                ZIndex: =15
+
+            Label5_1 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+                Text: ="Step 2"
+                Width: =Parent.Width/6
+                X: =Circle1_1.X-Circle1_1.Width/3
+                Y: =Circle1.Y+Circle1.Height+20
+                ZIndex: =16
+
+            Label5_2 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+                Text: ="Step 3"
+                Width: =Parent.Width/6
+                X: =Circle1_2.X-Circle1_2.Width/3
+                Y: =Circle1.Y+Circle1.Height+20
+                ZIndex: =17
+
+            Label5_3 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+                Text: ="Step 4"
+                Width: =Parent.Width/6
+                X: =Circle1_3.X-Circle1_3.Width/3
+                Y: =Circle1.Y+Circle1.Height+20
+                ZIndex: =18
+
+            Label5_4 As label:
+                Font: =Font.Arial
+                Height: =30
+                Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+                Text: ="Step 5"
+                Width: =Parent.Width/6
+                X: =Circle1_4.X-Circle1_4.Width/3
+                Y: =Circle1.Y+Circle1.Height+20
+                ZIndex: =19
+
+        BuildingInfoForm As form:
+            AlignInContainer: =AlignInContainer.Center
+            DataSource: =LeadInformations
+            FillPortions: =0
+            Height: =604
+            Item: =VarFormMode
+            LayoutMinHeight: =250
+            LayoutMinWidth: =400
+            Width: =Parent.Width
+            Y: =220
+            ZIndex: =5
+
+            "'Contract Number_DataCard2' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crd59_contractnumber"
+                Default: =ThisItem.'ContractNumber '
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_contractnumber")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =100
+                MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "shlrf_contractnumber")
+                Required: =false
+                Update: =DataCardValue3.Text
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey3 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =48
+                    Size: =18
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                    Color: =Color.Black
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisplayMode: =Parent.DisplayMode
+                    Font: =Font.Arial
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =18
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage3 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+                StarVisible3 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3.Y
+                    ZIndex: =4
+
+            PinCode_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crd59_pincode"
+                Default: =ThisItem.'ZipCode '
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_zipcode")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =100
+                MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "shlrf_zipcode")
+                Required: =false
+                Update: =DataCardValue9.Text
+                Width: =Parent.Width
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey9 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =48
+                    Size: =18
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue9 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage9 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue9.Y + DataCardValue9.Height
+                    ZIndex: =3
+
+                StarVisible9 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey9.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey9.Y
+                    ZIndex: =4
+
+            "'Building Name_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crd59_name"
+                Default: =ThisItem.'BuildingName '
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_buildingname")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =100
+                MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
+                Required: =false
+                Update: =DataCardValue2.Text
+                Width: =Parent.Width
+                X: =0
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =48
+                    Size: =18
+                    Text: |-
+                        =//Parent.DisplayName
+                        "Building Name"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Font: =Font.Arial
+                    Height: =50
+                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =18
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey2.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey2.Y
+                    ZIndex: =4
+
+            Address_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crd59_address"
+                Default: =ThisItem.Address
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_address")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =100
+                MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
+                Required: =false
+                Update: =DataCardValue4.Text
+                Width: =Parent.Width
+                X: =0
+                Y: =3
+                ZIndex: =2
+
+                DataCardKey4 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(0, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =48
+                    Size: =18
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue4 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Font: =Font.Arial
+                    Height: =115
+                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    MaxLength: =Parent.MaxLength
+                    Mode: =TextMode.MultiLine
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =18
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage4 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue4.Y + DataCardValue4.Height
+                    ZIndex: =3
+
+                StarVisible4 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey4.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey4.Y
+                    ZIndex: =4
+
+        Button2 As button:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Arial
+            Height: =50
+            HoverFill: =Color.Red
+            OnSelect: |-
+                =Set(VarIndicator,true);
+                Navigate(UnitScreen);
+            Size: =18
+            Text: ="Next"
+            Width: =131
+            X: =306
+            Y: =862
+            ZIndex: =6
+
