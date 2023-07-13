@@ -205,7 +205,7 @@ LeadListScreen As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Separator4_1 As rectangle:
+                        sptrglrylistLS As rectangle:
                             Fill: |-
                                 =//If(ThisItem.LeadStatus="Submitted",RGBA(39,113,194,1),ThisItem.LeadStatus="Inprogess",RGBA(54,176,75,1),ThisItem.LeadStatus="Reject",RGBA(255,0,0,1)) 
                                 RGBA(204, 204, 204, 1)
