@@ -2,7 +2,7 @@ DashboardScreen As screen:
 
     Container2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =Parent.Height
+        Height: =Parent.Height-20
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =10
         LayoutMode: =LayoutMode.Auto
@@ -180,7 +180,9 @@ DashboardScreen As screen:
                     Align: =Align.Center
                     Color: =RGBA(116, 116, 116, 1)
                     FontWeight: =FontWeight.Semibold
-                    Height: =Parent.Height/5
+                    Height: |-
+                        =//If(Parent.Height>Parent.Width,Parent.Height/5,Parent.Height/2)
+                        Parent.Height/5
                     OnSelect: =//Navigate(SubmittedLeadsScreen);
                     Size: |-
                         =//18
@@ -206,7 +208,7 @@ DashboardScreen As screen:
                     Label6_1 As label:
                         Align: =Align.Center
                         Color: =RGBA(39, 113, 194, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
@@ -217,19 +219,19 @@ DashboardScreen As screen:
                     Label7_1 As label:
                         Align: =Align.Center
                         Color: =RGBA(54, 176, 75, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
                         Text: ="InProgress"
-                        Width: =Parent.Width/4
+                        Width: =Parent.Width/3.5
                         ZIndex: =2
 
                     Label10_1 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 0, 0, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         PaddingLeft: =10
@@ -250,8 +252,9 @@ DashboardScreen As screen:
 
                     Label11_1 As label:
                         Align: =Align.Center
+                        AlignInContainer: =AlignInContainer.Center
                         Color: =RGBA(39, 113, 194, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         PaddingLeft: =0
@@ -262,19 +265,21 @@ DashboardScreen As screen:
 
                     Label12_1 As label:
                         Align: =Align.Center
+                        AlignInContainer: =AlignInContainer.Center
                         Color: =RGBA(54, 176, 75, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
                         Text: =If(cumulatively=true,"30","10")
-                        Width: =Parent.Width/4
+                        Width: =Parent.Width/3.5
                         ZIndex: =2
 
                     Label13_1 As label:
                         Align: =Align.Center
+                        AlignInContainer: =AlignInContainer.Center
                         Color: =RGBA(255, 0, 0, 1)
-                        Height: =70
+                        Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
@@ -294,7 +299,7 @@ DashboardScreen As screen:
                     Fill: =RGBA(149, 149, 149, 1)
                     Height: =If(Parent.Width<500,Parent.Height/2,Parent.Width>500,Parent.Height/2,Parent.Height/8)
                     Width: =3
-                    X: =Label12_1.Width+Label12_1.X
+                    X: =Label7_1.Width+Label7_1.X
                     Y: =Container3_4.Y/1.2
                     ZIndex: =5
 
@@ -322,7 +327,8 @@ DashboardScreen As screen:
                             true
                         );
                         Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
-                    PaddingRight: =5.34
+                    PaddingLeft: =0
+                    PaddingRight: =0
                     PaddingTop: =
                     PressedFill: =Self.Fill
                     Size: |-

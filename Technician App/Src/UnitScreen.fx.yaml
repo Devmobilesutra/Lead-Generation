@@ -1,16 +1,18 @@
 UnitScreen As screen:
 
     Container5_4 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingLeft: =10
+        PaddingRight: =10
         Width: =Parent.Width
         ZIndex: =1
 
         ctnHeaderDS_7 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -114,11 +116,13 @@ UnitScreen As screen:
                 ZIndex: =2
 
         Container5_6 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
-            FillPortions: =0
-            Height: =951
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
             Width: =Parent.Width-20
             X: =10
             Y: =174
@@ -126,9 +130,9 @@ UnitScreen As screen:
 
             UnitInfoForm As form:
                 DataSource: =LeadInformations
-                Height: =377
+                Height: =UnitCount_DataCard2.Height+UnitDescription_DataCard2.Height+30
                 Item: =VarFormMode
-                Width: =620
+                Width: =Parent.Width
                 Y: =252
                 ZIndex: =1
 
@@ -143,7 +147,7 @@ UnitScreen As screen:
                     Height: =50
                     Required: =false
                     Update: =Value(DataCardValue11.Text)
-                    Width: =620
+                    Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -222,7 +226,7 @@ UnitScreen As screen:
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                     Required: =false
                     Update: =DataCardValue12.Text
-                    Width: =620
+                    Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =1
@@ -325,8 +329,7 @@ UnitScreen As screen:
 
             Container7_4 As groupContainer.manualLayoutContainer:
                 Height: =136
-                Width: =Parent.Width/1.08
-                X: =40
+                Width: =Parent.Width
                 Y: =40
                 ZIndex: =6
 
