@@ -69,7 +69,7 @@ LeadListScreen As screen:
                 Width: =ctnHeaderLeadListScreen.Width/10
                 ZIndex: =4
 
-        Container23 As groupContainer.verticalAutoLayoutContainer:
+        ctnlistLS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -78,11 +78,13 @@ LeadListScreen As screen:
             Width: =Parent.Width
             ZIndex: =8
 
-            Container28 As groupContainer.manualLayoutContainer:
+            ctnfilterLS As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =100
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
+                Width: =Parent.Width
                 ZIndex: =1
 
                 Container25 As groupContainer.horizontalAutoLayoutContainer:
@@ -161,7 +163,7 @@ LeadListScreen As screen:
                         Width: =340
                         ZIndex: =5
 
-                Button1_1 As button:
+                btnbackLS As button:
                     BorderColor: =//ColorFade(Self.Fill, -15%)
                     BorderThickness: =0
                     Fill: =Header.Red
@@ -179,6 +181,7 @@ LeadListScreen As screen:
                     ZIndex: =2
 
             Container2_1 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
                 LayoutMinHeight: =100
