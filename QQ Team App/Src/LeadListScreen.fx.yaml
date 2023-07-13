@@ -363,7 +363,7 @@ LeadListScreen As screen:
                         Width: =120
                         ZIndex: =4
 
-                    Label5_2 As label:
+                    lblregionLS As label:
                         Align: =Align.Center
                         Text: ="Region"
                         ZIndex: =5
