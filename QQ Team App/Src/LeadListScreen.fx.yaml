@@ -181,7 +181,7 @@ LeadListScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =2
 
-                Container3_1 As groupContainer.verticalAutoLayoutContainer:
+                ctnleadlistglryLS As groupContainer.verticalAutoLayoutContainer:
                     Height: =Parent.Height//-420
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
@@ -190,7 +190,7 @@ LeadListScreen As screen:
                     Y: =ctnlistheadingLS.X+ctnlistheadingLS.Height
                     ZIndex: =1
 
-                    "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    "glryleadlistLS As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(204, 204, 204, 1)
                         BorderThickness: =3
@@ -324,7 +324,7 @@ LeadListScreen As screen:
                             Y: =Container6_3.Y
                             ZIndex: =5
 
-                        Rectangle2 As rectangle:
+                        rectvertLS As rectangle:
                             Fill: =If(ThisItem.LeadStatus="Submitted",RGBA(39,113,194,1),ThisItem.LeadStatus="Inprogess",RGBA(54,176,75,1),ThisItem.LeadStatus="Reject",RGBA(255,0,0,1))
                             Height: =Container6_3.Height-10
                             Visible: =false
