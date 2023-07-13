@@ -3670,19 +3670,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1.AccessibleLabel",
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadListScreen",
-                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1"
+                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS"
               }
             }
           ],
@@ -3700,19 +3700,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1.TabIndex"
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadListScreen",
-                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon2_1"
+                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icneditLS"
               }
             }
           ],
@@ -3730,19 +3730,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6.AccessibleLabel"
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6.AccessibleLabel",
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadListScreen",
-                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6"
+                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS"
               }
             }
           ],
@@ -3760,19 +3760,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6.TabIndex"
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6.TabIndex",
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadListScreen",
-                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.Icon6"
+                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnleadlistLS.ctnleadlistglryLS.glryleadlistLS.ctnlistheadingvalueLS.icnrightLS"
               }
             }
           ],
