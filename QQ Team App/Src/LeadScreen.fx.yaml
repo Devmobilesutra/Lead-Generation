@@ -1198,7 +1198,7 @@ LeadScreen As screen:
         Width: =Parent.Width
         ZIndex: =2
 
-        imguserDS_1 As image:
+        imguserLdS As image:
             Fill: =RGBA(253, 222, 207, 1)
             Height: =50
             Image: |-
@@ -1209,11 +1209,11 @@ LeadScreen As screen:
             RadiusTopLeft: =91
             RadiusTopRight: =91
             Width: =50
-            X: =lblheaderDS_1.X+lblheaderDS_1.Width
+            X: =lblheaderLdS.X+lblheaderLdS.Width
             Y: =16
             ZIndex: =1
 
-        lblusernameDS_1 As label:
+        lblusernameLdS As label:
             Align: =Align.Center
             Color: =Header.White
             FontWeight: =FontWeight.Semibold
@@ -1222,10 +1222,10 @@ LeadScreen As screen:
                 =//"Hi Sam Martin"
                 User().FullName
             Width: =ctnHeaderLeadScreen.Width/8
-            X: =imguserDS_1.X+ imguserDS_1.Height
+            X: =imguserLdS.X+ imguserLdS.Height
             ZIndex: =2
 
-        lblheaderDS_1 As label:
+        lblheaderLdS As label:
             Align: =Align.Center
             Color: =Header.White
             Fill: =RGBA(227, 43, 43, 1)
@@ -1234,10 +1234,10 @@ LeadScreen As screen:
             Size: =26
             Text: =" Leads"
             Width: =ctnHeaderLeadScreen.Width/1.5
-            X: =imgSchindlerlogoDS_1.Width+imgSchindlerlogoDS_1.X
+            X: =imgSchindlerlogoLdS.Width+imgSchindlerlogoLdS.X
             ZIndex: =3
 
-        imgSchindlerlogoDS_1 As image:
+        imgSchindlerlogoLdS As image:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height
             Image: =SchindlerImage
