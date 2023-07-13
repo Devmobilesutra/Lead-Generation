@@ -171,7 +171,7 @@ LeadListScreen As screen:
                     Y: =25
                     ZIndex: =2
 
-            Container2_1 As groupContainer.manualLayoutContainer:
+            ctnleadlistLS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
