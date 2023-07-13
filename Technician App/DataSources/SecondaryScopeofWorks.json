@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "shlrf_secondaryscopeofwork",
-    "MaxGetRowsCount": 500,
     "Name": "SecondaryScopeofWorks",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
