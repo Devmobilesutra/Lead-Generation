@@ -1,11 +1,16 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_shlrf_leadinformation_forms",
-      "Namespace": "LeadInformations (Forms)",
+      "Kind": "default.cds_shlrf_primaryscopeofwork_forms",
+      "Namespace": " PrimaryScopeofWorks (Forms)",
       "Values": {
-        "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
+        "Information": "525135e4-049e-4bdb-81b2-afec7f3e7b02"
       }
+    },
+    {
+      "Kind": "default.cds_duplicaterecord_forms",
+      "Namespace": "Duplicate Records (Forms)",
+      "Values": {}
     },
     {
       "Kind": "default.cds_shlrf_leadchat_forms",
@@ -15,10 +20,17 @@
       }
     },
     {
-      "Kind": "default.cds_shlrf_primaryscopeofwork_forms",
-      "Namespace": " PrimaryScopeofWorks (Forms)",
+      "Kind": "default.cds_shlrf_leadimage_forms",
+      "Namespace": "LeadImages (Forms)",
       "Values": {
-        "Information": "525135e4-049e-4bdb-81b2-afec7f3e7b02"
+        "Information": "589ae9f0-1520-4d73-b618-8ff99759338e"
+      }
+    },
+    {
+      "Kind": "default.cds_shlrf_leadinformation_forms",
+      "Namespace": "LeadInformations (Forms)",
+      "Values": {
+        "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
       }
     },
     {
@@ -26,18 +38,6 @@
       "Namespace": "SecondaryScopeofWorks (Forms)",
       "Values": {
         "Information": "997701e5-93f7-4b1f-be77-dac5ae3b7435"
-      }
-    },
-    {
-      "Kind": "default.cds_duplicaterecord_forms",
-      "Namespace": "Duplicate Records (Forms)",
-      "Values": {}
-    },
-    {
-      "Kind": "default.cds_shlrf_leadimage_forms",
-      "Namespace": "LeadImages (Forms)",
-      "Values": {
-        "Information": "589ae9f0-1520-4d73-b618-8ff99759338e"
       }
     },
     {

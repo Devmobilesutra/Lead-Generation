@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "duplicaterecord",
+    "MaxGetRowsCount": 500,
     "Name": "Duplicate Records",
     "NativeCDSDataSourceInfoNameMapping": {
       "_baserecordid_value": "Base Record ID",
@@ -17,5 +18,13 @@
     },
     "PreferredName": "Duplicate Records",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Duplicate Records (Views)",
+    "Name": "_duplicaterecord_views",
+    "RelatedEntityName": "Duplicate Records",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
   }
 ]
