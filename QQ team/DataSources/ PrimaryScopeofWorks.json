@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlrf_primaryscopeofworks",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlrf_primaryscopeofwork",
+    "MaxGetRowsCount": 500,
+    "Name": " PrimaryScopeofWorks",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlrf_id": "ID",
+      "shlrf_primaryscopeofwork_AsyncOperations": "System Jobs",
+      "shlrf_primaryscopeofwork_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlrf_primaryscopeofwork_DuplicateBaseRecord": "Duplicate Records (shlrf_primaryscopeofwork_DuplicateBaseRecord)",
+      "shlrf_primaryscopeofwork_DuplicateMatchingRecord": "Duplicate Records (shlrf_primaryscopeofwork_DuplicateMatchingRecord)",
+      "shlrf_primaryscopeofwork_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlrf_primaryscopeofwork_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlrf_primaryscopeofwork_ProcessSession": "Process Sessions",
+      "shlrf_primaryscopeofwork_SyncErrors": "Sync Errors",
+      "shlrf_primaryscopeofworkid": " PrimaryScopeofWork",
+      "shlrf_primaryscopeofworkname": "PrimaryScopeofWorkName ",
+      "shlrf_shlrf_leadinformation_PrimaryScopeofWorkL": "LeadInformations",
+      "shlrf_shlrf_secondaryscopeofwork_PrimaryScopeof": "SecondaryScopeofWorks",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": " PrimaryScopeofWorks",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": " PrimaryScopeofWorks (Views)",
+    "Name": "_shlrf_primaryscopeofwork_views",
+    "RelatedEntityName": " PrimaryScopeofWorks",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "05ba1a3b-5d48-44f8-9d8b-fa676083625a": "Active  PrimaryScopeofWorks",
+      "5c8e3dac-aaea-49d5-9400-fa58da37b09e": "Inactive  PrimaryScopeofWorks",
+      "736f1f7d-648b-4239-8468-055546e8670f": " PrimaryScopeofWork Lookup View",
+      "89a12538-66ff-4973-95a2-80eeb02f7ed7": " PrimaryScopeofWork Associated View",
+      "fc51572d-f9ec-4f83-bfbf-acf48d2e08d2": " PrimaryScopeofWork Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status ( PrimaryScopeofWorks)",
+    "Name": "shlrf_primaryscopeofwork_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": " PrimaryScopeofWorks"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": " PrimaryScopeofWorks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason ( PrimaryScopeofWorks)",
+    "Name": "shlrf_primaryscopeofwork_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": " PrimaryScopeofWorks"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": " PrimaryScopeofWorks",
+    "Type": "OptionSetInfo"
+  }
+]

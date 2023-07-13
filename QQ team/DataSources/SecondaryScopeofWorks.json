@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlrf_secondaryscopeofworks",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlrf_secondaryscopeofwork",
+    "MaxGetRowsCount": 500,
+    "Name": "SecondaryScopeofWorks",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlrf_id": "ID",
+      "shlrf_PrimaryScopeofWorkLID": "PrimaryScopeofWorkLID",
+      "shlrf_secondaryscopeofwork_AsyncOperations": "System Jobs",
+      "shlrf_secondaryscopeofwork_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlrf_secondaryscopeofwork_DuplicateBaseRecord": "Duplicate Records (shlrf_secondaryscopeofwork_DuplicateBaseRecord)",
+      "shlrf_secondaryscopeofwork_DuplicateMatchingRecord": "Duplicate Records (shlrf_secondaryscopeofwork_DuplicateMatchingRecord)",
+      "shlrf_secondaryscopeofwork_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlrf_secondaryscopeofwork_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlrf_secondaryscopeofwork_ProcessSession": "Process Sessions",
+      "shlrf_secondaryscopeofwork_SyncErrors": "Sync Errors",
+      "shlrf_secondaryscopeofworkid": "SecondaryScopeofWork",
+      "shlrf_secondaryscopeofworkname": "SecondaryScopeofWorkName ",
+      "shlrf_shlrf_leadinformation_SecondaryScopeofWor": "LeadInformations",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SecondaryScopeofWorks",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SecondaryScopeofWorks (Views)",
+    "Name": "_shlrf_secondaryscopeofwork_views",
+    "RelatedEntityName": "SecondaryScopeofWorks",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "042ddb98-348b-4fcd-99c0-c41eac4f2457": "SecondaryScopeofWork Lookup View",
+      "5c767806-fed3-4162-9199-2936e10b6bbe": "SecondaryScopeofWork Associated View",
+      "67563e11-5506-4227-bf5e-bd6ccb643073": "Active SecondaryScopeofWorks",
+      "a8e6252c-58fe-44ee-b51a-1e7a1459c1f9": "Inactive SecondaryScopeofWorks",
+      "ab53b7e3-94d8-414e-9a77-6f5de6bc5ad7": "SecondaryScopeofWork Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (SecondaryScopeofWorks)",
+    "Name": "shlrf_secondaryscopeofwork_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SecondaryScopeofWorks"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SecondaryScopeofWorks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SecondaryScopeofWorks)",
+    "Name": "shlrf_secondaryscopeofwork_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SecondaryScopeofWorks"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SecondaryScopeofWorks",
+    "Type": "OptionSetInfo"
+  }
+]
