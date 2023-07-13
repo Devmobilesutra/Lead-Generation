@@ -310,7 +310,7 @@ CreatLeadScreen As screen:
             AlignInContainer: =AlignInContainer.Center
             DataSource: =LeadInformations
             FillPortions: =0
-            Height: =604
+            Height: =Parent.Height/2.5
             Item: =VarFormMode
             LayoutMinHeight: =250
             LayoutMinWidth: =400
