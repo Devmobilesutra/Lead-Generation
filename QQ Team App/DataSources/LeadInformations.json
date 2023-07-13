@@ -1,0 +1,212 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlrf_leadinformations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlrf_leadinformation",
+    "MaxGetRowsCount": 500,
+    "Name": "LeadInformations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlrf_additionalexpensesrequired": "AdditionalExpensesRequired",
+      "shlrf_address": "Address",
+      "shlrf_buildingname": "BuildingName ",
+      "shlrf_communicatedtocustomer": "CommunicatedToCustomer",
+      "shlrf_contractnumber": "ContractNumber ",
+      "shlrf_customercontact": "CustomerContact ",
+      "shlrf_customername": "CustomerName ",
+      "shlrf_customscopeofwork": "CustomScopeofWork",
+      "shlrf_email": "Email",
+      "shlrf_employeenumber": "EmployeeNumber",
+      "shlrf_estimatedhours": "EstimatedHours ",
+      "shlrf_id": "ID",
+      "shlrf_isunitdown": "IsUnitDown",
+      "shlrf_leadcomment": "LeadComment",
+      "shlrf_leadestimatenumber": "LeadEstimateNumber",
+      "shlrf_leadincentive": "LeadIncentive",
+      "shlrf_leadincentive_base": "LeadIncentive (Base)",
+      "shlrf_leadinformation_AsyncOperations": "System Jobs",
+      "shlrf_leadinformation_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlrf_leadinformation_DuplicateBaseRecord": "Duplicate Records (shlrf_leadinformation_DuplicateBaseRecord)",
+      "shlrf_leadinformation_DuplicateMatchingRecord": "Duplicate Records (shlrf_leadinformation_DuplicateMatchingRecord)",
+      "shlrf_leadinformation_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlrf_leadinformation_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlrf_leadinformation_ProcessSession": "Process Sessions",
+      "shlrf_leadinformation_SyncErrors": "Sync Errors",
+      "shlrf_leadinformationid": "LeadInformation ",
+      "shlrf_leadprice": "LeadPrice ",
+      "shlrf_leadprice_base": "LeadPrice  (Base)",
+      "shlrf_leadproposedby": "LeadProposedBy",
+      "shlrf_leadproposeddate": "LeadProposedDate",
+      "shlrf_leadstatus": "LeadStatus",
+      "shlrf_mechanicname": "MechanicName",
+      "shlrf_notes": "Notes",
+      "shlrf_numberofunits": "NumberofUnits",
+      "shlrf_PrimaryScopeofWorkLID": "PrimaryScopeofWorkLID",
+      "shlrf_qqteamname": "QQTeamName",
+      "shlrf_SecondaryScopeofWorkLID": "SecondaryScopeofWorkLID",
+      "shlrf_shlrf_leadchat_LeadInformationLID_shlrf_l": "LeadChats",
+      "shlrf_shlrf_leadimage_LeadInformationLID_shlrf_": "LeadImages",
+      "shlrf_statusdate": "StatusDate",
+      "shlrf_travelrequired": "TravelRequired",
+      "shlrf_unitdescription": "UnitDescription",
+      "shlrf_zipcode": "ZipCode ",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LeadInformations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LeadInformations (Views)",
+    "Name": "_shlrf_leadinformation_views",
+    "RelatedEntityName": "LeadInformations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2451e61a-4cc9-47af-a7ae-418d665386a8": "LeadInformation  Advanced Find View",
+      "3fefbe21-102c-4a29-859b-48ec95be61cb": "LeadInformation  Lookup View",
+      "49a3c784-aa5c-4fb9-b208-78a80559749a": "Inactive LeadInformations",
+      "ada9df6c-65d2-415a-ad81-7b7936776d6c": "LeadInformation  Associated View",
+      "f169868a-f7ba-4c6d-825a-cee3dca17f41": "Active LeadInformations"
+    }
+  },
+  {
+    "DisplayName": "AdditionalExpensesRequired (LeadInformations)",
+    "Name": "shlrf_leadinformation_shlrf_additionalexpensesrequired",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlrf_additionalexpensesrequired",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlrf_additionalexpensesrequired",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CommunicatedToCustomer (LeadInformations)",
+    "Name": "shlrf_leadinformation_shlrf_communicatedtocustomer",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlrf_communicatedtocustomer",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlrf_communicatedtocustomer",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsUnitDown (LeadInformations)",
+    "Name": "shlrf_leadinformation_shlrf_isunitdown",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlrf_isunitdown",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlrf_isunitdown",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "TravelRequired (LeadInformations)",
+    "Name": "shlrf_leadinformation_shlrf_travelrequired",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlrf_travelrequired",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlrf_travelrequired",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (LeadInformations)",
+    "Name": "shlrf_leadinformation_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LeadInformations)",
+    "Name": "shlrf_leadinformation_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LeadInformations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LeadInformations",
+    "Type": "OptionSetInfo"
+  }
+]
