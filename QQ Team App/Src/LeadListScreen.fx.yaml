@@ -97,7 +97,7 @@ LeadListScreen As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    ComboBox1 As combobox:
+                    cmbxregionfilterLS As combobox:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 0, 0, 1)
                         ChevronHoverBackground: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
@@ -109,7 +109,7 @@ LeadListScreen As screen:
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Reset: =true
                         SearchFields: =["Value"]
-                        SearchItems: =Search(["Region1","Region2","Region3","Region4"],ComboBox1.SearchText,"Value")
+                        SearchItems: =Search(["Region1","Region2","Region3","Region4"],cmbxregionfilterLS.SearchText,"Value")
                         SelectionFill: =RGBA(0, 0, 0, 0)
                         SelectMultiple: =false
                         Width: =200

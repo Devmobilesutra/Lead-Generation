@@ -3400,19 +3400,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.cmbxregionfilterLS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.cmbxregionfilterLS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadListScreen",
-                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.ComboBox1"
+                "type": "LeadListScreen.ctnmainLS.ctnlistLS.ctnfilterLS.ctnfiltersearchLS.cmbxregionfilterLS"
               }
             }
           ],
