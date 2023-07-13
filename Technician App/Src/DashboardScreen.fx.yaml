@@ -2,9 +2,9 @@ DashboardScreen As screen:
 
     Container2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =Parent.Height-20
+        Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =10
+        LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingBottom: =10
@@ -19,7 +19,6 @@ DashboardScreen As screen:
             Height: |-
                 =//Parent.Height/13.5
                 If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
-            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -30,11 +29,12 @@ DashboardScreen As screen:
             ZIndex: =1
 
             imgSchindlerLogo_2 As image:
+                AlignInContainer: =AlignInContainer.Center
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: ='3x'
-                LayoutMinHeight: =Parent.Height
+                LayoutMinHeight: =320
                 LayoutMinWidth: =320
                 PaddingTop: =0.00
                 Width: =Parent.Width/7.5
@@ -60,11 +60,10 @@ DashboardScreen As screen:
                 ZIndex: =2
 
             Icon2_2 As icon.Hamburger:
-                AlignInContainer: =AlignInContainer.Start
+                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(255, 0, 0, 1)
-                Height: =Parent.Height
+                DisplayMode: =DisplayMode.View
                 Icon: =Icon.Hamburger
-                LayoutMinHeight: =Parent.Height
                 OnSelect: =//Set(varshowMenu,!varshowMenu)
                 PaddingLeft: =10
                 PaddingRight: =10.68
@@ -73,8 +72,20 @@ DashboardScreen As screen:
                 X: =1390.56
                 ZIndex: =4
 
+            Icon7_2 As icon.Message:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =50
+                Icon: =Icon.Message
+                OnSelect: =Navigate(DashboardScreen)
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Visible: =false
+                Width: =53.40
+                X: =0.00
+                ZIndex: =5
+
         Container1_2 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
@@ -143,28 +154,27 @@ DashboardScreen As screen:
                 X: =Parent.Width-Self.Width
                 ZIndex: =6
 
-        Container6 As groupContainer.verticalAutoLayoutContainer:
+        Container11 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height-40
+            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height-20
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =20
             LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            LayoutMinWidth: =Parent.Width
             LayoutMode: =LayoutMode.Auto
             PaddingTop: =10
+            Width: =Parent.Width
             ZIndex: =8
 
             Container3_1 As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
-                BorderColor: =ColorFade(Self.Fill, -15%)
-                BorderThickness: =4
                 DropShadow: =DropShadow.None
-                Fill: =RGBA(219, 219, 219, 1)
                 FillPortions: =0
                 Height: |
                     =//Parent.Height/5.5
-                    If(Parent.Height<Parent.Width,Parent.Height/3,Parent.Height/5)
+                    If(Parent.Height<Parent.Width,Parent.Height/2,Parent.Height/4)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 PaddingBottom: =5
@@ -176,142 +186,15 @@ DashboardScreen As screen:
                     If(Parent.Height>Parent.Width,Parent.Width/1.058,Parent.Width/1.058)
                 ZIndex: =1
 
-                Label2_7 As label:
-                    Align: =Align.Center
-                    Color: =RGBA(116, 116, 116, 1)
-                    FontWeight: =FontWeight.Semibold
-                    Height: |-
-                        =//If(Parent.Height>Parent.Width,Parent.Height/5,Parent.Height/2)
-                        Parent.Height/5
-                    OnSelect: =//Navigate(SubmittedLeadsScreen);
-                    Size: |-
-                        =//18
-                        If(Parent.Width<500,14,Parent.Width>500,18,12)
-                    Text: |-
-                        =If(cumulatively=true,"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email)),"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email))) 
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Button1_4.Width
-                    X: =Button1_4.X
-                    Y: =Parent.Height/14
-                    ZIndex: =1
-
-                Container3_4 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =Parent.Height/6
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutGap: =10
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =Parent.Width/10
-                    Width: =Parent.Width
-                    Y: =Label2_7.Height+Label2_7.Y+10
-                    ZIndex: =2
-
-                    Label6_1 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(39, 113, 194, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: ="Open"
-                        Width: =Parent.Width/4
-                        ZIndex: =1
-
-                    Label7_1 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(54, 176, 75, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =0
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: ="InProgress"
-                        Width: =Parent.Width/3.5
-                        ZIndex: =2
-
-                    Label10_1 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(255, 0, 0, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =10
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: ="Reject"
-                        Width: =Parent.Width/4
-                        ZIndex: =3
-
-                Container2_2 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =Parent.Height/5
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutGap: =10
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =Parent.Width/10
-                    Width: =Parent.Width
-                    Y: =Container3_4.Height+Container3_4.Y
-                    ZIndex: =3
-
-                    Label11_1 As label:
-                        Align: =Align.Center
-                        AlignInContainer: =AlignInContainer.Center
-                        Color: =RGBA(39, 113, 194, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =0
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: =If(cumulatively=true,"37","20")
-                        Width: =Parent.Width/4
-                        ZIndex: =1
-
-                    Label12_1 As label:
-                        Align: =Align.Center
-                        AlignInContainer: =AlignInContainer.Center
-                        Color: =RGBA(54, 176, 75, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: =If(cumulatively=true,"30","10")
-                        Width: =Parent.Width/3.5
-                        ZIndex: =2
-
-                    Label13_1 As label:
-                        Align: =Align.Center
-                        AlignInContainer: =AlignInContainer.Center
-                        Color: =RGBA(255, 0, 0, 1)
-                        Height: =Parent.Height
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
-                        Text: =If(cumulatively=true,"20","10")
-                        Width: =Parent.Width/4
-                        ZIndex: =3
-
-                Rectangle7_2 As rectangle:
-                    Fill: =RGBA(149, 149, 149, 1)
-                    Height: =If(Parent.Width<500,Parent.Height/2,Parent.Width>500,Parent.Height/2,Parent.Height/8)
-                    Width: =3
-                    X: =Label11_1.Width+Label11_1.X
-                    Y: =Container3_4.Y/1.2
-                    ZIndex: =4
-
-                Rectangle7_3 As rectangle:
-                    Fill: =RGBA(149, 149, 149, 1)
-                    Height: =If(Parent.Width<500,Parent.Height/2,Parent.Width>500,Parent.Height/2,Parent.Height/8)
-                    Width: =3
-                    X: =Label7_1.Width+Label7_1.X
-                    Y: =Container3_4.Y/1.2
-                    ZIndex: =5
-
                 Button1_4 As button:
                     BorderThickness: =5
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledBorderColor: =RGBA(116, 116, 116, 1)
-                    Fill: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(219, 219, 219, 1)
                     Height: |-
                         =//Parent.Height/5.5
                         Parent.Height
-                    HoverFill: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(149, 149, 149, 1)
                     OnSelect: |
                         =//Navigate(Screen2);
                         Set(
@@ -327,8 +210,7 @@ DashboardScreen As screen:
                             true
                         );
                         Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
-                    PaddingLeft: =0
-                    PaddingRight: =0
+                    PaddingRight: =5.34
                     PaddingTop: =
                     PressedFill: =Self.Fill
                     Size: |-
@@ -337,6 +219,128 @@ DashboardScreen As screen:
                     Text: |-
                         =//If(cumulatively=true,"Submitted Leads # 45","Submitted Leads # 40")
                     Width: =Parent.Width
+                    ZIndex: =1
+
+                Label2_7 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(116, 116, 116, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height/4
+                    OnSelect: =//Navigate(SubmittedLeadsScreen);
+                    Size: |-
+                        =//18
+                        If(Parent.Width<500,14,Parent.Width>500,18,12)
+                    Text: |-
+                        =If(cumulatively=true,"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email)),"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email))) 
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Button1_4.Width
+                    X: =Button1_4.X
+                    Y: =Parent.Height/14
+                    ZIndex: =2
+
+                Container3_4 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =Parent.Height/6
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =60
+                    Width: =Parent.Width
+                    Y: =Label2_7.Height+Label2_7.Y+10
+                    ZIndex: =3
+
+                    Label6_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: ="Open"
+                        Width: =Parent.Width/4
+                        ZIndex: =1
+
+                    Label7_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(54, 176, 75, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: ="InProgress"
+                        Width: =Parent.Width/3.5
+                        ZIndex: =2
+
+                    Label10_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =10
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: ="Reject"
+                        Width: =Parent.Width/4
+                        ZIndex: =3
+
+                Container2_2 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =80
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =60
+                    Width: =Parent.Width
+                    Y: =Container3_4.Height+Container3_4.Y
+                    ZIndex: =4
+
+                    Label11_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: =If(cumulatively=true,"37","20")
+                        Width: =Parent.Width/4
+                        ZIndex: =1
+
+                    Label12_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(54, 176, 75, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: =If(cumulatively=true,"30","10")
+                        Width: =Parent.Width/3.5
+                        ZIndex: =2
+
+                    Label13_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =If(Parent.Width<500,12,Parent.Width>500,16,18)
+                        Text: =If(cumulatively=true,"20","10")
+                        Width: =Parent.Width/4
+                        ZIndex: =3
+
+                Rectangle7_2 As rectangle:
+                    Fill: =RGBA(149, 149, 149, 1)
+                    Height: =Parent.Width/8
+                    Width: =3
+                    X: =Label11_1.Width+Label11_1.X
+                    Y: =Container3_4.Y
+                    ZIndex: =5
+
+                Rectangle7_3 As rectangle:
+                    Fill: =RGBA(149, 149, 149, 1)
+                    Height: =Parent.Width/8
+                    Width: =3
+                    X: =Label12_1.Width+Label12_1.X
+                    Y: =Container3_4.Y
                     ZIndex: =6
 
             Container4_2 As groupContainer.horizontalAutoLayoutContainer:
@@ -346,24 +350,18 @@ DashboardScreen As screen:
                 Height: |
                     =//180
                     //Parent.Height/5.5
-                    If(Parent.Height<Parent.Width,Parent.Height/3,Parent.Height/5)
+                    If(Parent.Height<Parent.Width,Parent.Height/2,Parent.Height/4)
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =10
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =5
-                PaddingTop: =5
                 Width: =Parent.Width-20
                 ZIndex: =2
 
                 Container6_2 As groupContainer.manualLayoutContainer:
-                    BorderColor: =ColorFade(Self.Fill, -15%)
-                    BorderThickness: =4
-                    Fill: =RGBA(219, 219, 219, 1)
                     FillPortions: =0
-                    Height: =180
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
                     Width: =Parent.Width/2.10
@@ -397,16 +395,17 @@ DashboardScreen As screen:
                             BorderThickness: =5
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledBorderColor: =RGBA(116, 116, 116, 1)
-                            Fill: =RGBA(0, 0, 0, 0)
+                            Fill: =RGBA(219, 219, 219, 1)
                             Height: |-
                                 =//180
                                 Parent.Height
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            OnSelect: |
-                                =Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
+                            HoverFill: =RGBA(149, 149, 149, 1)
+                            OnSelect: |-
+                                =Navigate([@Screen1],ScreenTransition.None,{Header: "Potential Future Incentives"});Set(VarFutureIncetives,true);
+                                Set(VarSoldIncetives,false);
+                                Set(VarTotalIncentives,false);
                             PaddingRight: =5.34
                             PaddingTop: =50
-                            PressedFill: =
                             Size: |-
                                 =//14.95
                                 If(Parent.Width<358,9,Parent.Width>358 && Parent.Width<500,12,Parent.Width>500,14)
@@ -421,13 +420,12 @@ DashboardScreen As screen:
                             Color: =RGBA(116, 116, 116, 1)
                             DisplayMode: =DisplayMode.View
                             FontWeight: =FontWeight.Semibold
-                            OnSelect: |
-                                =Navigate([@Screen1],ScreenTransition.None,{Header: "Submitted Leads"})
+                            OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                             Size: |-
                                 =//19.22
                                 If(Parent.Width<358,14,Parent.Width>358,16,18)
                             Text: |-
-                                =If(cumulatively=true, "Quoted Leads #"  & Char(10) & "30","Quoted Leads # "& Char(10) &  "15")
+                                =If(cumulatively=true, "Quoted Leads #" & Char(10) & "30","Quoted Leads #" & Char(10) & "15")
                             Width: =Button1_12.Width
                             X: =Button1_12.X
                             Y: =(Parent.Height-Self.Height)/2.5
@@ -435,15 +433,9 @@ DashboardScreen As screen:
 
                 Container9_2 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =ColorFade(Self.Fill, -15%)
-                    BorderThickness: =4
-                    Fill: =RGBA(219, 219, 219, 1)
                     FillPortions: =0
-                    Height: =180
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
-                    PaddingBottom: =5
-                    PaddingTop: =5
                     Width: =Parent.Width/2.10
                     ZIndex: =2
 
@@ -479,7 +471,10 @@ DashboardScreen As screen:
                             Height: =Parent.Height
                             HoverFill: =RGBA(149, 149, 149, 1)
                             OnSelect: |-
-                                =Navigate([@Screen1],ScreenTransition.None,{Header:"Submitted Leads"})
+                                =//Set(VarPopup,true)
+                                Navigate([@Screen1],ScreenTransition.None,{Header: "Sold Incentives"});
+                                Set(VarSoldIncetives,true);
+                                Set(VarFutureIncetives,false);
                             PaddingRight: =5.34
                             PaddingTop: =53.40
                             Size: |-
@@ -495,15 +490,14 @@ DashboardScreen As screen:
                             Color: =RGBA(116, 116, 116, 1)
                             DisplayMode: =DisplayMode.View
                             FontWeight: =FontWeight.Semibold
-                            OnSelect: |-
-                                =Navigate([@Screen1],ScreenTransition.None,{Header:"Submitted Leads"})
+                            OnSelect: =Set(VarPopup,true)
                             PaddingRight: =5.34
                             PaddingTop: =5.34
                             Size: |-
                                 =//19.22
                                 If(Parent.Width<358,14,Parent.Width>358,16,18)
                             Text: |-
-                                =If(cumulatively=true,"Sold Leads #"& Char(10) & "40","Sold Leads # "& Char(10) & "15")
+                                =If(cumulatively=true,"Sold Leads #" & Char(10) & "40","Sold Leads #" & Char(10) & "15")
                             Width: =Button1_14.Width
                             X: =Button1_14.X
                             Y: =(Parent.Height-Self.Height)/2.5
@@ -549,7 +543,7 @@ DashboardScreen As screen:
                         ResetForm(ScopeInfoForm);
                         //ResetForm(UnitInfoForm);
                     PaddingRight: =5.34
-                    PaddingTop: =12.36
+                    PaddingTop: =21.36
                     PressedBorderColor: =Color.Red
                     Size: |-
                         =//25.63
