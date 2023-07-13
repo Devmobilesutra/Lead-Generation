@@ -1,7 +1,7 @@
 LeadListScreen As screen:
     OnVisible: =Set(VarPopUpInprogress,false);
 
-    Container1_2 As groupContainer.verticalAutoLayoutContainer:
+    ctnmainLS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =10
@@ -10,6 +10,7 @@ LeadListScreen As screen:
         ZIndex: =1
 
         ctnHeaderDashboardScreen_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(227, 43, 43, 1)
             FillPortions: =0
             Height: =80
@@ -69,10 +70,12 @@ LeadListScreen As screen:
                 ZIndex: =4
 
         Container23 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
             ZIndex: =8
 
             Container28 As groupContainer.manualLayoutContainer:
