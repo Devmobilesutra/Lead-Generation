@@ -1262,7 +1262,7 @@ LeadScreen As screen:
             Width: =Parent.Width
             ZIndex: =3
 
-        Rectangle5_5 As rectangle:
+        rectchatmessage1LdS As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =405
             Visible: =VarChatMessage
@@ -1271,16 +1271,16 @@ LeadScreen As screen:
             Y: =(Parent.Height - Self.Height)/2
             ZIndex: =4
 
-        Container38_5 As groupContainer.horizontalAutoLayoutContainer:
+        ctnchatmessageheadingLdS As groupContainer.horizontalAutoLayoutContainer:
             Height: =50
             LayoutMode: =LayoutMode.Auto
             Visible: =VarChatMessage
-            Width: =Rectangle5_5.Width
-            X: =Rectangle5_5.X
-            Y: =Rectangle5_5.Y+10
+            Width: =rectchatmessage1LdS.Width
+            X: =rectchatmessage1LdS.X
+            Y: =rectchatmessage1LdS.Y+10
             ZIndex: =5
 
-            Label41_5 As label:
+            lblchatmessageheadingLdS As label:
                 FontWeight: =FontWeight.Semibold
                 PaddingLeft: =20
                 Text: |-
@@ -1288,39 +1288,39 @@ LeadScreen As screen:
                 Width: =Parent.Width-70
                 ZIndex: =1
 
-            Icon2_5 As icon.Cancel:
+            icnclosechatmessageLdS As icon.Cancel:
                 Color: =RGBA(153, 153, 153, 1)
                 Height: =35
                 Icon: =Icon.Cancel
                 OnSelect: |-
                     =Set(VarChatMessage,false);
-                    Reset(TextInput2_7);
+                    Reset(txtinptchatmessageLdS);
                 Width: =30
                 ZIndex: =2
 
-        Rectangle6_5 As rectangle:
+        rectchatmessageLdS As rectangle:
             BorderColor: =RGBA(179, 179, 179, 1)
             BorderThickness: =2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =250
             Visible: =VarChatMessage
             Width: =656
-            X: =Rectangle5_5.X+20
-            Y: =Container38_5.Y+Container38_5.Height +10
+            X: =rectchatmessage1LdS.X+20
+            Y: =ctnchatmessageheadingLdS.Y+ctnchatmessageheadingLdS.Height +10
             ZIndex: =6
 
-        Icon4_5 As icon.Add:
+        icnhorizontallineLdS As icon.Add:
             Color: =RGBA(179, 179, 179, 1)
             Fill: =RGBA(179, 179, 179, 1)
             Height: =2
             Icon: =Icon.HorizontalLine
             Visible: =VarChatMessage
-            Width: =Rectangle6_5.Width
-            X: =Rectangle6_5.X
-            Y: =Rectangle6_5.Y +Rectangle6_5.Height+10
+            Width: =rectchatmessageLdS.Width
+            X: =rectchatmessageLdS.X
+            Y: =rectchatmessageLdS.Y +rectchatmessageLdS.Height+10
             ZIndex: =7
 
-        Button11_6 As button:
+        btnsendchatmessageLdS As button:
             BorderThickness: =0
             DisabledFill: =RGBA(237, 237, 237, 1)
             DisplayMode: |-
@@ -1339,16 +1339,16 @@ LeadScreen As screen:
             Text: ="Send Message"
             Visible: =VarChatMessage
             X: =(Parent.Width-Self.Width)/2
-            Y: =Icon4_5.Y+20
+            Y: =icnhorizontallineLdS.Y+20
             ZIndex: =8
 
-        TextInput2_7 As text:
+        txtinptchatmessageLdS As text:
             BorderThickness: =0
             Default: =
             Fill: =RGBA(255,255,255,1)
             FocusedBorderColor: =RGBA(179, 179, 179, 1)
             FocusedBorderThickness: =2
-            Height: =Rectangle6_5.Height
+            Height: =rectchatmessageLdS.Height
             HintText: ="Type here ..."
             HoverBorderColor: =RGBA(179, 179, 179, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -1359,8 +1359,8 @@ LeadScreen As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Visible: =VarChatMessage
-            Width: =Rectangle6_5.Width
-            X: =Rectangle6_5.X
-            Y: =Rectangle6_5.Y
+            Width: =rectchatmessageLdS.Width
+            X: =rectchatmessageLdS.X
+            Y: =rectchatmessageLdS.Y
             ZIndex: =9
 

@@ -3400,19 +3400,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.Container38_5.Icon2_5.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.Container38_5.Icon2_5.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.Container38_5.Icon2_5"
+                "type": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS"
               }
             }
           ],
@@ -3430,19 +3430,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.Container38_5.Icon2_5.TabIndex"
+                  "fullyQualifiedName": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.Container38_5.Icon2_5.TabIndex",
+                  "fullyQualifiedName": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadScreen",
-                "type": "LeadScreen.Container38_5.Icon2_5"
+                "type": "LeadScreen.ctnchatmessageheadingLdS.icnclosechatmessageLdS"
               }
             }
           ],
@@ -3460,19 +3460,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.TextInput2_7.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.txtinptchatmessageLdS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.TextInput2_7.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.txtinptchatmessageLdS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.TextInput2_7"
+                "type": "LeadScreen.txtinptchatmessageLdS"
               }
             }
           ],
