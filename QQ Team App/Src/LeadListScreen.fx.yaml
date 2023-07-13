@@ -342,7 +342,7 @@ LeadListScreen As screen:
                     X: =10
                     ZIndex: =2
 
-                    Label1_2 As label:
+                    lblcreatedateLS As label:
                         Align: =Align.Center
                         Text: ="Created Date"
                         ZIndex: =1
