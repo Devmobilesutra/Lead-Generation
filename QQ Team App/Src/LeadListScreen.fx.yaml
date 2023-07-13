@@ -368,23 +368,23 @@ LeadListScreen As screen:
                         Text: ="Region"
                         ZIndex: =5
 
-                    Label8_2 As label:
+                    lbldistrictLS As label:
                         Align: =Align.Center
                         Text: ="District"
                         ZIndex: =6
 
-                    Label9_2 As label:
+                    lblareaLS As label:
                         Align: =Align.Center
                         Text: ="Area"
                         ZIndex: =7
 
-                    Label10_2 As label:
+                    lblleadstatusLS As label:
                         Align: =Align.Center
                         Text: ="Lead Status"
                         Width: =120
                         ZIndex: =8
 
-                    Label11_1 As label:
+                    lblactionLS As label:
                         Align: =Align.Center
                         Text: ="Action"
                         Visible: =false
