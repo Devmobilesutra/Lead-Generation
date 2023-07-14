@@ -18,7 +18,8 @@ DashboardScreen As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                //If(Parent.Height<Parent.Width,Parent.Height/10,Parent.Height/16.6)
+                80
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -158,7 +159,7 @@ DashboardScreen As screen:
             AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height-20
+            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height-40
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =20
             LayoutMinHeight: =100
@@ -174,7 +175,7 @@ DashboardScreen As screen:
                 FillPortions: =0
                 Height: |
                     =//Parent.Height/5.5
-                    If(Parent.Height<Parent.Width,Parent.Height/2,Parent.Height/4)
+                    If(Parent.Height<Parent.Width,Parent.Height/2.5,Parent.Height/4.5)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 PaddingBottom: =5
@@ -350,7 +351,7 @@ DashboardScreen As screen:
                 Height: |
                     =//180
                     //Parent.Height/5.5
-                    If(Parent.Height<Parent.Width,Parent.Height/2,Parent.Height/4)
+                    If(Parent.Height<Parent.Width,Parent.Height/2.5,Parent.Height/4.5)
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =10
                 LayoutJustifyContent: =LayoutJustifyContent.Center

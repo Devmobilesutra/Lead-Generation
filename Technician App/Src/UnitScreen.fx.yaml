@@ -119,6 +119,8 @@ UnitScreen As screen:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
