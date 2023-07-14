@@ -23,9 +23,9 @@ DashboardScreen As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: |
+            Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/15)
+                If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/16)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -93,7 +93,7 @@ DashboardScreen As screen:
         Container1_2 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: |-
+            Height: |
                 =//Parent.Height/14
                 If(Parent.Height<Parent.Width,Parent.Height/10,Parent.Height/16)
             LayoutMinHeight: =100
@@ -162,6 +162,8 @@ DashboardScreen As screen:
 
         Container4 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
@@ -231,11 +233,11 @@ DashboardScreen As screen:
                     AutoHeight: =true
                     Color: =RGBA(116, 116, 116, 1)
                     FontWeight: =FontWeight.Semibold
-                    Height: =Parent.Height/5
+                    Height: =Parent.Height/4
                     OnSelect: =//Navigate(SubmittedLeadsScreen);
                     Size: |-
                         =//18
-                        If(Parent.Width<500,14,Parent.Width>500,18,12)
+                        If(Parent.Width<500,14,Parent.Width>500,16,12)
                     Text: |-
                         =If(cumulatively=true,"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email)),"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email))) 
                     VerticalAlign: =VerticalAlign.Top
@@ -397,10 +399,11 @@ DashboardScreen As screen:
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height/3
+                        LineHeight: =1.05
                         OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                         Size: |-
                             =//19.22
-                            If(Parent.Width<358,11,Parent.Width>358,14,16)
+                            If(Parent.Width<358,11,Parent.Width>358,12,14)
                         Text: =If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
                         Width: =Button1_10.Width
                         X: =Button1_10.X
@@ -446,10 +449,11 @@ DashboardScreen As screen:
                             Color: =RGBA(116, 116, 116, 1)
                             DisplayMode: =DisplayMode.View
                             FontWeight: =FontWeight.Semibold
+                            LineHeight: =1.05
                             OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                             Size: |-
                                 =//19.22
-                                If(Parent.Width<358,14,Parent.Width>358,16,18)
+                                If(Parent.Width<358,12,Parent.Width<378,14,16)
                             Text: |-
                                 =If(cumulatively=true, "Quoted Leads #" & Char(10)& "30","Quoted Leads #" & Char(10) &  "15")
                             Width: =Button1_10.Width
@@ -472,10 +476,11 @@ DashboardScreen As screen:
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height/3
+                        LineHeight: =1.05
                         OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                         Size: |-
                             =//19.22
-                            If(Parent.Width<358,11,Parent.Width>358,14,16)
+                            If(Parent.Width<358,11,Parent.Width>358,12,14)
                         Text: =If(cumulatively=true,"Sold Incentives $" & Char(10) &"15684.22","Sold Incentives $" & Char(10) &"7045.22")
                         Width: =Button1_10.Width
                         X: =Button1_10.X
@@ -519,12 +524,13 @@ DashboardScreen As screen:
                             Color: =RGBA(116, 116, 116, 1)
                             DisplayMode: =DisplayMode.View
                             FontWeight: =FontWeight.Semibold
+                            LineHeight: =1.05
                             OnSelect: =Set(VarPopup,true)
                             PaddingRight: =5.34
                             PaddingTop: =5.34
                             Size: |-
                                 =//19.22
-                                If(Parent.Width<358,14,Parent.Width>358,16,18)
+                                If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: |-
                                 =If(cumulatively=true,"Sold Leads #" & Char(10)& "40","Sold Leads #" & Char(10)& "15")
                             Width: =Button1_11.Width
@@ -538,7 +544,7 @@ DashboardScreen As screen:
                 FillPortions: =0
                 Height: |-
                     =//Parent.Height/10
-                    If(Parent.Height<Parent.Width,Parent.Height/6.5,Parent.Height/10.5)
+                    If(Parent.Height<Parent.Width,Parent.Height/7,Parent.Height/11)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Width: |-
@@ -574,7 +580,7 @@ DashboardScreen As screen:
                     RadiusTopRight: =6
                     Size: |-
                         =//25.63
-                        If(Parent.Width<500,16,Parent.Width>500,20)
+                        If(Parent.Width<500,16,Parent.Width>500,18)
                     Text: ="+ Create New Leads"
                     Width: =Parent.Width
                     ZIndex: =1

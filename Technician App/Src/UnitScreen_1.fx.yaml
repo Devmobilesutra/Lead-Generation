@@ -4,7 +4,7 @@ UnitScreen_1 As screen:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =20
+        LayoutGap: =10
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingLeft: =10
@@ -17,7 +17,8 @@ UnitScreen_1 As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                //If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                80
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -115,12 +116,14 @@ UnitScreen_1 As screen:
                 ZIndex: =2
 
         Container6 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height-20
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =3
 
             Container7_6 As groupContainer.manualLayoutContainer:

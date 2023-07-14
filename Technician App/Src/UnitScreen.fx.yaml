@@ -118,7 +118,7 @@ UnitScreen As screen:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height+30
+            Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height-20
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =4
@@ -356,10 +356,10 @@ UnitScreen As screen:
 
             UnitInfoForm As form:
                 DataSource: =LeadInformations
-                Height: =UnitCount_DataCard2.Height+UnitDescription_DataCard2.Height+30
+                Height: =UnitCount_DataCard2.Height+UnitDescription_DataCard2.Height
                 Item: =VarFormMode
                 Width: =Parent.Width
-                Y: =Container1_7.Height+Container1_7.Y+20
+                Y: =Container7_4.Height+Container7_4.Y
                 ZIndex: =7
 
                 UnitCount_DataCard2 As typedDataCard.numberEditCard:

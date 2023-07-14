@@ -19,7 +19,8 @@ CreatLeadScreen As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/18)
+                ///If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/18)
+                80
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -664,4 +665,18 @@ CreatLeadScreen As screen:
                 X: =306
                 Y: =785
                 ZIndex: =3
+
+            Container13 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =40
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                ZIndex: =4
 
