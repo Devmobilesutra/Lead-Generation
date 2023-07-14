@@ -5,7 +5,7 @@ CreatLeadScreen As screen:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =10
+        LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingLeft: =10
@@ -19,7 +19,8 @@ CreatLeadScreen As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/18)
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -30,13 +31,13 @@ CreatLeadScreen As screen:
             ZIndex: =1
 
             Icon9_3 As icon.BackArrow:
-                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
                 OnSelect: |-
                     =Navigate(DashboardScreen);
                     UpdateContext({locInfoExpanded:false})
+                PaddingBottom: =5
                 PaddingLeft: =20
                 PaddingTop: =5
                 Width: =55
@@ -53,7 +54,6 @@ CreatLeadScreen As screen:
                 LayoutMinHeight: =70
                 PaddingLeft: =20
                 PaddingRight: =5.34
-                PaddingTop: =5.34
                 Size: |
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
@@ -63,7 +63,6 @@ CreatLeadScreen As screen:
                 ZIndex: =2
 
             imgSchindlerLogo_5 As image:
-                AlignInContainer: =AlignInContainer.Center
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -76,7 +75,7 @@ CreatLeadScreen As screen:
                 ZIndex: =3
 
         Container1_5 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
@@ -119,18 +118,19 @@ CreatLeadScreen As screen:
                 ZIndex: =2
 
         Container9 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height-40
+            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            LayoutMinHeight: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height
+            LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
             Container7_5 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -325,7 +325,7 @@ CreatLeadScreen As screen:
                     ZIndex: =19
 
             BuildingInfoForm As form:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
                 Height: ='Building Name_DataCard1_1'.Height+Address_DataCard1_1.Height+'Contract Number_DataCard2_1'.Height+PinCode_DataCard1_1.Height+40
@@ -653,10 +653,8 @@ CreatLeadScreen As screen:
                         ZIndex: =4
 
             Button2_5 As button:
-                AlignInContainer: =AlignInContainer.Center
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.Arial
-                Height: =50
                 HoverFill: =Color.Red
                 OnSelect: |-
                     =Set(VarIndicator,true);
