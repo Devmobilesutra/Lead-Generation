@@ -120,7 +120,7 @@ CreatLeadScreen As screen:
         Container9 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height
+            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height+10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height
@@ -130,7 +130,6 @@ CreatLeadScreen As screen:
             ZIndex: =7
 
             Container7_5 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
