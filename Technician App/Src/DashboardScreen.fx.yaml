@@ -263,7 +263,9 @@ DashboardScreen As screen:
                         LayoutMinWidth: =560
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<500,14,Parent.Width>500,12,18)
+                        Size: |-
+                            =//If(Parent.Width<500,11,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: ="Open"
                         Width: =Parent.Width/4
                         ZIndex: =1
@@ -277,7 +279,9 @@ DashboardScreen As screen:
                         LayoutMinWidth: =560
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,12,18)
+                        Size: |-
+                            =//If(Parent.Width<500,11,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: ="InProgress"
                         Width: =Parent.Width/3
                         ZIndex: =2
@@ -291,7 +295,9 @@ DashboardScreen As screen:
                         LayoutMinWidth: =560
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,12,18)
+                        Size: |-
+                            =//If(Parent.Width<500,11,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: ="Reject"
                         Width: =Parent.Width/4
                         ZIndex: =3
@@ -311,7 +317,9 @@ DashboardScreen As screen:
                         Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,14,18)
+                        Size: |-
+                            =//If(Parent.Width<500,12,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: =If(cumulatively=true,"37","20")
                         Width: =Parent.Width/4
                         ZIndex: =1
@@ -322,7 +330,9 @@ DashboardScreen As screen:
                         Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,14,18)
+                        Size: |-
+                            =//If(Parent.Width<500,12,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: =If(cumulatively=true,"30","10")
                         Width: =Parent.Width/3
                         ZIndex: =2
@@ -333,7 +343,9 @@ DashboardScreen As screen:
                         Height: =Parent.Height
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
-                        Size: =If(Parent.Width<500,12,Parent.Width>500,14,18)
+                        Size: |-
+                            =//If(Parent.Width<500,12,Parent.Width>500,14,Parent.Width>1000,18)
+                            If(Parent.Width<358,14,Parent.Width>358,16,18)
                         Text: =If(cumulatively=true,"20","10")
                         Width: =Parent.Width/4
                         ZIndex: =3
@@ -384,12 +396,12 @@ DashboardScreen As screen:
                         Color: =RGBA(116, 116, 116, 1)
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
-                        Height: =Label2_9.Height+Label2_9.Y
+                        Height: =Parent.Height/3
                         OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                         Size: |-
                             =//19.22
-                            If(Parent.Width<358,12,Parent.Width>358,16,14)
-                        Text: =If(cumulatively=true,"Future Incentives $9560.45","Future Incentives $2034.64")
+                            If(Parent.Width<358,11,Parent.Width>358,14,16)
+                        Text: =If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
                         Width: =Button1_10.Width
                         X: =Button1_10.X
                         Y: =Label2_9.Height+Label2_9.Y
@@ -439,10 +451,10 @@ DashboardScreen As screen:
                                 =//19.22
                                 If(Parent.Width<358,14,Parent.Width>358,16,18)
                             Text: |-
-                                =If(cumulatively=true, "Quoted Leads # 30","Quoted Leads # 15")
+                                =If(cumulatively=true, "Quoted Leads #" & Char(10)& "30","Quoted Leads #" & Char(10) &  "15")
                             Width: =Button1_10.Width
                             X: =Button1_10.X
-                            Y: =(Parent.Height-Self.Height)/2.5
+                            Y: =(Parent.Height-Self.Height)/3.5
                             ZIndex: =2
 
                 Container9_1 As groupContainer.manualLayoutContainer:
@@ -459,12 +471,12 @@ DashboardScreen As screen:
                         Color: =RGBA(116, 116, 116, 1)
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Semibold
-                        Height: =Label2_9.Height+Label2_9.Y
+                        Height: =Parent.Height/3
                         OnSelect: =Navigate(Screen1);Set(VarFutureIncetives,true)
                         Size: |-
                             =//19.22
-                            If(Parent.Width<358,12,Parent.Width>358,16,14)
-                        Text: =If(cumulatively=true,"Sold Incentives $15684.22","Sold Incentives $7045.22")
+                            If(Parent.Width<358,11,Parent.Width>358,14,16)
+                        Text: =If(cumulatively=true,"Sold Incentives $" & Char(10) &"15684.22","Sold Incentives $" & Char(10) &"7045.22")
                         Width: =Button1_10.Width
                         X: =Button1_10.X
                         Y: =Label2_10.Height+Label2_10.Y
@@ -514,10 +526,10 @@ DashboardScreen As screen:
                                 =//19.22
                                 If(Parent.Width<358,14,Parent.Width>358,16,18)
                             Text: |-
-                                =If(cumulatively=true,"Sold Leads # 40","Sold Leads # 15")
+                                =If(cumulatively=true,"Sold Leads #" & Char(10)& "40","Sold Leads #" & Char(10)& "15")
                             Width: =Button1_11.Width
                             X: =Button1_11.X
-                            Y: =(Parent.Height-Self.Height)/2.5
+                            Y: =(Parent.Height-Self.Height)/3.5
                             ZIndex: =2
 
             Container3_2 As groupContainer.manualLayoutContainer:
