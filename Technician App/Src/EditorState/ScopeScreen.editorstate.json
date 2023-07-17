@@ -1323,7 +1323,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle1_22",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1463,7 +1463,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle1_23",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1603,7 +1603,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle1_24",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4093,7 +4093,14 @@
         "DisplayMode",
         "ZIndex",
         "AutoHeight",
-        "Wrap",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Wrap",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PaddingTop",
         "PaddingRight",
         "PaddingBottom",
@@ -6500,7 +6507,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3_20",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6720,7 +6727,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3_21",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6940,7 +6947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3_22",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
