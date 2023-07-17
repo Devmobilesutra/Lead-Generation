@@ -4986,6 +4986,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 10
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -5955,19 +5967,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitCount_DataCard2_4.DataCardValue11_4.AccessibleLabel"
+                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitCount_DataCard2_4.DataCardValue11_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitCount_DataCard2_4.DataCardValue11_4.AccessibleLabel",
+                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitCount_DataCard2_4.DataCardValue11_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "UnitScreen",
-                "type": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitCount_DataCard2_4.DataCardValue11_4"
+                "type": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitCount_DataCard2_4.DataCardValue11_4"
               }
             }
           ],
@@ -5985,19 +5997,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitDescription_DataCard2_4.DataCardValue12_4.AccessibleLabel"
+                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitDescription_DataCard2_4.DataCardValue12_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitDescription_DataCard2_4.DataCardValue12_4.AccessibleLabel",
+                  "fullyQualifiedName": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitDescription_DataCard2_4.DataCardValue12_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "UnitScreen",
-                "type": "UnitScreen.Container5_4.Container10.UnitInfoForm_4.UnitDescription_DataCard2_4.DataCardValue12_4"
+                "type": "UnitScreen.Container5_4.Container10.UnitInfoForm.UnitDescription_DataCard2_4.DataCardValue12_4"
               }
             }
           ],
@@ -7676,36 +7688,6 @@
               },
               "properties": {
                 "member": "varIndicatorSS",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.VarIndicatorSS"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarIndicatorSS",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarIndicatorSS",
                 "module": "App",
                 "type": "App"
               }

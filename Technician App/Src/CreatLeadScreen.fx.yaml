@@ -23,7 +23,7 @@ CreatLeadScreen As screen:
                 80
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            LayoutMinWidth: =Parent.Width-20
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
             PaddingTop: =0.00
@@ -121,7 +121,7 @@ CreatLeadScreen As screen:
         Container9 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height+10
+            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height

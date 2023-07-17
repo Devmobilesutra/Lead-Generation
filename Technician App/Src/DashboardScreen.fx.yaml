@@ -25,10 +25,11 @@ DashboardScreen As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/16)
+                //If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/15)
+                If(Parent.Height<Parent.Width,60,80)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            LayoutMinWidth: =Parent.Width-20
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
             PaddingTop: =0.00
@@ -128,7 +129,7 @@ DashboardScreen As screen:
                 PaddingTop: =5.34
                 Size: =If(Parent.Width>500,18,Parent.Width<500,12,12)
                 Text: =User().FullName
-                Width: =Parent.Width/3
+                Width: =Parent.Width/2.5
                 X: =Parent.X
                 ZIndex: =4
 
@@ -163,7 +164,7 @@ DashboardScreen As screen:
         Container4 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height
+            Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height+10
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
@@ -565,14 +566,14 @@ DashboardScreen As screen:
                         Navigate(CreatLeadScreen);
                         Set(VarIndicator,false);
                         NewForm(BuildingInfoForm);ResetForm(BuildingInfoForm);
-                        //NewForm(EstimateForm);
+                        NewForm(EstimateForm);
                         //NewForm(ImageUploadForm);
-                        //NewForm(ScopeInfoForm);
-                        //NewForm(UnitInfoForm);
-                        //ResetForm(EstimateForm);
+                        NewForm(ScopeInfoForm);
+                        NewForm(UnitInfoForm);
+                        ResetForm(EstimateForm);
                         //ResetForm(ImageUploadForm);
-                        //ResetForm(ScopeInfoForm);
-                        //ResetForm(UnitInfoForm);
+                        ResetForm(ScopeInfoForm);
+                        ResetForm(UnitInfoForm);
                     PressedBorderColor: =Color.Red
                     RadiusBottomLeft: =6
                     RadiusBottomRight: =6
@@ -584,4 +585,12 @@ DashboardScreen As screen:
                     Text: ="+ Create New Leads"
                     Width: =Parent.Width
                     ZIndex: =1
+
+            Container11 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =20
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =4
 

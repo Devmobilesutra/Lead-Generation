@@ -38,6 +38,8 @@ UnitScreen As screen:
                     Navigate(CreatLeadScreen);
                     Set(VarIndicatorUS,false);
                     
+                    
+                    
                 PaddingLeft: =20
                 PaddingTop: =5
                 Width: =55
@@ -143,7 +145,7 @@ UnitScreen As screen:
                     ZIndex: =1
 
                 Circle1_31 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_24.X+Icon4_24.Width
@@ -191,7 +193,6 @@ UnitScreen As screen:
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_31.X+(Circle1_31.Width/4.2)
                     Y: =Circle1_31.Y+Circle1_31.Height/5
@@ -323,7 +324,7 @@ UnitScreen As screen:
                     Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =19
 
-            UnitInfoForm_4 As form:
+            UnitInfoForm As form:
                 DataSource: =LeadInformations
                 FillPortions: =0
                 Height: =UnitCount_DataCard2_4.Height+UnitDescription_DataCard2_4.Height+20
@@ -509,7 +510,7 @@ UnitScreen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width
-                Y: =UnitInfoForm_4.Y+UnitInfoForm_4.Height
+                Y: =UnitInfoForm.Y+UnitInfoForm.Height
                 ZIndex: =3
 
                 Button2_13 As button:

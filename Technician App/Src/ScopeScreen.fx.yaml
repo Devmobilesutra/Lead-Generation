@@ -121,7 +121,7 @@ ScopeScreen As screen:
         Container9_2 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_8.Height-Container1_8.Height+10
+            Height: =Parent.Height-ctnHeaderDS_8.Height-Container1_8.Height-60
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height-ctnHeaderDS_8.Height-Container1_8.Height
@@ -149,7 +149,7 @@ ScopeScreen As screen:
                     ZIndex: =1
 
                 Circle1_21 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_16.X+Icon4_16.Width
@@ -157,7 +157,7 @@ ScopeScreen As screen:
                     ZIndex: =2
 
                 Circle1_22 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorSS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_17.X+Icon4_17.Width
@@ -193,25 +193,27 @@ ScopeScreen As screen:
                     ZIndex: =6
 
                 Icon3_20 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_21.X+(Circle1_21.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,40,32)
+                    Y: |-
+                        =//If(Parent.Width<378,40,Parent.Width<500,40,32)
+                        Circle1_21.Y+Circle1_21.Height/6
                     ZIndex: =7
 
                 Icon3_21 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicatorSS=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_22.X+(Circle1_22.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: |-
+                        =//If(Parent.Width<378,40,Parent.Width<500,42,32)
+                        Circle1_21.Y+Circle1_21.Height/6
                     ZIndex: =8
 
                 Icon3_22 As icon.Check:
@@ -222,7 +224,9 @@ ScopeScreen As screen:
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_23.X+(Circle1_23.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: |-
+                        =//If(Parent.Width<378,40,Parent.Width<500,42,32)
+                        Circle1_21.Y+Circle1_21.Height/6
                     ZIndex: =9
 
                 Icon3_23 As icon.Check:
@@ -233,7 +237,9 @@ ScopeScreen As screen:
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_24.X+(Circle1_24.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: |-
+                        =//If(Parent.Width<378,40,Parent.Width<500,42,32)
+                        Circle1_21.Y+Circle1_21.Height/6
                     ZIndex: =10
 
                 Icon4_16 As icon.HorizontalLine:

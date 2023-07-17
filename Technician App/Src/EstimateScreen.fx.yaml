@@ -121,7 +121,7 @@ EstimateScreen As screen:
         Container9_3 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height+10
+            Height: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height
@@ -149,7 +149,7 @@ EstimateScreen As screen:
                     ZIndex: =1
 
                 Circle1_26 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_20.X+Icon4_20.Width
@@ -157,7 +157,7 @@ EstimateScreen As screen:
                     ZIndex: =2
 
                 Circle1_27 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorSS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_21.X+Icon4_21.Width
@@ -193,25 +193,23 @@ EstimateScreen As screen:
                     ZIndex: =6
 
                 Icon3_25 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicatorUS=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_26.X+(Circle1_26.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,40,32)
+                    Y: =Circle1_25.Y+Circle1_25.Height/6
                     ZIndex: =7
 
                 Icon3_26 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_27.X+(Circle1_27.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: =Circle1_25.Y+Circle1_25.Height/6
                     ZIndex: =8
 
                 Icon3_27 As icon.Check:
