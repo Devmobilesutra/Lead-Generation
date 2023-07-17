@@ -567,11 +567,11 @@ DashboardScreen As screen:
                         NewForm(BuildingInfoForm);ResetForm(BuildingInfoForm);
                         //NewForm(EstimateForm);
                         //NewForm(ImageUploadForm);
-                        NewForm(ScopeInfoForm);
+                        //NewForm(ScopeInfoForm);
                         //NewForm(UnitInfoForm);
                         //ResetForm(EstimateForm);
                         //ResetForm(ImageUploadForm);
-                        ResetForm(ScopeInfoForm);
+                        //ResetForm(ScopeInfoForm);
                         //ResetForm(UnitInfoForm);
                     PressedBorderColor: =Color.Red
                     RadiusBottomLeft: =6

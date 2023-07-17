@@ -114,62 +114,27 @@ UnitScreen As screen:
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-        Container5_6 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.Light
+        Container10 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height-20
+            Height: =Parent.Height-ctnHeaderDS_7.Height-Container1_7.Height-60
+            LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            Width: =Parent.Width-20
-            X: =10
-            Y: =174
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =3
 
-            Button2_1 As button:
-                Fill: =RGBA(255, 0, 0, 1)
-                Font: =Font.Arial
-                Height: =53
-                HoverFill: =Color.Red
-                OnSelect: |
-                    =Navigate(ScopeScreen);
-                    Set(VarIndicator,true);
-                    Set(VarIndicatorUS,true);
-                    Set(VarIndicatorSS,false);
-                Size: =18
-                Text: ="Next"
-                Width: =131
-                X: =317
-                Y: =692
-                ZIndex: =4
-
-            Button2_2 As button:
-                Fill: =RGBA(255, 0, 0, 1)
-                Font: =Font.Arial
-                Height: =53
-                HoverFill: =Color.Red
-                OnSelect: |+
-                    =Navigate(CreatLeadScreen);
-                    Set(VarIndicatorUS,false);
-                    
-                Size: =18
-                Text: ="Previous"
-                Width: =131
-                X: =172
-                Y: =692
-                ZIndex: =5
-
-            Container7_4 As groupContainer.manualLayoutContainer:
+            Container7_8 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
                 Height: =136
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 Width: =Parent.Width
                 Y: =40
-                ZIndex: =6
+                ZIndex: =1
 
-                Circle1_5 As circle:
+                Circle1_30 As circle:
                     Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
@@ -177,127 +142,131 @@ UnitScreen As screen:
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =1
 
-                Circle1_6 As circle:
+                Circle1_31 As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_4.X+Icon4_4.Width
+                    X: =Icon4_24.X+Icon4_24.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =2
 
-                Circle1_7 As circle:
+                Circle1_32 As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_5.X+Icon4_5.Width
+                    X: =Icon4_25.X+Icon4_25.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =3
 
-                Circle1_8 As circle:
+                Circle1_33 As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_6.X+Icon4_6.Width
+                    X: =Icon4_26.X+Icon4_26.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =4
 
-                Circle1_9 As circle:
+                Circle1_34 As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_7.X+Icon4_7.Width
+                    X: =Icon4_27.X+Icon4_27.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =5
 
-                Icon3_5 As icon.Check:
+                Icon3_33 As icon.Check:
                     Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_5.X+(Circle1_5.Width/4.2)
+                    X: =Circle1_30.X+(Circle1_30.Width/4.2)
                     Y: |-
                         =//If(Parent.Width<378,Circle1.Height/2,Parent.Width<500,Circle1.Height/2,Circle1.Height/2)
-                        Circle1_5.Y+Circle1_5.Height/5
+                        Circle1_30.Y+Circle1_30.Height/5
                     ZIndex: =6
 
-                Icon3_6 As icon.Check:
+                Icon3_34 As icon.Check:
                     Color: =If(VarIndicatorUS=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
+                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_6.X+(Circle1_6.Width/4.2)
-                    Y: =Circle1_6.Y+Circle1_6.Height/5
+                    X: =Circle1_31.X+(Circle1_31.Width/4.2)
+                    Y: =Circle1_31.Y+Circle1_31.Height/5
                     ZIndex: =7
 
-                Icon3_7 As icon.Check:
+                Icon3_30 As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
+                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_7.X+(Circle1_7.Width/4.2)
+                    X: =Circle1_32.X+(Circle1_32.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =8
 
-                Icon3_8 As icon.Check:
+                Icon3_31 As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
+                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_8.X+(Circle1_8.Width/4.2)
+                    X: =Circle1_33.X+(Circle1_33.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =9
 
-                Icon3_9 As icon.Check:
+                Icon3_32 As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
+                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_9.X+(Circle1_9.Width/4.2)
+                    X: =Circle1_34.X+(Circle1_34.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =10
 
-                Icon4_4 As icon.HorizontalLine:
+                Icon4_24 As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_5.X+Circle1_5.Width
+                    X: =Circle1_30.X+Circle1_30.Width
                     Y: =22
                     ZIndex: =11
 
-                Icon4_5 As icon.HorizontalLine:
+                Icon4_25 As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_6.X+Circle1_6.Width
+                    X: =Circle1_31.X+Circle1_31.Width
                     Y: =22
                     ZIndex: =12
 
-                Icon4_6 As icon.HorizontalLine:
+                Icon4_26 As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_7.X+Circle1_7.Width
+                    X: =Circle1_32.X+Circle1_32.Width
                     Y: =22
                     ZIndex: =13
 
-                Icon4_7 As icon.HorizontalLine:
+                Icon4_27 As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_8.X+Circle1_8.Width
+                    X: =Circle1_33.X+Circle1_33.Width
                     Y: =22
                     ZIndex: =14
 
-                Label5_6 As label:
+                Label5_31 As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
@@ -306,63 +275,66 @@ UnitScreen As screen:
                     Width: =Parent.Width/6
                     X: |-
                         =//If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
-                        Circle1_5.X-Circle1_5.Width/3
-                    Y: =73
+                        Circle1_30.X-Circle1_30.Width/3
+                    Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =15
 
-                Label5_5 As label:
+                Label5_30 As label:
                     Font: =Font.Arial
                     Height: =30
                     PaddingLeft: =10
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 2"
                     Width: =Parent.Width/6
-                    X: =Circle1_6.X-Circle1_6.Width/3
-                    Y: =70
+                    X: =Circle1_31.X-Circle1_31.Width/3
+                    Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =16
 
-                Label5_7 As label:
+                Label5_32 As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 3"
                     Width: =Parent.Width/6
-                    X: =Circle1_7.X-Circle1_7.Width/3
-                    Y: =73
+                    X: =Circle1_32.X-Circle1_32.Width/3
+                    Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =17
 
-                Label5_8 As label:
+                Label5_33 As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 4"
                     Width: =Parent.Width/6
-                    X: =Circle1_8.X-Circle1_8.Width/3
-                    Y: =73
+                    X: =Circle1_33.X-Circle1_33.Width/3
+                    Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =18
 
-                Label5_9 As label:
+                Label5_34 As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 5"
-                    Width: =Parent.Width/8
-                    X: =Circle1_9.X-Circle1_9.Width/3
-                    Y: =73
+                    Width: =Parent.Width/6
+                    X: =Circle1_34.X-Circle1_34.Width/2
+                    Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =19
 
-            UnitInfoForm As form:
+            UnitInfoForm_4 As form:
                 DataSource: =LeadInformations
-                Height: =UnitCount_DataCard2.Height+UnitDescription_DataCard2.Height
+                FillPortions: =0
+                Height: =UnitCount_DataCard2_4.Height+UnitDescription_DataCard2_4.Height+20
                 Item: =VarFormMode
+                LayoutMinHeight: =250
+                LayoutMinWidth: =Parent.Width
                 Width: =Parent.Width
-                Y: =Container7_4.Height+Container7_4.Y
-                ZIndex: =7
+                Y: =Container1_7.Height+Container1_7.Y+20
+                ZIndex: =2
 
-                UnitCount_DataCard2 As typedDataCard.numberEditCard:
+                UnitCount_DataCard2_4 As typedDataCard.numberEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_unitcount"
@@ -374,18 +346,18 @@ UnitScreen As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =Value(DataCardValue11.Text)
+                    Update: =Value(DataCardValue11_4.Text)
                     Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey11 As label:
+                    DataCardKey11_4 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =18
+                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="No. of Units"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -393,7 +365,7 @@ UnitScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue11 As text:
+                    DataCardValue11_4 As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -408,14 +380,14 @@ UnitScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =18
+                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                        Y: =DataCardKey11_4.Y + DataCardKey11_4.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage11 As label:
+                    ErrorMessage11_4 As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -428,21 +400,21 @@ UnitScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue11.Y + DataCardValue11.Height
+                        Y: =DataCardValue11_4.Y + DataCardValue11_4.Height
                         ZIndex: =3
 
-                    StarVisible11 As label:
+                    StarVisible11_4 As label:
                         Align: =Align.Center
-                        Height: =DataCardKey11.Height
+                        Height: =DataCardKey11_4.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey11.Y
+                        Y: =DataCardKey11_4.Y
                         ZIndex: =4
 
-                UnitDescription_DataCard2 As typedDataCard.textualEditCard:
+                UnitDescription_DataCard2_4 As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_unitdescription"
@@ -453,18 +425,18 @@ UnitScreen As screen:
                     Height: =214
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                     Required: =false
-                    Update: =DataCardValue12.Text
+                    Update: =DataCardValue12_4.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =1
 
-                    DataCardKey12 As label:
+                    DataCardKey12_4 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =18
+                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Unit Description"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -472,7 +444,7 @@ UnitScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue12 As text:
+                    DataCardValue12_4 As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -488,14 +460,14 @@ UnitScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =18
+                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                        Y: =DataCardKey12_4.Y + DataCardKey12_4.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage12 As label:
+                    ErrorMessage12_4 As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -508,17 +480,82 @@ UnitScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue12.Y + DataCardValue12.Height
+                        Y: =DataCardValue12_4.Y + DataCardValue12_4.Height
                         ZIndex: =3
 
-                    StarVisible12 As label:
+                    StarVisible12_4 As label:
                         Align: =Align.Center
-                        Height: =DataCardKey12.Height
+                        Height: =DataCardKey12_4.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey12.Y
+                        Y: =DataCardKey12_4.Y
                         ZIndex: =4
+
+            Container5_12 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =80
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =Parent.Width
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                Y: =UnitInfoForm_4.Y+UnitInfoForm_4.Height
+                ZIndex: =3
+
+                Button2_13 As button:
+                    Fill: =RGBA(255, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =53
+                    HoverFill: =Color.Red
+                    OnSelect: |+
+                        =Navigate(CreatLeadScreen);
+                        Set(VarIndicatorUS,false);
+                        
+                    Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
+                    Text: ="Previous"
+                    Width: =Parent.Width/4
+                    X: =172
+                    Y: =692
+                    ZIndex: =1
+
+                Button2_12 As button:
+                    Fill: =RGBA(255, 0, 0, 1)
+                    Font: =Font.Arial
+                    Height: =53
+                    HoverFill: =Color.Red
+                    OnSelect: |
+                        =Navigate(ScopeScreen);
+                        Set(VarIndicator,true);
+                        Set(VarIndicatorUS,true);
+                        Set(VarIndicatorSS,false);
+                    Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
+                    Text: ="Next"
+                    Width: =Parent.Width/4
+                    X: =145
+                    Y: =692
+                    ZIndex: =2
+
+            Container13_1 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =40
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                ZIndex: =4
 
