@@ -8350,47 +8350,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varIndicatorSS"
+                  "fullyQualifiedName": "App.varIndicatorUS"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varIndicatorSS",
+                  "fullyQualifiedName": "App.varIndicatorUS",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varIndicatorSS",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.VarIndicatorES"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarIndicatorES",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarIndicatorES",
+                "member": "varIndicatorUS",
                 "module": "App",
                 "type": "App"
               }

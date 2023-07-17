@@ -165,7 +165,7 @@ ImageUploadScreen As screen:
                     ZIndex: =3
 
                 Circle1_38 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_30.X+Icon4_30.Width
@@ -213,14 +213,13 @@ ImageUploadScreen As screen:
                     ZIndex: =8
 
                 Icon3_37 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_38.X+(Circle1_38.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: =Circle1_35.Y+Circle1_35.Height/6
                     ZIndex: =9
 
                 Icon3_38 As icon.Check:
@@ -231,7 +230,7 @@ ImageUploadScreen As screen:
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_39.X+(Circle1_39.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: =Circle1_35.Y+Circle1_35.Height/6
                     ZIndex: =10
 
                 Icon4_28 As icon.HorizontalLine:
@@ -332,7 +331,6 @@ ImageUploadScreen As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingTop: =20
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -373,32 +371,35 @@ ImageUploadScreen As screen:
                 "Gallery1 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
+                    Height: =1000
                     Items: |
                         =LeadImagesCollection
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =4
-                    TemplateSize: =Min(300, Self.Height - 60)
-                    Width: =Parent.Width
+                    TemplateSize: =Min(280, Self.Height - 60)
+                    Width: =Parent.Width/1.08
                     WrapCount: =2
                     ZIndex: =3
 
                     Image4 As image:
-                        Height: =Parent.TemplateHeight
+                        Height: =Parent.TemplateHeight/1.2
                         Image: =ThisItem.Image
-                        ImagePosition: =ImagePosition.Fill
                         OnSelect: =Select(Parent)
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =Parent.TemplateWidth
+                        Width: =Parent.TemplateWidth/1.10
                         ZIndex: =1
 
                     Icon3 As icon.Cancel:
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =30
                         Icon: =Icon.Cancel
                         OnSelect: =Remove(LeadImagesCollection,ThisItem);
-                        X: =295
+                        Width: =30
+                        X: =Image4.X+Image4.Width
                         Y: =30
                         ZIndex: =2
 
@@ -423,7 +424,7 @@ ImageUploadScreen As screen:
                     Height: =53
                     HoverFill: =Color.Red
                     OnSelect: |+
-                        =Navigate(ScopeScreen);
+                        =Navigate(EstimateScreen);
                         Set(VarIndicatorES,false);
                         
                         

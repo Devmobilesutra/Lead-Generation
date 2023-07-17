@@ -607,7 +607,7 @@ ScopeScreen As screen:
                     HoverFill: =Color.Red
                     OnSelect: |+
                         =Navigate(UnitScreen);
-                        Set(varIndicatorSS,false);
+                        Set(varIndicatorUS,false);
                         
                         
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)

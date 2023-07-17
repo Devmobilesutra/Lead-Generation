@@ -165,7 +165,7 @@ EstimateScreen As screen:
                     ZIndex: =3
 
                 Circle1_28 As circle:
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorES=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =Icon4_22.X+Icon4_22.Width
@@ -213,14 +213,13 @@ EstimateScreen As screen:
                     ZIndex: =8
 
                 Icon3_27 As icon.Check:
-                    Color: =Color.Red
+                    Color: =If(VarIndicatorES=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
-                    Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_28.X+(Circle1_28.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: =Circle1_25.Y+Circle1_25.Height/6
                     ZIndex: =9
 
                 Icon3_28 As icon.Check:
@@ -231,7 +230,7 @@ EstimateScreen As screen:
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     X: =Circle1_29.X+(Circle1_29.Width/4.2)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
+                    Y: =Circle1_25.Y+Circle1_25.Height/6
                     ZIndex: =10
 
                 Icon4_20 As icon.HorizontalLine:
@@ -743,7 +742,7 @@ EstimateScreen As screen:
                     HoverFill: =Color.Red
                     OnSelect: |+
                         =Navigate(ScopeScreen);
-                        Set(VarIndicatorES,false);
+                        Set(VarIndicatorSS,false);
                         
                         
                         
@@ -764,7 +763,7 @@ EstimateScreen As screen:
                         Set(VarIndicatorUS, true );
                         Set(VarIndicatorSS, true );
                         Set(VarIndicatorES,true);
-                        //Navigate(ImageploadScreen);
+                        Navigate(ImageUploadScreen);
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                     Text: ="Next"
                     Width: =Parent.Width/4
