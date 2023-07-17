@@ -20,7 +20,7 @@ CreatLeadScreen As screen:
             Height: |-
                 =//Parent.Height/13.5
                 ///If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/18)
-                80
+                If(Parent.Height<Parent.Width,60,80)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =Parent.Width-20

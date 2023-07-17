@@ -11,7 +11,7 @@ ChatScreen As screen:
         ctnHeaderDS_9 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =80
+            Height: =If(Parent.Height<Parent.Width,60,80)
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -202,7 +202,7 @@ ChatScreen As screen:
             Button1 As button:
                 Fill: =RGBA(255, 0, 0, 1)
                 HoverFill: =ColorFade(Self.Fill, -20%)
-                OnSelect: =Navigate(Screen1)
+                OnSelect: =Navigate(SubmittedLeadScreen)
                 Text: ="Back"
                 X: =32
                 Y: =22

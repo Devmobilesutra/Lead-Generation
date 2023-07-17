@@ -1,4 +1,4 @@
-Screen1 As screen:
+SubmittedLeadScreen As screen:
     OnVisible: |-
         =UpdateContext({locInfoExpanded:false})
 
@@ -17,7 +17,8 @@ Screen1 As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                //If(Parent.Height<Parent.Width,Parent.Height/6,Parent.Height/16)
+                If(Parent.Height<Parent.Width,60,80)
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto

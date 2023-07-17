@@ -134,10 +134,11 @@
     "DashboardScreen",
     "ViewDetailsScreen",
     "CreatLeadScreen",
-    "Screen1",
+    "SubmittedLeadScreen",
     "UnitScreen",
     "ScopeScreen",
     "ChatScreen",
-    "EstimateScreen"
+    "EstimateScreen",
+    "ImageUploadScreen"
   ]
 }

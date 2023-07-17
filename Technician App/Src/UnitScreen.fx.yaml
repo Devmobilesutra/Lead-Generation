@@ -17,7 +17,8 @@ UnitScreen As screen:
             FillPortions: =0
             Height: |-
                 =//Parent.Height/13.5
-                If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/15)
+                //If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/15)
+                If(Parent.Height<Parent.Width,60,80)
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
