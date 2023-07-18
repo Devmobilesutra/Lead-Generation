@@ -189,7 +189,7 @@ LeadScreen As screen:
                     Width: =150
                     ZIndex: =2
 
-            Container13_2 As groupContainer.verticalAutoLayoutContainer:
+            ctnleadmessagestabLdS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
@@ -202,7 +202,7 @@ LeadScreen As screen:
                 Width: =180
                 ZIndex: =2
 
-                Button2_2 As button:
+                btnleadmessagetabLdS As button:
                     BorderThickness: =0
                     Color: =If(VarLeadMessages= true,Header.Black,Header.Red)
                     Fill: =Header.White
@@ -222,7 +222,7 @@ LeadScreen As screen:
                     Width: =170
                     ZIndex: =1
 
-                Icon3_2 As icon.Add:
+                icnhorizontalleadmessageLdS As icon.Add:
                     Color: =Header.Red
                     Fill: =Header.Red
                     Height: =3
