@@ -69,32 +69,6 @@ LeadScreen As screen:
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-        Container11 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            FillPortions: =0
-            Height: =90
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =20
-            Visible: =false
-            ZIndex: =4
-
-            Label12 As label:
-                FontWeight: =FontWeight.Semibold
-                Size: =16
-                Text: ="Region"
-                Width: =Parent.Width-40
-                ZIndex: =1
-
-            Label13 As label:
-                FontWeight: =FontWeight.Semibold
-                Size: =16
-                Text: ="Leads submitted to QQ team"
-                Width: =Parent.Width-40
-                ZIndex: =2
-
         Container24_1 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
