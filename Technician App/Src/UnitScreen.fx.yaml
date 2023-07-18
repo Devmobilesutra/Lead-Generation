@@ -29,7 +29,7 @@ UnitScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            Icon9_4 As icon.BackArrow:
+            IconBackUS As icon.BackArrow:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
@@ -48,7 +48,7 @@ UnitScreen As screen:
                 Y: =11
                 ZIndex: =1
 
-            Label1_7 As label:
+            lblHeaderUS As label:
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -62,11 +62,11 @@ UnitScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_7.Width-Icon9_4.Width
+                Width: =Parent.Width-imgSchindlerLogoUS.Width-IconBackUS.Width
                 X: =96.12
                 ZIndex: =2
 
-            imgSchindlerLogo_7 As image:
+            imgSchindlerLogoUS As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height

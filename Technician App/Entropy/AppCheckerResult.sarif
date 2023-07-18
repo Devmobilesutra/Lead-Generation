@@ -11843,19 +11843,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4.AccessibleLabel"
+                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4.AccessibleLabel",
+                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "UnitScreen",
-                "type": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4"
+                "type": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS"
               }
             }
           ],
@@ -11873,19 +11873,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4.TabIndex"
+                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4.TabIndex",
+                  "fullyQualifiedName": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "UnitScreen",
-                "type": "UnitScreen.ctnMainUS.ctnHeaderUS.Icon9_4"
+                "type": "UnitScreen.ctnMainUS.ctnHeaderUS.IconBackUS"
               }
             }
           ],
