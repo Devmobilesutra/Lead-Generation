@@ -130,7 +130,7 @@ CreatLeadScreen As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
-            Container7_5 As groupContainer.manualLayoutContainer:
+            ctnProgressBarCreatLead As groupContainer.manualLayoutContainer:
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -152,35 +152,35 @@ CreatLeadScreen As screen:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_12.X+Icon4_12.Width
+                    X: =IconLine1CL.X+IconLine1CL.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =2
 
-                Circle1_17 As circle:
+                CircleStep3CL As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_13.X+Icon4_13.Width
+                    X: =IconLine2CL.X+IconLine2CL.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =3
 
-                Circle1_18 As circle:
+                CircleStep4CL As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_14.X+Icon4_14.Width
+                    X: =IconLine3CL.X+IconLine3CL.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =4
 
-                Circle1_19 As circle:
+                CircleStep5CL As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_15.X+Icon4_15.Width
+                    X: =IconLine4CL.X+IconLine4CL.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =5
 
-                Icon3_19 As icon.Check:
+                Icontick1CL As icon.Check:
                     Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
@@ -192,7 +192,7 @@ CreatLeadScreen As screen:
                         Circle1_15.Y+Circle1_15.Height/6
                     ZIndex: =6
 
-                Icon3_15 As icon.Check:
+                Icontick2CL As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
@@ -203,40 +203,40 @@ CreatLeadScreen As screen:
                     Y: =If(Parent.Width<378,40,Parent.Width<500,40,32)
                     ZIndex: =7
 
-                Icon3_16 As icon.Check:
+                Icontick3CL As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_17.X+(Circle1_17.Width/4.2)
+                    X: =CircleStep3CL.X+(CircleStep3CL.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =8
 
-                Icon3_17 As icon.Check:
+                Icontick4CL As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_18.X+(Circle1_18.Width/4.2)
+                    X: =CircleStep4CL.X+(CircleStep4CL.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =9
 
-                Icon3_18 As icon.Check:
+                Icontick5CL As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_19.X+(Circle1_19.Width/4.2)
+                    X: =CircleStep5CL.X+(CircleStep5CL.Width/4.2)
                     Y: =If(Parent.Width<378,40,Parent.Width<500,42,32)
                     ZIndex: =10
 
-                Icon4_12 As icon.HorizontalLine:
+                IconLine1CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
@@ -245,7 +245,7 @@ CreatLeadScreen As screen:
                     Y: =22
                     ZIndex: =11
 
-                Icon4_13 As icon.HorizontalLine:
+                IconLine2CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
@@ -254,25 +254,25 @@ CreatLeadScreen As screen:
                     Y: =22
                     ZIndex: =12
 
-                Icon4_14 As icon.HorizontalLine:
+                IconLine3CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_17.X+Circle1_17.Width
+                    X: =CircleStep3CL.X+CircleStep3CL.Width
                     Y: =22
                     ZIndex: =13
 
-                Icon4_15 As icon.HorizontalLine:
+                IconLine4CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_18.X+Circle1_18.Width
+                    X: =CircleStep4CL.X+CircleStep4CL.Width
                     Y: =22
                     ZIndex: =14
 
-                Label5_15 As label:
+                lblStep1CL As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
@@ -284,7 +284,7 @@ CreatLeadScreen As screen:
                     Y: =Circle1_15.Y+Circle1_15.Height+20
                     ZIndex: =15
 
-                Label5_16 As label:
+                lblStep2CL As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
@@ -294,33 +294,33 @@ CreatLeadScreen As screen:
                     Y: =Circle1_15.Y+Circle1_15.Height+20
                     ZIndex: =16
 
-                Label5_17 As label:
+                lblStep3CL As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 3"
                     Width: =Parent.Width/6
-                    X: =Circle1_17.X-Circle1_17.Width/3
+                    X: =CircleStep3CL.X-CircleStep3CL.Width/3
                     Y: =Circle1_15.Y+Circle1_15.Height+20
                     ZIndex: =17
 
-                Label5_18 As label:
+                lblSteo4CL As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 4"
                     Width: =Parent.Width/6
-                    X: =Circle1_18.X-Circle1_18.Width/3
+                    X: =CircleStep4CL.X-CircleStep4CL.Width/3
                     Y: =Circle1_15.Y+Circle1_15.Height+20
                     ZIndex: =18
 
-                Label5_19 As label:
+                lblStep5CL As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 5"
                     Width: =Parent.Width/6
-                    X: =Circle1_19.X-Circle1_19.Width/3
+                    X: =CircleStep5CL.X-CircleStep5CL.Width/3
                     Y: =Circle1_15.Y+Circle1_15.Height+20
                     ZIndex: =19
 
@@ -328,7 +328,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: ='Building Name_DataCard1_1'.Height+Address_DataCard1_1.Height+'Contract Number_DataCard2_1'.Height+PinCode_DataCard1_1.Height+40
+                Height: =BuildingName.Height+Address.Height+'Contract Number'.Height+PinCode.Height+40
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -336,7 +336,7 @@ CreatLeadScreen As screen:
                 Y: =143
                 ZIndex: =2
 
-                "'Contract Number_DataCard2_1' As typedDataCard.textualEditCard":
+                "'Contract Number' As typedDataCard.textualEditCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_contractnumber"
                     Default: =ThisItem.'ContractNumber '
@@ -346,13 +346,13 @@ CreatLeadScreen As screen:
                     Height: =100
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "shlrf_contractnumber")
                     Required: =false
-                    Update: =DataCardValue3_1.Text
+                    Update: =IntxtContractNumber.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey3_1 As label:
+                    lblContractNumber As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -365,7 +365,7 @@ CreatLeadScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue3_1 As text:
+                    IntxtContractNumber As text:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         Color: =Color.Black
                         Default: =Parent.Default
@@ -386,10 +386,10 @@ CreatLeadScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey3_1.Y + DataCardKey3_1.Height + 5
+                        Y: =lblContractNumber.Y + lblContractNumber.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage3_1 As label:
+                    ErrorMessageContractNumber As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -402,21 +402,21 @@ CreatLeadScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
+                        Y: =IntxtContractNumber.Y + IntxtContractNumber.Height
                         ZIndex: =3
 
-                    StarVisible3_1 As label:
+                    StarVisibleContractNumber As label:
                         Align: =Align.Center
-                        Height: =DataCardKey3_1.Height
+                        Height: =lblContractNumber.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey3_1.Y
+                        Y: =lblContractNumber.Y
                         ZIndex: =4
 
-                PinCode_DataCard1_1 As typedDataCard.textualEditCard:
+                PinCode As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_pincode"
                     Default: =ThisItem.'ZipCode '
@@ -426,13 +426,13 @@ CreatLeadScreen As screen:
                     Height: =100
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "shlrf_zipcode")
                     Required: =false
-                    Update: =DataCardValue9_1.Text
+                    Update: =IntxtPincode.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =2
                     ZIndex: =1
 
-                    DataCardKey9_1 As label:
+                    lblPincode As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -445,7 +445,7 @@ CreatLeadScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue9_1 As text:
+                    IntxtPincode As text:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -463,10 +463,10 @@ CreatLeadScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey9_1.Y + DataCardKey9_1.Height + 5
+                        Y: =lblPincode.Y + lblPincode.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage9_1 As label:
+                    ErrorMessagePincode As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -479,21 +479,21 @@ CreatLeadScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue9_1.Y + DataCardValue9_1.Height
+                        Y: =IntxtPincode.Y + IntxtPincode.Height
                         ZIndex: =3
 
-                    StarVisible9_1 As label:
+                    StarVisiblePincode As label:
                         Align: =Align.Center
-                        Height: =DataCardKey9_1.Height
+                        Height: =lblPincode.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey9_1.Y
+                        Y: =lblPincode.Y
                         ZIndex: =4
 
-                "'Building Name_DataCard1_1' As typedDataCard.textualEditCard":
+                BuildingName As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_name"
                     Default: =ThisItem.'BuildingName '
@@ -503,13 +503,13 @@ CreatLeadScreen As screen:
                     Height: =100
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                     Required: =false
-                    Update: =DataCardValue2_1.Text
+                    Update: =IntxtBuildingName.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =2
 
-                    DataCardKey2_1 As label:
+                    lblBuildingName As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -524,7 +524,7 @@ CreatLeadScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue2_1 As text:
+                    IntxtBuildingName As text:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -543,10 +543,10 @@ CreatLeadScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey2_1.Y + DataCardKey2_1.Height + 5
+                        Y: =lblBuildingName.Y + lblBuildingName.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage2_1 As label:
+                    ErrorMessageBuilldingName As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -559,21 +559,21 @@ CreatLeadScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
+                        Y: =IntxtBuildingName.Y + IntxtBuildingName.Height
                         ZIndex: =3
 
-                    StarVisible2_1 As label:
+                    StarVisibleBuildingName As label:
                         Align: =Align.Center
-                        Height: =DataCardKey2_1.Height
+                        Height: =lblBuildingName.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey2_1.Y
+                        Y: =lblBuildingName.Y
                         ZIndex: =4
 
-                Address_DataCard1_1 As typedDataCard.textualEditCard:
+                Address As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_address"
                     Default: =ThisItem.Address
@@ -583,13 +583,13 @@ CreatLeadScreen As screen:
                     Height: =100
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
                     Required: =false
-                    Update: =DataCardValue4_1.Text
+                    Update: =IntxtAddress.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =3
                     ZIndex: =2
 
-                    DataCardKey4_1 As label:
+                    lblAddress As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -602,7 +602,7 @@ CreatLeadScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue4_1 As text:
+                    IntxtAddress As text:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -622,10 +622,10 @@ CreatLeadScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 5
+                        Y: =lblAddress.Y + lblAddress.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage4_1 As label:
+                    ErrorMessageAddress As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -638,18 +638,18 @@ CreatLeadScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue4_1.Y + DataCardValue4_1.Height
+                        Y: =IntxtAddress.Y + IntxtAddress.Height
                         ZIndex: =3
 
-                    StarVisible4_1 As label:
+                    StarVisibleAddress As label:
                         Align: =Align.Center
-                        Height: =DataCardKey4_1.Height
+                        Height: =lblAddress.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey4_1.Y
+                        Y: =lblAddress.Y
                         ZIndex: =4
 
             Button2_5 As button:
