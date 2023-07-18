@@ -102,6 +102,19 @@ LeadScreen As screen:
             PaddingLeft: =20
             ZIndex: =6
 
+            lblestimatenumberLdS As label:
+                FontWeight: =FontWeight.Semibold
+                Size: =16
+                Text: ="Estimate No."
+                Width: =200
+                ZIndex: =1
+
+            lblestimatenumbervalueLdS As label:
+                Size: =16
+                Text: ="NA"
+                Width: =Parent.Width/2
+                ZIndex: =2
+
         Container24_3 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
