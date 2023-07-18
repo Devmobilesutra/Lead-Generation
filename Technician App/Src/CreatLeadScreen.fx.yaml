@@ -652,7 +652,7 @@ CreatLeadScreen As screen:
                         Y: =lblAddress.Y
                         ZIndex: =4
 
-            Button2_5 As button:
+            btnNextCL As button:
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.Arial
                 HoverFill: =Color.Red
@@ -666,7 +666,7 @@ CreatLeadScreen As screen:
                 Y: =785
                 ZIndex: =3
 
-            Container13 As groupContainer.verticalAutoLayoutContainer:
+            ctnForSpaceCL As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
