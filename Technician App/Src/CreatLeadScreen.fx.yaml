@@ -75,7 +75,7 @@ CreatLeadScreen As screen:
                 X: =0.00
                 ZIndex: =3
 
-        Container1_5 As groupContainer.manualLayoutContainer:
+        ctnUserHeaderCL As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
@@ -90,7 +90,7 @@ CreatLeadScreen As screen:
             Y: =ctnHeaderDS_5.Y+ctnHeaderDS_5.Height+10
             ZIndex: =2
 
-            Button3_1 As button:
+            btnheaderCL As button:
                 Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
@@ -105,7 +105,7 @@ CreatLeadScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label3_1 As label:
+            lblUserNameCL As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
@@ -121,10 +121,10 @@ CreatLeadScreen As screen:
         ctnMainCL As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height-40
+            Height: =Parent.Height-ctnHeaderDS_5.Height-ctnUserHeaderCL.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderDS_5.Height-ctnUserHeaderCL.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
