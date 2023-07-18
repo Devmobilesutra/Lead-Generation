@@ -274,7 +274,7 @@ LeadScreen As screen:
                     Width: =150
                     ZIndex: =2
 
-        Container18 As groupContainer.horizontalAutoLayoutContainer:
+        ctnhorizontallineleaddetailsglryLdS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =2
@@ -285,7 +285,7 @@ LeadScreen As screen:
             Width: =Parent.Width
             ZIndex: =9
 
-            Icon4 As icon.AddDocument:
+            icnhorizontallineleaddetailsglryLdS As icon.AddDocument:
                 Color: =RGBA(217, 217, 217, 1)
                 Fill: =RGBA(217, 217, 217, 1)
                 Height: =Parent.Height
