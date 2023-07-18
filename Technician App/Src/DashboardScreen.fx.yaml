@@ -1,6 +1,6 @@
 DashboardScreen As screen:
 
-    Container2 As groupContainer.horizontalAutoLayoutContainer:
+    ctnMainDS As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.None
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
@@ -162,6 +162,7 @@ DashboardScreen As screen:
                 ZIndex: =6
 
         Container4 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS_2.Height-Container1_2.Height+10
