@@ -1568,7 +1568,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep3CL",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1708,7 +1708,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep4CL",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1848,7 +1848,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep5CL",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6085,7 +6085,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick2CL",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6305,7 +6305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick3CL",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6525,7 +6525,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick4CL",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
