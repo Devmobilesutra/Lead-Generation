@@ -147,7 +147,7 @@ LeadScreen As screen:
             LayoutMode: =LayoutMode.Auto
             ZIndex: =8
 
-            Container13 As groupContainer.verticalAutoLayoutContainer:
+            ctnleaddetailstabLdS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
