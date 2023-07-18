@@ -347,22 +347,31 @@ ImageUploadScreen As screen:
                     ZIndex: =1
 
                     UploadedImage1 As image:
-                        Height: =400
+                        BorderThickness: =2
+                        Height: =If(Parent.Width<Parent.Height,200,250)
                         Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-                        ImagePosition: =ImagePosition.Fill
-                        Width: =Parent.Width/2
+                        PaddingBottom: =10
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        PaddingTop: =10
+                        Width: =Parent.Width/2.5
                         X: =AddMediaButton1.X
                         Y: =AddMediaButton1.Y
                         ZIndex: =1
 
                     AddMediaButton1 As addMedia:
                         ChangePictureText: ="Tap or click to add a picture"
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(219, 219, 219, 1)
+                        DisplayMode: |-
+                            =//DisplayMode.Edit
+                            If(CountRows(Gallery1.AllItems)<4,DisplayMode.Edit,DisplayMode.Disabled)
                         Height: =60
                         OnChange: |-
                             =If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
                         OnSelect: |-
                             =//If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
-                        Size: =25
+                        Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
                         Width: =Parent.Width
                         X: =40
                         Y: =500
@@ -371,10 +380,13 @@ ImageUploadScreen As screen:
                 "Gallery1 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
-                    Height: =1000
+                    FillPortions: =0
+                    Height: =600
                     Items: |
                         =LeadImagesCollection
                     Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =4
                     TemplateSize: =Min(280, Self.Height - 60)
@@ -383,9 +395,14 @@ ImageUploadScreen As screen:
                     ZIndex: =3
 
                     Image4 As image:
-                        Height: =Parent.TemplateHeight/1.2
+                        BorderThickness: =2
+                        Height: =If(Parent.Width>Parent.Height,Parent.TemplateHeight/1.2,Parent.TemplateHeight/1.4)
                         Image: =ThisItem.Image
                         OnSelect: =Select(Parent)
+                        PaddingBottom: =10
+                        PaddingLeft: =2
+                        PaddingRight: =2
+                        PaddingTop: =10
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
@@ -399,8 +416,8 @@ ImageUploadScreen As screen:
                         Icon: =Icon.Cancel
                         OnSelect: =Remove(LeadImagesCollection,ThisItem);
                         Width: =30
-                        X: =Image4.X+Image4.Width
-                        Y: =30
+                        X: =Image4.Width-Self.Width-10
+                        Y: =Image4.Y+10
                         ZIndex: =2
 
             Container13_6 As groupContainer.verticalAutoLayoutContainer:
@@ -446,7 +463,8 @@ ImageUploadScreen As screen:
                         Set(VarIndicatorUS, true );
                         Set(VarIndicatorSS, true );
                         Set(VarIndicatorES,true);
-                        //Navigate(ImageploadScreen);
+                        Set(VarIndicatorIS, true );
+                        //Navigate(LeadSummaryScreen);
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                     Text: ="Next"
                     Width: =Parent.Width/4

@@ -328,7 +328,7 @@ UnitScreen As screen:
             UnitInfoForm As form:
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =UnitCount_DataCard2_4.Height+UnitDescription_DataCard2_4.Height+20
+                Height: =UnitCount_DataCard2_4.Height+UnitDescription_DataCard2_4.Height+40
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width

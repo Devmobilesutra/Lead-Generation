@@ -325,7 +325,7 @@ EstimateScreen As screen:
                 AcceptsFocus: =false
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours_DataCard1.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+60
+                Height: =EstimatedHours_DataCard1.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width

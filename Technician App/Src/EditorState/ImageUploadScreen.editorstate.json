@@ -10,12 +10,33 @@
         "BorderStyle",
         "FocusedBorderColor",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Fill",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "HoverFill",
         "Font",
@@ -50,7 +71,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "25",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -3901,7 +3929,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "575",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -3910,6 +3938,19 @@
       ],
       "DynamicProperties": [
         {
+          "ControlPropertyState": {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "FillPortions",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "FillPortions",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "FillPortions"
         },
         {
@@ -3922,9 +3963,21 @@
           "PropertyName": "AlignInContainer"
         },
         {
+          "ControlPropertyState": "LayoutMinWidth",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinWidth",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "LayoutMinWidth"
         },
         {
+          "ControlPropertyState": "LayoutMinHeight",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinHeight",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "LayoutMinHeight"
         }
       ],
@@ -4126,7 +4179,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "30",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -6453,12 +6513,47 @@
         "DisplayMode",
         "OnSelect",
         "ZIndex",
-        "BorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderThickness",
-        "PaddingTop",
-        "PaddingRight",
-        "PaddingBottom",
-        "PaddingLeft",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingTop",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingRight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingBottom",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "TabIndex",
         "RadiusTopLeft",
         "RadiusBottomRight",
@@ -9339,7 +9434,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ImagePosition",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ImagePosition",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImageRotation",
         "X",
         "Y",
@@ -9375,12 +9477,47 @@
         "RadiusTopRight",
         "RadiusBottomLeft",
         "RadiusBottomRight",
-        "BorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderThickness",
-        "PaddingTop",
-        "PaddingRight",
-        "PaddingBottom",
-        "PaddingLeft"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingTop",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingRight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingBottom",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {

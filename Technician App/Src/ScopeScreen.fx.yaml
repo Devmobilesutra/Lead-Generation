@@ -333,7 +333,7 @@ ScopeScreen As screen:
             ScopeInfoForm As form:
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =Scope_DataCard1.Height+ScopeOfWorkLID_DataCard1.Height+ManuallyScopeOfWork_DataCard2.Height+30
+                Height: =Scope_DataCard1.Height+ScopeOfWorkLID_DataCard1.Height+ManuallyScopeOfWork_DataCard2.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
