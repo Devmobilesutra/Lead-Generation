@@ -231,7 +231,7 @@ LeadScreen As screen:
                     Width: =150
                     ZIndex: =2
 
-            Container13_1 As groupContainer.verticalAutoLayoutContainer:
+            ctnleadproposaltabLdS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
@@ -244,7 +244,7 @@ LeadScreen As screen:
                 Width: =180
                 ZIndex: =3
 
-                Button2_1 As button:
+                btnleadproposaltabLdS As button:
                     BorderThickness: =0
                     Color: =If(VarLeadProposal= true,Header.Black,Header.Red)
                     Fill: =Header.White
@@ -265,7 +265,7 @@ LeadScreen As screen:
                     Width: =170
                     ZIndex: =1
 
-                Icon3_1 As icon.Add:
+                icnhorizontalleadproposalLdS As icon.Add:
                     Color: =Header.Red
                     Fill: =Header.Red
                     Height: =3
