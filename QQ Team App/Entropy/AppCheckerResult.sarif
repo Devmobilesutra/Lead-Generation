@@ -4030,19 +4030,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container10.Button1.FocusedBorderThickness"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnbackLdS.btnbackLdS.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container10.Button1.FocusedBorderThickness",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnbackLdS.btnbackLdS.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.Container10.Button1"
+                "type": "LeadScreen.ctnmainLdS.ctnbackLdS.btnbackLdS"
               }
             }
           ],

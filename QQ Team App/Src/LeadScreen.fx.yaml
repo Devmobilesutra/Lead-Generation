@@ -16,19 +16,20 @@ LeadScreen As screen:
         Y: =ctnHeaderLeadScreen.Height+ctnHeaderLeadScreen.Y
         ZIndex: =1
 
-        Container10 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+        ctnbackLdS As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
             FillPortions: =0
             Height: =80
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =20
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =20
+            Width: =Parent.Width
             ZIndex: =2
 
-            Button1 As button:
-                AlignInContainer: =AlignInContainer.Center
+            btnbackLdS As button:
                 BorderColor: =//ColorFade(Self.Fill, -15%)
                 BorderThickness: =0
                 Fill: =Header.Red
@@ -45,7 +46,7 @@ LeadScreen As screen:
                 Text: =" Back"
                 ZIndex: =1
 
-        Container24 As groupContainer.horizontalAutoLayoutContainer:
+        ctnmechanicnameLdS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
@@ -55,14 +56,14 @@ LeadScreen As screen:
             PaddingLeft: =20
             ZIndex: =3
 
-            Label16 As label:
+            lblmechanicnameLdS As label:
                 FontWeight: =FontWeight.Semibold
                 Size: =16
                 Text: ="Mechanic Name"
                 Width: =200
                 ZIndex: =1
 
-            Label17 As label:
+            lblmechanicnamevalueLdS As label:
                 Size: =16
                 Text: =Gallery1.Selected.MechanicName
                 Width: =Parent.Width/2
