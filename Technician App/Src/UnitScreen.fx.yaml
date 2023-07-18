@@ -267,7 +267,7 @@ UnitScreen As screen:
                     Y: =22
                     ZIndex: =14
 
-                Label5_31 As label:
+                lblStep1US As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
@@ -280,7 +280,7 @@ UnitScreen As screen:
                     Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =15
 
-                Label5_30 As label:
+                lblStep2US As label:
                     Font: =Font.Arial
                     Height: =30
                     PaddingLeft: =10
@@ -291,7 +291,7 @@ UnitScreen As screen:
                     Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =16
 
-                Label5_32 As label:
+                lblStep3US As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
@@ -302,7 +302,7 @@ UnitScreen As screen:
                     Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =17
 
-                Label5_33 As label:
+                lblStep4US As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
@@ -313,7 +313,7 @@ UnitScreen As screen:
                     Y: =Circle1_30.Y+Circle1_30.Height+20
                     ZIndex: =18
 
-                Label5_34 As label:
+                lblStep5US As label:
                     Font: =Font.Arial
                     Height: =27
                     PaddingLeft: =10
