@@ -6,7 +6,7 @@ LeadScreen As screen:
         Set(VarLeadMessages,false);
         Refresh(LeadInformations);
 
-    Container1_1 As groupContainer.verticalAutoLayoutContainer:
+    ctnmainLdS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =7
@@ -17,6 +17,7 @@ LeadScreen As screen:
         ZIndex: =1
 
         Container10 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =80
             LayoutGap: =20
@@ -45,6 +46,7 @@ LeadScreen As screen:
                 ZIndex: =1
 
         Container24 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
             LayoutMinHeight: =100
@@ -67,7 +69,7 @@ LeadScreen As screen:
                 ZIndex: =2
 
         Container11 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =90
             LayoutDirection: =LayoutDirection.Vertical
@@ -93,6 +95,7 @@ LeadScreen As screen:
                 ZIndex: =2
 
         Container24_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
             LayoutMinHeight: =100
@@ -115,6 +118,7 @@ LeadScreen As screen:
                 ZIndex: =2
 
         Container24_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
             LayoutMinHeight: =100
@@ -137,6 +141,7 @@ LeadScreen As screen:
                 ZIndex: =2
 
         Container24_3 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
             LayoutMinHeight: =100
@@ -159,6 +164,7 @@ LeadScreen As screen:
                 ZIndex: =2
 
         Container12 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =60
             LayoutMinHeight: =100
@@ -291,6 +297,7 @@ LeadScreen As screen:
                     ZIndex: =2
 
         Container18 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =2
             LayoutMinHeight: =100
@@ -309,6 +316,7 @@ LeadScreen As screen:
                 ZIndex: =1
 
         Container14 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height+100
             LayoutMinHeight: =100
@@ -1183,13 +1191,14 @@ LeadScreen As screen:
                             ZIndex: =8
 
         Container27 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =100
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             X: =19
-            Y: =Container1_1.Height+Container1_1.Y
+            Y: =ctnmainLdS.Height+ctnmainLdS.Y
             ZIndex: =11
 
     ctnHeaderLeadScreen As groupContainer.manualLayoutContainer:
