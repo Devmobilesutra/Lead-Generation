@@ -293,7 +293,7 @@ LeadScreen As screen:
                 Width: =Parent.Width-40
                 ZIndex: =1
 
-        Container14 As groupContainer.manualLayoutContainer:
+        ctnglrymainLdS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height+100
@@ -568,7 +568,7 @@ LeadScreen As screen:
                     Y: =TextInput3.Height+TextInput3.Y+40
                     ZIndex: =8
 
-            Container17 As groupContainer.manualLayoutContainer:
+            ctnleaddetailsLdS As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0.16)
                 BorderThickness: =2
                 Fill: =RGBA(249, 249, 249, 1)
