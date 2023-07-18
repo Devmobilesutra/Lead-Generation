@@ -497,7 +497,7 @@ UnitScreen As screen:
                         Y: =lblUnitDescription.Y
                         ZIndex: =4
 
-            Container5_12 As groupContainer.horizontalAutoLayoutContainer:
+            ctnbuttonUS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -516,7 +516,7 @@ UnitScreen As screen:
                 Y: =UnitInfoForm.Y+UnitInfoForm.Height
                 ZIndex: =3
 
-                Button2_13 As button:
+                ctnPreviousUS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Font: =Font.Arial
                     Height: =53
@@ -531,7 +531,7 @@ UnitScreen As screen:
                     Y: =692
                     ZIndex: =1
 
-                Button2_12 As button:
+                ctnNextUS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Font: =Font.Arial
                     Height: =53
@@ -548,8 +548,7 @@ UnitScreen As screen:
                     Y: =692
                     ZIndex: =2
 
-            Container13_1 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnSpaceUS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =40
