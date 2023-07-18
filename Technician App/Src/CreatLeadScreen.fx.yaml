@@ -140,22 +140,6 @@ CreatLeadScreen As screen:
                 Y: =77
                 ZIndex: =1
 
-                Circle1_15 As circle:
-                    Fill: =If(VarIndicator=true,Color.Green,Color.Red)
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/6)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
-                    ZIndex: =1
-
-                Circle1_16 As circle:
-                    Fill: =Color.Red
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =IconLine1CL.X+IconLine1CL.Width
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
-                    ZIndex: =2
-
                 CircleStep3CL As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
