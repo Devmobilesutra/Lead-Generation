@@ -1,6 +1,6 @@
 UnitScreen As screen:
 
-    Container5_4 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainUS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
@@ -13,6 +13,7 @@ UnitScreen As screen:
         ZIndex: =1
 
         ctnHeaderDS_7 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -80,7 +81,7 @@ UnitScreen As screen:
                 ZIndex: =3
 
         Container1_7 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
