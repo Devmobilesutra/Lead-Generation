@@ -127,7 +127,7 @@ UnitScreen As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =3
 
-            Container7_8 As groupContainer.manualLayoutContainer:
+            ctnProgressBarUS As groupContainer.manualLayoutContainer:
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
