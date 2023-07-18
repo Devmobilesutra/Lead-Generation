@@ -115,7 +115,7 @@ LeadScreen As screen:
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-        Container24_3 As groupContainer.horizontalAutoLayoutContainer:
+        ctnqqteamnameLdS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
@@ -125,14 +125,14 @@ LeadScreen As screen:
             PaddingLeft: =20
             ZIndex: =7
 
-            Label16_3 As label:
+            lblqqteamnameLdS As label:
                 FontWeight: =FontWeight.Semibold
                 Size: =16
                 Text: ="QQ Team name"
                 Width: =200
                 ZIndex: =1
 
-            Label17_3 As label:
+            lblqqteamnamevalueLdS As label:
                 Size: =16
                 Text: =If(QQname=true,"Schindler QQ","Not Assigned")
                 Width: =Parent.Width/2
