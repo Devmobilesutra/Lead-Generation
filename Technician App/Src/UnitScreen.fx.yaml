@@ -329,7 +329,7 @@ UnitScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =UnitCount_DataCard2_4.Height+UnitDescription_DataCard2_4.Height+40
+                Height: =UnitCount.Height+UnitDescription.Height+40
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -337,7 +337,7 @@ UnitScreen As screen:
                 Y: =ctnUserHeaderUS.Height+ctnUserHeaderUS.Y+20
                 ZIndex: =2
 
-                UnitCount_DataCard2_4 As typedDataCard.numberEditCard:
+                UnitCount As typedDataCard.numberEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_unitcount"
@@ -349,13 +349,13 @@ UnitScreen As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =Value(DataCardValue11_4.Text)
+                    Update: =Value(IntxtUnitCount.Text)
                     Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey11_4 As label:
+                    lblUnitCount As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -368,7 +368,7 @@ UnitScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue11_4 As text:
+                    IntxtUnitCount As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -387,10 +387,10 @@ UnitScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey11_4.Y + DataCardKey11_4.Height + 5
+                        Y: =lblUnitCount.Y + lblUnitCount.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage11_4 As label:
+                    ErrorMessageUnitCount As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -403,21 +403,21 @@ UnitScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue11_4.Y + DataCardValue11_4.Height
+                        Y: =IntxtUnitCount.Y + IntxtUnitCount.Height
                         ZIndex: =3
 
-                    StarVisible11_4 As label:
+                    StarVisibleUnitCount As label:
                         Align: =Align.Center
-                        Height: =DataCardKey11_4.Height
+                        Height: =lblUnitCount.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey11_4.Y
+                        Y: =lblUnitCount.Y
                         ZIndex: =4
 
-                UnitDescription_DataCard2_4 As typedDataCard.textualEditCard:
+                UnitDescription As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_unitdescription"
@@ -428,13 +428,13 @@ UnitScreen As screen:
                     Height: =214
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                     Required: =false
-                    Update: =DataCardValue12_4.Text
+                    Update: =IntxtUnitDescription.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =1
 
-                    DataCardKey12_4 As label:
+                    lblUnitDescription As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -447,7 +447,7 @@ UnitScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue12_4 As text:
+                    IntxtUnitDescription As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -467,10 +467,10 @@ UnitScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey12_4.Y + DataCardKey12_4.Height + 5
+                        Y: =lblUnitDescription.Y + lblUnitDescription.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage12_4 As label:
+                    ErrorMessageUnitDescription As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -483,18 +483,18 @@ UnitScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue12_4.Y + DataCardValue12_4.Height
+                        Y: =IntxtUnitDescription.Y + IntxtUnitDescription.Height
                         ZIndex: =3
 
-                    StarVisible12_4 As label:
+                    StarVisibleUnitDescription As label:
                         Align: =Align.Center
-                        Height: =DataCardKey12_4.Height
+                        Height: =lblUnitDescription.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey12_4.Y
+                        Y: =lblUnitDescription.Y
                         ZIndex: =4
 
             Container5_12 As groupContainer.horizontalAutoLayoutContainer:
@@ -562,3 +562,4 @@ UnitScreen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 ZIndex: =4
+

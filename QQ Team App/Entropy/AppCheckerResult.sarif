@@ -3964,19 +3964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2"
               }
             }
           ],
@@ -3994,19 +3994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2.TabIndex"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2.TabIndex",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Gallery4_2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container15.Gallery4_2"
               }
             }
           ],
@@ -4024,19 +4024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.TextInput1_2.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.TextInput1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.TextInput1_2.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.TextInput1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.TextInput1_2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container15.TextInput1_2"
               }
             }
           ],
@@ -4054,19 +4054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2"
               }
             }
           ],
@@ -4084,19 +4084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2.TabIndex"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2.TabIndex",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container15.Icon6_2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container15.Icon6_2"
               }
             }
           ],
@@ -4114,19 +4114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput2"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput2"
               }
             }
           ],
@@ -4144,19 +4144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput3.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput3.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.Container16.TextInput3"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container16.TextInput3"
               }
             }
           ],
@@ -4174,19 +4174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4"
               }
             }
           ],
@@ -4204,19 +4204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4.TabIndex"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4.TabIndex",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container19_2.Container21_10.Gallery4"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container19_2.Container21_10.Gallery4"
               }
             }
           ],
@@ -4234,19 +4234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput2_1.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput2_1.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput2_1"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput2_1"
               }
             }
           ],
@@ -4264,19 +4264,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput3_1.AccessibleLabel"
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput3_1.AccessibleLabel",
+                  "fullyQualifiedName": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadScreen",
-                "type": "LeadScreen.ctnmainLdS.ctnglrymainLdS.ctnleaddetailsLdS.Container20.Container16_1.TextInput3_1"
+                "type": "LeadScreen.ctnmainLdS.Container14.Container17.Container20.Container16_1.TextInput3_1"
               }
             }
           ],
