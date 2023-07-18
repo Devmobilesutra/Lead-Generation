@@ -69,7 +69,7 @@ LeadScreen As screen:
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-        Container24_1 As groupContainer.horizontalAutoLayoutContainer:
+        ctncontractnumberLdS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
@@ -79,20 +79,20 @@ LeadScreen As screen:
             PaddingLeft: =20
             ZIndex: =5
 
-            Label16_1 As label:
+            lblcontractnumberLdS As label:
                 FontWeight: =FontWeight.Semibold
                 Size: =16
                 Text: ="Contract No."
                 Width: =200
                 ZIndex: =1
 
-            Label17_1 As label:
+            lblcontractnumbervalueLdS As label:
                 Size: =16
                 Text: =Gallery1.Selected.'ContractNumber '
                 Width: =Parent.Width/2
                 ZIndex: =2
 
-        Container24_2 As groupContainer.horizontalAutoLayoutContainer:
+        ctnestimatenumberLdS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =40
@@ -102,16 +102,16 @@ LeadScreen As screen:
             PaddingLeft: =20
             ZIndex: =6
 
-            Label16_2 As label:
+            lblestimatenumberLdS As label:
                 FontWeight: =FontWeight.Semibold
                 Size: =16
                 Text: ="Estimate No."
                 Width: =200
                 ZIndex: =1
 
-            Label17_2 As label:
+            lblestimatenumbervalueLdS As label:
                 Size: =16
-                Text: ="NA"//Gallery1.Selected.MechanicName
+                Text: ="NA"
                 Width: =Parent.Width/2
                 ZIndex: =2
 
