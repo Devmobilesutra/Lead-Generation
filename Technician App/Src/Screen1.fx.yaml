@@ -433,7 +433,7 @@ Screen1 As screen:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: |-
                                 =//Parent.Default
-                                DataCardValue3.Text
+                                IntxtContractNumber.Text
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
@@ -484,12 +484,12 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_buildingname"
-                        Default: =ThisItem.BuildingName
+                        Default: =ThisItem.'BuildingName '
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_buildingname")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_buildingname")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_buildingname")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                         Required: =false
                         Update: =DataCardValue6.Text
                         Width: =620
@@ -512,7 +512,7 @@ Screen1 As screen:
 
                         DataCardValue6 As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =DataCardValue2.Text
+                            Default: =IntxtBuildingName.Text
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
@@ -564,12 +564,12 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_pincode"
-                        Default: =ThisItem.'ZipCode (crd59_pincode)'
+                        Default: =ThisItem.'ZipCode '
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_pincode")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_zipcode")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_pincode")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_zipcode")
                         Required: =false
                         Update: =DataCardValue1.Text
                         Width: =620
@@ -591,7 +591,7 @@ Screen1 As screen:
 
                         DataCardValue1 As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =DataCardValue9.Text
+                            Default: =IntxtPincode.Text
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Height: =50
@@ -643,10 +643,10 @@ Screen1 As screen:
                         DataField: ="crd59_address"
                         Default: =ThisItem.Address
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_address")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_address")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_address")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
                         Required: =false
                         Update: =DataCardValue32.Text
                         Width: =620
@@ -669,7 +669,7 @@ Screen1 As screen:
 
                         DataCardValue32 As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =DataCardValue4.Text
+                            Default: =IntxtAddress.Text
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
@@ -722,7 +722,7 @@ Screen1 As screen:
                         DataField: ="crd59_unitcount"
                         Default: =ThisItem.UnitCount
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_unitcount")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_numberofunits")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
