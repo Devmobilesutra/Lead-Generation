@@ -1288,7 +1288,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep1CL",
-      "ParentIndex": 7,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1428,7 +1428,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep2CL",
-      "ParentIndex": 8,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1568,7 +1568,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep3CL",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1708,7 +1708,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep4CL",
-      "ParentIndex": 10,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1848,7 +1848,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep5CL",
-      "ParentIndex": 11,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2896,7 +2896,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "Contract Number": {
+    "ContractNumber": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2987,28 +2987,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Contract Number",
+      "Name": "ContractNumber",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Update",
+          "PropertyName": "DataField",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3018,42 +3003,27 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "DataField",
+          "PropertyName": "Update",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DisplayName",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3063,7 +3033,37 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -4278,17 +4278,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4439,11 +4444,6 @@
         {
           "Category": "Design",
           "PropertyName": "Overflow",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5121,7 +5121,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine1CL",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5301,7 +5301,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine2CL",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5481,7 +5481,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine3CL",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5661,7 +5661,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine4CL",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5870,7 +5870,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick1CL",
-      "ParentIndex": 0,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6085,7 +6085,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick2CL",
-      "ParentIndex": 12,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6305,7 +6305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick3CL",
-      "ParentIndex": 13,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6525,7 +6525,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick4CL",
-      "ParentIndex": 14,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6745,7 +6745,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icontick5CL",
-      "ParentIndex": 15,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8044,7 +8044,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "MaxLength",
+          "PropertyName": "Default",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8054,12 +8054,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Default",
+          "PropertyName": "DelayOutput",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "DelayOutput",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8104,7 +8109,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8234,12 +8239,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -10104,7 +10104,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
@@ -10194,7 +10194,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -10647,7 +10647,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSteo4CL",
-      "ParentIndex": 18,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10965,7 +10965,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStep1CL",
-      "ParentIndex": 1,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11283,7 +11283,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStep2CL",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11601,7 +11601,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStep3CL",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11919,7 +11919,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStep5CL",
-      "ParentIndex": 2,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -320,7 +320,7 @@ CreatLeadScreen As screen:
                     Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_24.X+Icon4_24.Width
+                    X: =IconLine1CL.X+IconLine1CL.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =21
 
@@ -328,7 +328,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =BuildingName.Height+Address.Height+'Contract Number'.Height+PinCode.Height+40
+                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+PinCode.Height+40
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -336,7 +336,7 @@ CreatLeadScreen As screen:
                 Y: =143
                 ZIndex: =2
 
-                "'Contract Number' As typedDataCard.textualEditCard":
+                ContractNumber As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_contractnumber"
                     Default: =ThisItem.'ContractNumber '

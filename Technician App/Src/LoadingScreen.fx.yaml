@@ -1,6 +1,6 @@
 LoadingScreen As screen:
 
-    Image3 As image:
+    FlashImageLS As image:
         Height: =Parent.Height
         Image: ='3x'
         ImagePosition: =ImagePosition.Center
@@ -27,7 +27,7 @@ LoadingScreen As screen:
         Y: =80
         ZIndex: =2
 
-    Label1_9 As label:
+    VersionLS As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         PaddingRight: =5.34

@@ -12743,19 +12743,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.'Contract Number'.IntxtContractNumber.AccessibleLabel"
+                  "fullyQualifiedName": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.ContractNumber.IntxtContractNumber.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.'Contract Number'.IntxtContractNumber.AccessibleLabel",
+                  "fullyQualifiedName": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.ContractNumber.IntxtContractNumber.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CreatLeadScreen",
-                "type": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.'Contract Number'.IntxtContractNumber"
+                "type": "CreatLeadScreen.Container5_2.Container9.BuildingInfoForm.ContractNumber.IntxtContractNumber"
               }
             }
           ],
