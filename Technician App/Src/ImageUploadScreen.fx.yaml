@@ -361,19 +361,20 @@ ImageUploadScreen As screen:
                         ZIndex: =1
 
                     AddMediaButton1 As addMedia:
-                        BorderThickness: =2
-                        ChangePictureText: ="Tap or click to add a picture"
+                        ChangePictureText: =If(CountRows(Gallery1.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
+                        Color: =RGBA(255, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(26, 26, 26, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        DisplayMode: =If(CountRows(Gallery1.AllItems)<4,DisplayMode.Edit,DisplayMode.Disabled)
-                        Fill: =RGBA(255, 0, 0, 1)
+                        DisabledColor: =RGBA(77, 77, 77, 1)
+                        DisabledFill: =RGBA(202, 202, 202, 1)
                         Height: =60
                         OnChange: |-
                             =If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
                         OnSelect: |-
                             =//If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
                         Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                        Text: |-
+                            =
+                            If(CountRows(Gallery1.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
                         Width: =Parent.Width
                         X: =40
                         Y: =500

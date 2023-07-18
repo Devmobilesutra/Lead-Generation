@@ -139,6 +139,7 @@
     "ScopeScreen",
     "ChatScreen",
     "EstimateScreen",
-    "ImageUploadScreen"
+    "ImageUploadScreen",
+    "Screen1"
   ]
 }
