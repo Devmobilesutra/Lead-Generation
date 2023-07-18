@@ -160,7 +160,7 @@ LeadScreen As screen:
                 Width: =180
                 ZIndex: =1
 
-                Button2 As button:
+                btnleaddetailstabLdS As button:
                     BorderThickness: =0
                     Color: =If(VarLeadDetails= true,Header.Black,Header.Red)
                     Fill: =Header.White
@@ -180,7 +180,7 @@ LeadScreen As screen:
                     Width: =170
                     ZIndex: =1
 
-                Icon3 As icon.Add:
+                icnhorizontalleaddetailsLdS As icon.Add:
                     Color: =Header.Red
                     Fill: =Header.Red
                     Height: =3
