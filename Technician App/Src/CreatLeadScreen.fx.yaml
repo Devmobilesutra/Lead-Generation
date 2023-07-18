@@ -118,7 +118,7 @@ CreatLeadScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        Container9 As groupContainer.verticalAutoLayoutContainer:
+        ctnMainCL As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS_5.Height-Container1_5.Height-40
@@ -131,6 +131,7 @@ CreatLeadScreen As screen:
             ZIndex: =7
 
             ctnProgressBarCreatLead As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -667,6 +668,7 @@ CreatLeadScreen As screen:
                 ZIndex: =3
 
             ctnForSpaceCL As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
