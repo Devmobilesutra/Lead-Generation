@@ -10155,19 +10155,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material.IntxtMaterial.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material.IntxtMaterial.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EstimateScreen",
-                "type": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19"
+                "type": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material.IntxtMaterial"
               }
             }
           ],

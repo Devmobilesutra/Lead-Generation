@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -414,7 +414,7 @@ EstimateScreen As screen:
                         Y: =lblEstimatedHours.Y
                         ZIndex: =4
 
-                Material_DataCard1 As typedDataCard.textualEditCard:
+                Material As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_material"
@@ -425,13 +425,13 @@ EstimateScreen As screen:
                     Height: =50
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_notes")
                     Required: =false
-                    Update: =DataCardValue19.Text
+                    Update: =IntxtMaterial.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =1
 
-                    DataCardKey20 As label:
+                    lblMaterial As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -443,7 +443,7 @@ EstimateScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue19 As text:
+                    IntxtMaterial As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -462,10 +462,10 @@ EstimateScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                        Y: =lblMaterial.Y + lblMaterial.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage20 As label:
+                    ErrorMessageMaterial As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -478,21 +478,21 @@ EstimateScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue19.Y + DataCardValue19.Height
+                        Y: =IntxtMaterial.Y + IntxtMaterial.Height
                         ZIndex: =3
 
-                    StarVisible20 As label:
+                    StarVisibleMaterial As label:
                         Align: =Align.Center
-                        Height: =DataCardKey20.Height
+                        Height: =lblMaterial.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey20.Y
+                        Y: =lblMaterial.Y
                         ZIndex: =4
 
-                "'Unit Down_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                UnitDown As typedDataCard.comboBoxOptionSetSingleEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_checklist"
@@ -509,7 +509,7 @@ EstimateScreen As screen:
                     Y: =2
                     ZIndex: =1
 
-                    ErrorMessage25 As label:
+                    ErrorMessageUnitDown As label:
                         AutoHeight: =true
                         Height: =0
                         Live: =Live.Assertive
@@ -522,10 +522,10 @@ EstimateScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =Checkbox4.Y + Checkbox4.Height
+                        Y: =CboxUnitDown.Y + CboxUnitDown.Height
                         ZIndex: =3
 
-                    StarVisible25 As label:
+                    StarVisibleUnitDown As label:
                         Align: =Align.Center
                         Height: =0
                         Size: =21
@@ -533,10 +533,10 @@ EstimateScreen As screen:
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =Checkbox4.Y
+                        Y: =CboxUnitDown.Y
                         ZIndex: =4
 
-                    Checkbox4 As checkbox:
+                    CboxUnitDown As checkbox:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                         CheckboxSize: =50
