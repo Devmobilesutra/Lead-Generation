@@ -1432,7 +1432,7 @@ LeadSummaryScreen As screen:
                         Checkbox4_7 As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
-                            Default: =Checkbox4_4.Value
+                            Default: =CboxCommunicatedtoCustomer.Value
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)

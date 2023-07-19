@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+'Communicated to Customer_DataCard1'.Height+80
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+CommunicatedtoCustomer.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -666,7 +666,7 @@ EstimateScreen As screen:
                         X: =30
                         ZIndex: =5
 
-                "'Communicated to Customer_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                CommunicatedtoCustomer As typedDataCard.comboBoxOptionSetSingleEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_communicatedtocustomer"
                     Default: =ThisItem.CommunicatedToCustomer
@@ -681,7 +681,7 @@ EstimateScreen As screen:
                     Y: =5
                     ZIndex: =1
 
-                    ErrorMessage8 As label:
+                    ErrorMessageCommunicatedtoCustomer As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -697,7 +697,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =3
 
-                    StarVisible8 As label:
+                    StarVisibleCommunicatedtoCustomer As label:
                         Align: =Align.Center
                         Height: =
                         Size: =21
@@ -708,7 +708,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =4
 
-                    Checkbox4_4 As checkbox:
+                    CboxCommunicatedtoCustomer As checkbox:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                         CheckboxSize: =50
