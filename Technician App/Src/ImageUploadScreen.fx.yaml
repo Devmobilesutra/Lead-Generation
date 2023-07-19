@@ -13,7 +13,7 @@ ImageUploadScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        ctnHeaderDS_11 As groupContainer.horizontalAutoLayoutContainer:
+        ctnHeaderIS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -31,7 +31,7 @@ ImageUploadScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            Icon9_7 As icon.BackArrow:
+            IconBackIS As icon.BackArrow:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
@@ -46,7 +46,7 @@ ImageUploadScreen As screen:
                 Y: =11
                 ZIndex: =1
 
-            Label1_12 As label:
+            lblUserIS As label:
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -59,11 +59,11 @@ ImageUploadScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_11.Width-Icon9_7.Width
+                Width: =Parent.Width-imgSchindlerLogoIS.Width-IconBackIS.Width
                 X: =96.12
                 ZIndex: =2
 
-            imgSchindlerLogo_11 As image:
+            imgSchindlerLogoIS As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -87,7 +87,7 @@ ImageUploadScreen As screen:
             PaddingTop: =0.00
             Width: =Parent.Width-40
             X: =21.36
-            Y: =ctnHeaderDS_11.Y+ctnHeaderDS_11.Height+10
+            Y: =ctnHeaderIS.Y+ctnHeaderIS.Height+10
             ZIndex: =2
 
             Button3_8 As button:
@@ -122,10 +122,10 @@ ImageUploadScreen As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_11.Height-Container1_11.Height-40
+            Height: =Parent.Height-ctnHeaderIS.Height-Container1_11.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderDS_11.Height-Container1_11.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderIS.Height-Container1_11.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll

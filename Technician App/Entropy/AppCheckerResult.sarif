@@ -10185,19 +10185,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7.AccessibleLabel"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7.AccessibleLabel",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7"
+                "type": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS"
               }
             }
           ],
@@ -10215,19 +10215,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7.TabIndex"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7.TabIndex",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.ctnHeaderDS_11.Icon9_7"
+                "type": "ImageUploadScreen.ctnMainIS.ctnHeaderIS.IconBackIS"
               }
             }
           ],
