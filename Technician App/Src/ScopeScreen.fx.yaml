@@ -587,7 +587,7 @@ ScopeScreen As screen:
                         Y: =lblManuallyScopeofwork.Y
                         ZIndex: =4
 
-            Container13_2 As groupContainer.verticalAutoLayoutContainer:
+            ctnButtonSS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -604,7 +604,7 @@ ScopeScreen As screen:
                 RadiusTopRight: =0
                 ZIndex: =3
 
-                Button2_4 As button:
+                btnPreviousSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -620,7 +620,7 @@ ScopeScreen As screen:
                     Y: =790
                     ZIndex: =1
 
-                Button2_3 As button:
+                btnNextSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -637,7 +637,7 @@ ScopeScreen As screen:
                     Y: =790
                     ZIndex: =2
 
-            Container13_3 As groupContainer.verticalAutoLayoutContainer:
+            ctnBottomSpaceSS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
