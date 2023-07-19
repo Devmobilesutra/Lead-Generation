@@ -118,7 +118,7 @@ ScopeScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        Container9_2 As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleSS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -131,7 +131,8 @@ ScopeScreen As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
-            Container7_6 As groupContainer.manualLayoutContainer:
+            ctnProgressbarSS As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -587,6 +588,7 @@ ScopeScreen As screen:
                         ZIndex: =4
 
             Container13_2 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
@@ -636,6 +638,7 @@ ScopeScreen As screen:
                     ZIndex: =2
 
             Container13_3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =20
