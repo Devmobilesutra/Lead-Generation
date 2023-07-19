@@ -11154,19 +11154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope_DataCard1.DataCardValue13.AccessibleLabel"
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope.intxtScope.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope_DataCard1.DataCardValue13.AccessibleLabel",
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope.intxtScope.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScopeScreen",
-                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope_DataCard1.DataCardValue13"
+                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.Scope.intxtScope"
               }
             }
           ],
@@ -11184,19 +11184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWorkLID_DataCard1.DataCardValue14.AccessibleLabel"
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWork.IntxtScopeofwork.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWorkLID_DataCard1.DataCardValue14.AccessibleLabel",
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWork.IntxtScopeofwork.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScopeScreen",
-                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWorkLID_DataCard1.DataCardValue14"
+                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ScopeOfWork.IntxtScopeofwork"
               }
             }
           ],
@@ -11214,19 +11214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork_DataCard2.DataCardValue15.AccessibleLabel"
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork.IntxtManuallyScopeofwork.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork_DataCard2.DataCardValue15.AccessibleLabel",
+                  "fullyQualifiedName": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork.IntxtManuallyScopeofwork.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScopeScreen",
-                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork_DataCard2.DataCardValue15"
+                "type": "ScopeScreen.ctnMainSS.ctnMiddleSS.ScopeInfoForm.ManuallyScopeOfWork.IntxtManuallyScopeofwork"
               }
             }
           ],

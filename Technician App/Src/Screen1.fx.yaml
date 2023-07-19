@@ -878,7 +878,7 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_Scope"
-                        Default: =DataCardValue13.Selected
+                        Default: =intxtScope.Selected
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_PrimaryScopeofWorkLID")
                         Fill: =RGBA(0, 0, 0, 0)
@@ -986,8 +986,8 @@ Screen1 As screen:
                         DataCardValue28 As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             ChevronBackground: =RGBA(0, 0, 0, 1)
-                            Default: =DataCardValue14.Selected
-                            DefaultSelectedItems: =DataCardValue14.SelectedItems
+                            Default: =IntxtScopeofwork.Selected
+                            DefaultSelectedItems: =IntxtScopeofwork.SelectedItems
                             DisplayFields: =["shlrf_id"]
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
@@ -1068,7 +1068,7 @@ Screen1 As screen:
 
                         DataCardValue26 As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =DataCardValue15.Text
+                            Default: =IntxtManuallyScopeofwork.Text
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial

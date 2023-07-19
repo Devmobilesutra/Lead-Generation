@@ -335,7 +335,7 @@ ScopeScreen As screen:
             ScopeInfoForm As form:
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =Scope_DataCard1.Height+ScopeOfWorkLID_DataCard1.Height+ManuallyScopeOfWork_DataCard2.Height+80
+                Height: =Scope.Height+ScopeOfWork.Height+ManuallyScopeOfWork.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -343,7 +343,7 @@ ScopeScreen As screen:
                 Y: =252
                 ZIndex: =2
 
-                Scope_DataCard1 As typedDataCard.comboBoxEditCard:
+                Scope As typedDataCard.comboBoxEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_Scope"
@@ -353,13 +353,13 @@ ScopeScreen As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =DataCardValue13.Selected
+                    Update: =intxtScope.Selected
                     Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey13 As label:
+                    lblScope As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -374,7 +374,7 @@ ScopeScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue13 As combobox:
+                    intxtScope As combobox:
                         BorderColor: =If(IsBlank(Parent.Error),Color.Black, Color.Red)
                         ChevronBackground: =RGBA(0, 0, 0, 1)
                         ChevronHoverBackground: =Color.Black
@@ -399,10 +399,10 @@ ScopeScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                        Y: =lblScope.Y + lblScope.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage13 As label:
+                    ErrorMessageScope As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -415,21 +415,21 @@ ScopeScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue13.Y + DataCardValue13.Height
+                        Y: =intxtScope.Y + intxtScope.Height
                         ZIndex: =3
 
-                    StarVisible13 As label:
+                    StarVisibleScope As label:
                         Align: =Align.Center
-                        Height: =DataCardKey13.Height
+                        Height: =lblScope.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey13.Y
+                        Y: =lblScope.Y
                         ZIndex: =4
 
-                ScopeOfWorkLID_DataCard1 As typedDataCard.comboBoxEditCard:
+                ScopeOfWork As typedDataCard.comboBoxEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_ScopeOfWorkLID"
                     Default: =ThisItem.SecondaryScopeofWorkLID
@@ -438,13 +438,13 @@ ScopeScreen As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =DataCardValue14.Selected
+                    Update: =IntxtScopeofwork.Selected
                     Width: =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =1
 
-                    DataCardKey14 As label:
+                    lblScopeofwork As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -457,7 +457,7 @@ ScopeScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue14 As combobox:
+                    IntxtScopeofwork As combobox:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         ChevronBackground: =RGBA(0, 0, 0, 1)
                         ChevronHoverBackground: =Color.Black
@@ -469,7 +469,7 @@ ScopeScreen As screen:
                         Height: =50
                         HoverFill: =RGBA(0, 0, 0, 0)
                         IsSearchable: =false
-                        Items: =Filter(SecondaryScopeofWorks,PrimaryScopeofWorkLID.'PrimaryScopeofWorkName '=DataCardValue13.Selected.'PrimaryScopeofWorkName ')
+                        Items: =Filter(SecondaryScopeofWorks,PrimaryScopeofWorkLID.'PrimaryScopeofWorkName '=intxtScope.Selected.'PrimaryScopeofWorkName ')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         SearchFields: =["shlrf_id"]
                         SearchItems: =[]
@@ -479,10 +479,10 @@ ScopeScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                        Y: =lblScopeofwork.Y + lblScopeofwork.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage14 As label:
+                    ErrorMessageScopeofwork As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -495,21 +495,21 @@ ScopeScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue14.Y + DataCardValue14.Height
+                        Y: =IntxtScopeofwork.Y + IntxtScopeofwork.Height
                         ZIndex: =3
 
-                    StarVisible14 As label:
+                    StarVisibleScopeofwork As label:
                         Align: =Align.Center
-                        Height: =DataCardKey14.Height
+                        Height: =lblScopeofwork.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey14.Y
+                        Y: =lblScopeofwork.Y
                         ZIndex: =4
 
-                ManuallyScopeOfWork_DataCard2 As typedDataCard.textualEditCard:
+                ManuallyScopeOfWork As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_manuallyscopeofwork"
@@ -520,13 +520,13 @@ ScopeScreen As screen:
                     Height: =50
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
                     Required: =false
-                    Update: =DataCardValue15.Text
+                    Update: =IntxtManuallyScopeofwork.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =2
                     ZIndex: =1
 
-                    DataCardKey15 As label:
+                    lblManuallyScopeofwork As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -538,7 +538,7 @@ ScopeScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue15 As text:
+                    IntxtManuallyScopeofwork As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -557,10 +557,10 @@ ScopeScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                        Y: =lblManuallyScopeofwork.Y + lblManuallyScopeofwork.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage15 As label:
+                    ErrorMessageManuallyScopeofwork As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -573,18 +573,18 @@ ScopeScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue15.Y + DataCardValue15.Height
+                        Y: =IntxtManuallyScopeofwork.Y + IntxtManuallyScopeofwork.Height
                         ZIndex: =3
 
-                    StarVisible15 As label:
+                    StarVisibleManuallyScopeofwork As label:
                         Align: =Align.Center
-                        Height: =DataCardKey15.Height
+                        Height: =lblManuallyScopeofwork.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey15.Y
+                        Y: =lblManuallyScopeofwork.Y
                         ZIndex: =4
 
             Container13_2 As groupContainer.verticalAutoLayoutContainer:
