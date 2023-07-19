@@ -1377,7 +1377,7 @@ LeadSummaryScreen As screen:
                         Checkbox4_6 As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
-                            Default: =Checkbox4_3.Value
+                            Default: =CboxTravelRequired.Value
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)

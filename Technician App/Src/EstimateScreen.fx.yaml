@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+'Communicated to Customer_DataCard1'.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -609,7 +609,7 @@ EstimateScreen As screen:
                         X: =30
                         ZIndex: =5
 
-                "'Travel Required_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                TravelRequired As typedDataCard.comboBoxOptionSetSingleEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_travelrequired"
                     Default: =ThisItem.TravelRequired
@@ -624,7 +624,7 @@ EstimateScreen As screen:
                     Y: =4
                     ZIndex: =1
 
-                    ErrorMessage7 As label:
+                    ErrorMessageTravelRequired As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -640,7 +640,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =3
 
-                    StarVisible7 As label:
+                    StarVisibleTravelRequired As label:
                         Align: =Align.Center
                         Height: =
                         Size: =21
@@ -651,7 +651,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =4
 
-                    Checkbox4_3 As checkbox:
+                    CboxTravelRequired As checkbox:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                         CheckboxSize: =50
