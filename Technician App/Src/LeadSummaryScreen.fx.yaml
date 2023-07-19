@@ -361,7 +361,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_contractnumber")
                         Required: =false
                         Update: =DataCardValue25.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -373,7 +373,7 @@ LeadSummaryScreen As screen:
                             Height: =48
                             Size: =18
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width-60
                             Wrap: =false
                             X: =30
                             Y: =10
@@ -398,7 +398,7 @@ LeadSummaryScreen As screen:
                             RadiusTopRight: =0
                             Size: =18
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width-60
                             X: =30
                             Y: =DataCardKey26.Y + DataCardKey26.Height + 5
                             ZIndex: =2
@@ -414,7 +414,7 @@ LeadSummaryScreen As screen:
                             Size: =24
                             Text: =Parent.Error
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width-60
                             X: =30
                             Y: =DataCardValue25.Y + DataCardValue25.Height
                             ZIndex: =3
@@ -442,7 +442,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                         Required: =false
                         Update: =DataCardValue6.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -522,7 +522,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_zipcode")
                         Required: =false
                         Update: =DataCardValue1.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =2
                         ZIndex: =1
@@ -599,7 +599,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
                         Required: =false
                         Update: =DataCardValue32.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -677,7 +677,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue29.Text)
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -756,7 +756,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                         Required: =false
                         Update: =DataCardValue30.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =5
                         ZIndex: =1
