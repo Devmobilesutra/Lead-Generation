@@ -10245,19 +10245,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.AddMediaButton1.AccessibleLabel"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.AddMediaButton1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.AddMediaButton1.AccessibleLabel",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.AddMediaButton1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.AddMediaButton1"
+                "type": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.AddMediaButton1"
               }
             }
           ],
@@ -10275,19 +10275,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1"
+                "type": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1"
               }
             }
           ],
@@ -10305,19 +10305,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.TabIndex"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.TabIndex",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1"
+                "type": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1"
               }
             }
           ],
@@ -10335,19 +10335,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3"
+                "type": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3"
               }
             }
           ],
@@ -10365,19 +10365,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3.TabIndex"
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3.TabIndex",
+                  "fullyQualifiedName": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ImageUploadScreen",
-                "type": "ImageUploadScreen.ctnMainIS.Container9_4.Container13_7.Gallery1.Icon3"
+                "type": "ImageUploadScreen.ctnMainIS.ctnMiddleIS.Container13_7.Gallery1.Icon3"
               }
             }
           ],

@@ -75,7 +75,7 @@ ImageUploadScreen As screen:
                 X: =0.00
                 ZIndex: =3
 
-        Container1_11 As groupContainer.manualLayoutContainer:
+        ctnUsernameIS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
@@ -90,7 +90,7 @@ ImageUploadScreen As screen:
             Y: =ctnHeaderIS.Y+ctnHeaderIS.Height+10
             ZIndex: =2
 
-            Button3_8 As button:
+            btnLeadIS As button:
                 Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
@@ -105,7 +105,7 @@ ImageUploadScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label3_8 As label:
+            lblUserNameIS As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
@@ -118,20 +118,21 @@ ImageUploadScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        Container9_4 As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleIS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderIS.Height-Container1_11.Height-40
+            Height: =Parent.Height-ctnHeaderIS.Height-ctnUsernameIS.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderIS.Height-Container1_11.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderIS.Height-ctnUsernameIS.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
             Container7_9 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -323,6 +324,7 @@ ImageUploadScreen As screen:
                     ZIndex: =19
 
             Container13_7 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =1000
@@ -425,6 +427,7 @@ ImageUploadScreen As screen:
                         ZIndex: =2
 
             Container13_6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
