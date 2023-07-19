@@ -386,7 +386,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep1US",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -563,7 +563,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep2US",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -740,7 +740,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep3US",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -917,7 +917,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep4US",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1094,7 +1094,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep5US",
-      "ParentIndex": 4,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4514,7 +4514,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine1US",
-      "ParentIndex": 10,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4775,7 +4775,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine2US",
-      "ParentIndex": 11,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5036,7 +5036,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine3US",
-      "ParentIndex": 12,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5297,7 +5297,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconLine4US",
-      "ParentIndex": 13,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5558,7 +5558,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick1US",
-      "ParentIndex": 5,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5819,7 +5819,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick2US",
-      "ParentIndex": 6,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6080,7 +6080,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick3US",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6341,7 +6341,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick4US",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6602,7 +6602,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick5US",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

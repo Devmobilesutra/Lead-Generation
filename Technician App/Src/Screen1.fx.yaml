@@ -720,7 +720,7 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_unitcount"
-                        Default: =ThisItem.UnitCount
+                        Default: =ThisItem.NumberofUnits
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_numberofunits")
                         Fill: =RGBA(0, 0, 0, 0)
@@ -800,10 +800,10 @@ Screen1 As screen:
                         DataField: ="crd59_unitdescription"
                         Default: =ThisItem.UnitDescription
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_unitdescription")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_unitdescription")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_unitdescription")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                         Required: =false
                         Update: =DataCardValue30.Text
                         Width: =620
@@ -879,7 +879,7 @@ Screen1 As screen:
                         DataField: ="crd59_Scope"
                         Default: =DataCardValue13.Selected
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_Scope")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_PrimaryScopeofWorkLID")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -957,9 +957,9 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_ScopeOfWorkLID"
-                        Default: =ThisItem.ScopeOfWorkLID
+                        Default: =ThisItem.PrimaryScopeofWorkLID
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_ScopeOfWorkLID")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_SecondaryScopeofWorkLID")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -987,15 +987,17 @@ Screen1 As screen:
                             ChevronBackground: =RGBA(0, 0, 0, 1)
                             Default: =DataCardValue14.Selected
                             DefaultSelectedItems: =DataCardValue14.SelectedItems
-                            DisplayFields: =["crd59_name"]
+                            DisplayFields: =["shlrf_id"]
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
                             Height: =50
                             HoverFill: =RGBA(0, 0, 0, 0)
                             IsSearchable: =false
-                            Items: =Choices([@LeadInformations].ScopeOfWorkLID)
+                            Items: |-
+                                =//Choices([@LeadInformations].ScopeOfWorkLID)
+                                SecondaryScopeofWorks
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            SearchFields: =["crd59_name"]
+                            SearchFields: =["shlrf_id"]
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
@@ -1037,12 +1039,12 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_manuallyscopeofwork"
-                        Default: =ThisItem.ManuallyScopeOfWork
+                        Default: =ThisItem.CustomScopeofWork
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_manuallyscopeofwork")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_customscopeofwork")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_manuallyscopeofwork")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
                         Required: =false
                         Update: =DataCardValue26.Text
                         Width: =620
@@ -1116,12 +1118,12 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_estimatedhours"
-                        Default: =ThisItem.EstimatedHours
+                        Default: =ThisItem.'EstimatedHours '
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_estimatedhours")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_estimatedhours")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_estimatedhours")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_estimatedhours")
                         Required: =false
                         Update: =DataCardValue18_1.Text
                         Width: =620
@@ -1195,12 +1197,12 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_material"
-                        Default: =ThisItem.Material
+                        Default: =ThisItem.Notes
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_material")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_notes")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_material")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_notes")
                         Required: =false
                         Update: =DataCardValue19_1.Text
                         Width: =620
@@ -1328,9 +1330,9 @@ Screen1 As screen:
                     "'Additional expenses required_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_additionalexpensesrequired"
-                        Default: =ThisItem.'Additional expenses required'
+                        Default: =ThisItem.AdditionalExpensesRequired
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_additionalexpensesrequired")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_additionalexpensesrequired")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =61
                         Required: =false
@@ -1383,9 +1385,9 @@ Screen1 As screen:
                     "'Travel Required_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_travelrequired"
-                        Default: =ThisItem.'Travel Required'
+                        Default: =ThisItem.TravelRequired
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_travelrequired")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_travelrequired")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1438,9 +1440,9 @@ Screen1 As screen:
                     "'Communicated to Customer_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_communicatedtocustomer"
-                        Default: =ThisItem.'Communicated to Customer'
+                        Default: =ThisItem.CommunicatedToCustomer
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_communicatedtocustomer")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_communicatedtocustomer")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1494,9 +1496,9 @@ Screen1 As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_lead_image"
-                        Default: =ThisItem.Lead_Image
+                        Default: =//ThisItem.LeadImages
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_lead_image")
+                        DisplayName: =//DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_lead_image")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =361
                         Required: =false
@@ -1523,7 +1525,7 @@ Screen1 As screen:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
                             Height: =AddPicture2.Height
-                            Image: =If(IsBlank(AddPicture2.Media),AddPicture1.Media, AddPicture2.Media)
+                            Image: =If(IsBlank(AddPicture2.Media),AddPicture2.Media, AddPicture2.Media)
                             Tooltip: =Parent.DisplayName
                             Width: =AddPicture2.Width
                             X: =AddPicture2.X
@@ -1569,10 +1571,10 @@ Screen1 As screen:
                         DataField: ="crd59_leadstatus"
                         Default: =ThisItem.LeadStatus
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_leadstatus")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_leadstatus")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_leadstatus")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_leadstatus")
                         Required: =false
                         Update: =DataCardValue34.Text
                         Visible: =false
@@ -1643,10 +1645,10 @@ Screen1 As screen:
                         DataField: ="crd59_email"
                         Default: =ThisItem.Email
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_email")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_email")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_email")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_email")
                         Required: =false
                         Update: =DataCardValue17.Text
                         Visible: =false
@@ -1717,10 +1719,10 @@ Screen1 As screen:
                         DataField: ="crd59_mechanicname"
                         Default: =ThisItem.MechanicName
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_mechanicname")
+                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_mechanicname")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "crd59_mechanicname")
+                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_mechanicname")
                         Required: =false
                         Update: =DataCardValue5.Text
                         Visible: =false
