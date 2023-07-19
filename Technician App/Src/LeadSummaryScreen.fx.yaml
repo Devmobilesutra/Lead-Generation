@@ -1322,7 +1322,7 @@ LeadSummaryScreen As screen:
                         Checkbox4_5 As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
-                            Default: =Checkbox4_2.Value
+                            Default: =CboxAdditionalExpensesRequired.Value
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)

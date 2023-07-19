@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -552,7 +552,7 @@ EstimateScreen As screen:
                         Y: =24
                         ZIndex: =5
 
-                "'Additional expenses required_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                AdditionalExpensesRequired As typedDataCard.comboBoxOptionSetSingleEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_additionalexpensesrequired"
                     Default: =ThisItem.AdditionalExpensesRequired
@@ -567,7 +567,7 @@ EstimateScreen As screen:
                     Y: =3
                     ZIndex: =1
 
-                    ErrorMessage6 As label:
+                    ErrorMessageAdditionalExpensesRequired As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -583,7 +583,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =3
 
-                    StarVisible6 As label:
+                    StarVisibleAdditonalExpensesRequired As label:
                         Align: =Align.Center
                         Height: =
                         Size: =21
@@ -594,7 +594,7 @@ EstimateScreen As screen:
                         Y: =
                         ZIndex: =4
 
-                    Checkbox4_2 As checkbox:
+                    CboxAdditionalExpensesRequired As checkbox:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                         CheckboxSize: =50
