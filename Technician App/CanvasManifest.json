@@ -132,14 +132,14 @@
   "ScreenOrder": [
     "LoadingScreen",
     "DashboardScreen",
-    "ViewDetailsScreen",
     "CreatLeadScreen",
-    "SubmittedLeadScreen",
     "UnitScreen",
     "ScopeScreen",
-    "ChatScreen",
     "EstimateScreen",
     "ImageUploadScreen",
-    "Screen1"
+    "LeadSummaryScreen",
+    "SubmittedLeadScreen",
+    "ViewDetailsScreen",
+    "ChatScreen"
   ]
 }

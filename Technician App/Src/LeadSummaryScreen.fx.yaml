@@ -1,4 +1,4 @@
-Screen1 As screen:
+LeadSummaryScreen As screen:
 
     Container5_10 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)

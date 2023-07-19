@@ -1,6 +1,6 @@
 EstimateScreen As screen:
 
-    Container5_6 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainES As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -13,7 +13,7 @@ EstimateScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        ctnHeaderDS_10 As groupContainer.horizontalAutoLayoutContainer:
+        ctnHeaderES As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -31,7 +31,7 @@ EstimateScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            Icon9_6 As icon.BackArrow:
+            IconBackES As icon.BackArrow:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
@@ -46,7 +46,7 @@ EstimateScreen As screen:
                 Y: =11
                 ZIndex: =1
 
-            Label1_11 As label:
+            lblHeaderES As label:
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -59,11 +59,11 @@ EstimateScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_10.Width-Icon9_6.Width
+                Width: =Parent.Width-imgSchindlerLogoES.Width-IconBackES.Width
                 X: =96.12
                 ZIndex: =2
 
-            imgSchindlerLogo_10 As image:
+            imgSchindlerLogoES As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -87,7 +87,7 @@ EstimateScreen As screen:
             PaddingTop: =0.00
             Width: =Parent.Width-40
             X: =21.36
-            Y: =ctnHeaderDS_10.Y+ctnHeaderDS_10.Height+10
+            Y: =ctnHeaderES.Y+ctnHeaderES.Height+10
             ZIndex: =2
 
             Button3_7 As button:
@@ -119,12 +119,13 @@ EstimateScreen As screen:
                 ZIndex: =2
 
         Container9_3 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height-40
+            Height: =Parent.Height-ctnHeaderES.Height-Container1_10.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderDS_10.Height-Container1_10.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderES.Height-Container1_10.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
