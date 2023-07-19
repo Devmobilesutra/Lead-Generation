@@ -723,7 +723,7 @@ EstimateScreen As screen:
                         X: =30
                         ZIndex: =5
 
-            Container13_5 As groupContainer.verticalAutoLayoutContainer:
+            ctnButtonES As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -740,7 +740,7 @@ EstimateScreen As screen:
                 RadiusTopRight: =0
                 ZIndex: =3
 
-                Button2_7 As button:
+                btnPreviousES As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -758,7 +758,7 @@ EstimateScreen As screen:
                     Y: =790
                     ZIndex: =1
 
-                Button2_6 As button:
+                btnNextES As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -775,7 +775,7 @@ EstimateScreen As screen:
                     Y: =790
                     ZIndex: =2
 
-            Container13_4 As groupContainer.verticalAutoLayoutContainer:
+            ctnSpaceES As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
