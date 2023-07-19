@@ -1,6 +1,6 @@
 ImageUploadScreen As screen:
 
-    Container5_7 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainIS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -119,6 +119,7 @@ ImageUploadScreen As screen:
                 ZIndex: =2
 
         Container9_4 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS_11.Height-Container1_11.Height-40
