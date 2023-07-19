@@ -568,11 +568,11 @@ DashboardScreen As screen:
                         Set(VarIndicator,false);
                         NewForm(BuildingInfoForm);ResetForm(BuildingInfoForm);
                         NewForm(EstimateForm);
-                        NewForm(ImageUploadForm);
+                        //NewForm(ImageUploadForm);
                         NewForm(ScopeInfoForm);
                         NewForm(UnitInfoForm);
                         ResetForm(EstimateForm);
-                        ResetForm(ImageUploadForm);
+                        //ResetForm(ImageUploadForm);
                         ResetForm(ScopeInfoForm);
                         ResetForm(UnitInfoForm);
                     PressedBorderColor: =Color.Red

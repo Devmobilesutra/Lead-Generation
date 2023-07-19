@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours_DataCard1.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
+                Height: =EstimatedHours.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -336,7 +336,7 @@ EstimateScreen As screen:
                 Y: =252
                 ZIndex: =2
 
-                EstimatedHours_DataCard1 As typedDataCard.textualEditCard:
+                EstimatedHours As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_estimatedhours"
@@ -347,13 +347,13 @@ EstimateScreen As screen:
                     Height: =50
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_estimatedhours")
                     Required: =false
-                    Update: =DataCardValue18.Text
+                    Update: =IntxtEstimatedHours.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey19 As label:
+                    lblEstimatedHours As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -365,7 +365,7 @@ EstimateScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue18 As text:
+                    IntxtEstimatedHours As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -384,10 +384,10 @@ EstimateScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                        Y: =lblEstimatedHours.Y + lblEstimatedHours.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage19 As label:
+                    ErrorMessageEstimatedHours As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -400,18 +400,18 @@ EstimateScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue18.Y + DataCardValue18.Height
+                        Y: =IntxtEstimatedHours.Y + IntxtEstimatedHours.Height
                         ZIndex: =3
 
-                    StarVisible19 As label:
+                    StarVisibleEstimatedHours As label:
                         Align: =Align.Center
-                        Height: =DataCardKey19.Height
+                        Height: =lblEstimatedHours.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey19.Y
+                        Y: =lblEstimatedHours.Y
                         ZIndex: =4
 
                 Material_DataCard1 As typedDataCard.textualEditCard:
