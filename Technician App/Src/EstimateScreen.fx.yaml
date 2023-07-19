@@ -332,7 +332,7 @@ EstimateScreen As screen:
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
-                Width: =620
+                Width: =Parent.Width
                 Y: =252
                 ZIndex: =2
 
