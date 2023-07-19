@@ -330,7 +330,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+PinCode.Height+40
+                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+ZipCode.Height+40
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -418,7 +418,7 @@ CreatLeadScreen As screen:
                         Y: =lblContractNumber.Y
                         ZIndex: =4
 
-                PinCode As typedDataCard.textualEditCard:
+                ZipCode As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="crd59_pincode"
                     Default: =ThisItem.'ZipCode '
@@ -428,13 +428,13 @@ CreatLeadScreen As screen:
                     Height: =100
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength, "shlrf_zipcode")
                     Required: =false
-                    Update: =IntxtPincode.Text
+                    Update: =IntxtZipCode.Text
                     Width: =Parent.Width
                     X: =0
                     Y: =2
                     ZIndex: =1
 
-                    lblPincode As label:
+                    lblZipcode As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
@@ -447,7 +447,7 @@ CreatLeadScreen As screen:
                         Y: =10
                         ZIndex: =1
 
-                    IntxtPincode As text:
+                    IntxtZipCode As text:
                         BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
                         Default: =Parent.Default
                         DelayOutput: =true
@@ -465,10 +465,10 @@ CreatLeadScreen As screen:
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =lblPincode.Y + lblPincode.Height + 5
+                        Y: =lblZipcode.Y + lblZipcode.Height + 5
                         ZIndex: =2
 
-                    ErrorMessagePincode As label:
+                    ErrorMessageZipcode As label:
                         AutoHeight: =true
                         Height: =10
                         Live: =Live.Assertive
@@ -481,18 +481,18 @@ CreatLeadScreen As screen:
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =IntxtPincode.Y + IntxtPincode.Height
+                        Y: =IntxtZipCode.Y + IntxtZipCode.Height
                         ZIndex: =3
 
-                    StarVisiblePincode As label:
+                    StarVisibleZipcode As label:
                         Align: =Align.Center
-                        Height: =lblPincode.Height
+                        Height: =lblZipcode.Height
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =lblPincode.Y
+                        Y: =lblZipcode.Y
                         ZIndex: =4
 
                 BuildingName As typedDataCard.textualEditCard:
