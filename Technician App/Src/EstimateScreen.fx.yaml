@@ -75,7 +75,7 @@ EstimateScreen As screen:
                 X: =0.00
                 ZIndex: =3
 
-        Container1_10 As groupContainer.manualLayoutContainer:
+        ctnUserHeaderES As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
@@ -90,7 +90,7 @@ EstimateScreen As screen:
             Y: =ctnHeaderES.Y+ctnHeaderES.Height+10
             ZIndex: =2
 
-            Button3_7 As button:
+            btnLeadES As button:
                 Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
@@ -105,7 +105,7 @@ EstimateScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label3_7 As label:
+            lblUsernameES As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
@@ -122,10 +122,10 @@ EstimateScreen As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderES.Height-Container1_10.Height-40
+            Height: =Parent.Height-ctnHeaderES.Height-ctnUserHeaderES.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderES.Height-Container1_10.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderES.Height-ctnUserHeaderES.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
