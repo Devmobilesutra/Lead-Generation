@@ -391,10 +391,11 @@ Screen1 As screen:
 
                 SummaryForm As form:
                     DataSource: =LeadInformations
-                    Height: =852
+                    FillPortions: =0
+                    Height: =Parent.Height
                     Item: =VarFormMode
                     LayoutMinHeight: =250
-                    LayoutMinWidth: =400
+                    LayoutMinWidth: =Parent.Width
                     Width: =620
                     Y: =4
                     ZIndex: =1

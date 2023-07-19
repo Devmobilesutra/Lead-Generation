@@ -1,6 +1,6 @@
 ScopeScreen As screen:
 
-    Container5_5 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainSS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -119,6 +119,7 @@ ScopeScreen As screen:
                 ZIndex: =2
 
         Container9_2 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS_8.Height-Container1_8.Height-60
