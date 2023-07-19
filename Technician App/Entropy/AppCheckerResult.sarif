@@ -10795,19 +10795,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.EstimatedHours_DataCard1.DataCardValue18.AccessibleLabel"
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.EstimatedHours_DataCard1.DataCardValue18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.EstimatedHours_DataCard1.DataCardValue18.AccessibleLabel",
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.EstimatedHours_DataCard1.DataCardValue18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EstimateScreen",
-                "type": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.EstimatedHours_DataCard1.DataCardValue18"
+                "type": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.EstimatedHours_DataCard1.DataCardValue18"
               }
             }
           ],
@@ -10825,19 +10825,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EstimateScreen",
-                "type": "EstimateScreen.ctnMainES.Container9_3.EstimateForm.Material_DataCard1.DataCardValue19"
+                "type": "EstimateScreen.ctnMainES.ctnMiddleES.EstimateForm.Material_DataCard1.DataCardValue19"
               }
             }
           ],

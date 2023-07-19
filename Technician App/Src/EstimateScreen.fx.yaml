@@ -118,7 +118,7 @@ EstimateScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        Container9_3 As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleES As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -132,6 +132,7 @@ EstimateScreen As screen:
             ZIndex: =7
 
             Container7_7 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
@@ -324,6 +325,7 @@ EstimateScreen As screen:
 
             EstimateForm As form:
                 AcceptsFocus: =false
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
                 Height: =EstimatedHours_DataCard1.Height+Material_DataCard1.Height+'Unit Down_DataCard2'.Height+'Additional expenses required_DataCard1'.Height+'Travel Required_DataCard1'.Height+'Communicated to Customer_DataCard1'.Height+80
@@ -722,6 +724,7 @@ EstimateScreen As screen:
                         ZIndex: =5
 
             Container13_5 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
@@ -773,6 +776,7 @@ EstimateScreen As screen:
                     ZIndex: =2
 
             Container13_4 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =20
