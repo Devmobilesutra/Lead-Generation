@@ -118,7 +118,7 @@ LeadSummaryScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        ctnSummaryLSS As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleLSS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -131,7 +131,7 @@ LeadSummaryScreen As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
-            Container13_9 As groupContainer.verticalAutoLayoutContainer:
+            ctnSummaryLSS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =Parent.Height
@@ -159,7 +159,7 @@ LeadSummaryScreen As screen:
                     Y: =4
                     ZIndex: =1
 
-                    "'Contract Number_DataCard1' As typedDataCard.textualEditCard":
+                    ContractNumberLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_contractnumber"
@@ -170,13 +170,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_contractnumber")
                         Required: =false
-                        Update: =DataCardValue25.Text
+                        Update: =DataCardValueCNLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
 
-                        DataCardKey26 As label:
+                        DataCardKeyCNLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -189,7 +189,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue25 As text:
+                        DataCardValueCNLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: |-
                                 =//Parent.Default
@@ -210,10 +210,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width-60
                             X: =30
-                            Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                            Y: =DataCardKeyCNLSS.Y + DataCardKeyCNLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage26 As label:
+                        ErrorMessageCNLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -226,21 +226,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width-60
                             X: =30
-                            Y: =DataCardValue25.Y + DataCardValue25.Height
+                            Y: =DataCardValueCNLSS.Y + DataCardValueCNLSS.Height
                             ZIndex: =3
 
-                        StarVisible26 As label:
+                        StarVisibleCNLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey26.Height
+                            Height: =DataCardKeyCNLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey26.Y
+                            Y: =DataCardKeyCNLSS.Y
                             ZIndex: =4
 
-                    BuildingName_DataCard2 As typedDataCard.textualEditCard:
+                    BuildingNameLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_buildingname"
@@ -1592,7 +1592,7 @@ LeadSummaryScreen As screen:
                                 Defaults(LeadInformations),
                                 {
                                      ID:Text(GUID()),
-                                    'ContractNumber ':DataCardValue25.Text,
+                                    'ContractNumber ':DataCardValueCNLSS.Text,
                                     'BuildingName ': DataCardValue6.Text,
                                     'ZipCode ':DataCardValue1.Text,
                                     Address: DataCardValue32.Text,
