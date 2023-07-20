@@ -1,6 +1,6 @@
 LeadSummaryScreen As screen:
 
-    Container5_10 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainLSS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -13,7 +13,7 @@ LeadSummaryScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        ctnHeaderDS_12 As groupContainer.horizontalAutoLayoutContainer:
+        ctnHeaderLSS As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -31,7 +31,7 @@ LeadSummaryScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            Icon9_8 As icon.BackArrow:
+            IconBackLSS As icon.BackArrow:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
@@ -46,7 +46,7 @@ LeadSummaryScreen As screen:
                 Y: =11
                 ZIndex: =1
 
-            Label1_13 As label:
+            lblHeaderLSS As label:
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -59,11 +59,11 @@ LeadSummaryScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_12.Width-Icon9_8.Width
+                Width: =Parent.Width-imgSchindlerLogoLSS.Width-IconBackLSS.Width
                 X: =96.12
                 ZIndex: =2
 
-            imgSchindlerLogo_12 As image:
+            imgSchindlerLogoLSS As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -87,7 +87,7 @@ LeadSummaryScreen As screen:
             PaddingTop: =0.00
             Width: =Parent.Width-40
             X: =21.36
-            Y: =ctnHeaderDS_12.Y+ctnHeaderDS_12.Height+10
+            Y: =ctnHeaderLSS.Y+ctnHeaderLSS.Height+10
             ZIndex: =2
 
             Button3_10 As button:
@@ -119,12 +119,13 @@ LeadSummaryScreen As screen:
                 ZIndex: =2
 
         Container9_5 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS_12.Height-Container1_12.Height-40
+            Height: =Parent.Height-ctnHeaderLSS.Height-Container1_12.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderDS_12.Height-Container1_12.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderLSS.Height-Container1_12.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
