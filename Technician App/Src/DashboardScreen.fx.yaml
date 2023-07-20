@@ -324,7 +324,9 @@ DashboardScreen As screen:
                         Size: |-
                             =//If(Parent.Width<500,12,Parent.Width>500,14,Parent.Width>1000,18)
                             If(Parent.Width<358,12,Parent.Width>358,14,18)
-                        Text: =If(cumulatively=true,"37","20")
+                        Text: |-
+                            =//If(cumulatively=true,"37","20")
+                            If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Open")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Open" && Year('Created On')=2023))) 
                         Width: =Parent.Width/4
                         ZIndex: =1
 
@@ -337,7 +339,9 @@ DashboardScreen As screen:
                         Size: |-
                             =//If(Parent.Width<500,12,Parent.Width>500,14,Parent.Width>1000,18)
                             If(Parent.Width<358,12,Parent.Width>358,14,18)
-                        Text: =If(cumulatively=true,"30","10")
+                        Text: |-
+                            =//If(cumulatively=true,"30","10")
+                            If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress" && Year('Created On')=2023))) 
                         Width: =Parent.Width/3
                         ZIndex: =2
 
@@ -575,6 +579,7 @@ DashboardScreen As screen:
                         //ResetForm(ImageUploadForm);
                         ResetForm(ScopeInfoForm);
                         ResetForm(UnitInfoForm);
+                        Clear(LeadImagesCollection);
                     PressedBorderColor: =Color.Red
                     RadiusBottomLeft: =6
                     RadiusBottomRight: =6

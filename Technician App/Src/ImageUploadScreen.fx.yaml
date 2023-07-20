@@ -388,13 +388,15 @@ ImageUploadScreen As screen:
                         OnChange: |
                             =If(
                                 CountRows(glryImageIS.AllItems) >3 ,
-                                Notify("You Can add only 4 Images.");Reset(AddMediaButtonIS),
+                                Notify("You Can add only 4 Images."),
+                               If( !IsBlank(UploadedImageIS) || UploadedImageIS.Image<>SampleImage,
                                 Collect(
                                     LeadImagesCollection,
                                     {
                                         Image: UploadedImageIS.Image
                                     }
-                                )
+                                ));
+                                
                                 
                             );
                         OnSelect: |

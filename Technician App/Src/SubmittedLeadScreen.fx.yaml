@@ -2,7 +2,7 @@ SubmittedLeadScreen As screen:
     OnVisible: |-
         =UpdateContext({locInfoExpanded:false})
 
-    Container5_3 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainSLS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =20
@@ -11,8 +11,8 @@ SubmittedLeadScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        ctnHeaderDS_6 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+        ctnHeaderSLS As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -28,8 +28,7 @@ SubmittedLeadScreen As screen:
             X: =0.00
             ZIndex: =1
 
-            Icon9_2 As icon.BackArrow:
-                AlignInContainer: =AlignInContainer.Center
+            IconBackSLS As icon.BackArrow:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
@@ -43,7 +42,7 @@ SubmittedLeadScreen As screen:
                 Y: =11
                 ZIndex: =1
 
-            Label1_6 As label:
+            lblHeaderSLS As label:
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -57,12 +56,11 @@ SubmittedLeadScreen As screen:
                     =//21.36
                     If(Parent.Width<500,14,Parent.Width>500,22,12)
                 Text: ="Technicians Lead Generation"
-                Width: =Parent.Width-imgSchindlerLogo_6.Width-Icon9_2.Width
+                Width: =Parent.Width-imgSchindlerLogoSLS.Width-IconBackSLS.Width
                 X: =96.12
                 ZIndex: =3
 
-            imgSchindlerLogo_6 As image:
-                AlignInContainer: =AlignInContainer.Center
+            imgSchindlerLogoSLS As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -74,8 +72,8 @@ SubmittedLeadScreen As screen:
                 X: =0.00
                 ZIndex: =4
 
-        Container1_6 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+        ctnUserNameSLS As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
@@ -86,7 +84,7 @@ SubmittedLeadScreen As screen:
             PaddingTop: =0.00
             Width: =Parent.Width-40
             X: =21.36
-            Y: =ctnHeaderDS_6.Y+ctnHeaderDS_6.Height+10
+            Y: =ctnHeaderSLS.Y+ctnHeaderSLS.Height+10
             ZIndex: =2
 
             Button3_6 As button:
@@ -120,7 +118,7 @@ SubmittedLeadScreen As screen:
                 Y: =2
                 ZIndex: =2
 
-            Label3_6 As label:
+            lblUsernameSLS As label:
                 Align: =Align.Right
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
@@ -133,13 +131,13 @@ SubmittedLeadScreen As screen:
                 Visible: =false
                 Width: =Parent.Width/3
                 X: =Parent.Width-Self.Width
-                ZIndex: =4
+                ZIndex: =3
 
         Container5_8 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-Container1_6.Height-ctnHeaderDS_6.Height
+            Height: =Parent.Height-ctnUserNameSLS.Height-ctnHeaderSLS.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
