@@ -75,7 +75,7 @@ LeadSummaryScreen As screen:
                 X: =0.00
                 ZIndex: =3
 
-        Container1_12 As groupContainer.manualLayoutContainer:
+        ctnUserNameLSS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
@@ -90,7 +90,7 @@ LeadSummaryScreen As screen:
             Y: =ctnHeaderLSS.Y+ctnHeaderLSS.Height+10
             ZIndex: =2
 
-            Button3_10 As button:
+            btnUserNameLSS As button:
                 Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
@@ -105,7 +105,7 @@ LeadSummaryScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label3_11 As label:
+            lblUserNameLSS As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
@@ -122,10 +122,10 @@ LeadSummaryScreen As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderLSS.Height-Container1_12.Height-40
+            Height: =Parent.Height-ctnHeaderLSS.Height-ctnUserNameLSS.Height-40
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =Parent.Height-ctnHeaderLSS.Height-Container1_12.Height
+            LayoutMinHeight: =Parent.Height-ctnHeaderLSS.Height-ctnUserNameLSS.Height
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
