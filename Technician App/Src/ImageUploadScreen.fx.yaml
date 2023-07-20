@@ -324,7 +324,6 @@ ImageUploadScreen As screen:
                     ZIndex: =19
 
             Container13_7 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =1000
