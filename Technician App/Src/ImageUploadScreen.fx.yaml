@@ -36,8 +36,8 @@ ImageUploadScreen As screen:
                 Height: =55
                 Icon: =Icon.BackArrow
                 OnSelect: |-
-                    =Navigate(DashboardScreen);
-                    UpdateContext({locInfoExpanded:false})
+                    =Navigate(EstimateScreen);
+                    Set(VarIndicatorES,false);
                 PaddingBottom: =5
                 PaddingLeft: =20
                 PaddingTop: =5
@@ -131,7 +131,7 @@ ImageUploadScreen As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =7
 
-            Container7_9 As groupContainer.manualLayoutContainer:
+            ctnProgressBarIS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =136
@@ -142,7 +142,7 @@ ImageUploadScreen As screen:
                 Y: =77
                 ZIndex: =1
 
-                Circle1_35 As circle:
+                CircleSteo1IS As circle:
                     Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
@@ -150,128 +150,128 @@ ImageUploadScreen As screen:
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =1
 
-                Circle1_36 As circle:
+                CircleStep2IS As circle:
                     Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_28.X+Icon4_28.Width
+                    X: =IconLine1IS.X+IconLine1IS.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =2
 
-                Circle1_37 As circle:
+                CircleStep3IS As circle:
                     Fill: =If(VarIndicatorSS=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_29.X+Icon4_29.Width
+                    X: =IconLine2IS.X+IconLine2IS.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =3
 
-                Circle1_38 As circle:
+                CircleStep4IS As circle:
                     Fill: =If(VarIndicator=true,Color.Green,Color.Red)
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_30.X+Icon4_30.Width
+                    X: =IconLine3IS.X+IconLine3IS.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =4
 
-                Circle1_39 As circle:
+                CircleStep5IS As circle:
                     Fill: =Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    X: =Icon4_31.X+Icon4_31.Width
+                    X: =IconLine4IS.X+IconLine4IS.Width
                     Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
                     ZIndex: =5
 
-                Icon3_39 As icon.Check:
+                IconTick1IS As icon.Check:
                     Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_35.X+(Circle1_35.Width/4.2)
+                    X: =CircleSteo1IS.X+(CircleSteo1IS.Width/4.2)
                     Y: |-
                         =//If(Parent.Width<378,Circle1.Height/2,Parent.Width<500,Circle1.Height/2,Circle1.Height/2)
-                        Circle1_35.Y+Circle1_35.Height/6
+                        CircleSteo1IS.Y+CircleSteo1IS.Height/6
                     ZIndex: =6
 
-                Icon3_35 As icon.Check:
+                IconTick2IS As icon.Check:
                     Color: =If(VarIndicatorUS=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_36.X+(Circle1_36.Width/4.2)
-                    Y: =Circle1_35.Y+Circle1_35.Height/6
+                    X: =CircleStep2IS.X+(CircleStep2IS.Width/4.2)
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height/6
                     ZIndex: =7
 
-                Icon3_36 As icon.Check:
+                IconTick3IS As icon.Check:
                     Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_37.X+(Circle1_37.Width/4.2)
-                    Y: =Circle1_35.Y+Circle1_35.Height/6
+                    X: =CircleStep3IS.X+(CircleStep3IS.Width/4.2)
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height/6
                     ZIndex: =8
 
-                Icon3_37 As icon.Check:
+                IconTick4IS As icon.Check:
                     Color: =If(VarIndicator=true,Color.White,Color.Red)
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_38.X+(Circle1_38.Width/4.2)
-                    Y: =Circle1_35.Y+Circle1_35.Height/6
+                    X: =CircleStep4IS.X+(CircleStep4IS.Width/4.2)
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height/6
                     ZIndex: =9
 
-                Icon3_38 As icon.Check:
+                IconTick5IS As icon.Check:
                     Color: =Color.Red
                     Height: =If(Parent.Width<378,18,Parent.Width<500,20,25)
                     Icon: =Icon.Check
                     OnSelect: =
                     Visible: =false
                     Width: =If(Parent.Width<378,18,Parent.Width<500,20,25)
-                    X: =Circle1_39.X+(Circle1_39.Width/4.2)
-                    Y: =Circle1_35.Y+Circle1_35.Height/6
+                    X: =CircleStep5IS.X+(CircleStep5IS.Width/4.2)
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height/6
                     ZIndex: =10
 
-                Icon4_28 As icon.HorizontalLine:
+                IconLine1IS As icon.HorizontalLine:
                     Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_35.X+Circle1_35.Width
+                    X: =CircleSteo1IS.X+CircleSteo1IS.Width
                     Y: =22
                     ZIndex: =11
 
-                Icon4_29 As icon.HorizontalLine:
+                IconLine2IS As icon.HorizontalLine:
                     Color: =If(VarIndicatorUS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_36.X+Circle1_36.Width
+                    X: =CircleStep2IS.X+CircleStep2IS.Width
                     Y: =22
                     ZIndex: =12
 
-                Icon4_30 As icon.HorizontalLine:
+                IconLine3IS As icon.HorizontalLine:
                     Color: =If(VarIndicatorSS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_37.X+Circle1_37.Width
+                    X: =CircleStep3IS.X+CircleStep3IS.Width
                     Y: =22
                     ZIndex: =13
 
-                Icon4_31 As icon.HorizontalLine:
+                IconLine4IS As icon.HorizontalLine:
                     Color: =If(VarIndicatorES=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
-                    X: =Circle1_38.X+Circle1_38.Width
+                    X: =CircleStep4IS.X+CircleStep4IS.Width
                     Y: =22
                     ZIndex: =14
 
-                Label5_35 As label:
+                lblStep1IS As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
@@ -279,48 +279,48 @@ ImageUploadScreen As screen:
                     Width: =Parent.Width/6
                     X: |-
                         =//If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
-                        Circle1_35.X-Circle1_35.Width/3
-                    Y: =Circle1_35.Y+Circle1_35.Height+20
+                        CircleSteo1IS.X-CircleSteo1IS.Width/3
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =15
 
-                Label5_36 As label:
+                lblStep2IS As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 2"
                     Width: =Parent.Width/6
-                    X: =Circle1_36.X-Circle1_36.Width/3
-                    Y: =Circle1_35.Y+Circle1_35.Height+20
+                    X: =CircleStep2IS.X-CircleStep2IS.Width/3
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =16
 
-                Label5_37 As label:
+                lblStep3IS As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 3"
                     Width: =Parent.Width/6
-                    X: =Circle1_37.X-Circle1_37.Width/3
-                    Y: =Circle1_35.Y+Circle1_35.Height+20
+                    X: =CircleStep3IS.X-CircleStep3IS.Width/3
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =17
 
-                Label5_38 As label:
+                lblStep4IS As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 4"
                     Width: =Parent.Width/6
-                    X: =Circle1_38.X-Circle1_38.Width/3
-                    Y: =Circle1_35.Y+Circle1_35.Height+20
+                    X: =CircleStep4IS.X-CircleStep4IS.Width/3
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =18
 
-                Label5_39 As label:
+                lblStep5IS As label:
                     Font: =Font.Arial
                     Height: =30
                     Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                     Text: ="Step 5"
                     Width: =Parent.Width/6
-                    X: =Circle1_39.X-Circle1_39.Width/4
-                    Y: =Circle1_35.Y+Circle1_35.Height+20
+                    X: =CircleStep5IS.X-CircleStep5IS.Width/4
+                    Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =19
 
             Container13_7 As groupContainer.verticalAutoLayoutContainer:

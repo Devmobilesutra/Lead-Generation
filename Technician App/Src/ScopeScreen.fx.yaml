@@ -35,9 +35,11 @@ ScopeScreen As screen:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =55
                 Icon: =Icon.BackArrow
-                OnSelect: |-
-                    =Navigate(DashboardScreen);
-                    UpdateContext({locInfoExpanded:false})
+                OnSelect: |+
+                    =Navigate(UnitScreen);
+                    Set(varIndicatorUS,false);
+                    
+                    
                 PaddingBottom: =5
                 PaddingLeft: =20
                 PaddingTop: =5
