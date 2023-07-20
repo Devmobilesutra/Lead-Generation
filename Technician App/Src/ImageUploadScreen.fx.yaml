@@ -323,7 +323,7 @@ ImageUploadScreen As screen:
                     Y: =CircleSteo1IS.Y+CircleSteo1IS.Height+20
                     ZIndex: =19
 
-            Container13_7 As groupContainer.verticalAutoLayoutContainer:
+            ctnImageIS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =1000
@@ -339,7 +339,7 @@ ImageUploadScreen As screen:
                 RadiusTopRight: =0
                 ZIndex: =2
 
-                AddMediaWithImage1 As group:
+                AddMediaWithImageIS As group:
                     Height: =5
                     LayoutMinHeight: =5
                     LayoutMinWidth: =5
@@ -348,41 +348,41 @@ ImageUploadScreen As screen:
                     Y: =20
                     ZIndex: =1
 
-                    UploadedImage1 As image:
+                    UploadedImageIS As image:
                         BorderThickness: =2
-                        DisplayMode: =If(CountRows(Gallery1.AllItems)<4,DisplayMode.Edit,DisplayMode.Disabled)
+                        DisplayMode: =If(CountRows(glryImageIS.AllItems)<4,DisplayMode.Edit,DisplayMode.Disabled)
                         Height: =If(Parent.Width<Parent.Height,200,250)
-                        Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+                        Image: =If(IsBlank(AddMediaButtonIS.Media), SampleImage, AddMediaButtonIS.Media)
                         PaddingBottom: =10
                         PaddingLeft: =10
                         PaddingRight: =10
                         PaddingTop: =10
                         Width: =Parent.Width/2.5
-                        X: =AddMediaButton1.X
-                        Y: =AddMediaButton1.Y
+                        X: =AddMediaButtonIS.X
+                        Y: =AddMediaButtonIS.Y
                         ZIndex: =1
 
-                    AddMediaButton1 As addMedia:
-                        ChangePictureText: =If(CountRows(Gallery1.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
+                    AddMediaButtonIS As addMedia:
+                        ChangePictureText: =If(CountRows(glryImageIS.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
                         Color: =RGBA(255, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(77, 77, 77, 1)
                         DisabledFill: =RGBA(202, 202, 202, 1)
                         Height: =60
                         OnChange: |-
-                            =If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
+                            =If(CountRows(glryImageIS.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImageIS.Image}),Notify("You Can add only 4 Images."))
                         OnSelect: |-
                             =//If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
                         Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
                         Text: |-
                             =
-                            If(CountRows(Gallery1.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
+                            If(CountRows(glryImageIS.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
                         Width: =Parent.Width
                         X: =40
                         Y: =500
                         ZIndex: =2
 
-                "Gallery1 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
+                "glryImageIS As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
                     FillPortions: =0
@@ -399,7 +399,7 @@ ImageUploadScreen As screen:
                     WrapCount: =2
                     ZIndex: =3
 
-                    Image4 As image:
+                    ImageIS As image:
                         BorderThickness: =2
                         Height: =If(Parent.Width>Parent.Height,Parent.TemplateHeight/1.2,Parent.TemplateHeight/1.4)
                         Image: =ThisItem.Image
@@ -415,17 +415,17 @@ ImageUploadScreen As screen:
                         Width: =Parent.TemplateWidth/1.10
                         ZIndex: =1
 
-                    Icon3 As icon.Cancel:
+                    IconImageIS As icon.Cancel:
                         Color: =RGBA(255, 0, 0, 1)
                         Height: =30
                         Icon: =Icon.Cancel
                         OnSelect: =Remove(LeadImagesCollection,ThisItem);
                         Width: =30
-                        X: =Image4.Width-Self.Width-10
-                        Y: =Image4.Y+10
+                        X: =ImageIS.Width-Self.Width-10
+                        Y: =ImageIS.Y+10
                         ZIndex: =2
 
-            Container13_6 As groupContainer.verticalAutoLayoutContainer:
+            ctnButtonIS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -442,7 +442,7 @@ ImageUploadScreen As screen:
                 RadiusTopRight: =0
                 ZIndex: =3
 
-                Button2_8 As button:
+                btnPreviousIS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -460,7 +460,7 @@ ImageUploadScreen As screen:
                     Y: =790
                     ZIndex: =1
 
-                Button2_9 As button:
+                btnNextIS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
