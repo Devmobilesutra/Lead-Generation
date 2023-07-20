@@ -149,11 +149,11 @@ DashboardScreen As screen:
                 X: =Parent.Width-Self.Width
                 ZIndex: =6
 
-        Container4 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+        ctnMiddleDS As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderDS.Height-ctnUserNameDS.Height+10
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
@@ -163,7 +163,7 @@ DashboardScreen As screen:
             ZIndex: =3
 
             Container3 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: |
@@ -365,7 +365,7 @@ DashboardScreen As screen:
                     ZIndex: =6
 
             Container4_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: |
@@ -535,7 +535,7 @@ DashboardScreen As screen:
                             ZIndex: =2
 
             Container3_2 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.Center
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: |-
@@ -583,6 +583,7 @@ DashboardScreen As screen:
                     ZIndex: =1
 
             Container11 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =20
