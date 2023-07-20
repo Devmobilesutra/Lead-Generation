@@ -236,7 +236,7 @@ ImageUploadScreen As screen:
                     ZIndex: =10
 
                 Icon4_28 As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -245,7 +245,7 @@ ImageUploadScreen As screen:
                     ZIndex: =11
 
                 Icon4_29 As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorUS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -254,7 +254,7 @@ ImageUploadScreen As screen:
                     ZIndex: =12
 
                 Icon4_30 As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorSS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -263,7 +263,7 @@ ImageUploadScreen As screen:
                     ZIndex: =13
 
                 Icon4_31 As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorES=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
