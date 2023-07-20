@@ -795,7 +795,7 @@ LeadSummaryScreen As screen:
                             Y: =lblScopeofWorkLSS.Y
                             ZIndex: =4
 
-                    ManuallyScopeOfWork_DataCard3 As typedDataCard.textualEditCard:
+                    ManuallyScopeOfWorkLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_manuallyscopeofwork"
@@ -806,13 +806,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
                         Required: =false
-                        Update: =DataCardValue26.Text
+                        Update: =IntxtManuallyScopeofWorkLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =8
                         ZIndex: =1
 
-                        DataCardKey27 As label:
+                        lblManuallyScopeofWorkLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -825,7 +825,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue26 As text:
+                        IntxtManuallyScopeofWorkLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtManuallyScopeofwork.Text
                             DelayOutput: =true
@@ -844,10 +844,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                            Y: =lblManuallyScopeofWorkLSS.Y + lblManuallyScopeofWorkLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage27 As label:
+                        ErrorMessageManuallyScopeofWorkLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -860,21 +860,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue26.Y + DataCardValue26.Height
+                            Y: =IntxtManuallyScopeofWorkLSS.Y + IntxtManuallyScopeofWorkLSS.Height
                             ZIndex: =3
 
-                        StarVisible27 As label:
+                        StarVisibleManuallyScopeofWorkLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey27.Height
+                            Height: =lblManuallyScopeofWorkLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey27.Y
+                            Y: =lblManuallyScopeofWorkLSS.Y
                             ZIndex: =4
 
-                    EstimatedHours_DataCard1_1 As typedDataCard.textualEditCard:
+                    EstimatedHoursLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_estimatedhours"
@@ -885,13 +885,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_estimatedhours")
                         Required: =false
-                        Update: =DataCardValue18_1.Text
+                        Update: =IntxtEstimatedHoursLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =9
                         ZIndex: =1
 
-                        DataCardKey19_1 As label:
+                        lblEstimatedHoursLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -904,7 +904,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue18_1 As text:
+                        IntxtEstimatedHoursLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtEstimatedHours.Text
                             DelayOutput: =true
@@ -923,10 +923,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey19_1.Y + DataCardKey19_1.Height + 5
+                            Y: =lblEstimatedHoursLSS.Y + lblEstimatedHoursLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage19_1 As label:
+                        ErrorMessageEstimatedHoursLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -939,21 +939,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue18_1.Y + DataCardValue18_1.Height
+                            Y: =IntxtEstimatedHoursLSS.Y + IntxtEstimatedHoursLSS.Height
                             ZIndex: =3
 
-                        StarVisible19_1 As label:
+                        StarVisibleEstimatedHoursLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey19_1.Height
+                            Height: =lblEstimatedHoursLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey19_1.Y
+                            Y: =lblEstimatedHoursLSS.Y
                             ZIndex: =4
 
-                    Material_DataCard1_1 As typedDataCard.textualEditCard:
+                    NotesLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_material"
@@ -964,13 +964,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_notes")
                         Required: =false
-                        Update: =DataCardValue19_1.Text
+                        Update: =IntxtNotesLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =10
                         ZIndex: =1
 
-                        DataCardKey20_1 As label:
+                        lblNotesLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
@@ -982,7 +982,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue19_1 As text:
+                        IntxtNotesLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtMaterial.Text
                             DelayOutput: =true
@@ -1000,10 +1000,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey20_1.Y + DataCardKey20_1.Height + 5
+                            Y: =lblNotesLSS.Y + lblNotesLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage20_1 As label:
+                        ErrorMessageNotesLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -1016,21 +1016,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue19_1.Y + DataCardValue19_1.Height
+                            Y: =IntxtNotesLSS.Y + IntxtNotesLSS.Height
                             ZIndex: =3
 
-                        StarVisible20_1 As label:
+                        StarVisibleNotesLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey20_1.Height
+                            Height: =lblNotesLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey20_1.Y
+                            Y: =lblNotesLSS.Y
                             ZIndex: =4
 
-                    "'Unit Down_DataCard2_1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    UnitDownLSS As typedDataCard.comboBoxOptionSetSingleEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_checklist"
@@ -1040,13 +1040,13 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =60
                         Required: =false
-                        Update: ='Unit Down_DataCard2_1'.Default
+                        Update: =UnitDownLSS.Default
                         Width: =Parent.Width
                         X: =0
                         Y: =11
                         ZIndex: =1
 
-                        ErrorMessage25_1 As label:
+                        ErrorMessageUDLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -1059,21 +1059,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =Checkbox4_1.Y + Checkbox4_1.Height
+                            Y: =CboxUDLSS.Y + CboxUDLSS.Height
                             ZIndex: =3
 
-                        StarVisible25_1 As label:
+                        StarVisibleUDLSS As label:
                             Align: =Align.Center
-                            Height: =Checkbox4_1.Height
+                            Height: =CboxUDLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =Checkbox4_1.Y
+                            Y: =CboxUDLSS.Y
                             ZIndex: =4
 
-                        Checkbox4_1 As checkbox:
+                        CboxUDLSS As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
                             Default: =CboxUnitDown.Value
@@ -1087,7 +1087,7 @@ LeadSummaryScreen As screen:
                             Y: =18
                             ZIndex: =5
 
-                    "'Additional expenses required_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    AdditionalExpensesRequiredLSS As typedDataCard.comboBoxOptionSetSingleEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_additionalexpensesrequired"
                         Default: =ThisItem.AdditionalExpensesRequired
@@ -1096,13 +1096,13 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =61
                         Required: =false
-                        Update: ='Additional expenses required_DataCard2'.Default
+                        Update: =AdditionalExpensesRequiredLSS.Default
                         Width: =Parent.Width
                         X: =0
                         Y: =12
                         ZIndex: =1
 
-                        ErrorMessage10 As label:
+                        ErrorMessageAELSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -1118,7 +1118,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =3
 
-                        StarVisible10 As label:
+                        StarVisibleAELSS As label:
                             Align: =Align.Center
                             Height: =
                             Size: =21
@@ -1129,7 +1129,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =4
 
-                        Checkbox4_5 As checkbox:
+                        cboxAELSS As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
                             Default: =CboxAdditionalExpensesRequired.Value
@@ -1142,7 +1142,7 @@ LeadSummaryScreen As screen:
                             X: =40
                             ZIndex: =5
 
-                    "'Travel Required_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    TravelRequiredLSS As typedDataCard.comboBoxOptionSetSingleEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_travelrequired"
                         Default: =ThisItem.TravelRequired
@@ -1151,13 +1151,13 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='Travel Required_DataCard2'.Default
+                        Update: =TravelRequiredLSS.Default
                         Width: =Parent.Width
                         X: =0
                         Y: =13
                         ZIndex: =1
 
-                        ErrorMessage16 As label:
+                        ErrorMessageTravelRequiredLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -1173,7 +1173,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =3
 
-                        StarVisible16 As label:
+                        StarVisibleTravelRequiredLSS As label:
                             Align: =Align.Center
                             Height: =
                             Size: =21
@@ -1184,7 +1184,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =4
 
-                        Checkbox4_6 As checkbox:
+                        cboxTravelRequiredLSS As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
                             Default: =CboxTravelRequired.Value
@@ -1197,7 +1197,7 @@ LeadSummaryScreen As screen:
                             X: =40
                             ZIndex: =5
 
-                    "'Communicated to Customer_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    CommunicatedtoCustomerLSS As typedDataCard.comboBoxOptionSetSingleEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_communicatedtocustomer"
                         Default: =ThisItem.CommunicatedToCustomer
@@ -1206,13 +1206,13 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='Communicated to Customer_DataCard2'.Default
+                        Update: =CommunicatedtoCustomerLSS.Default
                         Width: =Parent.Width
                         X: =0
                         Y: =14
                         ZIndex: =1
 
-                        ErrorMessage17 As label:
+                        ErrorMessageCCLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -1228,7 +1228,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =3
 
-                        StarVisible17 As label:
+                        StarVisibleCCLSS As label:
                             Align: =Align.Center
                             Height: =
                             Size: =21
@@ -1239,7 +1239,7 @@ LeadSummaryScreen As screen:
                             Y: =
                             ZIndex: =4
 
-                        Checkbox4_7 As checkbox:
+                        CboxCCLSS As checkbox:
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             CheckboxSize: =50
                             Default: =CboxCommunicatedtoCustomer.Value
@@ -1251,303 +1251,6 @@ LeadSummaryScreen As screen:
                             Width: =Parent.Width
                             X: =40
                             ZIndex: =5
-
-                    Lead_Image_DataCard2 As typedDataCard.addLargePictureCard:
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="crd59_lead_image"
-                        Default: =//ThisItem.LeadImages
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =//DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"crd59_lead_image")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =361
-                        Required: =false
-                        Update: =Image2.Image
-                        Width: =620
-                        X: =0
-                        Y: =15
-                        ZIndex: =1
-
-                        DataCardKey5 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(0, 0, 0, 1)
-                            Font: =Font.Arial
-                            Height: =48
-                            Size: =18
-                            Text: ="Upload Image"
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        Image2 As image:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            DisplayMode: =Parent.DisplayMode
-                            Height: =AddPicture2.Height
-                            Image: =If(IsBlank(AddPicture2.Media),AddPicture2.Media, AddPicture2.Media)
-                            Tooltip: =Parent.DisplayName
-                            Width: =AddPicture2.Width
-                            X: =AddPicture2.X
-                            Y: =AddPicture2.Y
-                            ZIndex: =2
-
-                        AddPicture2 As addMedia:
-                            Height: =278
-                            Size: =If(Parent.Width<358,11,Parent.Width>358,14,12)
-                            Width: =560
-                            X: =30
-                            Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                            ZIndex: =3
-
-                        ErrorMessage5 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =24
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =Image2.Y + Image2.Height
-                            ZIndex: =4
-
-                        StarVisible5 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey5.Height
-                            Size: =21
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey5.Y
-                            ZIndex: =5
-
-                    LeadStatus_DataCard1 As typedDataCard.textualEditCard:
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="crd59_leadstatus"
-                        Default: =ThisItem.LeadStatus
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_leadstatus")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_leadstatus")
-                        Required: =false
-                        Update: =DataCardValue34.Text
-                        Visible: =false
-                        Width: =620
-                        X: =0
-                        Y: =16
-                        ZIndex: =1
-
-                        DataCardKey35 As label:
-                            AutoHeight: =true
-                            Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue34 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: ="Submit"
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            Height: =70
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey35.Y + DataCardKey35.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage35 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =24
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue34.Y + DataCardValue34.Height
-                            ZIndex: =3
-
-                        StarVisible35 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey35.Height
-                            Size: =21
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey35.Y
-                            ZIndex: =4
-
-                    Email_DataCard1 As typedDataCard.textualEditCard:
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="crd59_email"
-                        Default: =ThisItem.Email
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_email")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_email")
-                        Required: =false
-                        Update: =DataCardValue17.Text
-                        Visible: =false
-                        Width: =620
-                        X: =0
-                        Y: =17
-                        ZIndex: =1
-
-                        DataCardKey21 As label:
-                            AutoHeight: =true
-                            Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue17 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =User().Email
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            Height: =70
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey21.Y + DataCardKey21.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage21 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =24
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue17.Y + DataCardValue17.Height
-                            ZIndex: =3
-
-                        StarVisible21 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey21.Height
-                            Size: =21
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey21.Y
-                            ZIndex: =4
-
-                    MechanicName_DataCard1 As typedDataCard.textualEditCard:
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="crd59_mechanicname"
-                        Default: =ThisItem.MechanicName
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_mechanicname")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_mechanicname")
-                        Required: =false
-                        Update: =DataCardValue5.Text
-                        Visible: =false
-                        Width: =620
-                        X: =0
-                        Y: =18
-                        ZIndex: =1
-
-                        DataCardKey6 As label:
-                            AutoHeight: =true
-                            Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Text: =User().FullName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue5 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =User().FullName
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            Height: =70
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey6.Y + DataCardKey6.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage22 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =24
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue5.Y + DataCardValue5.Height
-                            ZIndex: =3
-
-                        StarVisible22 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey6.Height
-                            Size: =21
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey6.Y
-                            ZIndex: =4
 
             Container13_8 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -1601,14 +1304,14 @@ LeadSummaryScreen As screen:
                                     UnitDescription: IntxtUnitDescriptionLSS.Text,
                                     PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=IntxtScopeLSS.Selected.ID),
                                     SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=IntxtScopeofWorkLSS.Selected.ID),
-                                    CustomScopeofWork:DataCardValue26.Text,
-                                    'EstimatedHours ': DataCardValue18_1.Text,
-                                    Notes:DataCardValue19_1.Text,
+                                    CustomScopeofWork:IntxtManuallyScopeofWorkLSS.Text,
+                                    'EstimatedHours ': IntxtEstimatedHoursLSS.Text,
+                                    Notes:IntxtNotesLSS.Text,
                                      //Lead_Image:Image2.Image,
-                                     IsUnitDown:Checkbox4_1.Value,
-                                     AdditionalExpensesRequired:Checkbox4_5.Value,
-                                    TravelRequired: Checkbox4_6.Value,
-                                     CommunicatedToCustomer: Checkbox4_7.Value,
+                                     IsUnitDown:CboxUDLSS.Value,
+                                     AdditionalExpensesRequired:cboxAELSS.Value,
+                                    TravelRequired: cboxTravelRequiredLSS.Value,
+                                     CommunicatedToCustomer: CboxCCLSS.Value,
                                      LeadStatus:"Submitted",
                                      Email:User().Email,
                                      MechanicName:User().FullName
