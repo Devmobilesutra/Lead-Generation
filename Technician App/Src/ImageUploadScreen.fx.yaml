@@ -1,4 +1,5 @@
 ImageUploadScreen As screen:
+    OnVisible: =
 
     ctnMainIS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -326,7 +327,7 @@ ImageUploadScreen As screen:
             ctnImageIS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =1000
+                Height: =glryImageIS.Height+AddMediaWithImageIS.LayoutMinHeight+ctnButtonIS.Height+400
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =20
@@ -350,9 +351,12 @@ ImageUploadScreen As screen:
 
                     UploadedImageIS As image:
                         BorderThickness: =2
+                        DisabledFill: =RGBA(255, 255, 255, 1)
                         DisplayMode: =If(CountRows(glryImageIS.AllItems)<4,DisplayMode.Edit,DisplayMode.Disabled)
                         Height: =If(Parent.Width<Parent.Height,200,250)
-                        Image: =If(IsBlank(AddMediaButtonIS.Media), SampleImage, AddMediaButtonIS.Media)
+                        Image: |-
+                            =If(IsBlank(AddMediaButtonIS.Media), SampleImage, AddMediaButtonIS.Media)
+                            //If(VarImage=true ,SampleImage,AddMediaButtonIS.Media)
                         PaddingBottom: =10
                         PaddingLeft: =10
                         PaddingRight: =10
@@ -363,20 +367,44 @@ ImageUploadScreen As screen:
                         ZIndex: =1
 
                     AddMediaButtonIS As addMedia:
-                        ChangePictureText: =If(CountRows(glryImageIS.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
-                        Color: =RGBA(255, 0, 0, 1)
+                        AlignInContainer: =AlignInContainer.Center
+                        ChangePictureText: |-
+                            =//If(CountRows(glryImageIS.AllItems)=4,"Tap or click to add a picture","You Can add only 4 Images.")
+                            "Tap or click to add a picture"
+                        Color: |-
+                            =
+                            If(CountRows(glryImageIS.AllItems)=4,RGBA(255, 0, 0, 1),Color.White)
                         DisabledBorderColor: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(77, 77, 77, 1)
-                        DisabledFill: =RGBA(202, 202, 202, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 1)
+                        DisplayMode: |-
+                            =If(CountRows(glryImageIS.AllItems)=4,DisplayMode.Disabled,DisplayMode.Edit)
+                            //DisplayMode.Edit
+                        Fill: |-
+                            =
+                            If(CountRows(glryImageIS.AllItems)=4,RGBA(255, 255, 255, 1),RGBA(255, 0, 0, 1))
                         Height: =60
-                        OnChange: |-
-                            =If(CountRows(glryImageIS.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImageIS.Image}),Notify("You Can add only 4 Images."))
-                        OnSelect: |-
+                        HoverBorderColor: =//ColorFade(Self.BorderColor, 20%)
+                        OnChange: |
+                            =If(
+                                CountRows(glryImageIS.AllItems) >3 ,
+                                Notify("You Can add only 4 Images.");Reset(AddMediaButtonIS),
+                                Collect(
+                                    LeadImagesCollection,
+                                    {
+                                        Image: UploadedImageIS.Image
+                                    }
+                                )
+                                
+                            );
+                        OnSelect: |
                             =//If(CountRows(Gallery1.AllItems)<4,Collect(LeadImagesCollection,{Image:UploadedImage1.Image}),Notify("You Can add only 4 Images."))
+                        PressedBorderColor: =//ColorFade(Self.BorderColor, -20%)
+                        Reset: =true
                         Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
                         Text: |-
-                            =
-                            If(CountRows(glryImageIS.AllItems)<4,"Tap or click to add a picture","You Can add only 4 Images.")
+                            ="Tap or click to add a picture"
+                            //If(CountRows(glryImageIS.AllItems)=4,"Tap or click to add a picture","You Can add only 4 Images.")
                         Width: =Parent.Width
                         X: =40
                         Y: =500
@@ -386,7 +414,7 @@ ImageUploadScreen As screen:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
                     FillPortions: =0
-                    Height: =600
+                    Height: =If(glryImageIS.AllItemsCount=0,0,glryImageIS.AllItemsCount=1,250,550)
                     Items: |
                         =LeadImagesCollection
                     Layout: =Layout.Vertical
@@ -394,7 +422,7 @@ ImageUploadScreen As screen:
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =4
-                    TemplateSize: =Min(280, Self.Height - 60)
+                    TemplateSize: =Min(250, Self.Height - 60)
                     Width: =Parent.Width/1.08
                     WrapCount: =2
                     ZIndex: =3
@@ -425,56 +453,56 @@ ImageUploadScreen As screen:
                         Y: =ImageIS.Y+10
                         ZIndex: =2
 
-            ctnButtonIS As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                DropShadow: =DropShadow.None
-                FillPortions: =0
-                Height: =60
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =20
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                ZIndex: =3
+                ctnButtonIS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =60
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =20
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    ZIndex: =4
 
-                btnPreviousIS As button:
-                    Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
-                    HoverFill: =Color.Red
-                    OnSelect: |+
-                        =Navigate(EstimateScreen);
-                        Set(VarIndicatorES,false);
-                        
-                        
-                        
-                        
-                    Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
-                    Text: ="Previous"
-                    Width: =Parent.Width/4
-                    X: =144
-                    Y: =790
-                    ZIndex: =1
+                    btnPreviousIS As button:
+                        Fill: =RGBA(255, 0, 0, 1)
+                        Height: =53
+                        HoverFill: =Color.Red
+                        OnSelect: |+
+                            =Navigate(EstimateScreen);
+                            Set(VarIndicatorES,false);
+                            
+                            
+                            
+                            
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
+                        Text: ="Previous"
+                        Width: =Parent.Width/4
+                        X: =144
+                        Y: =790
+                        ZIndex: =1
 
-                btnNextIS As button:
-                    Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
-                    HoverFill: =Color.Red
-                    OnSelect: |-
-                        =Set(VarIndicator, true );
-                        Set(VarIndicatorUS, true );
-                        Set(VarIndicatorSS, true );
-                        Set(VarIndicatorES,true);
-                        Set(VarIndicatorIS, true );
-                        Navigate(LeadSummaryScreen);
-                    Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
-                    Text: ="Next"
-                    Width: =Parent.Width/4
-                    X: =145
-                    Y: =790
-                    ZIndex: =2
+                    btnNextIS As button:
+                        Fill: =RGBA(255, 0, 0, 1)
+                        Height: =53
+                        HoverFill: =Color.Red
+                        OnSelect: |-
+                            =Set(VarIndicator, true );
+                            Set(VarIndicatorUS, true );
+                            Set(VarIndicatorSS, true );
+                            Set(VarIndicatorES,true);
+                            Set(VarIndicatorIS, true );
+                            Navigate(LeadSummaryScreen);
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
+                        Text: ="Next"
+                        Width: =Parent.Width/4
+                        X: =145
+                        Y: =790
+                        ZIndex: =2
 

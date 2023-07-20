@@ -129,12 +129,13 @@ LeadSummaryScreen As screen:
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
+            PaddingTop: =10
             ZIndex: =7
 
             ctnSummaryLSS As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =Parent.Height
+                Height: =SummaryForm.Height+glryImageLSS.Height
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =20
@@ -142,6 +143,7 @@ LeadSummaryScreen As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingTop: =10
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -151,7 +153,7 @@ LeadSummaryScreen As screen:
                 SummaryForm As form:
                     DataSource: =LeadInformations
                     FillPortions: =0
-                    Height: =Parent.Height
+                    Height: =ContractNumberLSS.Height+BuildingNameLSS.Height+ZipCodeLSS.Height+AddressLSS.Height+UnitCountLSS.Height+UnitDescriptionLSS.Height+ScopeLSS.Height+ScopeOfWorkLSS.Height+ManuallyScopeOfWorkLSS.Height+EstimatedHoursLSS.Height+NotesLSS.Height+UnitDownLSS.Height+AdditionalExpensesRequiredLSS.Height+TravelRequiredLSS.Height+CommunicatedtoCustomerLSS.Height+20
                     Item: =VarFormMode
                     LayoutMinHeight: =250
                     LayoutMinWidth: =Parent.Width
@@ -666,7 +668,7 @@ LeadSummaryScreen As screen:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             ChevronBackground: =RGBA(0, 0, 0, 1)
                             DefaultSelectedItems: =Parent.Default
-                            DisplayFields: =["shlrf_id"]
+                            DisplayFields: =["shlrf_primaryscopeofworkname"]
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
                             Height: =50
@@ -675,7 +677,7 @@ LeadSummaryScreen As screen:
                             Items: =' PrimaryScopeofWorks'
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PressedFill: =RGBA(0, 0, 0, 1)
-                            SearchFields: =["shlrf_id"]
+                            SearchFields: =["shlrf_primaryscopeofworkname"]
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
@@ -747,7 +749,7 @@ LeadSummaryScreen As screen:
                             ChevronBackground: =RGBA(0, 0, 0, 1)
                             Default: =IntxtScopeofwork.Selected
                             DefaultSelectedItems: =IntxtScopeofwork.SelectedItems
-                            DisplayFields: =["shlrf_id"]
+                            DisplayFields: =["shlrf_secondaryscopeofworkname"]
                             DisplayMode: =Parent.DisplayMode
                             Font: =Font.Arial
                             Height: =50
@@ -755,9 +757,9 @@ LeadSummaryScreen As screen:
                             IsSearchable: =false
                             Items: |-
                                 =//Choices([@LeadInformations].ScopeOfWorkLID)
-                                SecondaryScopeofWorks
+                                Filter(SecondaryScopeofWorks,PrimaryScopeofWorkLID.'PrimaryScopeofWorkName '=intxtScope.Selected.'PrimaryScopeofWorkName ')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            SearchFields: =["shlrf_id"]
+                            SearchFields: =["shlrf_secondaryscopeofworkname"]
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
@@ -1252,8 +1254,50 @@ LeadSummaryScreen As screen:
                             X: =40
                             ZIndex: =5
 
-            Container13_8 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+                "glryImageLSS As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DelayItemLoading: =true
+                    FillPortions: =0
+                    Height: =If(glryImageLSS.AllItemsCount=0,0,glryImageLSS.AllItemsCount=1,250,550)
+                    Items: |
+                        =LeadImagesCollection
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =4
+                    TemplateSize: =Min(250, Self.Height - 60)
+                    Width: =Parent.Width/1.08
+                    WrapCount: =2
+                    ZIndex: =2
+
+                    ImageLSS As image:
+                        BorderThickness: =2
+                        Height: =If(Parent.Width>Parent.Height,Parent.TemplateHeight/1.2,Parent.TemplateHeight/1.4)
+                        Image: =ThisItem.Image
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =10
+                        PaddingLeft: =2
+                        PaddingRight: =2
+                        PaddingTop: =10
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =Parent.TemplateWidth/1.10
+                        ZIndex: =1
+
+                    IconImageLSS As icon.Cancel:
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =30
+                        Icon: =Icon.Cancel
+                        OnSelect: =Remove(LeadImagesCollection,ThisItem);
+                        Width: =30
+                        X: =ImageLSS.Width-Self.Width-10
+                        Y: =ImageLSS.Y+10
+                        ZIndex: =2
+
+            ctnButtonSummaryScreen As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
@@ -1269,7 +1313,7 @@ LeadSummaryScreen As screen:
                 RadiusTopRight: =0
                 ZIndex: =3
 
-                Button2_10 As button:
+                btnPreviousLSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
@@ -1287,37 +1331,56 @@ LeadSummaryScreen As screen:
                     Y: =790
                     ZIndex: =1
 
-                Button2_11 As button:
+                btnSubmitLSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
                     Height: =53
                     HoverFill: =Color.Red
                     OnSelect: |
-                        = Patch(LeadInformations,
-                                Defaults(LeadInformations),
+                        =Set(VarLeadInformationID,GUID());
+                        Patch(
+                            LeadInformations,
+                            Defaults(LeadInformations),
+                            {
+                                ID: VarLeadInformationID,
+                                'ContractNumber ': IntxtContractNumerLSS.Text,
+                                'BuildingName ': IntxtBuildingNameLSS.Text,
+                                'ZipCode ': IntxtZipcodeLSS.Text,
+                                Address: IntxtAddressLSS.Text,
+                                NumberofUnits: Value(IntxtUnitCountLSS.Text),
+                                UnitDescription: IntxtUnitDescriptionLSS.Text,
+                                PrimaryScopeofWorkLID: LookUp(
+                                    ' PrimaryScopeofWorks',
+                                    ID = IntxtScopeLSS.Selected.ID
+                                ),
+                                SecondaryScopeofWorkLID: LookUp(
+                                    SecondaryScopeofWorks,
+                                    ID = IntxtScopeofWorkLSS.Selected.ID
+                                ),
+                                CustomScopeofWork: IntxtManuallyScopeofWorkLSS.Text,
+                                'EstimatedHours ': IntxtEstimatedHoursLSS.Text,
+                                Notes: IntxtNotesLSS.Text,
+                                //Lead_Image:Image2.Image,
+                                IsUnitDown: CboxUDLSS.Value,
+                                AdditionalExpensesRequired: cboxAELSS.Value,
+                                TravelRequired: cboxTravelRequiredLSS.Value,
+                                CommunicatedToCustomer: CboxCCLSS.Value,
+                                LeadStatus: "Submitted",
+                                Email: User().Email,
+                                MechanicName: User().FullName
+                            }
+                        );
+                        ForAll(
+                            glryImageLSS.AllItems As i,
+                            Patch(
+                                LeadImages,
                                 {
-                                     ID:Text(GUID()),
-                                    'ContractNumber ':IntxtContractNumerLSS.Text,
-                                    'BuildingName ': IntxtBuildingNameLSS.Text,
-                                    'ZipCode ':IntxtZipcodeLSS.Text,
-                                    Address: IntxtAddressLSS.Text,
-                                    NumberofUnits:Value(IntxtUnitCountLSS.Text),
-                                    UnitDescription: IntxtUnitDescriptionLSS.Text,
-                                    PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=IntxtScopeLSS.Selected.ID),
-                                    SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=IntxtScopeofWorkLSS.Selected.ID),
-                                    CustomScopeofWork:IntxtManuallyScopeofWorkLSS.Text,
-                                    'EstimatedHours ': IntxtEstimatedHoursLSS.Text,
-                                    Notes:IntxtNotesLSS.Text,
-                                     //Lead_Image:Image2.Image,
-                                     IsUnitDown:CboxUDLSS.Value,
-                                     AdditionalExpensesRequired:cboxAELSS.Value,
-                                    TravelRequired: cboxTravelRequiredLSS.Value,
-                                     CommunicatedToCustomer: CboxCCLSS.Value,
-                                     LeadStatus:"Submitted",
-                                     Email:User().Email,
-                                     MechanicName:User().FullName
-                                            
-                                });
+                                    ID:GUID(),
+                                    Images:i.Image,
+                                    LeadInformationLID:LookUp(LeadInformations,ID=Text(VarLeadInformationID))
                         
+                                }
+                            )
+                        );
                         Notify(
                             "Form has been submitted succuessfully.",
                             NotificationType.Success
