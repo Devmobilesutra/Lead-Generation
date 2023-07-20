@@ -8860,19 +8860,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.FocusedBorderThickness"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.FocusedBorderThickness",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS"
               }
             }
           ],
@@ -8890,19 +8890,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.TabIndex"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.TabIndex",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.lblSubmittedLeadDS"
               }
             }
           ],

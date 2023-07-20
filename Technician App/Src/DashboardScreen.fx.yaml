@@ -180,7 +180,7 @@ DashboardScreen As screen:
                     If(Parent.Height>Parent.Width,Parent.Width/1.058,Parent.Width/1.058)
                 ZIndex: =1
 
-                Button1_3 As button:
+                btnSubmittedLeadDS As button:
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledBorderColor: =RGBA(116, 116, 116, 1)
                     Fill: =RGBA(219, 219, 219, 1)
@@ -218,7 +218,7 @@ DashboardScreen As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-                Label2_6 As label:
+                lblSubmittedLeadDS As label:
                     Align: =Align.Center
                     AutoHeight: =true
                     Color: =RGBA(116, 116, 116, 1)
@@ -231,8 +231,8 @@ DashboardScreen As screen:
                     Text: |-
                         =If(cumulatively=true,"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email)),"Submitted Leads # " & CountRows(Filter(LeadInformations,Email=User().Email))) 
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Button1_3.Width
-                    X: =Button1_3.X
+                    Width: =btnSubmittedLeadDS.Width
+                    X: =btnSubmittedLeadDS.X
                     Y: =Parent.Height/14
                     ZIndex: =2
 
@@ -243,10 +243,10 @@ DashboardScreen As screen:
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =If(Parent.Width<500,30,Parent.Width>500,70)
                     Width: =Parent.Width
-                    Y: =Label2_6.Height+Label2_6.Y
+                    Y: =lblSubmittedLeadDS.Height+lblSubmittedLeadDS.Y
                     ZIndex: =3
 
-                    Label6 As label:
+                    lblOpenDS As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(39, 113, 194, 1)
@@ -262,7 +262,7 @@ DashboardScreen As screen:
                         Width: =Parent.Width/4
                         ZIndex: =1
 
-                    Label7 As label:
+                    lblInprogressDS As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(54, 176, 75, 1)
@@ -278,7 +278,7 @@ DashboardScreen As screen:
                         Width: =Parent.Width/3
                         ZIndex: =2
 
-                    Label10 As label:
+                    lblRejectedDS As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(255, 0, 0, 1)
