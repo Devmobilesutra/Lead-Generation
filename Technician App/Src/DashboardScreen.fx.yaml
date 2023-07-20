@@ -458,7 +458,7 @@ DashboardScreen As screen:
                             Y: =(Parent.Height-Self.Height)/3.5
                             ZIndex: =2
 
-                Container9_1 As groupContainer.manualLayoutContainer:
+                ctnSoldLeadsDS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutMinHeight: =80
@@ -466,7 +466,7 @@ DashboardScreen As screen:
                     Width: =Parent.Width/2.10
                     ZIndex: =2
 
-                    Label2_12 As label:
+                    lblSoldIncentivesDS As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(116, 116, 116, 1)
@@ -481,17 +481,17 @@ DashboardScreen As screen:
                         Text: =If(cumulatively=true,"Sold Incentives $" & Char(10) &"15684.22","Sold Incentives $" & Char(10) &"7045.22")
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
-                        Y: =Label2_10.Height+Label2_10.Y
+                        Y: =lblSoldLeadsDS.Height+lblSoldLeadsDS.Y
                         ZIndex: =3
 
-                    Group3_2 As group:
+                    grpSoldLeadsDS As group:
                         Height: =5
                         Width: =5
                         X: =28.74418604651163
                         Y: =40
                         ZIndex: =3
 
-                        Button1_11 As button:
+                        btnSoldLeadsDS As button:
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledBorderColor: =RGBA(116, 116, 116, 1)
                             Fill: =RGBA(219, 219, 219, 1)
@@ -515,7 +515,7 @@ DashboardScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =1
 
-                        Label2_10 As label:
+                        lblSoldLeadsDS As label:
                             Align: =Align.Center
                             AutoHeight: =true
                             Color: =RGBA(116, 116, 116, 1)
@@ -530,12 +530,12 @@ DashboardScreen As screen:
                                 If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: |-
                                 =If(cumulatively=true,"Sold Leads #" & Char(10)& "40","Sold Leads #" & Char(10)& "15")
-                            Width: =Button1_11.Width
-                            X: =Button1_11.X
+                            Width: =btnSoldLeadsDS.Width
+                            X: =btnSoldLeadsDS.X
                             Y: =(Parent.Height-Self.Height)/3.5
                             ZIndex: =2
 
-            Container3_2 As groupContainer.manualLayoutContainer:
+            ctnCreateLeadDS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -549,7 +549,7 @@ DashboardScreen As screen:
                     If(Parent.Height>Parent.Width,Parent.Width/1.058,Parent.Width/1.058)
                 ZIndex: =3
 
-                Button1_13 As button:
+                btnCreateLeadDS As button:
                     Color: =RGBA(255, 0, 0, 1)
                     DisabledBorderColor: =RGBA(255, 0, 0, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -583,7 +583,7 @@ DashboardScreen As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-            Container11 As groupContainer.manualLayoutContainer:
+            ctnforSpaceLeadDS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
