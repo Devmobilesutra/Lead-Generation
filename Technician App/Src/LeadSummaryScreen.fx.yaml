@@ -170,13 +170,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_contractnumber")
                         Required: =false
-                        Update: =DataCardValueCNLSS.Text
+                        Update: =ContractNumerLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
 
-                        DataCardKeyCNLSS As label:
+                        lblContractNumberLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -189,7 +189,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValueCNLSS As text:
+                        ContractNumerLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: |-
                                 =//Parent.Default
@@ -210,7 +210,7 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width-60
                             X: =30
-                            Y: =DataCardKeyCNLSS.Y + DataCardKeyCNLSS.Height + 5
+                            Y: =lblContractNumberLSS.Y + lblContractNumberLSS.Height + 5
                             ZIndex: =2
 
                         ErrorMessageCNLSS As label:
@@ -226,18 +226,18 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width-60
                             X: =30
-                            Y: =DataCardValueCNLSS.Y + DataCardValueCNLSS.Height
+                            Y: =ContractNumerLSS.Y + ContractNumerLSS.Height
                             ZIndex: =3
 
                         StarVisibleCNLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKeyCNLSS.Height
+                            Height: =lblContractNumberLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKeyCNLSS.Y
+                            Y: =lblContractNumberLSS.Y
                             ZIndex: =4
 
                     BuildingNameLSS As typedDataCard.textualEditCard:
@@ -251,7 +251,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                         Required: =false
-                        Update: =DataCardValue6.Text
+                        Update: =In.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =1
@@ -270,7 +270,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue6 As text:
+                        In As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtBuildingName.Text
                             DelayOutput: =true
@@ -293,7 +293,7 @@ LeadSummaryScreen As screen:
                             Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage23 As label:
+                        ErrorMessageBNLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -306,10 +306,10 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue6.Y + DataCardValue6.Height
+                            Y: =In.Y + In.Height
                             ZIndex: =3
 
-                        StarVisible23 As label:
+                        StarVisibleBNLSS As label:
                             Align: =Align.Center
                             Height: =DataCardKey7.Height
                             Size: =21
@@ -1592,8 +1592,8 @@ LeadSummaryScreen As screen:
                                 Defaults(LeadInformations),
                                 {
                                      ID:Text(GUID()),
-                                    'ContractNumber ':DataCardValueCNLSS.Text,
-                                    'BuildingName ': DataCardValue6.Text,
+                                    'ContractNumber ':ContractNumerLSS.Text,
+                                    'BuildingName ': In.Text,
                                     'ZipCode ':DataCardValue1.Text,
                                     Address: DataCardValue32.Text,
                                     NumberofUnits:Value(DataCardValue29.Text),
