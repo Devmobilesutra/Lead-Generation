@@ -364,7 +364,7 @@ DashboardScreen As screen:
                     Y: =ctnHeadingSubmittedLeadsDS.Y
                     ZIndex: =6
 
-            Container4_1 As groupContainer.horizontalAutoLayoutContainer:
+            ctnLeadsButtonsDS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -381,14 +381,15 @@ DashboardScreen As screen:
                 Width: =Parent.Width-20
                 ZIndex: =2
 
-                Container6_1 As groupContainer.manualLayoutContainer:
+                ctnQuatedLeadsDS As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
                     Width: =Parent.Width/2.10
                     ZIndex: =1
 
-                    Label2_11 As label:
+                    lblFutureIncentivesDS As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(116, 116, 116, 1)
@@ -401,19 +402,19 @@ DashboardScreen As screen:
                             =//19.22
                             If(Parent.Width<358,11,Parent.Width>358,12,14)
                         Text: =If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
-                        Width: =Button1_10.Width
-                        X: =Button1_10.X
-                        Y: =Label2_9.Height+Label2_9.Y
+                        Width: =btnQuotedLeadsDS.Width
+                        X: =btnQuotedLeadsDS.X
+                        Y: =lblQuotedLeadsDS.Height+lblQuotedLeadsDS.Y
                         ZIndex: =3
 
-                    Group2_2 As group:
+                    grpQuotedLeadsDS As group:
                         Height: =5
                         Width: =5
                         X: =20
                         Y: =40
                         ZIndex: =3
 
-                        Button1_10 As button:
+                        btnQuotedLeadsDS As button:
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledBorderColor: =RGBA(116, 116, 116, 1)
                             Fill: =RGBA(219, 219, 219, 1)
@@ -439,7 +440,7 @@ DashboardScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =1
 
-                        Label2_9 As label:
+                        lblQuotedLeadsDS As label:
                             Align: =Align.Center
                             AutoHeight: =true
                             Color: =RGBA(116, 116, 116, 1)
@@ -452,8 +453,8 @@ DashboardScreen As screen:
                                 If(Parent.Width<358,12,Parent.Width<378,14,16)
                             Text: |-
                                 =If(cumulatively=true, "Quoted Leads #" & Char(10)& "30","Quoted Leads #" & Char(10) &  "15")
-                            Width: =Button1_10.Width
-                            X: =Button1_10.X
+                            Width: =btnQuotedLeadsDS.Width
+                            X: =btnQuotedLeadsDS.X
                             Y: =(Parent.Height-Self.Height)/3.5
                             ZIndex: =2
 
@@ -478,8 +479,8 @@ DashboardScreen As screen:
                             =//19.22
                             If(Parent.Width<358,11,Parent.Width>358,12,14)
                         Text: =If(cumulatively=true,"Sold Incentives $" & Char(10) &"15684.22","Sold Incentives $" & Char(10) &"7045.22")
-                        Width: =Button1_10.Width
-                        X: =Button1_10.X
+                        Width: =btnQuotedLeadsDS.Width
+                        X: =btnQuotedLeadsDS.X
                         Y: =Label2_10.Height+Label2_10.Y
                         ZIndex: =3
 
