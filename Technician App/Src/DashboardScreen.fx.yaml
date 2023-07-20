@@ -79,7 +79,7 @@ DashboardScreen As screen:
                 X: =1390.56
                 ZIndex: =4
 
-        Container1_2 As groupContainer.manualLayoutContainer:
+        ctnUserNameDS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |
@@ -138,13 +138,13 @@ DashboardScreen As screen:
                 Y: =Parent.Height/4
                 ZIndex: =5
 
-            Label3_10 As label:
+            lblyearDS As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
                 PaddingRight: =10.68
                 Size: =If(Parent.Width>500,18,Parent.Width<500,12,12)
-                Text: =If(cumulatively=true,"2012-2023",yearly=true,"2023")
+                Text: =If(cumulatively=true,Year(Now())-10 & "-" & Year(Now()),yearly=true,Year(Now()))
                 Width: =Parent.Width/3
                 X: =Parent.Width-Self.Width
                 ZIndex: =6
@@ -153,7 +153,7 @@ DashboardScreen As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =Parent.Height-ctnHeaderDS.Height-Container1_2.Height+10
+            Height: =Parent.Height-ctnHeaderDS.Height-ctnUserNameDS.Height+10
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =10
             LayoutMinHeight: =100
