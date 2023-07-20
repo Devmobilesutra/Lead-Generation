@@ -181,7 +181,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Contract Number"
                             Width: =Parent.Width-60
                             Wrap: =false
@@ -206,7 +206,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width-60
                             X: =30
@@ -262,7 +262,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Building Name"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -286,7 +286,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -341,7 +341,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -363,7 +363,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -397,7 +397,7 @@ LeadSummaryScreen As screen:
                             Y: =lblZipcodeLSS.Y
                             ZIndex: =4
 
-                    Address_DataCard2 As typedDataCard.textualEditCard:
+                    AddressLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_address"
@@ -408,18 +408,18 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
                         Required: =false
-                        Update: =DataCardValue32.Text
+                        Update: =IntxtAddressLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =3
                         ZIndex: =1
 
-                        DataCardKey33 As label:
+                        lblAddressLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -427,7 +427,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue32 As text:
+                        IntxtAddressLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtAddress.Text
                             DelayOutput: =true
@@ -442,14 +442,14 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey33.Y + DataCardKey33.Height + 5
+                            Y: =lblAddressLSS.Y + lblAddressLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage33 As label:
+                        ErrorMessageAddressLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -462,21 +462,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue32.Y + DataCardValue32.Height
+                            Y: =IntxtAddressLSS.Y + IntxtAddressLSS.Height
                             ZIndex: =3
 
-                        StarVisible33 As label:
+                        StarVisibleAddressLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey33.Height
+                            Height: =lblAddressLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey33.Y
+                            Y: =lblAddressLSS.Y
                             ZIndex: =4
 
-                    UnitCount_DataCard3 As typedDataCard.numberEditCard:
+                    UnitCountLSS As typedDataCard.numberEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_unitcount"
@@ -486,18 +486,18 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: =Value(DataCardValue29.Text)
+                        Update: =Value(IntxtUnitCountLSS.Text)
                         Width: =Parent.Width
                         X: =0
                         Y: =4
                         ZIndex: =1
 
-                        DataCardKey30 As label:
+                        lblUnitCountLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="No ofUnits"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -505,7 +505,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue29 As text:
+                        IntxtUnitCountLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtUnitCount.Text
                             DelayOutput: =true
@@ -520,14 +520,14 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                            Y: =lblUnitCountLSS.Y + lblUnitCountLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage30 As label:
+                        ErrorMessageUnitCountLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -540,21 +540,21 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue29.Y + DataCardValue29.Height
+                            Y: =IntxtUnitCountLSS.Y + IntxtUnitCountLSS.Height
                             ZIndex: =3
 
-                        StarVisible30 As label:
+                        StarVisibleUnitCountLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey30.Height
+                            Height: =lblUnitCountLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey30.Y
+                            Y: =lblUnitCountLSS.Y
                             ZIndex: =4
 
-                    UnitDescription_DataCard3 As typedDataCard.textualEditCard:
+                    UnitDescriptionLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_unitdescription"
@@ -565,13 +565,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                         Required: =false
-                        Update: =DataCardValue30.Text
+                        Update: =IntxtUnitDescriptionLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =5
                         ZIndex: =1
 
-                        DataCardKey31 As label:
+                        lblUnitDescriptionLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -584,7 +584,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue30 As text:
+                        IntxtUnitDescriptionLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtUnitDescription.Text
                             DelayOutput: =true
@@ -603,10 +603,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                            Y: =lblUnitDescriptionLSS.Y + lblUnitDescriptionLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage31 As label:
+                        ErrorMessageUnitDescriptionLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -619,18 +619,18 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue30.Y + DataCardValue30.Height
+                            Y: =IntxtUnitDescriptionLSS.Y + IntxtUnitDescriptionLSS.Height
                             ZIndex: =3
 
-                        StarVisible31 As label:
+                        StarVisibleUnitDescriptionLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey31.Height
+                            Height: =lblUnitDescriptionLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey31.Y
+                            Y: =lblUnitDescriptionLSS.Y
                             ZIndex: =4
 
                     Scope_DataCard2 As typedDataCard.comboBoxEditCard:
@@ -1595,9 +1595,9 @@ LeadSummaryScreen As screen:
                                     'ContractNumber ':IntxtContractNumerLSS.Text,
                                     'BuildingName ': IntxtBuildingNameLSS.Text,
                                     'ZipCode ':IntxtZipcodeLSS.Text,
-                                    Address: DataCardValue32.Text,
-                                    NumberofUnits:Value(DataCardValue29.Text),
-                                    UnitDescription: DataCardValue30.Text,
+                                    Address: IntxtAddressLSS.Text,
+                                    NumberofUnits:Value(IntxtUnitCountLSS.Text),
+                                    UnitDescription: IntxtUnitDescriptionLSS.Text,
                                     PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=DataCardValue27.Selected.ID),
                                     SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=DataCardValue28.Selected.ID),
                                     CustomScopeofWork:DataCardValue26.Text,
