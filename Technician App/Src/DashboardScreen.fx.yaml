@@ -94,7 +94,7 @@ DashboardScreen As screen:
             Y: =ctnHeaderDS.Y+ctnHeaderDS.Height+10
             ZIndex: =2
 
-            Button3_2 As button:
+            btnLeadDS As button:
                 Align: =Align.Left
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
@@ -109,7 +109,7 @@ DashboardScreen As screen:
                 X: =0.00
                 ZIndex: =1
 
-            Label3_2 As label:
+            lblUserNameDS As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
@@ -121,7 +121,7 @@ DashboardScreen As screen:
                 X: =Parent.X
                 ZIndex: =4
 
-            Toggle1 As toggleSwitch:
+            toggleDS As toggleSwitch:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Default: =true
                 Height: =40

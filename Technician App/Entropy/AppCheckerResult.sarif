@@ -8800,19 +8800,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1.ShowLabel"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS.ShowLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1.ShowLabel",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS.ShowLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "ShowLabel",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1"
+                "type": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS"
               }
             }
           ],
@@ -8830,19 +8830,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1.AccessibleLabel"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1.AccessibleLabel",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnUserNameDS.Toggle1"
+                "type": "DashboardScreen.ctnMainDS.ctnUserNameDS.toggleDS"
               }
             }
           ],
