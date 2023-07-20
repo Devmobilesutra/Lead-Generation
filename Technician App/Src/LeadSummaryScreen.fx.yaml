@@ -498,7 +498,7 @@ LeadSummaryScreen As screen:
                             Font: =Font.Arial
                             Height: =48
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
-                            Text: ="No ofUnits"
+                            Text: ="No of Units"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -576,7 +576,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Unit Description"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -599,7 +599,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -633,7 +633,7 @@ LeadSummaryScreen As screen:
                             Y: =lblUnitDescriptionLSS.Y
                             ZIndex: =4
 
-                    Scope_DataCard2 As typedDataCard.comboBoxEditCard:
+                    ScopeLSS As typedDataCard.comboBoxEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_Scope"
@@ -643,26 +643,26 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: =DataCardValue27.Selected
+                        Update: =IntxtScopeLSS.Selected
                         Width: =Parent.Width
                         X: =0
                         Y: =6
                         ZIndex: =1
 
-                        DataCardKey28 As label:
+                        lblScopeLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
-                            Text: =Parent.DisplayName
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Text: ="Scope"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue27 As combobox:
+                        IntxtScopeLSS As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             ChevronBackground: =RGBA(0, 0, 0, 1)
                             DefaultSelectedItems: =Parent.Default
@@ -679,14 +679,14 @@ LeadSummaryScreen As screen:
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                            Y: =lblScopeLSS.Y + lblScopeLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage28 As label:
+                        ErrorMessageScpeLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -699,18 +699,18 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue27.Y + DataCardValue27.Height
+                            Y: =IntxtScopeLSS.Y + IntxtScopeLSS.Height
                             ZIndex: =3
 
-                        StarVisible28 As label:
+                        StarVisibleScopeLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey28.Height
+                            Height: =lblScopeLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey28.Y
+                            Y: =lblScopeLSS.Y
                             ZIndex: =4
 
                     ScopeOfWorkLID_DataCard2 As typedDataCard.comboBoxEditCard:
@@ -734,7 +734,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Scope of Work"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -761,7 +761,7 @@ LeadSummaryScreen As screen:
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -807,7 +807,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
                         Required: =false
                         Update: =DataCardValue26.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =8
                         ZIndex: =1
@@ -817,7 +817,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Scope of Work (Manually Entered)"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -840,7 +840,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -886,7 +886,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_estimatedhours")
                         Required: =false
                         Update: =DataCardValue18_1.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =9
                         ZIndex: =1
@@ -896,7 +896,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Estimated Hours (Total Man Hours)"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -919,7 +919,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -965,7 +965,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_notes")
                         Required: =false
                         Update: =DataCardValue19_1.Text
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =10
                         ZIndex: =1
@@ -974,7 +974,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Material, Part Number and other things"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -996,7 +996,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -1041,7 +1041,7 @@ LeadSummaryScreen As screen:
                         Height: =60
                         Required: =false
                         Update: ='Unit Down_DataCard2_1'.Default
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =11
                         ZIndex: =1
@@ -1080,9 +1080,9 @@ LeadSummaryScreen As screen:
                             Font: =Font.Arial
                             Height: =57
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Unit Down"
-                            Width: =550
+                            Width: =Parent.Width
                             X: =40
                             Y: =18
                             ZIndex: =5
@@ -1097,7 +1097,7 @@ LeadSummaryScreen As screen:
                         Height: =61
                         Required: =false
                         Update: ='Additional expenses required_DataCard2'.Default
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =12
                         ZIndex: =1
@@ -1136,9 +1136,9 @@ LeadSummaryScreen As screen:
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Additional Expenses Required"
-                            Width: =550
+                            Width: =Parent.Width
                             X: =40
                             ZIndex: =5
 
@@ -1152,7 +1152,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: ='Travel Required_DataCard2'.Default
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =13
                         ZIndex: =1
@@ -1191,9 +1191,9 @@ LeadSummaryScreen As screen:
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Travel Required"
-                            Width: =550
+                            Width: =Parent.Width
                             X: =40
                             ZIndex: =5
 
@@ -1207,7 +1207,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: ='Communicated to Customer_DataCard2'.Default
-                        Width: =620
+                        Width: =Parent.Width
                         X: =0
                         Y: =14
                         ZIndex: =1
@@ -1246,9 +1246,9 @@ LeadSummaryScreen As screen:
                             Font: =Font.Arial
                             Height: =56
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =18
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Communicated to customer"
-                            Width: =550
+                            Width: =Parent.Width
                             X: =40
                             ZIndex: =5
 
@@ -1294,6 +1294,7 @@ LeadSummaryScreen As screen:
 
                         AddPicture2 As addMedia:
                             Height: =278
+                            Size: =If(Parent.Width<358,11,Parent.Width>358,14,12)
                             Width: =560
                             X: =30
                             Y: =DataCardKey5.Y + DataCardKey5.Height + 5
@@ -1346,7 +1347,7 @@ LeadSummaryScreen As screen:
                         DataCardKey35 As label:
                             AutoHeight: =true
                             Height: =48
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -1366,7 +1367,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -1420,7 +1421,7 @@ LeadSummaryScreen As screen:
                         DataCardKey21 As label:
                             AutoHeight: =true
                             Height: =48
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -1440,7 +1441,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -1494,7 +1495,7 @@ LeadSummaryScreen As screen:
                         DataCardKey6 As label:
                             AutoHeight: =true
                             Height: =48
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: =User().FullName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -1514,7 +1515,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =21
+                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -1598,7 +1599,7 @@ LeadSummaryScreen As screen:
                                     Address: IntxtAddressLSS.Text,
                                     NumberofUnits:Value(IntxtUnitCountLSS.Text),
                                     UnitDescription: IntxtUnitDescriptionLSS.Text,
-                                    PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=DataCardValue27.Selected.ID),
+                                    PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=IntxtScopeLSS.Selected.ID),
                                     SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=DataCardValue28.Selected.ID),
                                     CustomScopeofWork:DataCardValue26.Text,
                                     'EstimatedHours ': DataCardValue18_1.Text,
