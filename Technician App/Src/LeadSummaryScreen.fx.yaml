@@ -118,7 +118,7 @@ LeadSummaryScreen As screen:
                 Y: =5
                 ZIndex: =2
 
-        Container9_5 As groupContainer.verticalAutoLayoutContainer:
+        ctnSummaryLSS As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -1549,6 +1549,7 @@ LeadSummaryScreen As screen:
                             ZIndex: =4
 
             Container13_8 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =60
