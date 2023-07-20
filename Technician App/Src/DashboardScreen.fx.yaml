@@ -162,8 +162,8 @@ DashboardScreen As screen:
             PaddingTop: =10
             ZIndex: =3
 
-            Container3 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnSubmittedLeadDS As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: |
@@ -236,7 +236,7 @@ DashboardScreen As screen:
                     Y: =Parent.Height/14
                     ZIndex: =2
 
-                Container3_3 As groupContainer.horizontalAutoLayoutContainer:
+                ctnHeadingSubmittedLeadsDS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =Parent.Height/5
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -294,16 +294,16 @@ DashboardScreen As screen:
                         Width: =Parent.Width/4
                         ZIndex: =3
 
-                Container2_1 As groupContainer.horizontalAutoLayoutContainer:
+                ctnCountsSubmittedLeadDS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =Parent.Height/5.5
                     LayoutGap: =10
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =If(Parent.Width<500,30,Parent.Width>500,70)
                     Width: =Parent.Width
-                    Y: =Container3_3.Height+Container3_3.Y+10
+                    Y: =ctnHeadingSubmittedLeadsDS.Height+ctnHeadingSubmittedLeadsDS.Y+10
                     ZIndex: =4
 
-                    Label11 As label:
+                    lblCountOpenDS As label:
                         Align: =Align.Center
                         Color: =RGBA(39, 113, 194, 1)
                         Height: =Parent.Height
@@ -318,7 +318,7 @@ DashboardScreen As screen:
                         Width: =Parent.Width/4
                         ZIndex: =1
 
-                    Label12 As label:
+                    lblCountInprogressDS As label:
                         Align: =Align.Center
                         Color: =RGBA(54, 176, 75, 1)
                         Height: =Parent.Height
@@ -333,7 +333,7 @@ DashboardScreen As screen:
                         Width: =Parent.Width/3
                         ZIndex: =2
 
-                    Label13 As label:
+                    lblCountRejectedDS As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 0, 0, 1)
                         Height: =Parent.Height
@@ -348,20 +348,20 @@ DashboardScreen As screen:
                         Width: =Parent.Width/4
                         ZIndex: =3
 
-                Rectangle7 As rectangle:
+                VerticalLine1SubmittedLeadDS As rectangle:
                     Fill: =RGBA(149, 149, 149, 1)
                     Height: =Parent.Height/2
                     Width: =3
-                    X: =Label11.Width+Label11.X
-                    Y: =Container3_3.Y
+                    X: =lblCountOpenDS.Width+lblCountOpenDS.X
+                    Y: =ctnHeadingSubmittedLeadsDS.Y
                     ZIndex: =5
 
-                Rectangle7_1 As rectangle:
+                VerticalLineS2ubmittedLeadDS As rectangle:
                     Fill: =RGBA(149, 149, 149, 1)
                     Height: =Parent.Height/2
                     Width: =3
-                    X: =Label12.Width+Label12.X
-                    Y: =Container3_3.Y
+                    X: =lblCountInprogressDS.Width+lblCountInprogressDS.X
+                    Y: =ctnHeadingSubmittedLeadsDS.Y
                     ZIndex: =6
 
             Container4_1 As groupContainer.horizontalAutoLayoutContainer:

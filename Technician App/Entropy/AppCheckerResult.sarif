@@ -6580,12 +6580,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6599,7 +6599,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
               }
             }
           ],
@@ -6620,12 +6620,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6639,7 +6639,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
               }
             }
           ],
@@ -6660,12 +6660,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6679,7 +6679,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label11"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
               }
             }
           ],
@@ -6700,12 +6700,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6719,7 +6719,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS"
               }
             }
           ],
@@ -6740,12 +6740,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6759,7 +6759,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS"
               }
             }
           ],
@@ -6780,12 +6780,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6799,7 +6799,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label12"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS"
               }
             }
           ],
@@ -6820,12 +6820,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6839,7 +6839,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS"
               }
             }
           ],
@@ -6860,12 +6860,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6879,7 +6879,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS"
               }
             }
           ],
@@ -6900,12 +6900,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13.Text",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -6919,7 +6919,7 @@
               "properties": {
                 "member": "Text",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Container2_1.Label13"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountRejectedDS"
               }
             }
           ],
@@ -8860,19 +8860,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6.FocusedBorderThickness"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6.FocusedBorderThickness",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6"
               }
             }
           ],
@@ -8890,19 +8890,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6.TabIndex"
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6.TabIndex",
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "DashboardScreen",
-                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.Container3.Label2_6"
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.Label2_6"
               }
             }
           ],
