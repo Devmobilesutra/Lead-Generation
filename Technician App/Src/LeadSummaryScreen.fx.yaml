@@ -713,7 +713,7 @@ LeadSummaryScreen As screen:
                             Y: =lblScopeLSS.Y
                             ZIndex: =4
 
-                    ScopeOfWorkLID_DataCard2 As typedDataCard.comboBoxEditCard:
+                    ScopeOfWorkLSS As typedDataCard.comboBoxEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_ScopeOfWorkLID"
@@ -723,13 +723,13 @@ LeadSummaryScreen As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: =DataCardValue28.Selected
+                        Update: =IntxtScopeofWorkLSS.Selected
                         Width: =Parent.Width
                         X: =0
                         Y: =7
                         ZIndex: =1
 
-                        DataCardKey29 As label:
+                        lblScopeofWorkLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
@@ -742,7 +742,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue28 As combobox:
+                        IntxtScopeofWorkLSS As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             ChevronBackground: =RGBA(0, 0, 0, 1)
                             Default: =IntxtScopeofwork.Selected
@@ -765,10 +765,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                            Y: =lblScopeofWorkLSS.Y + lblScopeofWorkLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage29 As label:
+                        ErrorMessageScopeofWorkLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -781,18 +781,18 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue28.Y + DataCardValue28.Height
+                            Y: =IntxtScopeofWorkLSS.Y + IntxtScopeofWorkLSS.Height
                             ZIndex: =3
 
-                        StarVisible29 As label:
+                        StarVisibleScopeofWorkLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey29.Height
+                            Height: =lblScopeofWorkLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey29.Y
+                            Y: =lblScopeofWorkLSS.Y
                             ZIndex: =4
 
                     ManuallyScopeOfWork_DataCard3 As typedDataCard.textualEditCard:
@@ -1600,7 +1600,7 @@ LeadSummaryScreen As screen:
                                     NumberofUnits:Value(IntxtUnitCountLSS.Text),
                                     UnitDescription: IntxtUnitDescriptionLSS.Text,
                                     PrimaryScopeofWorkLID:LookUp(' PrimaryScopeofWorks',ID=IntxtScopeLSS.Selected.ID),
-                                    SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=DataCardValue28.Selected.ID),
+                                    SecondaryScopeofWorkLID:LookUp(SecondaryScopeofWorks,ID=IntxtScopeofWorkLSS.Selected.ID),
                                     CustomScopeofWork:DataCardValue26.Text,
                                     'EstimatedHours ': DataCardValue18_1.Text,
                                     Notes:DataCardValue19_1.Text,
