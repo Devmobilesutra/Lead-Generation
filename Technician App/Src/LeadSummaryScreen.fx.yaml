@@ -320,7 +320,7 @@ LeadSummaryScreen As screen:
                             Y: =lblBuildingNameLSS.Y
                             ZIndex: =4
 
-                    PinCode_DataCard2 As typedDataCard.textualEditCard:
+                    ZipCodeLSS As typedDataCard.textualEditCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="crd59_pincode"
@@ -331,13 +331,13 @@ LeadSummaryScreen As screen:
                         Height: =50
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_zipcode")
                         Required: =false
-                        Update: =DataCardValue1.Text
+                        Update: =IntxtZipcodeLSS.Text
                         Width: =Parent.Width
                         X: =0
                         Y: =2
                         ZIndex: =1
 
-                        DataCardKey1 As label:
+                        lblZipcodeLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
@@ -349,7 +349,7 @@ LeadSummaryScreen As screen:
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue1 As text:
+                        IntxtZipcodeLSS As text:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             Default: =IntxtZipCode.Text
                             DelayOutput: =true
@@ -367,10 +367,10 @@ LeadSummaryScreen As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                            Y: =lblZipcodeLSS.Y + lblZipcodeLSS.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage1 As label:
+                        ErrorMessageZipcodeLSS As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -383,18 +383,18 @@ LeadSummaryScreen As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue1.Y + DataCardValue1.Height
+                            Y: =IntxtZipcodeLSS.Y + IntxtZipcodeLSS.Height
                             ZIndex: =3
 
-                        StarVisible1 As label:
+                        StarVisibleZipcodeLSS As label:
                             Align: =Align.Center
-                            Height: =DataCardKey1.Height
+                            Height: =lblZipcodeLSS.Height
                             Size: =21
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey1.Y
+                            Y: =lblZipcodeLSS.Y
                             ZIndex: =4
 
                     Address_DataCard2 As typedDataCard.textualEditCard:
@@ -1594,7 +1594,7 @@ LeadSummaryScreen As screen:
                                      ID:Text(GUID()),
                                     'ContractNumber ':IntxtContractNumerLSS.Text,
                                     'BuildingName ': IntxtBuildingNameLSS.Text,
-                                    'ZipCode ':DataCardValue1.Text,
+                                    'ZipCode ':IntxtZipcodeLSS.Text,
                                     Address: DataCardValue32.Text,
                                     NumberofUnits:Value(DataCardValue29.Text),
                                     UnitDescription: DataCardValue30.Text,
