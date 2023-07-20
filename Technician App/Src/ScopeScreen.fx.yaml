@@ -245,7 +245,7 @@ ScopeScreen As screen:
                     ZIndex: =10
 
                 IconLine1SS As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -254,7 +254,7 @@ ScopeScreen As screen:
                     ZIndex: =11
 
                 IconLine2SS As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorUS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -379,7 +379,7 @@ ScopeScreen As screen:
                         ChevronBackground: =RGBA(0, 0, 0, 1)
                         ChevronHoverBackground: =Color.Black
                         DefaultSelectedItems: =Parent.Default
-                        DisplayFields: =["shlrf_id"]
+                        DisplayFields: =["shlrf_primaryscopeofworkname"]
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =2
                         Font: =Font.Arial
@@ -391,7 +391,7 @@ ScopeScreen As screen:
                         Items: =' PrimaryScopeofWorks'
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedFill: =RGBA(0, 0, 0, 1)
-                        SearchFields: =["shlrf_id"]
+                        SearchFields: =["shlrf_primaryscopeofworkname"]
                         SearchItems: =[]
                         SelectionFill: =RGBA(0, 0, 0, 1)
                         SelectMultiple: =false
@@ -462,7 +462,7 @@ ScopeScreen As screen:
                         ChevronBackground: =RGBA(0, 0, 0, 1)
                         ChevronHoverBackground: =Color.Black
                         DefaultSelectedItems: =Parent.Default
-                        DisplayFields: =["shlrf_id"]
+                        DisplayFields: =["shlrf_secondaryscopeofworkname"]
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =2
                         Font: =Font.Arial
@@ -471,7 +471,7 @@ ScopeScreen As screen:
                         IsSearchable: =false
                         Items: =Filter(SecondaryScopeofWorks,PrimaryScopeofWorkLID.'PrimaryScopeofWorkName '=intxtScope.Selected.'PrimaryScopeofWorkName ')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["shlrf_id"]
+                        SearchFields: =["shlrf_secondaryscopeofworkname"]
                         SearchItems: =[]
                         SelectionFill: =RGBA(0, 0, 0, 1)
                         SelectMultiple: =false

@@ -233,7 +233,7 @@ UnitScreen As screen:
                     ZIndex: =10
 
                 IconLine1US As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -536,11 +536,12 @@ UnitScreen As screen:
                     Font: =Font.Arial
                     Height: =53
                     HoverFill: =Color.Red
-                    OnSelect: |
-                        =Navigate(ScopeScreen);
-                        Set(VarIndicator,true);
+                    OnSelect: |+
+                        =Set(VarIndicator,true);
                         Set(VarIndicatorUS,true);
                         Set(VarIndicatorSS,false);
+                        Navigate(ScopeScreen);
+                        
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                     Text: ="Next"
                     Width: =Parent.Width/4

@@ -319,7 +319,9 @@ CreatLeadScreen As screen:
                     ZIndex: =20
 
                 CircleStep2CL As circle:
-                    Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
+                    Fill: |-
+                        =//If(VarIndicatorUS=true,Color.Green,Color.Red)
+                        Color.Red
                     Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
                     X: =IconLine1CL.X+IconLine1CL.Width
@@ -659,7 +661,8 @@ CreatLeadScreen As screen:
                 Font: =Font.Arial
                 HoverFill: =Color.Red
                 OnSelect: |-
-                    =Set(VarIndicator,true);
+                    =Set(VarIndicatorUS,false);
+                    Set(VarIndicator,true);
                     Navigate(UnitScreen);
                 Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
                 Text: ="Next"

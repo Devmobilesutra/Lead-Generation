@@ -236,7 +236,7 @@ EstimateScreen As screen:
                     ZIndex: =10
 
                 IconLine1ES As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicator=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -245,7 +245,7 @@ EstimateScreen As screen:
                     ZIndex: =11
 
                 IconLine2ES As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorUS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -254,7 +254,7 @@ EstimateScreen As screen:
                     ZIndex: =12
 
                 IconLine3ES As icon.HorizontalLine:
-                    Color: =Color.DarkGray
+                    Color: =If(VarIndicatorSS=true,Color.Green,Color.DarkGray)
                     Height: =51
                     Icon: =Icon.HorizontalLine
                     Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
@@ -328,7 +328,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+CommunicatedtoCustomer.Height+80
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+CommunicatedtoCustomer.Height+100
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -767,6 +767,7 @@ EstimateScreen As screen:
                         Set(VarIndicatorUS, true );
                         Set(VarIndicatorSS, true );
                         Set(VarIndicatorES,true);
+                        Set(VarIndicatorIS,false);
                         Navigate(ImageUploadScreen);
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                     Text: ="Next"
