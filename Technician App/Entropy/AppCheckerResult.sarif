@@ -9616,19 +9616,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.ContractNumerLSS.AccessibleLabel"
+                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.IntxtContractNumerLSS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.ContractNumerLSS.AccessibleLabel",
+                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.IntxtContractNumerLSS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadSummaryScreen",
-                "type": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.ContractNumerLSS"
+                "type": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.ContractNumberLSS.IntxtContractNumerLSS"
               }
             }
           ],
@@ -9646,19 +9646,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.In.AccessibleLabel"
+                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.IntxtBuildingNameLSS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.In.AccessibleLabel",
+                  "fullyQualifiedName": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.IntxtBuildingNameLSS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LeadSummaryScreen",
-                "type": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.In"
+                "type": "LeadSummaryScreen.ctnMainLSS.ctnMiddleLSS.ctnSummaryLSS.SummaryForm.BuildingNameLSS.IntxtBuildingNameLSS"
               }
             }
           ],
