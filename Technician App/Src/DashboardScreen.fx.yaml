@@ -314,7 +314,7 @@ DashboardScreen As screen:
                             If(Parent.Width<358,12,Parent.Width>358,14,18)
                         Text: |-
                             =//If(cumulatively=true,"37","20")
-                            If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Submitted")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Submitted" && Year('Created On')=2023))) 
+                            //If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Submitted")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="Submitted" && Year('Created On')=2023))) 
                         Width: =Parent.Width/4
                         ZIndex: =1
 
@@ -329,7 +329,7 @@ DashboardScreen As screen:
                             If(Parent.Width<358,12,Parent.Width>358,14,18)
                         Text: |-
                             =//If(cumulatively=true,"30","10")
-                            If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress" && Year('Created On')=2023))) 
+                            If(cumulatively=true, CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress")), CountRows(Filter(LeadInformations,Email=User().Email && LeadStatus="InProgress" && Year('Created On')=Year(Now()))))
                         Width: =Parent.Width/3
                         ZIndex: =2
 
@@ -404,7 +404,7 @@ DashboardScreen As screen:
                         Text: |-
                             =//If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
                             //If(cumulatively=true,"Future Incentives $" & Char(10) & "","Future Incentives $" & Char(10) &"2034.64")
-                            LookUp(TotalIncentives,Year=Year(Today()),'TotalIncentives ')
+                            If(cumulatively=true,"Future Incentives $" & Char(10) & LookUp(GCTotalIncentives,Year(Year)=Year(Today()),TotalIncentives),"Future Incentives $" & Char(10) & Sum(GCTotalIncentives,TotalIncentives))
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblQuotedLeadsDS.Height+lblQuotedLeadsDS.Y

@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "shlrf_totalincentives",
+    "MaxGetRowsCount": 500,
     "Name": "TotalIncentives",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

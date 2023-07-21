@@ -33,6 +33,7 @@ App As appinfo:
             varshowMenu,
             false
         );
+        ClearCollect(GCTotalIncentives,TotalIncentives);
     StartScreen: =
 
     Host As hostControl.DefaultHostControlVariant:
