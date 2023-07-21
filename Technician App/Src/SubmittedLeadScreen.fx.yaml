@@ -549,7 +549,11 @@ SubmittedLeadScreen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =If(Parent.Width<378,10,Parent.Width<500,11,14)
-                    Text: ="10000$"
+                    Text: |-
+                        =Sum(Filter(
+                         GCTotalIncentives,Year(Year)=Year(lblTitleYearSLS.Text)),
+                               TotalIncentives
+                        )
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width/6
                     X: =lblTotalIncentivesSLS.Width+lblTotalIncentivesSLS.X
