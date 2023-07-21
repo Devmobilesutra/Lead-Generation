@@ -23,7 +23,7 @@ CreatLeadScreen As screen:
                 If(Parent.Height<Parent.Width,60,80)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
-            LayoutMinWidth: =Parent.Width-20
+            LayoutMinWidth: =Parent.Width/1.02
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
             PaddingTop: =0.00
@@ -126,9 +126,10 @@ CreatLeadScreen As screen:
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =Parent.Height-ctnHeaderCL.Height-ctnUserHeaderCL.Height
-            LayoutMinWidth: =Parent.Width-40
+            LayoutMinWidth: =Parent.Width/1.08
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =Parent.Width
             ZIndex: =7
 
             ctnProgressBarCreatLead As groupContainer.manualLayoutContainer:
@@ -136,7 +137,7 @@ CreatLeadScreen As screen:
                 FillPortions: =0
                 Height: =136
                 LayoutMinHeight: =100
-                LayoutMinWidth: =250
+                LayoutMinWidth: =Parent.Width/1.04
                 Width: =Parent.Width/1.04
                 X: =87
                 Y: =77
@@ -508,7 +509,8 @@ CreatLeadScreen As screen:
                     MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                     Required: =false
                     Update: =IntxtBuildingName.Text
-                    Width: =Parent.Width
+                    Width: |
+                        =Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =2

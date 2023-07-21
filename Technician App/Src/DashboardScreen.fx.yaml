@@ -428,7 +428,7 @@ DashboardScreen As screen:
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblQuotedLeadsDS.Height+lblQuotedLeadsDS.Y
-                        ZIndex: =3
+                        ZIndex: =2
 
                     grpQuotedLeadsDS As group:
                         Height: =5
@@ -436,6 +436,24 @@ DashboardScreen As screen:
                         X: =20
                         Y: =40
                         ZIndex: =3
+
+                        lblQuotedLeadsDS As label:
+                            Align: =Align.Center
+                            AutoHeight: =true
+                            Color: =RGBA(116, 116, 116, 1)
+                            DisplayMode: =DisplayMode.View
+                            FontWeight: =FontWeight.Semibold
+                            LineHeight: =1.05
+                            OnSelect: =Navigate(SubmittedLeadScreen);Set(VarFutureIncetives,true)
+                            Size: |-
+                                =//19.22
+                                If(Parent.Width<358,12,Parent.Width<378,14,16)
+                            Text: |-
+                                =If(cumulatively=true, "Quoted Leads #" & Char(10)& "30","Quoted Leads #" & Char(10) &  "15")
+                            Width: =btnQuotedLeadsDS.Width
+                            X: =btnQuotedLeadsDS.X
+                            Y: =(Parent.Height-Self.Height)/3.5
+                            ZIndex: =1
 
                         btnQuotedLeadsDS As button:
                             Color: =RGBA(0, 0, 0, 1)
@@ -461,25 +479,7 @@ DashboardScreen As screen:
                             Text: =
                             VerticalAlign: =VerticalAlign.Top
                             Width: =Parent.Width
-                            ZIndex: =1
-
-                        lblQuotedLeadsDS As label:
-                            Align: =Align.Center
-                            AutoHeight: =true
-                            Color: =RGBA(116, 116, 116, 1)
-                            DisplayMode: =DisplayMode.View
-                            FontWeight: =FontWeight.Semibold
-                            LineHeight: =1.05
-                            OnSelect: =Navigate(SubmittedLeadScreen);Set(VarFutureIncetives,true)
-                            Size: |-
-                                =//19.22
-                                If(Parent.Width<358,12,Parent.Width<378,14,16)
-                            Text: |-
-                                =If(cumulatively=true, "Quoted Leads #" & Char(10)& "30","Quoted Leads #" & Char(10) &  "15")
-                            Width: =btnQuotedLeadsDS.Width
-                            X: =btnQuotedLeadsDS.X
-                            Y: =(Parent.Height-Self.Height)/3.5
-                            ZIndex: =2
+                            ZIndex: =3
 
                 ctnSoldLeadsDS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
