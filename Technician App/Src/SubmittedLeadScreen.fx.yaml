@@ -488,7 +488,7 @@ SubmittedLeadScreen As screen:
                     Text: |-
                         =//ThisItem.Value\
                         "Year"
-                    Width: =Parent.Width/12
+                    Width: =Parent.Width/11
                     X: =10
                     Y: =10
                     ZIndex: =5
@@ -508,7 +508,7 @@ SubmittedLeadScreen As screen:
                     Text: |+
                         =CountRows(Filter
                         (LeadInformations,Email=User().Email  && 
-                        Text(Year('Created On'))=Title2.Text))
+                        Year('Created On')=Year(Title2.Text)))
                         
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width/8

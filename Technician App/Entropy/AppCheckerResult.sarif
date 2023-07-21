@@ -6565,10 +6565,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 24,
+                  "charLength": 18,
                   "charOffset": 61,
                   "snippet": {
-                    "text": "Text(Year('Created On'))"
+                    "text": "Year('Created On')"
                   }
                 }
               },
@@ -6581,7 +6581,7 @@
           ],
           "message": {
             "arguments": [
-              "Text"
+              "Year"
             ],
             "id": "issue"
           },
@@ -6606,7 +6606,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 85,
+                  "charOffset": 79,
                   "snippet": {
                     "text": "="
                   }
