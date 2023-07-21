@@ -6796,6 +6796,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 221,
+                  "snippet": {
+                    "text": "Year('Created On')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardScreen",
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Year"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 239,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardScreen",
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 218,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardScreen",
+                "type": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountOpenDS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "DashboardScreen.ctnMainDS.ctnMiddleDS.ctnSubmittedLeadDS.ctnCountsSubmittedLeadDS.lblCountInprogressDS.Text"
                 }
               ],
