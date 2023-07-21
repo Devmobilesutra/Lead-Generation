@@ -507,7 +507,7 @@ SubmittedLeadScreen As screen:
                     Size: =If(Parent.Width<378,10,Parent.Width<500,11,14)
                     Text: |+
                         =CountRows(Filter
-                        (LeadInformations,//Email=User().Email  && 
+                        (LeadInformations,Email=User().Email  && 
                         Text(Year('Created On'))=Title2.Text))
                         
                     VerticalAlign: =VerticalAlign.Top

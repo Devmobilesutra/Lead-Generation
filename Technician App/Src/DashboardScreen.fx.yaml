@@ -1,4 +1,5 @@
 DashboardScreen As screen:
+    OnVisible: =Refresh(LeadInformations);
 
     ctnMainDS As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.None

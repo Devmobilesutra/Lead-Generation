@@ -6566,7 +6566,7 @@
                 },
                 "region": {
                   "charLength": 24,
-                  "charOffset": 63,
+                  "charOffset": 61,
                   "snippet": {
                     "text": "Text(Year('Created On'))"
                   }
@@ -6606,9 +6606,49 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 87,
+                  "charOffset": 85,
                   "snippet": {
                     "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "SubmittedLeadScreen",
+                "type": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.lblCountTotalLeadsSLS"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.lblCountTotalLeadsSLS.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.lblCountTotalLeadsSLS.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 56,
+                  "snippet": {
+                    "text": "&&"
                   }
                 }
               },
