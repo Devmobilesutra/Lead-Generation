@@ -401,7 +401,10 @@ DashboardScreen As screen:
                         Size: |-
                             =//19.22
                             If(Parent.Width<358,11,Parent.Width>358,12,14)
-                        Text: =If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
+                        Text: |-
+                            =//If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
+                            //If(cumulatively=true,"Future Incentives $" & Char(10) & "","Future Incentives $" & Char(10) &"2034.64")
+                            LookUp(TotalIncentives,Year=Year(Today()),'TotalIncentives ')
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblQuotedLeadsDS.Height+lblQuotedLeadsDS.Y

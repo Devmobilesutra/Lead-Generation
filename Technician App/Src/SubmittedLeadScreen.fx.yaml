@@ -87,13 +87,13 @@ SubmittedLeadScreen As screen:
             Y: =ctnHeaderSLS.Y+ctnHeaderSLS.Height+10
             ZIndex: =2
 
-            Button3_6 As button:
+            btnUserNameSLS As button:
                 Align: =Align.Left
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
-                PaddingLeft: =Image1_6.Width+20
+                PaddingLeft: =imgUserNameSLS.Width+20
                 PaddingRight: =5.34
                 PaddingTop: =0.00
                 Size: =If(Parent.Width<500,14,Parent.Width>500,22,12)
@@ -108,7 +108,7 @@ SubmittedLeadScreen As screen:
                 X: =0.00
                 ZIndex: =1
 
-            Image1_6 As image:
+            imgUserNameSLS As image:
                 Height: =Parent.Height/1.1
                 Image: =download
                 PaddingRight: =0.00
@@ -133,7 +133,7 @@ SubmittedLeadScreen As screen:
                 X: =Parent.Width-Self.Width
                 ZIndex: =3
 
-        Container5_8 As groupContainer.manualLayoutContainer:
+        ctnMiddleSLS As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -144,7 +144,7 @@ SubmittedLeadScreen As screen:
             X: =15
             ZIndex: =3
 
-            "Gallery3 As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
+            "glrySubmittedLeadsSLS As gallery.'BrowseLayout_Flexible_SocialFeed_ver5.0'":
                 DelayItemLoading: =true
                 Height: =Parent.Height/1.08
                 Items: |-
@@ -168,7 +168,7 @@ SubmittedLeadScreen As screen:
                 TemplateSize: =Min(870, Self.Height - 40)
                 Width: =Parent.Width/1.06
                 X: =20
-                Y: =Container1.Y+Container1.Height+10
+                Y: =ctnSearchBarSLS.Y+ctnSearchBarSLS.Height+10
                 ZIndex: =1
 
                 Title2 As label:
@@ -185,11 +185,11 @@ SubmittedLeadScreen As screen:
                     Size: =If(Parent.Width<378,10,Parent.Width<500,11,14)
                     Text: =ThisItem.Value
                     Width: =Parent.Width/10
-                    X: =Title2_1.X+Title2_1.Width
+                    X: =lblTitleYearSLS.X+lblTitleYearSLS.Width
                     Y: =10
                     ZIndex: =1
 
-                "Gallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+                "glryLeadsSLS As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                     Fill: =RGBA(237, 237, 237, 1)
                     Height: =Parent.Height  -50
                     Items: |-
@@ -198,14 +198,14 @@ SubmittedLeadScreen As screen:
                         Filter
                         (LeadInformations,//Email=User().Email  && 
                         Text(Year('Created On'))=Title2.Text && 
-                        LeadStatus <> "Sold" && Email=User().Email),'Created On',SortOrder.Ascending), TextInput1_1.Text,"shlrf_contractnumber","shlrf_address","shlrf_buildingname")
+                        LeadStatus <> "Sold" && Email=User().Email),'Created On',SortOrder.Ascending), IntxtSearchBoxSLS.Text,"shlrf_contractnumber","shlrf_address","shlrf_buildingname")
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =235
                     Visible: |
                         =ThisItem.IsSelected && locInfoExpanded
                     Width: =Parent.Width/1.03
-                    Y: =Rectangle2.Height
+                    Y: =rectangleYearSLS.Height
                     ZIndex: =2
 
                     Separator3_1 As rectangle:
@@ -286,7 +286,7 @@ SubmittedLeadScreen As screen:
                                               Parent.Width/4.5
                                               )
                         X: =10
-                        Y: =Rectangle1_1.Y+Rectangle1_1.Height+10
+                        Y: =lineEstimateSLS.Y+lineEstimateSLS.Height+10
                         ZIndex: =6
 
                     Title3_5 As label:
@@ -419,7 +419,7 @@ SubmittedLeadScreen As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width/1.8
                         X: =10
-                        Y: =Body1_9.Height+Body1_9.Y
+                        Y: =lblEstimateNumberSLS.Height+lblEstimateNumberSLS.Y
                         ZIndex: =14
 
                     Button6_1 As button:
@@ -446,7 +446,7 @@ SubmittedLeadScreen As screen:
                         Y: =14
                         ZIndex: =15
 
-                    Rectangle1_1 As rectangle:
+                    lineEstimateSLS As rectangle:
                         BorderColor: =RGBA(116, 116, 116, 1)
                         DisplayMode: =DisplayMode.View
                         Fill: =RGBA(116, 116, 116, 1)
@@ -457,7 +457,7 @@ SubmittedLeadScreen As screen:
                         Y: =If(Parent.Width<500,Body1_11.Height+Body1_11.Y,Body1_10.Height+Body1_10.Y+10)
                         ZIndex: =16
 
-                    Body1_9 As label:
+                    lblEstimateNumberSLS As label:
                         Height: =20
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -473,31 +473,7 @@ SubmittedLeadScreen As screen:
                         Y: =20
                         ZIndex: =17
 
-                Icon1 As icon.ChevronDown:
-                    Height: =30
-                    Icon: =Icon.ChevronDown
-                    OnSelect: |
-                        =Select(Parent); UpdateContext({locInfoExpanded:true})
-                    Visible: |
-                        =//!(ThisItem.IsSelected && locInfoExpanded)
-                        false
-                    Width: =30
-                    X: =Parent.Width-2*Self.Width
-                    ZIndex: =3
-
-                Icon1_1 As icon.ChevronDown:
-                    Height: =30
-                    Icon: =Icon.ChevronUp
-                    OnSelect: |
-                        =Select(Parent); UpdateContext({locInfoExpanded:false})
-                    Visible: |
-                        =//ThisItem.IsSelected && locInfoExpanded
-                        false
-                    Width: =30
-                    X: =Parent.Width-2*Self.Width
-                    ZIndex: =4
-
-                Title2_1 As label:
+                lblTitleYearSLS As label:
                     AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: |-
@@ -517,7 +493,7 @@ SubmittedLeadScreen As screen:
                     Y: =10
                     ZIndex: =5
 
-                Title2_2 As label:
+                lblCountTotalLeadsSLS As label:
                     AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: |-
@@ -536,11 +512,11 @@ SubmittedLeadScreen As screen:
                         
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width/8
-                    X: =Title2_3.Width+Title2_3.X
+                    X: =lblTotalLeadsSLS.Width+lblTotalLeadsSLS.X
                     Y: =10
                     ZIndex: =6
 
-                Title2_3 As label:
+                lblTotalLeadsSLS As label:
                     AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: |-
@@ -561,7 +537,7 @@ SubmittedLeadScreen As screen:
                     Y: =10
                     ZIndex: =7
 
-                Title2_4 As label:
+                lblCountTotalIncentivesSLS As label:
                     AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: |-
@@ -576,11 +552,11 @@ SubmittedLeadScreen As screen:
                     Text: ="10000$"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width/6
-                    X: =Title2_5.Width+Title2_5.X
+                    X: =lblTotalIncentivesSLS.Width+lblTotalIncentivesSLS.X
                     Y: =10
                     ZIndex: =8
 
-                Title2_5 As label:
+                lblTotalIncentivesSLS As label:
                     AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: |-
@@ -597,11 +573,11 @@ SubmittedLeadScreen As screen:
                         "Total Incentives"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width/5
-                    X: =Title2_2.Width+Title2_2.X
+                    X: =lblCountTotalLeadsSLS.Width+lblCountTotalLeadsSLS.X
                     Y: =10
                     ZIndex: =9
 
-                Rectangle2 As rectangle:
+                rectangleYearSLS As rectangle:
                     BorderColor: =RGBA(255, 0, 0, 1)
                     BorderThickness: =1
                     Fill: =RGBA(0, 0, 0, 0)
@@ -612,7 +588,7 @@ SubmittedLeadScreen As screen:
                         If(Parent.Width<378,Parent.Width/1.06,Parent.Width<500,Parent.Width/1.06,Parent.Width/1.03)
                     ZIndex: =10
 
-                Image5 As image:
+                imgExpandSLS As image:
                     Height: =50
                     Image: =accordianPlus
                     OnSelect: |-
@@ -623,7 +599,7 @@ SubmittedLeadScreen As screen:
                     X: =If(Parent.Width<500,Parent.Width -1.5*(Self.Width),Parent.Width -1.8*(Self.Width))
                     ZIndex: =11
 
-                Image5_1 As image:
+                imgCollapseSLS As image:
                     Height: =50
                     Image: =accordianMinus
                     OnSelect: |-
@@ -634,7 +610,7 @@ SubmittedLeadScreen As screen:
                     X: =If(Parent.Width<500,Parent.Width -1.5*(Self.Width),Parent.Width -1.8*(Self.Width))
                     ZIndex: =12
 
-            Container1 As groupContainer.horizontalAutoLayoutContainer:
+            ctnSearchBarSLS As groupContainer.horizontalAutoLayoutContainer:
                 Height: =60
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutJustifyContent: =LayoutJustifyContent.End
@@ -643,7 +619,7 @@ SubmittedLeadScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =5
 
-                TextInput1_1 As text:
+                IntxtSearchBoxSLS As text:
                     BorderColor: =RGBA(255, 0, 0, 1)
                     Clear: =true
                     Default: =""
@@ -666,7 +642,7 @@ SubmittedLeadScreen As screen:
                     Width: =Parent.Width/1.6
                     ZIndex: =1
 
-                Icon7_1 As icon.Search:
+                IconSearchSLS As icon.Search:
                     BorderColor: =RGBA(255, 0, 0, 1)
                     BorderThickness: =2
                     Color: =RGBA(255, 0, 0, 1)

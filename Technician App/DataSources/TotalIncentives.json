@@ -1,0 +1,120 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlrf_totalincentiveses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlrf_totalincentives",
+    "Name": "TotalIncentives",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlrf_id": "ID",
+      "shlrf_toalleads": "ToalLeads ",
+      "shlrf_totalincentives": "TotalIncentives",
+      "shlrf_totalincentives_AsyncOperations": "System Jobs",
+      "shlrf_totalincentives_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlrf_totalincentives_DuplicateBaseRecord": "Duplicate Records (shlrf_totalincentives_DuplicateBaseRecord)",
+      "shlrf_totalincentives_DuplicateMatchingRecord": "Duplicate Records (shlrf_totalincentives_DuplicateMatchingRecord)",
+      "shlrf_totalincentives_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlrf_totalincentives_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlrf_totalincentives_ProcessSession": "Process Sessions",
+      "shlrf_totalincentives_SyncErrors": "Sync Errors",
+      "shlrf_totalincentivesid": "TotalIncentives ",
+      "shlrf_year": "Year",
+      "shlrf_yearlycapreached": "YearlyCapReached",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "TotalIncentives",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "TotalIncentives (Views)",
+    "Name": "_shlrf_totalincentives_views",
+    "RelatedEntityName": "TotalIncentives",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1029b2eb-9bc4-4f6d-ba08-d064f7566649": "Inactive TotalIncentives",
+      "50af01b4-a881-4a5d-8f09-5a0e00f30f35": "TotalIncentives  Advanced Find View",
+      "77af06b0-b6ba-4e2f-8bf5-5487963cc81f": "Active TotalIncentives",
+      "8ce77ff2-60b7-401a-a271-9d4cd12b7ae5": "TotalIncentives  Associated View",
+      "ec6bf2ee-4a68-4af1-9907-dd73d9fb7fc5": "TotalIncentives  Lookup View"
+    }
+  },
+  {
+    "DisplayName": "YearlyCapReached (TotalIncentives)",
+    "Name": "shlrf_totalincentives_shlrf_yearlycapreached",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlrf_yearlycapreached",
+        "OptionSetReferenceEntityName": "TotalIncentives"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlrf_yearlycapreached",
+    "RelatedEntityName": "TotalIncentives",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (TotalIncentives)",
+    "Name": "shlrf_totalincentives_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "TotalIncentives"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "TotalIncentives",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (TotalIncentives)",
+    "Name": "shlrf_totalincentives_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "TotalIncentives"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "TotalIncentives",
+    "Type": "OptionSetInfo"
+  }
+]
