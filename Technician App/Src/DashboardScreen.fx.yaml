@@ -404,7 +404,26 @@ DashboardScreen As screen:
                         Text: |-
                             =//If(cumulatively=true,"Future Incentives $" & Char(10) & "9560.45","Future Incentives $" & Char(10) &"2034.64")
                             //If(cumulatively=true,"Future Incentives $" & Char(10) & "","Future Incentives $" & Char(10) &"2034.64")
-                            If(yearly=true,"Future Incentives $" & Char(10) & LookUp(GCTotalIncentives,Year(Year)=Year(Today()),TotalIncentives),"Future Incentives $" & Char(10) & Sum(GCTotalIncentives,TotalIncentives))
+                            //If(yearly=true,"Future Incentives $" & Char(10) & LookUp(GCTotalIncentives,Year(Year)=Year(Today()),TotalIncentives),"Future Incentives $" & Char(10) & Sum(GCTotalIncentives,TotalIncentives))
+                            If(
+                               yearly = true,
+                                "Future Incentives $" & Char(10) & 
+                            If( LookUp(
+                                        GCTotalIncentives,
+                                        Year(Year) = Year(Now()),
+                                        YearlyCapReached) = true,
+                                    "10000",
+                                    LookUp(
+                                        GCTotalIncentives,
+                                        Year(Year) = Year(Now()),
+                                        TotalIncentives
+                                    ))
+                                ,
+                                "Future Incentives $" & Char(10) & Sum(
+                                    GCTotalIncentives,
+                                    TotalIncentives
+                                )
+                            )
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblQuotedLeadsDS.Height+lblQuotedLeadsDS.Y
@@ -483,8 +502,25 @@ DashboardScreen As screen:
                             If(Parent.Width<358,11,Parent.Width>358,12,14)
                         Text: |-
                             =//If(cumulatively=true,"Sold Incentives $" & Char(10) &"15684.22","Sold Incentives $" & Char(10) &"7045.22")
-                            If(cumulatively=true,"Future Incentives $" & Char(10) & Sum(GCTotalIncentives,TotalIncentives),"Future Incentives $" & Char(10) & LookUp(GCTotalIncentives,Year(Year)=Year(Today()),TotalIncentives))
-                             
+                            If(
+                               yearly = true,
+                                "Future Incentives $" & Char(10) & 
+                            If( LookUp(
+                                        GCTotalIncentives,
+                                        Year(Year) = Year(Now()),
+                                        YearlyCapReached) = true,
+                                    "10000",
+                                    LookUp(
+                                        GCTotalIncentives,
+                                        Year(Year) = Year(Now()),
+                                        TotalIncentives
+                                    ))
+                                ,
+                                "Future Incentives $" & Char(10) & Sum(
+                                    GCTotalIncentives,
+                                    TotalIncentives
+                                )
+                            )
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblSoldLeadsDS.Height+lblSoldLeadsDS.Y
