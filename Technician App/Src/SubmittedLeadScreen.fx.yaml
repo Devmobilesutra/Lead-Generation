@@ -354,7 +354,7 @@ SubmittedLeadScreen As screen:
                         Y: =Body1_12.Y+Body1_12.Height
                         ZIndex: =10
 
-                    Body1_17 As label:
+                    lblDateValueSLS As label:
                         Height: =25
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -366,10 +366,10 @@ SubmittedLeadScreen As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =408
                         X: =182
-                        Y: =Body1_16.Y
+                        Y: =lblDateCSLS.Y
                         ZIndex: =11
 
-                    Body1_16 As label:
+                    lblDateCSLS As label:
                         FontWeight: =FontWeight.Semibold
                         Height: =25
                         OnSelect: =Select(Parent)
@@ -386,7 +386,7 @@ SubmittedLeadScreen As screen:
                         Y: =Body1_14.Height+Body1_14.Y
                         ZIndex: =12
 
-                    Body1_11 As label:
+                    lblPriceSLS As label:
                         Height: =20
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -399,11 +399,11 @@ SubmittedLeadScreen As screen:
                             "Price:" & " " & 0
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width/2.55
-                        X: =If(Parent.Width<500,Body1_10.X,Parent.Width/1.8)
-                        Y: =If(Parent.Width>500,Body1_10.Y,Body1_10.Y+Body1_10.Height)
+                        X: =If(Parent.Width<500,lblTitleTotalIncentivesSLS.X,Parent.Width/1.8)
+                        Y: =If(Parent.Width>500,lblTitleTotalIncentivesSLS.Y,lblTitleTotalIncentivesSLS.Y+lblTitleTotalIncentivesSLS.Height)
                         ZIndex: =13
 
-                    Body1_10 As label:
+                    lblTitleTotalIncentivesSLS As label:
                         Height: =20
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -422,7 +422,7 @@ SubmittedLeadScreen As screen:
                         Y: =lblEstimateNumberSLS.Height+lblEstimateNumberSLS.Y
                         ZIndex: =14
 
-                    Button6_1 As button:
+                    btnSubmittedLeadSLS As button:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =Separator3_1.Height
                         HoverColor: =RGBA(0, 0, 0, 0)
@@ -454,7 +454,7 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         Width: =Separator3_1.Width-20
                         X: =10
-                        Y: =If(Parent.Width<500,Body1_11.Height+Body1_11.Y,Body1_10.Height+Body1_10.Y+10)
+                        Y: =If(Parent.Width<500,lblPriceSLS.Height+lblPriceSLS.Y,lblTitleTotalIncentivesSLS.Height+lblTitleTotalIncentivesSLS.Y+10)
                         ZIndex: =16
 
                     lblEstimateNumberSLS As label:
