@@ -73,7 +73,7 @@ SubmittedLeadScreen As screen:
                 ZIndex: =4
 
         ctnUserNameSLS As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.Center
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
@@ -619,7 +619,6 @@ SubmittedLeadScreen As screen:
             ctnSearchBarSLS As groupContainer.horizontalAutoLayoutContainer:
                 Height: =60
                 LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.End
                 LayoutMode: =LayoutMode.Auto
                 PaddingRight: =30
                 Width: =Parent.Width

@@ -134,7 +134,7 @@ CreatLeadScreen As screen:
             ctnProgressBarCreatLead As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
-                Height: =136
+                Height: =130
                 LayoutMinHeight: =100
                 LayoutMinWidth: =Parent.Width/1.04
                 Width: =Parent.Width/1.04
@@ -613,7 +613,7 @@ CreatLeadScreen As screen:
                         DelayOutput: =true
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.Arial
-                        Height: =115
+                        Height: =80
                         HoverBorderColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         MaxLength: =Parent.MaxLength
@@ -676,7 +676,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =60
+                Height: =20
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
