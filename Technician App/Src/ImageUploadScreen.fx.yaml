@@ -416,7 +416,7 @@ ImageUploadScreen As screen:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DelayItemLoading: =true
                     FillPortions: =0
-                    Height: =If(glryImageIS.AllItemsCount=0,0,glryImageIS.AllItemsCount=1,250,550)
+                    Height: =If(glryImageIS.AllItemsCount=0,0,glryImageIS.AllItemsCount=1||2,250,550)
                     Items: |
                         =LeadImagesCollection
                     Layout: =Layout.Vertical

@@ -1260,7 +1260,7 @@ LeadSummaryScreen As screen:
                     BorderColor: =RGBA(39, 113, 194, 1)
                     DelayItemLoading: =true
                     FillPortions: =0
-                    Height: =If(glryImageLSS.AllItemsCount=0,0,glryImageLSS.AllItemsCount=1,250,550)
+                    Height: =If(glryImageLSS.AllItemsCount=0,0,glryImageLSS.AllItemsCount=1||2,250,550)
                     Items: |
                         =LeadImagesCollection
                     Layout: =Layout.Vertical

@@ -10387,19 +10387,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.Scope_DataCard2_3.DataCardValue27_3.AccessibleLabel"
+                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.SecondaryScopeofWorkLID_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.Scope_DataCard2_3.DataCardValue27_3.AccessibleLabel",
+                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.SecondaryScopeofWorkLID_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewDetailsScreen",
-                "type": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.Scope_DataCard2_3.DataCardValue27_3"
+                "type": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.SecondaryScopeofWorkLID_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -10417,19 +10417,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.ScopeOfWorkLID_DataCard2_3.DataCardValue28_3.AccessibleLabel"
+                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.PrimaryScopeofWorkLID_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.ScopeOfWorkLID_DataCard2_3.DataCardValue28_3.AccessibleLabel",
+                  "fullyQualifiedName": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.PrimaryScopeofWorkLID_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewDetailsScreen",
-                "type": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.ScopeOfWorkLID_DataCard2_3.DataCardValue28_3"
+                "type": "ViewDetailsScreen.Container5_1.Container2.SummaryForm_3.PrimaryScopeofWorkLID_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -10687,17 +10687,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.VarBackColor"
+                  "fullyQualifiedName": "App.VarLtdID"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.VarBackColor",
+                  "fullyQualifiedName": "App.VarLtdID",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "VarBackColor",
+                "member": "VarLtdID",
                 "module": "App",
                 "type": "App"
               }
@@ -10807,6 +10807,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.VarBackColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VarBackColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VarBackColor",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.final-logo-SmallV2"
                 }
               ],
@@ -10861,36 +10891,6 @@
           },
           "ruleId": "app-CollectDelegatableDataSource",
           "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewDetailsScreen.ID"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewDetailsScreen.ID",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ID",
-                "module": "ViewDetailsScreen",
-                "type": "ViewDetailsScreen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
         },
         {
           "locations": [
