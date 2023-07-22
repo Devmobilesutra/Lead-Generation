@@ -551,7 +551,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Unit Down"
-                        Width: =Parent.Width
+                        Width: =Parent.Width-60
                         X: =30
                         Y: =24
                         ZIndex: =5
@@ -609,7 +609,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Additional expenses required"
-                        Width: =Parent.Width
+                        Width: =Parent.Width-60
                         X: =30
                         ZIndex: =5
 
@@ -666,7 +666,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Travel Required"
-                        Width: =Parent.Width
+                        Width: =Parent.Width-60
                         X: =30
                         ZIndex: =5
 
@@ -723,7 +723,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Communicated to Customer"
-                        Width: =Parent.Width
+                        Width: =Parent.Width-60
                         X: =30
                         ZIndex: =5
 
