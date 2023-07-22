@@ -51,6 +51,7 @@ DashboardScreen As screen:
                 ZIndex: =1
 
             lblHeaderDS As label:
+                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(116, 116, 116, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.Arial
@@ -69,9 +70,10 @@ DashboardScreen As screen:
                 ZIndex: =2
 
             IconMenuDS As icon.Hamburger:
+                AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 0, 0, 1)
-                DisplayMode: =DisplayMode.View
                 Icon: =Icon.Hamburger
+                LayoutMinHeight: =Self.Height
                 OnSelect: =//Set(varshowMenu,!varshowMenu)
                 PaddingLeft: =10
                 PaddingRight: =10.68
@@ -118,14 +120,14 @@ DashboardScreen As screen:
                 PaddingTop: =5.34
                 Size: =If(Parent.Width>500,18,Parent.Width<500,12,12)
                 Text: =User().FullName
-                Width: =Parent.Width/2.5
+                Width: =Parent.Width/2
                 X: =Parent.X
                 ZIndex: =4
 
             toggleDS As toggleSwitch:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Default: =true
-                Height: =40
+                Height: =Parent.Height/1.8
                 OnCheck: |-
                     =Set(cumulatively,false);
                     Set(yearly,true);
@@ -134,9 +136,11 @@ DashboardScreen As screen:
                     Set(cumulatively,true);
                 ShowLabel: =false
                 Size: =18
-                Width: =50
-                X: =Parent.Width/2
-                Y: =Parent.Height/4
+                Width: =Parent.Width/14
+                X: =lblUserNameDS.X+lblUserNameDS.Width
+                Y: |-
+                    =//Parent.Y/3
+                    (Parent.Y+Parent.Height)/6
                 ZIndex: =5
 
             lblyearDS As label:
@@ -147,7 +151,7 @@ DashboardScreen As screen:
                 Size: =If(Parent.Width>500,18,Parent.Width<500,12,12)
                 Text: =If(cumulatively=true,Year(Now())-10 & "-" & Year(Now()),yearly=true,Year(Now()))
                 Width: =Parent.Width/3
-                X: =Parent.Width-Self.Width
+                X: =toggleDS.X+toggleDS.Width+20
                 ZIndex: =6
 
         ctnMiddleDS As groupContainer.verticalAutoLayoutContainer:
@@ -161,11 +165,13 @@ DashboardScreen As screen:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingTop: =10
+            Width: =Parent.Width
             ZIndex: =3
 
             ctnSubmittedLeadDS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Center
                 DropShadow: =DropShadow.None
+                Fill: =RGBA(219, 219, 219, 1)
                 FillPortions: =0
                 Height: |
                     =//Parent.Height/5.5
@@ -180,44 +186,6 @@ DashboardScreen As screen:
                     =//Parent.Width-50
                     If(Parent.Height>Parent.Width,Parent.Width/1.058,Parent.Width/1.058)
                 ZIndex: =1
-
-                btnSubmittedLeadDS As button:
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledBorderColor: =RGBA(116, 116, 116, 1)
-                    Fill: =RGBA(219, 219, 219, 1)
-                    Height: |-
-                        =//Parent.Height/5.5
-                        Parent.Height
-                    HoverFill: =RGBA(149, 149, 149, 1)
-                    OnSelect: |
-                        =//Navigate(Screen2);
-                        Set(
-                            VarSoldIncetives,
-                            false
-                        );
-                        Set(
-                            VarFutureIncetives,
-                            false
-                        );
-                        Set(
-                            VarTotalIncentives,
-                            true
-                        );
-                        Navigate([@SubmittedLeadScreen],ScreenTransition.None,{Header: "Submitted Leads"})
-                    PaddingRight: =5.34
-                    PaddingTop: =
-                    PressedFill: =Self.Fill
-                    RadiusBottomLeft: =6
-                    RadiusBottomRight: =6
-                    RadiusTopLeft: =6
-                    RadiusTopRight: =6
-                    Size: |-
-                        =//14.95
-                        If(Parent.Width<540,9,Parent.Width>540,14)
-                    Text: |-
-                        =//If(cumulatively=true,"Submitted Leads # 45","Submitted Leads # 40")
-                    Width: =Parent.Width
-                    ZIndex: =1
 
                 lblSubmittedLeadDS As label:
                     Align: =Align.Center
@@ -235,7 +203,7 @@ DashboardScreen As screen:
                     Width: =btnSubmittedLeadDS.Width
                     X: =btnSubmittedLeadDS.X
                     Y: =Parent.Height/14
-                    ZIndex: =2
+                    ZIndex: =1
 
                 ctnHeadingSubmittedLeadsDS As groupContainer.horizontalAutoLayoutContainer:
                     Height: =Parent.Height/5
@@ -245,7 +213,7 @@ DashboardScreen As screen:
                     PaddingLeft: =If(Parent.Width<500,30,Parent.Width>500,70)
                     Width: =Parent.Width
                     Y: =lblSubmittedLeadDS.Height+lblSubmittedLeadDS.Y
-                    ZIndex: =3
+                    ZIndex: =2
 
                     lblOpenDS As label:
                         Align: =Align.Center
@@ -302,7 +270,7 @@ DashboardScreen As screen:
                     PaddingLeft: =If(Parent.Width<500,30,Parent.Width>500,70)
                     Width: =Parent.Width
                     Y: =ctnHeadingSubmittedLeadsDS.Height+ctnHeadingSubmittedLeadsDS.Y+10
-                    ZIndex: =4
+                    ZIndex: =3
 
                     lblCountOpenDS As label:
                         Align: =Align.Center
@@ -355,7 +323,7 @@ DashboardScreen As screen:
                     Width: =3
                     X: =lblCountOpenDS.Width+lblCountOpenDS.X
                     Y: =ctnHeadingSubmittedLeadsDS.Y
-                    ZIndex: =5
+                    ZIndex: =4
 
                 VerticalLineS2ubmittedLeadDS As rectangle:
                     Fill: =RGBA(149, 149, 149, 1)
@@ -363,6 +331,44 @@ DashboardScreen As screen:
                     Width: =3
                     X: =lblCountInprogressDS.Width+lblCountInprogressDS.X
                     Y: =ctnHeadingSubmittedLeadsDS.Y
+                    ZIndex: =5
+
+                btnSubmittedLeadDS As button:
+                    Color: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(116, 116, 116, 1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: |-
+                        =//Parent.Height/5.5
+                        Parent.Height
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    OnSelect: |
+                        =//Navigate(Screen2);
+                        Set(
+                            VarSoldIncetives,
+                            false
+                        );
+                        Set(
+                            VarFutureIncetives,
+                            false
+                        );
+                        Set(
+                            VarTotalIncentives,
+                            true
+                        );
+                        Navigate([@SubmittedLeadScreen],ScreenTransition.None,{Header: "Submitted Leads"})
+                    PaddingRight: =5.34
+                    PaddingTop: =
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =6
+                    RadiusBottomRight: =6
+                    RadiusTopLeft: =6
+                    RadiusTopRight: =6
+                    Size: |-
+                        =//14.95
+                        If(Parent.Width<540,9,Parent.Width>540,14)
+                    Text: |-
+                        =//If(cumulatively=true,"Submitted Leads # 45","Submitted Leads # 40")
+                    Width: =Parent.Width
                     ZIndex: =6
 
             ctnLeadsButtonsDS As groupContainer.horizontalAutoLayoutContainer:
@@ -384,6 +390,7 @@ DashboardScreen As screen:
 
                 ctnQuatedLeadsDS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    Fill: =RGBA(219, 219, 219, 1)
                     FillPortions: =0
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
@@ -456,13 +463,13 @@ DashboardScreen As screen:
                             ZIndex: =1
 
                         btnQuotedLeadsDS As button:
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 0)
                             DisabledBorderColor: =RGBA(116, 116, 116, 1)
-                            Fill: =RGBA(219, 219, 219, 1)
+                            Fill: =RGBA(0, 0, 0, 0)
                             Height: |-
                                 =//180
                                 Parent.Height
-                            HoverFill: =RGBA(149, 149, 149, 1)
+                            HoverFill: =RGBA(0, 0, 0, 0)
                             OnSelect: |-
                                 =Navigate([@SubmittedLeadScreen],ScreenTransition.None,{Header: "Potential Future Incentives"});Set(VarFutureIncetives,true);
                                 Set(VarSoldIncetives,false);
@@ -483,6 +490,7 @@ DashboardScreen As screen:
 
                 ctnSoldLeadsDS As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    Fill: =RGBA(219, 219, 219, 1)
                     FillPortions: =0
                     LayoutMinHeight: =80
                     LayoutMinWidth: =250
@@ -525,7 +533,7 @@ DashboardScreen As screen:
                         Width: =btnQuotedLeadsDS.Width
                         X: =btnQuotedLeadsDS.X
                         Y: =lblSoldLeadsDS.Height+lblSoldLeadsDS.Y
-                        ZIndex: =3
+                        ZIndex: =2
 
                     grpSoldLeadsDS As group:
                         Height: =5
@@ -533,30 +541,6 @@ DashboardScreen As screen:
                         X: =28.74418604651163
                         Y: =40
                         ZIndex: =3
-
-                        btnSoldLeadsDS As button:
-                            Color: =RGBA(0, 0, 0, 1)
-                            DisabledBorderColor: =RGBA(116, 116, 116, 1)
-                            Fill: =RGBA(219, 219, 219, 1)
-                            Height: =Parent.Height
-                            HoverFill: =RGBA(149, 149, 149, 1)
-                            OnSelect: |-
-                                =//Set(VarPopup,true)
-                                Navigate([@SubmittedLeadScreen],ScreenTransition.None,{Header: "Sold Incentives"});
-                                Set(VarSoldIncetives,true);
-                                Set(VarFutureIncetives,false);
-                            PaddingRight: =5.34
-                            PaddingTop: =53.40
-                            RadiusBottomLeft: =6
-                            RadiusBottomRight: =6
-                            RadiusTopLeft: =6
-                            RadiusTopRight: =6
-                            Size: |-
-                                =//14.95
-                                If(Parent.Width<358,9,Parent.Width>358 && Parent.Width<500,12,Parent.Width>500,14)
-                            Text: =""
-                            Width: =Parent.Width
-                            ZIndex: =1
 
                         lblSoldLeadsDS As label:
                             Align: =Align.Center
@@ -576,7 +560,31 @@ DashboardScreen As screen:
                             Width: =btnSoldLeadsDS.Width
                             X: =btnSoldLeadsDS.X
                             Y: =(Parent.Height-Self.Height)/3.5
-                            ZIndex: =2
+                            ZIndex: =1
+
+                        btnSoldLeadsDS As button:
+                            Color: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(116, 116, 116, 1)
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =Parent.Height
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            OnSelect: |-
+                                =//Set(VarPopup,true)
+                                Navigate([@SubmittedLeadScreen],ScreenTransition.None,{Header: "Sold Incentives"});
+                                Set(VarSoldIncetives,true);
+                                Set(VarFutureIncetives,false);
+                            PaddingRight: =5.34
+                            PaddingTop: =53.40
+                            RadiusBottomLeft: =6
+                            RadiusBottomRight: =6
+                            RadiusTopLeft: =6
+                            RadiusTopRight: =6
+                            Size: |-
+                                =//14.95
+                                If(Parent.Width<358,9,Parent.Width>358 && Parent.Width<500,12,Parent.Width>500,14)
+                            Text: =""
+                            Width: =Parent.Width
+                            ZIndex: =3
 
             ctnCreateLeadDS As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
