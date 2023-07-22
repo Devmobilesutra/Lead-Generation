@@ -16034,7 +16034,14 @@
           "NameMapSourceSchema": "?"
         },
         "Live",
-        "Overflow",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Overflow",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         {
           "AFDDataSourceName": "",
@@ -16071,7 +16078,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "AutoHeight",
@@ -16912,7 +16926,14 @@
           "NameMapSourceSchema": "?"
         },
         "Live",
-        "Overflow",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Overflow",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         {
           "AFDDataSourceName": "",
@@ -16949,7 +16970,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "AutoHeight",

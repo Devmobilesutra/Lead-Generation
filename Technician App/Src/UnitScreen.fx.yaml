@@ -3,6 +3,7 @@ UnitScreen As screen:
     ctnMainUS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
@@ -119,6 +120,7 @@ UnitScreen As screen:
                 ZIndex: =2
 
         ctnMiddleUS As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderUS.Height-ctnUserHeaderUS.Height-60
@@ -127,6 +129,7 @@ UnitScreen As screen:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =Parent.Width
             ZIndex: =3
 
             ctnProgressBarUS As groupContainer.manualLayoutContainer:
@@ -328,14 +331,14 @@ UnitScreen As screen:
                     ZIndex: =19
 
             UnitInfoForm As form:
-                AlignInContainer: =AlignInContainer.SetByContainer
+                AlignInContainer: =AlignInContainer.Center
                 DataSource: =LeadInformations
                 FillPortions: =0
                 Height: =UnitCount.Height+UnitDescription.Height+50
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
-                Width: =Parent.Width
+                Width: =Parent.Width/1.04
                 Y: =ctnUserHeaderUS.Height+ctnUserHeaderUS.Y+20
                 ZIndex: =2
 
@@ -362,7 +365,7 @@ UnitScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
                         Text: ="No. of Units"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -385,7 +388,7 @@ UnitScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -441,7 +444,7 @@ UnitScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
                         Text: ="Unit Description"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -465,7 +468,7 @@ UnitScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -552,6 +555,7 @@ UnitScreen As screen:
                     ZIndex: =2
 
             ctnSpaceUS As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =40

@@ -131,6 +131,7 @@ ScopeScreen As screen:
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =Parent.Width
             ZIndex: =7
 
             ctnProgressbarSS As groupContainer.manualLayoutContainer:
@@ -335,13 +336,14 @@ ScopeScreen As screen:
                     ZIndex: =19
 
             ScopeInfoForm As form:
+                AlignInContainer: =AlignInContainer.Center
                 DataSource: =LeadInformations
                 FillPortions: =0
                 Height: =Scope.Height+ScopeOfWork.Height+ManuallyScopeOfWork.Height+80
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
-                Width: =620
+                Width: =Parent.Width/1.04
                 Y: =252
                 ZIndex: =2
 

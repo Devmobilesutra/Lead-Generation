@@ -917,7 +917,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep4US",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1094,7 +1094,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CircleStep5US",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1826,7 +1826,14 @@
         "ChildTabPriority",
         "LayoutMode",
         "LayoutDirection",
-        "LayoutAlignItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutAlignItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutJustifyContent",
         {
           "AFDDataSourceName": "",
@@ -2033,7 +2040,14 @@
         },
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "500",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2046,7 +2060,14 @@
         "ChildTabPriority",
         "LayoutMode",
         "LayoutDirection",
-        "LayoutAlignItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutAlignItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutJustifyContent",
         "LayoutGap",
         "LayoutOverflowX",
@@ -6087,7 +6108,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick3US",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6348,7 +6369,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick4US",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11651,7 +11672,14 @@
           "PropertyName": "FillPortions"
         },
         {
-          "ControlPropertyState": "AlignInContainer",
+          "ControlPropertyState": {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "AlignInContainer",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Property": {
             "Category": "Design",
             "PropertyName": "AlignInContainer",

@@ -123,7 +123,6 @@ EstimateScreen As screen:
                 ZIndex: =2
 
         ctnMiddleES As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =Parent.Height-ctnHeaderES.Height-ctnUserHeaderES.Height-40
@@ -133,6 +132,7 @@ EstimateScreen As screen:
             LayoutMinWidth: =Parent.Width-40
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =Parent.Width
             ZIndex: =7
 
             ctnProgressBarES As groupContainer.manualLayoutContainer:
@@ -336,7 +336,7 @@ EstimateScreen As screen:
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
-                Width: =Parent.Width
+                Width: =Parent.Width/1.04
                 Y: =252
                 ZIndex: =2
 

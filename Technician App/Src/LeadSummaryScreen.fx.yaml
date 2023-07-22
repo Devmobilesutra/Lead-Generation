@@ -158,7 +158,7 @@ LeadSummaryScreen As screen:
                     LayoutMinHeight: =250
                     LayoutMinWidth: =Parent.Width
                     NumberOfColumns: =1
-                    Width: =Parent.Width
+                    Width: =Parent.Width/1.04
                     Y: =4
                     ZIndex: =1
 
@@ -736,7 +736,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Height: =48
+                            Overflow: =Overflow.Scroll
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Scope of Work"
                             Width: =Parent.Width - 60
@@ -819,7 +819,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Height: =48
+                            Overflow: =Overflow.Scroll
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Scope of Work (Manually Entered)"
                             Width: =Parent.Width - 60
@@ -1085,7 +1085,7 @@ LeadSummaryScreen As screen:
                             HoverColor: =RGBA(0, 0, 0, 1)
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Unit Down"
-                            Width: =Parent.Width
+                            Width: =Parent.Width-60
                             X: =40
                             Y: =18
                             ZIndex: =5
@@ -1141,7 +1141,7 @@ LeadSummaryScreen As screen:
                             HoverColor: =RGBA(0, 0, 0, 1)
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Additional Expenses Required"
-                            Width: =Parent.Width
+                            Width: =Parent.Width-60
                             X: =40
                             ZIndex: =5
 
@@ -1196,7 +1196,7 @@ LeadSummaryScreen As screen:
                             HoverColor: =RGBA(0, 0, 0, 1)
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Travel Required"
-                            Width: =Parent.Width
+                            Width: =Parent.Width-60
                             X: =40
                             ZIndex: =5
 
@@ -1251,7 +1251,7 @@ LeadSummaryScreen As screen:
                             HoverColor: =RGBA(0, 0, 0, 1)
                             Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                             Text: ="Communicated to customer"
-                            Width: =Parent.Width
+                            Width: =Parent.Width-60
                             X: =40
                             ZIndex: =5
 
