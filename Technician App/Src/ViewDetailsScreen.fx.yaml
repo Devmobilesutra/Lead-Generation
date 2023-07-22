@@ -1296,7 +1296,6 @@ ViewDetailsScreen As screen:
 
                     Checkbox4_19 As checkbox:
                         CheckboxBorderColor: =RGBA(0, 0, 0, 1)
-                        CheckboxSize: =30
                         Default: =true
                         Font: =Font.Arial
                         FontWeight: =FontWeight.Semibold
@@ -1314,19 +1313,19 @@ ViewDetailsScreen As screen:
                         ZIndex: =5
 
             "glryImageLSS_2 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(39, 113, 194, 1)
                 DelayItemLoading: =true
                 FillPortions: =0
-                Height: =If(glryImageLSS_2.AllItemsCount=0,0,glryImageLSS_2.AllItemsCount=1||2,250,550)
-                Items: |
-                    =Filter(LeadImages,LeadInformationLID.ID=ID)
+                Height: =If(glryImageLSS_2.AllItemsCount=0,0,glryImageLSS_2.AllItemsCount=1||glryImageLSS_2.AllItemsCount=2,250,glryImageLSS_2.AllItemsCount=4,550)
+                Items: =Filter(LeadImages,LeadInformationLID.ID=VarLtdID)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =4
                 TemplateSize: =Min(250, Self.Height - 60)
-                Width: =Parent.Width/1.08
+                Width: =Parent.Width-60
                 WrapCount: =2
                 X: =40
                 Y: =SummaryForm_3.Height
