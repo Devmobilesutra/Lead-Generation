@@ -151,7 +151,6 @@ LeadSummaryScreen As screen:
                 ZIndex: =2
 
                 SummaryForm As form:
-                    BorderThickness: =4
                     DataSource: =LeadInformations
                     FillPortions: =0
                     Height: =ContractNumberLSS.Height+BuildingNameLSS.Height+ZipCodeLSS.Height+AddressLSS.Height+UnitCountLSS.Height+UnitDescriptionLSS.Height+ScopeLSS.Height+ScopeOfWorkLSS.Height+ManuallyScopeOfWorkLSS.Height+EstimatedHoursLSS.Height+NotesLSS.Height+UnitDownLSS.Height+AdditionalExpensesRequiredLSS.Height+TravelRequiredLSS.Height+CommunicatedtoCustomerLSS.Height
@@ -175,7 +174,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_contractnumber")
                         Required: =false
                         Update: =IntxtContractNumerLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -256,7 +255,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_buildingname")
                         Required: =false
                         Update: =IntxtBuildingNameLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -336,7 +335,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_zipcode")
                         Required: =false
                         Update: =IntxtZipcodeLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =2
                         ZIndex: =1
@@ -413,7 +412,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_address")
                         Required: =false
                         Update: =IntxtAddressLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -491,7 +490,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =Value(IntxtUnitCountLSS.Text)
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -570,7 +569,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_unitdescription")
                         Required: =false
                         Update: =IntxtUnitDescriptionLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =5
                         ZIndex: =1
@@ -648,7 +647,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =IntxtScopeLSS.Selected
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =6
                         ZIndex: =1
@@ -728,7 +727,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =IntxtScopeofWorkLSS.Selected
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =7
                         ZIndex: =1
@@ -811,7 +810,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_customscopeofwork")
                         Required: =false
                         Update: =IntxtManuallyScopeofWorkLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =8
                         ZIndex: =1
@@ -890,7 +889,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_estimatedhours")
                         Required: =false
                         Update: =IntxtEstimatedHoursLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =9
                         ZIndex: =1
@@ -969,7 +968,7 @@ LeadSummaryScreen As screen:
                         MaxLength: =DataSourceInfo([@LeadInformations], DataSourceInfo.MaxLength,"shlrf_notes")
                         Required: =false
                         Update: =IntxtNotesLSS.Text
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =10
                         ZIndex: =1
@@ -1045,7 +1044,7 @@ LeadSummaryScreen As screen:
                         Height: =60
                         Required: =false
                         Update: =UnitDownLSS.Default
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =11
                         ZIndex: =1
@@ -1101,7 +1100,7 @@ LeadSummaryScreen As screen:
                         Height: =61
                         Required: =false
                         Update: =AdditionalExpensesRequiredLSS.Default
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =12
                         ZIndex: =1
@@ -1156,7 +1155,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =TravelRequiredLSS.Default
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =13
                         ZIndex: =1
@@ -1211,7 +1210,7 @@ LeadSummaryScreen As screen:
                         Height: =50
                         Required: =false
                         Update: =CommunicatedtoCustomerLSS.Default
-                        Width: =729
+                        Width: =731
                         X: =0
                         Y: =14
                         ZIndex: =1
@@ -1259,7 +1258,6 @@ LeadSummaryScreen As screen:
                 "glryImageLSS As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(39, 113, 194, 1)
-                    BorderThickness: =5
                     DelayItemLoading: =true
                     FillPortions: =0
                     Height: =If(glryImageLSS.AllItemsCount=0,0,glryImageLSS.AllItemsCount=1,250,550)
@@ -1297,7 +1295,7 @@ LeadSummaryScreen As screen:
                         Icon: =Icon.Cancel
                         OnSelect: =Remove(LeadImagesCollection,ThisItem);
                         Width: =30
-                        X: =ImageLSS.Width-Self.Width-10
+                        X: =ImageLSS.Width-Self.Width
                         Y: =ImageLSS.Y+10
                         ZIndex: =2
 
