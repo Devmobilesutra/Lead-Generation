@@ -4,8 +4,9 @@ SubmittedLeadScreen As screen:
 
     ctnMainSLS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =20
+        LayoutGap: =10
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width
@@ -73,7 +74,7 @@ SubmittedLeadScreen As screen:
                 ZIndex: =4
 
         ctnUserNameSLS As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: |-
                 =//Parent.Height/14
@@ -88,15 +89,15 @@ SubmittedLeadScreen As screen:
             ZIndex: =2
 
             btnUserNameSLS As button:
-                Align: =Align.Left
+                Align: =Align.Right
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 0, 0, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
-                PaddingLeft: =imgUserNameSLS.Width+20
+                PaddingLeft: =20
                 PaddingRight: =5.34
                 PaddingTop: =0.00
-                Size: =If(Parent.Width<500,14,Parent.Width>500,22,12)
+                Size: =If(Parent.Width<500,14,Parent.Width>500,20,12)
                 Text: |-
                     =//"Technician"
                     /*If(VarFutureIncetives = true,
@@ -108,29 +109,15 @@ SubmittedLeadScreen As screen:
                 X: =0.00
                 ZIndex: =1
 
-            imgUserNameSLS As image:
-                Height: =Parent.Height/1.1
-                Image: =download
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Width: =Parent.Width/8
-                X: =5
-                Y: =2
-                ZIndex: =2
-
             lblUsernameSLS As label:
-                Align: =Align.Right
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
                 Height: =Parent.Height
-                PaddingRight: =10.68
                 PaddingTop: =5.34
-                Size: =If(Parent.Width>500,14,Parent.Width<500,11,10)
+                Size: =If(Parent.Width<500,14,Parent.Width>500,20,12)
                 Text: =User().FullName
-                VerticalAlign: =VerticalAlign.Top
-                Visible: =false
-                Width: =Parent.Width/3
-                X: =Parent.Width-Self.Width
+                Width: =Parent.Width/2
+                X: =10
                 ZIndex: =3
 
         ctnMiddleSLS As groupContainer.manualLayoutContainer:
@@ -617,11 +604,13 @@ SubmittedLeadScreen As screen:
                     ZIndex: =12
 
             ctnSearchBarSLS As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
                 Height: =60
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutMode: =LayoutMode.Auto
-                PaddingRight: =30
-                Width: =Parent.Width
+                PaddingLeft: =20
+                Width: =Parent.Width-20
+                X: =10
                 ZIndex: =5
 
                 IntxtSearchBoxSLS As text:
@@ -644,7 +633,7 @@ SubmittedLeadScreen As screen:
                     RadiusTopRight: =1
                     Reset: =true
                     Size: =If(Parent.Width<378,10,Parent.Width<500,11,14)
-                    Width: =Parent.Width/1.6
+                    Width: =Parent.Width/1.18
                     ZIndex: =1
 
                 IconSearchSLS As icon.Search:
@@ -658,7 +647,7 @@ SubmittedLeadScreen As screen:
                     PaddingBottom: =5
                     PaddingLeft: =5
                     PaddingTop: =5
-                    Width: =52
+                    Width: =Parent.Width-IntxtSearchBoxSLS.Width
                     X: =468
                     Y: =000
                     ZIndex: =2
