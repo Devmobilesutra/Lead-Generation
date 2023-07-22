@@ -100,7 +100,7 @@ CreatLeadScreen As screen:
                 PaddingLeft: =100
                 PaddingRight: =20
                 PaddingTop: =0
-                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                Size: =If(Parent.Width<500,14,Parent.Width>500,20,18)
                 Text: ="Create Lead"
                 Width: =Parent.Width
                 ZIndex: =1
@@ -112,10 +112,9 @@ CreatLeadScreen As screen:
                 PaddingBottom: =0
                 PaddingRight: =10
                 PaddingTop: =0
-                Size: =If(Parent.Width<500,16,Parent.Width>500,22,18)
+                Size: =If(Parent.Width<500,14,Parent.Width>500,20,18)
                 Text: =User().FullName
                 Width: =Parent.Width/2
-                Y: =5
                 ZIndex: =2
 
         ctnLeadCL As groupContainer.verticalAutoLayoutContainer:
@@ -333,7 +332,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+ZipCode.Height+40
+                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+ZipCode.Height+20
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
