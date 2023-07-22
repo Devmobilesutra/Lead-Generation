@@ -481,8 +481,9 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<378,10,Parent.Width<500,12,14)
+                        Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                         Width: =Parent.Width
+                        X: =10
                         Y: =HtmlText2_4.Y+HtmlText2_4.Height
                         ZIndex: =18
 
@@ -494,9 +495,10 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<378,10,Parent.Width<500,12,14)
+                        Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                         Width: =Parent.Width
-                        Y: =lineEstimateSLS_1.Y+lineEstimateSLS_1.Height
+                        X: =10
+                        Y: =lineEstimateSLS_1.Y+lineEstimateSLS_1.Height+10
                         ZIndex: =19
 
                     HtmlText2_5 As htmlViewer:
@@ -508,8 +510,9 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<378,10,Parent.Width<500,12,14)
+                        Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                         Width: =Parent.Width
+                        X: =10
                         Y: =HtmlText2_3.Y+HtmlText2_3.Height
                         ZIndex: =20
 
@@ -522,8 +525,9 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<378,10,Parent.Width<500,12,14)
+                        Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                         Width: =Parent.Width
+                        X: =10
                         Y: =HtmlText2_5.Y+HtmlText2_5.Height
                         ZIndex: =21
 
@@ -536,9 +540,10 @@ SubmittedLeadScreen As screen:
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingTop: =0
-                        Size: =If(Parent.Width<378,10,Parent.Width<500,12,14)
+                        Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
                         Width: =Parent.Width
-                        Y: =HtmlText2_5.Y+HtmlText2_5.Height
+                        X: =10
+                        Y: =HtmlText2_6.Y+HtmlText2_6.Height
                         ZIndex: =22
 
                 lblTitleYearSLS As label:

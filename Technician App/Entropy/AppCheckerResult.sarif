@@ -6690,90 +6690,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -7424,32 +7340,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y"
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y",
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
+                  "charLength": 17,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Body1_16"
+                    "text": "lineEstimateSLS_1"
                   }
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Body1_18"
+                "module": "SubmittedLeadScreen",
+                "type": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Body1_16"
+              "lineEstimateSLS_1"
             ],
             "id": "issue"
           },
@@ -7464,17 +7380,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y"
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y",
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 8,
+                  "charOffset": 17,
                   "snippet": {
                     "text": ".Y"
                   }
@@ -7482,8 +7398,8 @@
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Body1_18"
+                "module": "SubmittedLeadScreen",
+                "type": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4"
               }
             }
           ],
@@ -7501,32 +7417,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y"
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y",
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
-                  "charOffset": 11,
+                  "charLength": 17,
+                  "charOffset": 20,
                   "snippet": {
-                    "text": "Body1_16"
+                    "text": "lineEstimateSLS_1"
                   }
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Body1_18"
+                "module": "SubmittedLeadScreen",
+                "type": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Body1_16"
+              "lineEstimateSLS_1"
             ],
             "id": "issue"
           },
@@ -7541,17 +7457,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y"
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Body1_18.Y",
+                  "fullyQualifiedName": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4.Y",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 19,
+                  "charOffset": 37,
                   "snippet": {
                     "text": ".Height"
                   }
@@ -7559,8 +7475,8 @@
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Body1_18"
+                "module": "SubmittedLeadScreen",
+                "type": "SubmittedLeadScreen.ctnMainSLS.ctnMiddleSLS.glrySubmittedLeadsSLS.glryLeadsSLS.HtmlText2_4"
               }
             }
           ],
@@ -11027,49 +10943,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.TabIndex",
+                  "fullyQualifiedName": "Screen1.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1"
+                "type": "Screen1.Gallery1"
               }
             }
           ],
@@ -11087,19 +10973,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Separator3_2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Separator3_2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Separator3_2"
+                "type": "Screen1.Gallery1"
               }
             }
           ],
@@ -11111,36 +10997,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Separator3_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.glryLeadsSLS_1.Separator3_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen1",
-                "type": "Screen1.glryLeadsSLS_1.Separator3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
         },
         {
           "locations": [
