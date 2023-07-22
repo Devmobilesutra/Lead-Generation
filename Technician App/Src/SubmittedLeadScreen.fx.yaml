@@ -272,7 +272,7 @@ SubmittedLeadScreen As screen:
                         Text: |-
                             ="Contract Number :"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width/3.2
+                        Width: =Parent.Width/3
                         X: =10
                         Y: =lineEstimateSLS.Y+lineEstimateSLS.Height+10
                         ZIndex: =6
@@ -288,7 +288,7 @@ SubmittedLeadScreen As screen:
                         Text: |-
                             ="Bulding Name :"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width/4
+                        Width: =Parent.Width/3.5
                         X: =10
                         Y: =Title3_3.Y+Title3_3.Height
                         ZIndex: =7
@@ -305,7 +305,7 @@ SubmittedLeadScreen As screen:
                         Text: |-
                             ="Address :"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width/4
+                        Width: =Parent.Width/6
                         X: =10
                         Y: =Title3_5.Y+Title3_5.Height
                         ZIndex: =8
