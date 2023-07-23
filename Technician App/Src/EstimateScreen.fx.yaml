@@ -332,7 +332,7 @@ EstimateScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+CommunicatedtoCustomer.Height+100
+                Height: =EstimatedHours.Height+Material.Height+UnitDown.Height+AdditionalExpensesRequired.Height+TravelRequired.Height+CommunicatedtoCustomer.Height+50
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
@@ -366,7 +366,6 @@ EstimateScreen As screen:
                         Text: ="Estimate Hours(Total Man Hours)"
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =10
                         ZIndex: =1
 
                     IntxtEstimatedHours As text:
@@ -444,7 +443,6 @@ EstimateScreen As screen:
                         Text: ="Material , Part number and other things"
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =10
                         ZIndex: =1
 
                     IntxtMaterial As text:
@@ -504,7 +502,7 @@ EstimateScreen As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_isunitdown")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =56
+                    Height: =30
                     Required: =false
                     Update: =
                     Visible: =true
@@ -546,14 +544,14 @@ EstimateScreen As screen:
                         CheckboxSize: =50
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         Font: =Font.Arial
+                        Height: =56
                         HoverBorderColor: =
                         HoverColor: =RGBA(0, 0, 0, 1)
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Unit Down"
-                        Width: =Parent.Width-60
+                        Width: =Parent.Width-50
                         X: =30
-                        Y: =24
                         ZIndex: =5
 
                 AdditionalExpensesRequired As typedDataCard.comboBoxOptionSetSingleEditCard:
@@ -609,7 +607,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Additional expenses required"
-                        Width: =Parent.Width-60
+                        Width: =Parent.Width-50
                         X: =30
                         ZIndex: =5
 
@@ -666,7 +664,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Travel Required"
-                        Width: =Parent.Width-60
+                        Width: =Parent.Width-50
                         X: =30
                         ZIndex: =5
 
@@ -677,7 +675,7 @@ EstimateScreen As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_communicatedtocustomer")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =70
+                    Height: =68
                     Required: =false
                     Update: =
                     Width: =Parent.Width
@@ -723,7 +721,7 @@ EstimateScreen As screen:
                         PressedBorderColor: =
                         Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
                         Text: ="Communicated to Customer"
-                        Width: =Parent.Width-60
+                        Width: =Parent.Width-50
                         X: =30
                         ZIndex: =5
 

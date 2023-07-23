@@ -362,7 +362,7 @@ CreatLeadScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: ="Contract Number"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -387,7 +387,7 @@ CreatLeadScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -442,7 +442,7 @@ CreatLeadScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -464,7 +464,7 @@ CreatLeadScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -520,7 +520,7 @@ CreatLeadScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: |-
                             =//Parent.DisplayName
                             "Building Name"
@@ -545,7 +545,7 @@ CreatLeadScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -600,7 +600,7 @@ CreatLeadScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -624,7 +624,7 @@ CreatLeadScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,12,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30

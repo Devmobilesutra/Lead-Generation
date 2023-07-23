@@ -21,7 +21,7 @@ DashboardScreen As screen:
         ZIndex: =1
 
         ctnHeaderDS As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |
@@ -33,7 +33,7 @@ DashboardScreen As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =Parent.Width-20
             LayoutMode: =LayoutMode.Auto
-            PaddingRight: =0.00
+            PaddingRight: =5
             PaddingTop: =0.00
             Width: =Parent.Width
             X: =0.00

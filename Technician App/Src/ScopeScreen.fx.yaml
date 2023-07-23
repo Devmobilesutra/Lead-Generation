@@ -14,7 +14,7 @@ ScopeScreen As screen:
         ZIndex: =1
 
         ctnHeaderSS As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -339,7 +339,7 @@ ScopeScreen As screen:
                 AlignInContainer: =AlignInContainer.Center
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =Scope.Height+ScopeOfWork.Height+ManuallyScopeOfWork.Height+80
+                Height: =Scope.Height+ScopeOfWork.Height+ManuallyScopeOfWork.Height+50
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -355,7 +355,7 @@ ScopeScreen As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_PrimaryScopeofWorkLID")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =110
                     Required: =false
                     Update: =intxtScope.Selected
                     Width: =Parent.Width
@@ -440,7 +440,7 @@ ScopeScreen As screen:
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@LeadInformations],DataSourceInfo.DisplayName,"shlrf_PrimaryScopeofWorkLID")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =110
                     Required: =false
                     Update: =IntxtScopeofwork.Selected
                     Width: =Parent.Width
@@ -453,7 +453,7 @@ ScopeScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: ="Scope of work"
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -479,7 +479,7 @@ ScopeScreen As screen:
                         SearchItems: =[]
                         SelectionFill: =RGBA(0, 0, 0, 1)
                         SelectMultiple: =false
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -535,7 +535,7 @@ ScopeScreen As screen:
                         Color: =RGBA(0, 0, 0, 1)
                         Font: =Font.Arial
                         Height: =48
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Text: ="Custom Scope of work(Manually Entered)"
                         Width: =Parent.Width - 60
                         X: =30
@@ -557,7 +557,7 @@ ScopeScreen As screen:
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
-                        Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                        Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
@@ -610,7 +610,7 @@ ScopeScreen As screen:
 
                 btnPreviousSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
+                    Height: =50
                     HoverFill: =Color.Red
                     OnSelect: |+
                         =Navigate(UnitScreen);
@@ -626,7 +626,7 @@ ScopeScreen As screen:
 
                 btnNextSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
+                    Height: =50
                     HoverFill: =Color.Red
                     OnSelect: |
                         =Set(VarIndicator,true);
