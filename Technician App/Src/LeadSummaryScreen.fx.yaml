@@ -264,7 +264,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Height: =48
+                            Height: =30
                             Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Building Name"
                             Width: =Parent.Width - 60
@@ -343,7 +343,7 @@ LeadSummaryScreen As screen:
                         lblZipcodeLSS As label:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
-                            Height: =48
+                            Height: =32
                             Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -375,7 +375,7 @@ LeadSummaryScreen As screen:
 
                         ErrorMessageZipcodeLSS As label:
                             AutoHeight: =true
-                            Height: =10
+                            Height: =0
                             Live: =Live.Assertive
                             PaddingBottom: =0
                             PaddingLeft: =0
@@ -736,7 +736,6 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Overflow: =Overflow.Scroll
                             Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Scope of Work"
                             Width: =Parent.Width - 60
