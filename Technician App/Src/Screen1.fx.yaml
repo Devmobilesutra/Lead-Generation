@@ -1,11 +1,5 @@
 Screen1 As screen:
-    OnVisible: |-
-        =Collect(StepBar,
-        {ID:1 ,Color : Color.Red,Step: 1 ,lineColor: Color.DimGrey},
-        {ID:2 ,Color : Color.Red,Step :2,line: Color.DimGrey},
-        {ID:3 ,Color : Color.Red,Step:3,line: Color.DimGrey},
-        {ID:4 ,Color : Color.Red,Step:4,line: Color.DimGrey},
-        {ID:5 ,Color : Color.Red,Step:5,line: Color.White })
+    OnVisible: =
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -14,8 +8,8 @@ Screen1 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =85
-        Width: =715
+        TemplateSize: =50
+        Width: =694
         WrapCount: =5
         X: =40
         Y: =40
@@ -24,7 +18,7 @@ Screen1 As screen:
         Image2 As image:
             BorderColor: =RGBA(255, 0, 0, 1)
             Fill: =ThisItem.Color
-            Height: =Parent.Width/14
+            Height: =Parent.Width/16
             Image: =
             ImagePosition: =ImagePosition.Fill
             OnSelect: =Select(Parent)
@@ -32,7 +26,7 @@ Screen1 As screen:
             RadiusBottomRight: =50
             RadiusTopLeft: =50
             RadiusTopRight: =50
-            Width: =Parent.Width/14
+            Width: =Parent.Width/16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
@@ -52,11 +46,11 @@ Screen1 As screen:
             ZIndex: =2
 
         Separator2 As rectangle:
-            Fill: =RGBA(149, 149, 149, 1)
+            Fill: =ThisItem.line
             Height: =5
             OnSelect: =Select(Parent)
-            Width: =91
-            X: =51
-            Y: =38
+            Width: =Parent.TemplateWidth-Image2.Width
+            X: =Image2.X+Image2.Width
+            Y: =22
             ZIndex: =4
 

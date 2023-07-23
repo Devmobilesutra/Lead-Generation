@@ -1,4 +1,11 @@
 CreatLeadScreen As screen:
+    OnVisible: |-
+        =ClearCollect(StepBar,
+        {ID:1 ,Color : Color.Red,Step: "Step 1" ,lineColor: Color.DimGrey},
+        {ID:2 ,Color : Color.Red,Step :"Step 2",line: Color.DimGrey},
+        {ID:3 ,Color : Color.Red,Step:"Step 3",line: Color.DimGrey},
+        {ID:4 ,Color : Color.Red,Step:"Step 4",line: Color.DimGrey},
+        {ID:5 ,Color : Color.Red,Step:"Step 5",line: Color.White });
 
     ctnMainCLS As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -138,33 +145,45 @@ CreatLeadScreen As screen:
                 Height: =130
                 LayoutMinHeight: =100
                 LayoutMinWidth: =Parent.Width/1.04
-                Width: =Parent.Width/1.04
+                Width: =Parent.Width-60
                 X: =87
                 Y: =77
-                ZIndex: =1
+                ZIndex: =2
 
                 CircleStep3CL As circle:
                     Fill: =Color.Red
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                    Height: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
+                    Width: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     X: =IconLine2CL.X+IconLine2CL.Width
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                    Y: =(Parent.Height-Self.Height)/3.5
                     ZIndex: =3
 
                 CircleStep4CL As circle:
                     Fill: =Color.Red
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                    Height: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
+                    Width: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     X: =IconLine3CL.X+IconLine3CL.Width
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                    Y: =(Parent.Height-Self.Height)/3.5
                     ZIndex: =4
 
                 CircleStep5CL As circle:
                     Fill: =Color.Red
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                    Height: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
+                    Width: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     X: =IconLine4CL.X+IconLine4CL.Width
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                    Y: =(Parent.Height-Self.Height)/3.5
                     ZIndex: =5
 
                 Icontick1CL As icon.Check:
@@ -225,38 +244,46 @@ CreatLeadScreen As screen:
 
                 IconLine1CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
-                    Height: =51
+                    Height: =Parent.Height/13
                     Icon: =Icon.HorizontalLine
-                    Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                    Width: |-
+                        =//If(Parent.Width<440,40,Parent.Width<500,55,70)
+                        If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =CircleStep1CL.X+CircleStep1CL.Width
-                    Y: =22
+                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
                     ZIndex: =11
 
                 IconLine2CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
-                    Height: =51
+                    Height: =Parent.Height/13
                     Icon: =Icon.HorizontalLine
-                    Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                    Width: |-
+                        =//If(Parent.Width<440,40,Parent.Width<500,55,70)
+                        If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =CircleStep2CL.X+CircleStep2CL.Width
-                    Y: =22
+                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
                     ZIndex: =12
 
                 IconLine3CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
-                    Height: =51
+                    Height: =Parent.Height/13
                     Icon: =Icon.HorizontalLine
-                    Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                    Width: |-
+                        =//If(Parent.Width<440,40,Parent.Width<500,55,70)
+                        If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =CircleStep3CL.X+CircleStep3CL.Width
-                    Y: =22
+                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
                     ZIndex: =13
 
                 IconLine4CL As icon.HorizontalLine:
                     Color: =Color.DarkGray
-                    Height: =51
+                    Height: =Parent.Height/13
                     Icon: =Icon.HorizontalLine
-                    Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+                    Width: |-
+                        =//If(Parent.Width<440,40,Parent.Width<500,55,70)
+                        If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =CircleStep4CL.X+CircleStep4CL.Width
-                    Y: =22
+                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
                     ZIndex: =14
 
                 lblStep1CL As label:
@@ -313,20 +340,24 @@ CreatLeadScreen As screen:
 
                 CircleStep1CL As circle:
                     Fill: =If(VarIndicator=true,Color.Green,Color.Red)
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                    Height: =If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
+                    Width: =If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/6)
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                    Y: =(Parent.Height-Self.Height)/3.5
                     ZIndex: =20
 
                 CircleStep2CL As circle:
                     Fill: |-
                         =//If(VarIndicatorUS=true,Color.Green,Color.Red)
                         Color.Red
-                    Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
-                    Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+                    Height: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
+                    Width: |-
+                        =//If(Parent.Width<378,20,Parent.Width<500,30,40)
+                        If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     X: =IconLine1CL.X+IconLine1CL.Width
-                    Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+                    Y: =(Parent.Height-Self.Height)/3.5
                     ZIndex: =21
 
             BuildingInfoForm As form:
@@ -339,7 +370,7 @@ CreatLeadScreen As screen:
                 LayoutMinWidth: =400
                 Width: =Parent.Width/1.04
                 Y: =143
-                ZIndex: =2
+                ZIndex: =3
 
                 ContractNumber As typedDataCard.textualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -671,7 +702,7 @@ CreatLeadScreen As screen:
                 Width: =Parent.Width/6
                 X: =306
                 Y: =785
-                ZIndex: =3
+                ZIndex: =4
 
             ctnForSpaceCL As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -686,5 +717,5 @@ CreatLeadScreen As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                ZIndex: =4
+                ZIndex: =5
 
