@@ -63,7 +63,7 @@ UnitScreen As screen:
                 PaddingTop: =5.34
                 Size: |
                     =//21.36
-                    If(Parent.Width<500,14,Parent.Width>500,22,12)
+                    If(Parent.Width<500,12,Parent.Width>500,20,12)
                 Text: ="Technicians Lead Generation"
                 Width: =Parent.Width-imgSchindlerLogoUS.Width-IconBackUS.Width
                 X: =96.12

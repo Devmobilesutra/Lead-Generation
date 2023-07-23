@@ -4396,7 +4396,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconBackIS",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7052,7 +7052,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgSchindlerLogoIS",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8983,7 +8983,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblUserIS",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

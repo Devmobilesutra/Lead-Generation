@@ -27,8 +27,8 @@ DashboardScreen As screen:
             Height: |
                 =//Parent.Height/13.5
                 //If(Parent.Height<Parent.Width,Parent.Height/8,Parent.Height/15)
-                //If(Parent.Height<Parent.Width,60,80)
-                If(Parent.Height<Parent.Width,Parent.Height/10,Parent.Height/16)
+                If(Parent.Height<Parent.Width,60,80)
+                //If(Parent.Height<Parent.Width,Parent.Height/10,Parent.Height/16)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =Parent.Width-20
@@ -129,7 +129,7 @@ DashboardScreen As screen:
             toggleDS As toggleSwitch:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Default: =true
-                Height: =Parent.Height/1.8
+                Height: =Parent.Height/3
                 OnCheck: |-
                     =Set(cumulatively,false);
                     Set(yearly,true);
@@ -137,12 +137,12 @@ DashboardScreen As screen:
                     =Set(yearly,false);
                     Set(cumulatively,true);
                 ShowLabel: =false
-                Size: =18
+                Size: =If(Parent.Height<Parent.Width,12,14)
                 Width: =Parent.Width/14
                 X: =lblUserNameDS.X+lblUserNameDS.Width
-                Y: |-
+                Y: |
                     =//Parent.Y/3
-                    (Parent.Y+Parent.Height)/6
+                    If(Parent.Width>Parent.Height,Parent.Height/2.5,Parent.Height/6)
                 ZIndex: =5
 
             lblyearDS As label:

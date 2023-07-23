@@ -14,7 +14,7 @@ CreatLeadScreen As screen:
         ZIndex: =1
 
         ctnHeaderCL As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -55,9 +55,9 @@ CreatLeadScreen As screen:
                 LayoutMinHeight: =70
                 PaddingLeft: =20
                 PaddingRight: =5.34
-                Size: |
+                Size: |-
                     =//21.36
-                    If(Parent.Width<500,14,Parent.Width>500,22,12)
+                    If(Parent.Width<500,12,Parent.Width>500,20,12)
                 Text: ="Technicians Lead Generation"
                 Width: =Parent.Width-imgSchindlerLogoCL.Width-iconBackCL.Width
                 X: =96.12
@@ -110,6 +110,7 @@ CreatLeadScreen As screen:
                 Font: =Font.Arial
                 Height: =Parent.Height
                 PaddingBottom: =0
+                PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =0
                 Size: =If(Parent.Width<500,14,Parent.Width>500,20,18)
@@ -332,7 +333,7 @@ CreatLeadScreen As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+ZipCode.Height+20
+                Height: =BuildingName.Height+Address.Height+ContractNumber.Height+ZipCode.Height
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
