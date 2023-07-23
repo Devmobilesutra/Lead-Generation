@@ -557,7 +557,7 @@ UnitScreen As screen:
                     ZIndex: =2
 
             ctnSpaceUS As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+                AlignInContainer: =AlignInContainer.Center
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =40

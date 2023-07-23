@@ -1,0 +1,157 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =130
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =130
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        X: =50
+        ZIndex: =21
+
+        CircleStep1US_2 As circle:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: |-
+                =//If(VarIndicator=true,Color.Green,Color.Red)
+                Color.Red
+            Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            X: =If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/6)
+            Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+            ZIndex: =1
+
+        IconLine1US_1 As icon.HorizontalLine:
+            AlignInContainer: =AlignInContainer.Center
+            Color: |-
+                =//If(VarIndicator=true,Color.Green,Color.DarkGray)
+                Color.DarkGray
+            Height: =51
+            Icon: =Icon.HorizontalLine
+            Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+            Y: =20
+            ZIndex: =2
+
+        CircleStep2US_2 As circle:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: |-
+                =//If(VarIndicatorUS=true,Color.Green,Color.Red)
+                Color.Red
+            Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            X: =IconLine1US_1.X+IconLine1US_1.Width
+            Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+            ZIndex: =3
+
+        IconLine2US_1 As icon.HorizontalLine:
+            AlignInContainer: =AlignInContainer.Center
+            Color: =Color.DarkGray
+            Height: =51
+            Icon: =Icon.HorizontalLine
+            Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+            Y: =20
+            ZIndex: =4
+
+        CircleStep3US_2 As circle:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =Color.Red
+            Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            X: =IconLine2US_1.X+IconLine2US_1.Width
+            Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+            ZIndex: =5
+
+        IconLine3US_1 As icon.HorizontalLine:
+            AlignInContainer: =AlignInContainer.Center
+            Color: =Color.DarkGray
+            Height: =51
+            Icon: =Icon.HorizontalLine
+            Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+            Y: =20
+            ZIndex: =6
+
+        CircleStep4US_2 As circle:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =Color.Red
+            Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            X: =IconLine3US_1.X+IconLine3US_1.Width
+            Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+            ZIndex: =7
+
+        IconLine4US_1 As icon.HorizontalLine:
+            AlignInContainer: =AlignInContainer.Center
+            Color: =Color.DarkGray
+            Height: =51
+            Icon: =Icon.HorizontalLine
+            Width: =If(Parent.Width<440,40,Parent.Width<500,55,70)
+            Y: =20
+            ZIndex: =8
+
+        CircleStep5US_2 As circle:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =Color.Red
+            Height: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            Width: =If(Parent.Width<378,20,Parent.Width<500,30,40)
+            X: =IconLine4US_1.X+IconLine4US_1.Width
+            Y: =If(Parent.Width<378,40,Parent.Width<500,30,30)
+            ZIndex: =9
+
+    Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =130
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        X: =10
+        ZIndex: =22
+
+        lblStep1US_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =27
+            Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+            Text: ="Step 1"
+            Width: =Parent.Width/5.5
+            X: |-
+                =//If(Parent.Width<378,Parent.Width/8,Parent.Width<500,Parent.Width/7,Parent.Width/4)
+                0
+            ZIndex: =1
+
+        lblStep2US_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =30
+            Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+            Text: ="Step 2"
+            Width: =Parent.Width/5.5
+            ZIndex: =2
+
+        lblStep3US_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =27
+            Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+            Text: ="Step 3"
+            Width: =Parent.Width/5.5
+            ZIndex: =3
+
+        lblStep4US_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =27
+            Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+            Text: ="Step 4"
+            Width: =Parent.Width/5.5
+            ZIndex: =4
+
+        lblStep5US_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =27
+            Size: =If(Parent.Width<378,11,Parent.Width<500,12,14)
+            Text: ="Step 5"
+            Width: =Parent.Width/5.5
+            ZIndex: =5
+
