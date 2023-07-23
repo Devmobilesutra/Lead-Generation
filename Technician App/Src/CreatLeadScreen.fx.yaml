@@ -145,7 +145,7 @@ CreatLeadScreen As screen:
                 Height: =130
                 LayoutMinHeight: =100
                 LayoutMinWidth: =Parent.Width/1.04
-                Width: =Parent.Width-60
+                Width: =Parent.Width
                 X: =87
                 Y: =77
                 ZIndex: =2
