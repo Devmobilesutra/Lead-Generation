@@ -184,7 +184,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Contract Number"
                             Width: =Parent.Width-60
                             Wrap: =false
@@ -209,7 +209,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width-60
                             X: =30
@@ -265,7 +265,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Building Name"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -289,7 +289,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -344,7 +344,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -366,7 +366,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -422,7 +422,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -445,7 +445,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -500,7 +500,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="No of Units"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -523,7 +523,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -579,7 +579,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Unit Description"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -602,7 +602,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -657,7 +657,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Scope"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -682,7 +682,7 @@ LeadSummaryScreen As screen:
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -737,7 +737,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Overflow: =Overflow.Scroll
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Scope of Work"
                             Width: =Parent.Width - 60
                             Wrap: =false
@@ -764,7 +764,7 @@ LeadSummaryScreen As screen:
                             SearchItems: =[]
                             SelectionFill: =RGBA(0, 0, 0, 1)
                             SelectMultiple: =false
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -820,7 +820,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Overflow: =Overflow.Scroll
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Scope of Work (Manually Entered)"
                             Width: =Parent.Width - 60
                             X: =30
@@ -842,7 +842,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -898,7 +898,7 @@ LeadSummaryScreen As screen:
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Estimated Hours (Total Man Hours)"
                             Width: =Parent.Width - 60
                             X: =30
@@ -920,7 +920,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -975,7 +975,7 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Height: =48
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Material, Part Number and other things"
                             Width: =Parent.Width - 60
                             X: =30
@@ -996,7 +996,7 @@ LeadSummaryScreen As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
@@ -1079,7 +1079,7 @@ LeadSummaryScreen As screen:
                             Default: =CboxUnitDown.Value
                             Font: =Font.Arial
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Unit Down"
                             Width: =Parent.Width-60
                             X: =40
@@ -1134,7 +1134,7 @@ LeadSummaryScreen As screen:
                             Default: =CboxAdditionalExpensesRequired.Value
                             Font: =Font.Arial
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Additional Expenses Required"
                             Width: =Parent.Width-60
                             X: =40
@@ -1188,7 +1188,7 @@ LeadSummaryScreen As screen:
                             Default: =CboxTravelRequired.Value
                             Font: =Font.Arial
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Travel Required"
                             Width: =Parent.Width-60
                             X: =40
@@ -1242,7 +1242,7 @@ LeadSummaryScreen As screen:
                             Default: =CboxCommunicatedtoCustomer.Value
                             Font: =Font.Arial
                             HoverColor: =RGBA(0, 0, 0, 1)
-                            Size: =If(Parent.Width<358,14,Parent.Width>358,16,14)
+                            Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Communicated to customer"
                             Width: =Parent.Width-60
                             X: =40
@@ -1310,7 +1310,7 @@ LeadSummaryScreen As screen:
 
                 btnPreviousLSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
+                    Height: =50
                     HoverFill: =Color.Red
                     OnSelect: |+
                         =Navigate(ImageUploadScreen);
@@ -1328,7 +1328,7 @@ LeadSummaryScreen As screen:
 
                 btnSubmitLSS As button:
                     Fill: =RGBA(255, 0, 0, 1)
-                    Height: =53
+                    Height: =50
                     HoverFill: =Color.Red
                     OnSelect: |
                         =Set(VarLeadInformationID,GUID());
