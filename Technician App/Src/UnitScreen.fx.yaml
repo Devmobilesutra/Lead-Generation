@@ -336,7 +336,7 @@ UnitScreen As screen:
                 AlignInContainer: =AlignInContainer.Center
                 DataSource: =LeadInformations
                 FillPortions: =0
-                Height: =UnitCount.Height+UnitDescription.Height
+                Height: =UnitCount.Height+UnitDescription.Height+20
                 Item: =VarFormMode
                 LayoutMinHeight: =250
                 LayoutMinWidth: =Parent.Width
