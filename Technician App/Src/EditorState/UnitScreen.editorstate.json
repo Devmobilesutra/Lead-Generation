@@ -6669,7 +6669,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick1US",
-      "ParentIndex": 12,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6930,7 +6930,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick2US",
-      "ParentIndex": 13,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7191,7 +7191,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick3US",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7452,7 +7452,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick4US",
-      "ParentIndex": 10,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7713,7 +7713,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconTick5US",
-      "ParentIndex": 11,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

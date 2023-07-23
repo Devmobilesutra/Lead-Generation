@@ -323,10 +323,10 @@ ImageUploadScreen As screen:
 
                 Image1_25 As image:
                     BorderColor: =
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorIS=true,Color.Green,Color.Red)
                     FocusedBorderThickness: =0
                     Height: =If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
-                    Image: =
+                    Image: =If(VarIndicatorIS=true,'Check_green_icon.svg')
                     RadiusBottomLeft: =50
                     RadiusBottomRight: =50
                     RadiusTopLeft: =50
@@ -684,7 +684,7 @@ ImageUploadScreen As screen:
                         HoverFill: =Color.Red
                         OnSelect: |+
                             =Navigate(EstimateScreen);
-                            Set(VarIndicatorES,false);
+                            Set(VarIndicatorIS,false);
                             
                             
                             

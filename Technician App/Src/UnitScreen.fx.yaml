@@ -713,7 +713,7 @@ UnitScreen As screen:
                     HoverFill: =Color.Red
                     OnSelect: |
                         =Navigate(CreatLeadScreen);
-                        Set(VarIndicator,false);
+                        Set(VarIndicatorUS,false);
                     Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                     Text: ="Previous"
                     Width: =Parent.Width/4

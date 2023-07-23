@@ -154,7 +154,9 @@ EstimateScreen As screen:
                         =//If(Parent.Width<440,40,Parent.Width<500,55,70)
                         If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =Image1_16.X+Image1_16.Width
-                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                    Y: |-
+                        =//If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                        If(Parent.Height<Parent.Width,(Image1_16.Height+Image1_16.Y)/1.5,(Image1_16.Height+Image1_16.Y)/3)
                     ZIndex: =8
 
                 IconLine2CL_3 As icon.HorizontalLine:
@@ -165,7 +167,9 @@ EstimateScreen As screen:
                         =//If(Parent.Width<440,40,Parent.Width<500,55,70)
                         If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =Image1_17.X+Image1_17.Width
-                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                    Y: |-
+                        =//If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                        If(Parent.Height<Parent.Width,(Image1_16.Height+Image1_16.Y)/1.5,(Image1_16.Height+Image1_16.Y)/3)
                     ZIndex: =9
 
                 IconLine3CL_3 As icon.HorizontalLine:
@@ -176,7 +180,9 @@ EstimateScreen As screen:
                         =//If(Parent.Width<440,40,Parent.Width<500,55,70)
                         If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =Image1_18.X+Image1_18.Width
-                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                    Y: |-
+                        =//If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                        If(Parent.Height<Parent.Width,(Image1_16.Height+Image1_16.Y)/1.5,(Image1_16.Height+Image1_16.Y)/3)
                     ZIndex: =10
 
                 IconLine4CL_3 As icon.HorizontalLine:
@@ -187,7 +193,9 @@ EstimateScreen As screen:
                         =//If(Parent.Width<440,40,Parent.Width<500,55,70)
                         If(Parent.Width<378,Parent.Width/10,Parent.Width<500,Parent.Width/12,Parent.Width/14)
                     X: =Image1_19.X+Image1_19.Width
-                    Y: =If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                    Y: |-
+                        =//If(Parent.Height>Parent.Width,(Parent.Height-Self.Height)/6,(Parent.Height-Self.Height)/3)
+                        If(Parent.Height<Parent.Width,(Image1_16.Height+Image1_16.Y)/1.5,(Image1_16.Height+Image1_16.Y)/3)
                     ZIndex: =11
 
                 lblStep1CL_3 As label:
@@ -284,7 +292,7 @@ EstimateScreen As screen:
 
                 Image1_18 As image:
                     BorderColor: =
-                    Fill: =If(VarIndicatorUS=true,Color.Green,Color.Red)
+                    Fill: =If(VarIndicatorSS=true,Color.Green,Color.Red)
                     FocusedBorderThickness: =0
                     Height: =If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
                     Image: =If(VarIndicatorSS=true,'Check_green_icon.svg')
@@ -299,10 +307,10 @@ EstimateScreen As screen:
 
                 Image1_19 As image:
                     BorderColor: =
-                    Fill: =Color.Red
+                    Fill: =If(VarIndicatorES=true,Color.Green,Color.Red)
                     FocusedBorderThickness: =0
                     Height: =If(Parent.Width<378,Parent.Width/16,Parent.Width<500,Parent.Width/18,Parent.Width/20)
-                    Image: =
+                    Image: =If(VarIndicatorES=true,'Check_green_icon.svg')
                     RadiusBottomLeft: =50
                     RadiusBottomRight: =50
                     RadiusTopLeft: =50
@@ -941,7 +949,7 @@ EstimateScreen As screen:
                     HoverFill: =Color.Red
                     OnSelect: |+
                         =Navigate(ScopeScreen);
-                        Set(VarIndicatorSS,false);
+                        Set(VarIndicatorES,false);
                         
                         
                         

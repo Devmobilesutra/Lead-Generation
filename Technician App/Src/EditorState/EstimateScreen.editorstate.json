@@ -4674,7 +4674,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnProgressBarES",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7323,7 +7323,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "EstimateForm",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
