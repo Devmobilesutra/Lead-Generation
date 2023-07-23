@@ -578,11 +578,10 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Height: =48
+                            Height: =35
                             Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Unit Description"
                             Width: =Parent.Width - 60
-                            Wrap: =false
                             X: =30
                             Y: =10
                             ZIndex: =1
@@ -818,7 +817,6 @@ LeadSummaryScreen As screen:
                             AutoHeight: =true
                             Color: =RGBA(0, 0, 0, 1)
                             Font: =Font.Arial
-                            Overflow: =Overflow.Scroll
                             Size: =If(Parent.Width<358,12,Parent.Width>358,14,16)
                             Text: ="Scope of Work (Manually Entered)"
                             Width: =Parent.Width - 60
