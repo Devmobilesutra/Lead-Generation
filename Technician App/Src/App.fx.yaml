@@ -35,6 +35,7 @@ App As appinfo:
         );
         ClearCollect(GCTotalIncentives,TotalIncentives);
     StartScreen: =
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

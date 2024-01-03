@@ -206,6 +206,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnCreateLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -532,6 +533,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -907,6 +909,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQuotedLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1289,6 +1292,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnSoldLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1664,6 +1668,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnSubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1951,6 +1956,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnCountsSubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2199,6 +2205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnCreateLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2459,6 +2466,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnforSpaceLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2737,6 +2745,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnHeaderDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2959,6 +2968,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnHeadingSubmittedLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3213,6 +3223,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnLeadsButtonsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3497,6 +3508,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnMainDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3781,6 +3793,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnMiddleDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4022,6 +4035,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnQuatedLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4241,6 +4255,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnSoldLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4506,6 +4521,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnSubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4754,6 +4770,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnUserNameDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4910,6 +4927,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DashboardScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4981,6 +4999,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "grpQuotedLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5032,6 +5051,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "grpSoldLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5206,6 +5226,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconMenuDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5499,6 +5520,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgSchindlerLogoDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5784,6 +5806,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCountInprogressDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6126,6 +6149,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCountOpenDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6461,6 +6485,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCountRejectedDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6830,6 +6855,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblFutureIncentivesDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7231,6 +7257,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblHeaderDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7602,6 +7629,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblInprogressDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7978,6 +8006,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblOpenDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8352,6 +8381,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblQuotedLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8733,6 +8763,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblRejectedDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9107,6 +9138,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSoldIncentivesDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9472,6 +9504,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSoldLeadsDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9830,6 +9863,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10172,6 +10206,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblUserNameDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10511,6 +10546,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblyearDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10826,6 +10862,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "toggleDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -11042,6 +11079,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "VerticalLine1SubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -11188,6 +11226,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "VerticalLineS2ubmittedLeadDS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [

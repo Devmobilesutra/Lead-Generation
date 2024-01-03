@@ -78,6 +78,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -401,6 +402,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button3_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -619,6 +621,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ChatScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -775,6 +778,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container1_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -950,6 +954,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1183,6 +1188,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container8",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1427,6 +1433,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnHeaderDS_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1603,7 +1610,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ZIndex"
+        "ZIndex",
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate4_2",
       "HasDynamicProperties": false,
@@ -1616,6 +1624,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery4_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1738,6 +1747,11 @@
           "Category": "Design",
           "PropertyName": "ZIndex",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",
@@ -1766,6 +1780,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate4_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1903,6 +1918,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon2_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2171,6 +2187,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon6_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2365,6 +2382,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2668,6 +2686,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgSchindlerLogo_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2981,6 +3000,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3278,6 +3298,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3591,6 +3612,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3920,6 +3942,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4293,6 +4316,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

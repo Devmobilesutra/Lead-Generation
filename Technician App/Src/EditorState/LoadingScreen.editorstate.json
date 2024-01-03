@@ -99,6 +99,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FlashImageLS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -272,6 +273,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LoadingScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -403,6 +405,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TimerLS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -687,6 +690,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "VersionLS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
