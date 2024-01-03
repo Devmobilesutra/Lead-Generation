@@ -4688,7 +4688,7 @@
       "MetaDataIDKey": "",
       "Name": "IconBackIS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9600,7 +9600,7 @@
       "MetaDataIDKey": "",
       "Name": "imgSchindlerLogoIS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13167,7 +13167,7 @@
       "MetaDataIDKey": "",
       "Name": "lblUserIS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

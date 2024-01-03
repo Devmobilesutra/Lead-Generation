@@ -7650,7 +7650,7 @@
       "MetaDataIDKey": "",
       "Name": "IconBackES",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7877,7 +7877,7 @@
       "MetaDataIDKey": "",
       "Name": "IconLine1CL_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8260,7 +8260,7 @@
       "MetaDataIDKey": "",
       "Name": "IconLine2CL_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8643,7 +8643,7 @@
       "MetaDataIDKey": "",
       "Name": "IconLine3CL_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9026,7 +9026,7 @@
       "MetaDataIDKey": "",
       "Name": "IconLine4CL_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10563,7 +10563,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10850,7 +10850,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_17",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11137,7 +11137,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_18",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11424,7 +11424,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_19",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11711,7 +11711,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12015,7 +12015,7 @@
       "MetaDataIDKey": "",
       "Name": "imgSchindlerLogoES",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13379,7 +13379,7 @@
       "MetaDataIDKey": "",
       "Name": "lblHeaderES",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

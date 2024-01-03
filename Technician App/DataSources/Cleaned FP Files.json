@@ -1,0 +1,124 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre40_cleanedfpfiles",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre40_cleanedfpfile",
+    "Name": "Cleaned FP Files",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre40_area": "Area",
+      "cre40_bidprice": "BidPrice",
+      "cre40_bidprice_base": "BidPrice (Base)",
+      "cre40_buildingaddress": "BuildingAddress",
+      "cre40_buildingname": "BuildingName",
+      "cre40_buildingzip": "BuildingZip",
+      "cre40_cleanedfpfile_AsyncOperations": "System Jobs",
+      "cre40_cleanedfpfile_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre40_cleanedfpfile_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre40_cleanedfpfile_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre40_cleanedfpfile_ProcessSession": "Process Sessions",
+      "cre40_cleanedfpfile_SyncErrors": "Sync Errors",
+      "cre40_cleanedfpfileid": "Cleaned FP File",
+      "cre40_customercity": "CustomerCity",
+      "cre40_customername": "CustomerName",
+      "cre40_customerstate": "CustomerState",
+      "cre40_district": "District",
+      "cre40_estimatenumber": "Estimate Number",
+      "cre40_leadgenerator": "Lead Generator",
+      "cre40_predictedprice": "Predicted Price",
+      "cre40_predictedprice_base": "Predicted Price (Base)",
+      "cre40_scopeofwork": "Scope of work",
+      "cre40_shortworkdescription": "ShortWorkDescription",
+      "cre40_targetcost": "Target Cost",
+      "cre40_targetcost_base": "Target Cost (Base)",
+      "cre40_targetprice": "Target Price",
+      "cre40_targetprice_base": "Target Price (Base)",
+      "cre40_totalhours": "Total Hours",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_expl_2fc616c3_b931_400c_aaf0_e99c656f3e3e": "cre40_bidprice - explanation (Prediction 12/27/202",
+      "new_expl_7a5b089d_684c_4aae_b5e2_1fdae11b38bd": "cre40_bidprice - explanation (Prediction 12/28/202",
+      "new_p1_2fc616c3_b931_400c_aaf0_e99c656f3e3e": "cre40_bidprice - probability (Prediction 12/27/202",
+      "new_p1_7a5b089d_684c_4aae_b5e2_1fdae11b38bd": "cre40_bidprice - probability (Prediction 12/28/202",
+      "new_pred_2fc616c3_b931_400c_aaf0_e99c656f3e3e": "cre40_bidprice - predicted (Prediction 12/27/2023,",
+      "new_pred_2fc616c3_b931_400c_aaf0_e99c656f3e3e_base": "cre40_bidprice - predicted (Prediction 12/27/2023, (Base)",
+      "new_pred_7a5b089d_684c_4aae_b5e2_1fdae11b38bd": "cre40_bidprice - predicted (Prediction 12/28/2023,",
+      "new_pred_7a5b089d_684c_4aae_b5e2_1fdae11b38bd_base": "cre40_bidprice - predicted (Prediction 12/28/2023, (Base)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Cleaned FP Files",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Cleaned FP Files (Views)",
+    "Name": "_cre40_cleanedfpfile_views",
+    "RelatedEntityName": "Cleaned FP Files",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "119b0b5c-c207-4395-88db-af9165b6ff63": "Cleaned FP File Lookup View",
+      "15406fe5-fea0-4c77-9aa2-756141a28606": "Inactive Cleaned FP Files",
+      "2c517a74-8c27-4e76-8e8d-51ce5232b944": "Cleaned FP File Associated View",
+      "55db5594-c713-43d7-afc0-1137d44c73dc": "Cleaned FP File Advanced Find View",
+      "ce2fc167-2568-41b5-a693-9481c5408864": "Active Cleaned FP Files"
+    }
+  },
+  {
+    "DisplayName": "Status (Cleaned FP Files)",
+    "Name": "cre40_cleanedfpfile_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Cleaned FP Files"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Cleaned FP Files",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Cleaned FP Files)",
+    "Name": "cre40_cleanedfpfile_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Cleaned FP Files"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Cleaned FP Files",
+    "Type": "OptionSetInfo"
+  }
+]

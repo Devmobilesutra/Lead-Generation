@@ -95,6 +95,13 @@
       "Values": {
         "Information": "727926a5-5942-4ea6-86ab-b2138cd24797"
       }
+    },
+    {
+      "Kind": "default.cds_cre40_cleanedfpfile_forms",
+      "Namespace": "Cleaned FP Files (Forms)",
+      "Values": {
+        "Information": "7298df1e-09c1-42c3-8570-d499dcf47315"
+      }
     }
   ]
 }

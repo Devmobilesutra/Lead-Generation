@@ -1,36 +1,31 @@
 Screen1 As screen:
     OnVisible: =
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =85
-        Items: =StepBar
+        Height: =1260
+        Items: ='Cleaned FP Files'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =50
-        Width: =694
-        WrapCount: =5
-        X: =40
-        Y: =40
+        TemplateSize: =104
+        Width: =335
+        Y: =15
         ZIndex: =1
 
         Image2 As image:
-            BorderColor: =RGBA(255, 0, 0, 1)
-            Fill: =ThisItem.Color
-            Height: =Parent.Width/16
-            Image: =
-            ImagePosition: =ImagePosition.Fill
+            Height: =72
             OnSelect: =Select(Parent)
-            RadiusBottomLeft: =50
-            RadiusBottomRight: =50
-            RadiusTopLeft: =50
-            RadiusTopRight: =50
-            Width: =Parent.Width/16
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Title3 As label:
+        Title1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -38,19 +33,373 @@ Screen1 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Estimate Number'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image2.Width - 137
-            X: =91
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =Parent.TemplateWidth - 173
+            X: =103
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
             ZIndex: =2
 
-        Separator2 As rectangle:
-            Fill: =ThisItem.line
-            Height: =5
+        Subtitle1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth-Image2.Width
-            X: =Image2.X+Image2.Width
-            Y: =22
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =96
+            Icon: =Icon.ChevronRight
+            OnSelect: =Set(VarEstimatenumber,ThisItem.'Estimate Number');
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =58
+            X: =265
             ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle1 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+    FormViewer1 As formViewer:
+        DataSource: ='Cleaned FP Files'
+        Height: =669
+        Item: =Gallery1.Selected
+        NumberOfColumns: =1
+        Width: =410
+        X: =358
+        Y: =66
+        ZIndex: =2
+
+        Area_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_area"
+            Default: =ThisItem.Area
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_area")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+        BuildingName_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_buildingname"
+            Default: =ThisItem.BuildingName
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_buildingname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+        BuildingAddress_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_buildingaddress"
+            Default: =ThisItem.BuildingAddress
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_buildingaddress")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue7 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                ZIndex: =2
+
+        CustomerName_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_customername"
+            Default: =ThisItem.CustomerName
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_customername")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                ZIndex: =2
+
+        "'Lead Generator_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_leadgenerator"
+            Default: =ThisItem.'Lead Generator'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_leadgenerator")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+        BidPrice_DataCard1 As typedDataCard.USCurrencyViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_bidprice"
+            Default: =ThisItem.BidPrice
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_bidprice")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =Text(Parent.Default, "$###.##")
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+        "'Predicted Price_DataCard1' As typedDataCard.USCurrencyViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_predictedprice"
+            Default: =ThisItem.'Predicted Price'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_predictedprice")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As label:
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =Text(Parent.Default, "$###.##")
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
+        "'Estimate Number_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre40_estimatenumber"
+            Default: =ThisItem.'Estimate Number'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Cleaned FP Files'],DataSourceInfo.DisplayName,"cre40_estimatenumber")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =61
+            Required: =false
+            Width: =410
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingBottom: =0
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+    Button2 As button:
+        OnSelect: ='PowerAppV2->Predict,RespondtoaPowerApporflow'.Run()
+        Text: ="Button"
+        X: =588
+        Y: =15
+        ZIndex: =3
 
